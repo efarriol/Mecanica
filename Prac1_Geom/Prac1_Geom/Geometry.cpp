@@ -69,30 +69,55 @@ void Line::setDirection(const glm::vec3& newDir){
 };
 
 bool Line::isInside(const Point& point){ //not yet implemented
-
+	float alpha;
+	glm::vec3 extrem = this->point.position + direction;
+	alpha = (glm::length(point.position - this->point.position) / glm::length(extrem - this->point.position));
+	if (alpha >= 0 && alpha <= 1) return true;
+	return false;
 };
 
 bool Line::isInside(const glm::vec3& punt){ //not yet implemented
-
+	float alpha;
+	glm::vec3 extrem = this->point.position + direction;
+	alpha = (glm::length(punt - this->point.position) / glm::length(extrem - this->point.position));
+	if (alpha >= 0 && alpha <= 1) return true;
+	return false;
 };
 
 float Line::distLine2Point(const Point& point){
-
+	glm::vec3 vectorPA = this->point.position - point.position;
+	float distance = (glm::length(glm::cross(vectorPA, direction)) / glm::length(direction));
+	return distance;
 };
 
 glm::vec3 Line::closestPointInLine(const Point& point){
+	glm::vec3 vectorPA = this->point.position - point.position;
+	glm::vec3 crossVector = glm::cross(vectorPA, direction);
+	glm::vec3 closestPoint;
+	if (direction.x - vectorPA.x != 0) closestPoint.x = (point.position.x * direction.x - this->point.position.x * vectorPA.x) / (direction.x - vectorPA.x);
+	
+	else closestPoint.x = (point.position.x * direction.x - this->point.position.x * vectorPA.x);
 
+	if (direction.y - vectorPA.y != 0) closestPoint.y = (point.position.y * direction.y - this->point.position.y * vectorPA.y) / (direction.y - vectorPA.y);
+
+	else closestPoint.y = (point.position.y * direction.y - this->point.position.y * vectorPA.y);
+
+	if (direction.z - vectorPA.z != 0) closestPoint.z = (point.position.z * direction.z - this->point.position.z * vectorPA.z) / (direction.z - vectorPA.z);
+
+	else closestPoint.z = (point.position.z * direction.z - this->point.position.z * vectorPA.z);
+
+	return closestPoint;
 
 };
-
+/*
 float Line::distLine2Line(const Line& line){
 
 };
-
+*/
 //****************************************************
 // Plane
 //****************************************************
-
+/*
 Plane::Plane(const glm::vec3& point, const glm::vec3& normalVect){
 	normal = glm::normalize(normalVect);
 	dconst = -glm::dot(point, normal);
@@ -182,3 +207,4 @@ bool Sphere::isInside(const glm::vec3& point){
 bool Sphere::intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall){
 
 };
+*/

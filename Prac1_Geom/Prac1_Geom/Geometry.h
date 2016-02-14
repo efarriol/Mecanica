@@ -1,6 +1,6 @@
 #pragma once
 #include <glm\glm.hpp>
-
+#include <iostream>
 struct Geometry{
 	virtual void setPosition(const glm::vec3& newPos) = 0;
 	virtual bool isInside(const glm::vec3& point) = 0;
@@ -18,7 +18,7 @@ struct Point : public Geometry {
 	bool isInside(const glm::vec3& point);
 	float distPoint2Point(const Point& punt);
 	Point pointInSegment(const Point& q, const float& alfa);
-};
+}; 
 
 struct Line : public Geometry {
 	Point point;
@@ -28,15 +28,16 @@ struct Line : public Geometry {
 	Line(const glm::vec3& origin, const glm::vec3& vector);
 	Line(const Point& origen, const Point& extrem);
 
+	
 	void setPosition(const glm::vec3& newPos);
 	void setDirection(const glm::vec3& newDir);
 	bool isInside(const Point& punt);
 	bool isInside(const glm::vec3& punt);
 	float distLine2Point(const Point& punt);
 	glm::vec3 closestPointInLine(const Point& punt);
-	float distLine2Line(const Line& line);
+	//float distLine2Line(const Line& line);
 };
-
+/*
 struct Plane : public Geometry {
 	glm::vec3 normal;
 	float dconst;
@@ -71,3 +72,4 @@ struct Sphere : public Geometry {
 	bool isInside(const glm::vec3& point);
 	bool intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall);
 };
+*/

@@ -1,0 +1,14 @@
+*.sdf
+*.opensdf
+*.exe
+*.lik
+*.vs/
+*/Debug/*
+*/Release/*
+*/sharedResources/*
+*/x64/*
+!*.dll
+!*.lib
+
+
+

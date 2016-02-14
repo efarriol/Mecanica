@@ -1,4 +1,0 @@
-0 0.1 -2
-1 0.5 1.5
-distancia de p a q = 3.66197
-distancia entre els punts p i q = 3.66197

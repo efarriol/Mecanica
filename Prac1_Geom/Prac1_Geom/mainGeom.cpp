@@ -82,7 +82,7 @@ void main()
 	std::cout << "milliseconds = " << duration << std::endl;
 
 	system("pause");
-
+	
 	/// Test Line methods
 	Line line;
 	line.point = glm::vec3(0); //origen of coordinates
@@ -103,8 +103,8 @@ void main()
 	Line line2;
 	line2.point = q;
 	line2.setDirection(glm::vec3(0, 0, 1));	
-	std::cout << "dist between lines = " << line.distLine2Line(line2) << std::endl;
-
+	//std::cout << "dist between lines = " << line.distLine2Line(line2) << std::endl;
+	/*
 	/// Test Plane methods
 	Plane pla(glm::vec3(0), glm::vec3(1, 1, 1));
 	pla.setPosition(glm::vec3(2, 2, 2));
@@ -128,7 +128,7 @@ void main()
 	std::cout << "r = " << r.position.x << "  " << r.position.y << "  " << r.position.z << std::endl;
 	dist = pla.distPoint2Plane(r.position);
 	std::cout << "distancia des de r: " << dist << std::endl;
-
+	*/
 	system("pause");
 
 	

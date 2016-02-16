@@ -77,11 +77,7 @@ void main()
 	std::cout << "verify dist to mid point: " << p.distPoint2Point(r) << std::endl; 
 	std::cout << "verify mid distance between the points: " << 0.5f*p.distPoint2Point(q) << std::endl;
 
-	tfin = tempsActual; //std::chrono::high_resolution_clock::now();
-	auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();
-	std::cout << "milliseconds = " << duration << std::endl;
-
-	system("pause");
+	std::cout << "\n------------------------------------Line-------------------------------------\n" << std::endl;
 	
 	/// Test Line methods
 	Line line;
@@ -103,8 +99,14 @@ void main()
 	Line line2;
 	line2.point = q;
 	line2.setDirection(glm::vec3(0, 0, 1));	
-	//std::cout << "dist between lines = " << line.distLine2Line(line2) << std::endl;
-	/*
+
+	tfin = tempsActual; //std::chrono::high_resolution_clock::now();
+	auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();
+	std::cout << "milliseconds = " << duration << std::endl;
+
+	std::cout << "dist between lines = " << line.distLine2Line(line2) << std::endl;
+	
+	std::cout << "\n------------------------------------Plane-------------------------------------\n" << std::endl;
 	/// Test Plane methods
 	Plane pla(glm::vec3(0), glm::vec3(1, 1, 1));
 	pla.setPosition(glm::vec3(2, 2, 2));
@@ -128,7 +130,7 @@ void main()
 	std::cout << "r = " << r.position.x << "  " << r.position.y << "  " << r.position.z << std::endl;
 	dist = pla.distPoint2Plane(r.position);
 	std::cout << "distancia des de r: " << dist << std::endl;
-	*/
+	
 	system("pause");
 
 	

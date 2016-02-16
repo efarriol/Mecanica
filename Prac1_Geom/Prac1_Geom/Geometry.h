@@ -35,9 +35,9 @@ struct Line : public Geometry {
 	bool isInside(const glm::vec3& punt);
 	float distLine2Point(const Point& punt);
 	glm::vec3 closestPointInLine(const Point& punt);
-	//float distLine2Line(const Line& line);
+	float distLine2Line(const Line& line);
 };
-/*
+
 struct Plane : public Geometry {
 	glm::vec3 normal;
 	float dconst;
@@ -53,7 +53,7 @@ struct Plane : public Geometry {
 	bool intersecSegment(const glm::vec3& punt1, const glm::vec3& punt2, glm::vec3& pTall);
 	bool intersecLinePlane(const Line& line, glm::vec3& pTall);
 };	
-
+/*
 struct Triangle : public Plane {
 	glm::vec3 vertex1, vertex2, vertex3;
 	Triangle(const glm::vec3& point0, const glm::vec3& point1, const glm::vec3& point2);

@@ -68,7 +68,7 @@ void Line::setDirection(const glm::vec3& newDir){
 	direction = newDir;
 };
 
-bool Line::isInside(const Point& point){ //not yet implemented
+bool Line::isInside(const Point& point){ 
 	float alpha;
 	glm::vec3 extrem = this->point.position + direction;
 	alpha = (glm::length(point.position - this->point.position) / glm::length(extrem - this->point.position));
@@ -76,7 +76,7 @@ bool Line::isInside(const Point& point){ //not yet implemented
 	return false;
 };
 
-bool Line::isInside(const glm::vec3& punt){ //not yet implemented
+bool Line::isInside(const glm::vec3& punt){ 
 	float alpha;
 	glm::vec3 extrem = this->point.position + direction;
 	alpha = (glm::length(punt - this->point.position) / glm::length(extrem - this->point.position));
@@ -91,33 +91,35 @@ float Line::distLine2Point(const Point& point){
 };
 
 glm::vec3 Line::closestPointInLine(const Point& point){
+	glm::vec3 perpendicularVec; // vector de la projeccio perpendicular a direction
 	glm::vec3 vectorPA = this->point.position - point.position;
-	glm::vec3 crossVector = glm::cross(vectorPA, direction);
 	glm::vec3 closestPoint;
-	if (direction.x - vectorPA.x != 0) closestPoint.x = (point.position.x * direction.x - this->point.position.x * vectorPA.x) / (direction.x - vectorPA.x);
+
+	perpendicularVec = vectorPA - (((glm::dot(direction, vectorPA)) /( (glm::length(direction) * glm::length(direction)))) * direction); // vector perpendicular
 	
-	else closestPoint.x = (point.position.x * direction.x - this->point.position.x * vectorPA.x);
+	if (direction.x - perpendicularVec.x != 0) closestPoint.x = (point.position.x * direction.x - this->point.position.x * perpendicularVec.x) / (direction.x - perpendicularVec.x);
+	else closestPoint.x = this->point.position.x;
 
-	if (direction.y - vectorPA.y != 0) closestPoint.y = (point.position.y * direction.y - this->point.position.y * vectorPA.y) / (direction.y - vectorPA.y);
+	if (direction.y - perpendicularVec.y != 0) closestPoint.y = (point.position.y * direction.y - this->point.position.y * perpendicularVec.y) / (direction.y - perpendicularVec.y);
+	else closestPoint.y = this->point.position.y;
 
-	else closestPoint.y = (point.position.y * direction.y - this->point.position.y * vectorPA.y);
-
-	if (direction.z - vectorPA.z != 0) closestPoint.z = (point.position.z * direction.z - this->point.position.z * vectorPA.z) / (direction.z - vectorPA.z);
-
-	else closestPoint.z = (point.position.z * direction.z - this->point.position.z * vectorPA.z);
+	if (direction.z - perpendicularVec.z != 0) closestPoint.z = (point.position.z * direction.z - this->point.position.z * perpendicularVec.z) / (direction.z - perpendicularVec.z);
+	else closestPoint.z = this->point.position.z;
 
 	return closestPoint;
-
 };
-/*
+
 float Line::distLine2Line(const Line& line){
-
+	glm::vec3 PQ = this->point.position - line.point.position; 
+	float distance = (glm::length(PQ * (glm::cross(direction, line.direction))) / glm::length(glm::cross(direction, line.direction)));
+	return distance;
 };
-*/
+
+
 //****************************************************
 // Plane
 //****************************************************
-/*
+
 Plane::Plane(const glm::vec3& point, const glm::vec3& normalVect){
 	normal = glm::normalize(normalVect);
 	dconst = -glm::dot(point, normal);
@@ -135,23 +137,31 @@ void Plane::setPosition(const glm::vec3& newPos){
 };
 
 bool Plane::isInside(const glm::vec3& point){
+	float valor = normal.x * point.x + normal.y * point.y + normal.z * point.z + dconst;
+	if (valor == 0) return true;
+	return false;
 
 };
 
-float Plane::distPoint2Plane(const glm::vec3& point){ //return dist with sign
-
+float Plane::distPoint2Plane(const glm::vec3& point){ //return dist with sign	
+	float distance = glm::length(normal.x * point.x + normal.y * point.y + normal.z * point.z + dconst) / (glm::sqrt((normal.x * normal.x) + (normal.y * normal.y) + (normal.z * normal.z)));
+	std::cout<<  "pene " << glm::sqrt((normal.x * normal.x) + (normal.y * normal.y) + (normal.z * normal.z)) << std::endl;
+	return distance;
 };
 
 glm::vec3 Plane::closestPointInPlane(const glm::vec3& point){
-
+	float alpha = ((-dconst - glm::dot(normal, point)) / glm::dot(normal, normal));
+	glm::vec3 closestPoint = point + alpha*normal;
+	return closestPoint;
 };
 
 bool Plane::intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall){
-
+	glm::vec3 vectorP1P2 = point1 - point2;
+	return false;
 };
 
 bool Plane::intersecLinePlane(const Line& line, glm::vec3& pTall) {
-
+	return false;
 };
 
 
@@ -160,7 +170,7 @@ bool Plane::intersecLinePlane(const Line& line, glm::vec3& pTall) {
 //****************************************************
 // Triangle
 //****************************************************
-
+/*
 Triangle::Triangle(const glm::vec3& point0, const glm::vec3& point1, const glm::vec3& point2){
 	vertex1 = point0;
 	vertex2 = point1;

@@ -96,8 +96,8 @@ glm::vec3 Line::closestPointInLine(const Point& point){
 	glm::vec3 closestPoint;
 
 	perpendicularVec = vectorPA - (((glm::dot(direction, vectorPA)) /( (glm::length(direction) * glm::length(direction)))) * direction); // vector perpendicular
-	
-	if (direction.x - perpendicularVec.x != 0) closestPoint.x = (point.position.x * direction.x - this->point.position.x * perpendicularVec.x) / (direction.x - perpendicularVec.x);
+	closestPoint = perpendicularVec + point.position;
+	/*if (direction.x - perpendicularVec.x != 0) closestPoint.x = (point.position.x * direction.x - this->point.position.x * perpendicularVec.x) / (direction.x - perpendicularVec.x);
 	else closestPoint.x = this->point.position.x;
 
 	if (direction.y - perpendicularVec.y != 0) closestPoint.y = (point.position.y * direction.y - this->point.position.y * perpendicularVec.y) / (direction.y - perpendicularVec.y);
@@ -105,7 +105,7 @@ glm::vec3 Line::closestPointInLine(const Point& point){
 
 	if (direction.z - perpendicularVec.z != 0) closestPoint.z = (point.position.z * direction.z - this->point.position.z * perpendicularVec.z) / (direction.z - perpendicularVec.z);
 	else closestPoint.z = this->point.position.z;
-
+	*/
 	return closestPoint;
 };
 
@@ -145,7 +145,6 @@ bool Plane::isInside(const glm::vec3& point){
 
 float Plane::distPoint2Plane(const glm::vec3& point){ //return dist with sign	
 	float distance = glm::length(normal.x * point.x + normal.y * point.y + normal.z * point.z + dconst) / (glm::sqrt((normal.x * normal.x) + (normal.y * normal.y) + (normal.z * normal.z)));
-	std::cout<<  "pene " << glm::sqrt((normal.x * normal.x) + (normal.y * normal.y) + (normal.z * normal.z)) << std::endl;
 	return distance;
 };
 
@@ -157,10 +156,27 @@ glm::vec3 Plane::closestPointInPlane(const glm::vec3& point){
 
 bool Plane::intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall){
 	glm::vec3 vectorP1P2 = point1 - point2;
+	float alpha = ((-dconst - glm::dot(normal, point1)) / glm::dot(normal, vectorP1P2));
+	glm::vec3 intersecPoint = point1 + alpha*vectorP1P2;
+	glm::vec3 vectorOneSide = point1 - intersecPoint;
+	glm::vec3 vectorOtherSide = point2 - intersecPoint;
+	float comprovator = glm::dot(vectorOneSide, vectorOtherSide);
+	if (comprovator < 0) {  // si fem el escalar dels vectors P1 a intersecPoint i P2 a intersecPoint i dona < 0 significa que tenen sentit contrari i per tant, el punt es troba dins el segment.
+		if (intersecPoint == pTall)
+			
+			return true;
+	}
+	pTall = intersecPoint;
 	return false;
 };
 
 bool Plane::intersecLinePlane(const Line& line, glm::vec3& pTall) {
+	glm::vec3 vectorP1P2 = line.point.position - (line.point.position + line.direction);
+	float alpha = ((-dconst - glm::dot(normal, line.point.position)) / glm::dot(normal, vectorP1P2));
+	glm::vec3 intersecPoint = line.point.position + alpha*vectorP1P2;
+	
+	if (intersecPoint == pTall)	return true;
+	//pTall = intersecPoint;
 	return false;
 };
 

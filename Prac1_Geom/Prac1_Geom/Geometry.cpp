@@ -138,7 +138,7 @@ void Plane::setPosition(const glm::vec3& newPos){
 
 bool Plane::isInside(const glm::vec3& point){
 	float valor = normal.x * point.x + normal.y * point.y + normal.z * point.z + dconst;
-	if (valor == 0) return true;
+	if (valor == 0) return true; //hay que poner que sea |en valor abs| < 10 ^-7
 	return false;
 
 };

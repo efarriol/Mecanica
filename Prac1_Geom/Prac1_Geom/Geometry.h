@@ -36,6 +36,7 @@ struct Line : public Geometry {
 	float distLine2Point(const Point& punt);
 	glm::vec3 closestPointInLine(const Point& punt);
 	float distLine2Line(const Line& line);
+	float projectPointToLine(const Point& point);
 };
 
 struct Plane : public Geometry {

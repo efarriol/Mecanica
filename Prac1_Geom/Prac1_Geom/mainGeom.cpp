@@ -131,7 +131,49 @@ void main()
 	dist = pla.distPoint2Plane(r.position);
 	std::cout << "distancia des de r: " << dist << std::endl;
 	
-	system("pause");
+	
 
+	// Gestionar un vector d'estructures (per exemple tipus Point)
+	const int nPunts = 1000000;
+	std::cout << " " << std::endl;
+	std::cout << "Numero de Punts = " << nPunts << std::endl;
+
+	// Primer metode: vector dimensionat i assignem valors
+	std::vector<Point> punts(nPunts);
+	std::cout << " longitud del vector punts = " << punts.size() << std::endl;
+	//Comptar el temps d'execució
+	tini = tempsActual; //std::chrono::high_resolution_clock::now();
+	for (int i = 0; i < nPunts; i++) {
+		punts[i] = p;
+	}
+	tfin = tempsActual; //std::chrono::high_resolution_clock::now();
+	duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();
+	std::cout << "milliseconds = " << duration << std::endl;
+
+	// Segon metode: vector dimensionat i push_back
+	punts.clear();
+	std::cout << " longitud del vector punts = " << punts.size() << std::endl;
+	tini = tempsActual; // std::chrono::high_resolution_clock::now();
+	for (int i = 0; i < nPunts; i++) {
+		punts.push_back(p);
+	}
+	tfin = tempsActual; // std::chrono::high_resolution_clock::now();
+	duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();
+	std::cout << "milliseconds = " << duration << std::endl;
+
+	// Tercer metode: vector NO dimensionat i push_back
+	std::vector<Point> punts2;
+	tini = tempsActual; //std::chrono::high_resolution_clock::now();
+	for (int i = 0; i < nPunts; i++) {
+		punts2.push_back(p);
+	}
+	std::cout << " longitud del vector punts = " << punts2.size() << std::endl;
+	tfin = tempsActual; //std::chrono::high_resolution_clock::now();
+	duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();
+	std::cout << "milliseconds = " << duration << std::endl;
+
+	fileOut.close();
+
+	system("pause");
 	
 };

@@ -83,7 +83,7 @@ void main()
 	Line line;
 	line.point = glm::vec3(0); //origen of coordinates
 	line.setDirection(glm::vec3(1, 0, 0)); //inicialitzacio com a vec3
-	q.setPosition(5.0f, 2.0f, 0.0f); //inicialitzacio com a floats
+	q.setPosition(0.0f, 2.0f, 0.0f); //inicialitzacio com a floats
 	std::cout << "point q = ";
 	std::cout << q.position.x << "  " << q.position.y << "  " << q.position.z << std::endl;
 

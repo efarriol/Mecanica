@@ -54,7 +54,7 @@ struct Plane : public Geometry {
 	bool intersecSegment(const glm::vec3& punt1, const glm::vec3& punt2, glm::vec3& pTall);
 	bool intersecLinePlane(const Line& line, glm::vec3& pTall);
 };	
-/*
+
 struct Triangle : public Plane {
 	glm::vec3 vertex1, vertex2, vertex3;
 	Triangle(const glm::vec3& point0, const glm::vec3& point1, const glm::vec3& point2);
@@ -62,8 +62,9 @@ struct Triangle : public Plane {
 	void setPosition(const glm::vec3& newPos);
 	bool isInside(const glm::vec3& point);
 	bool intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall);
+	float CalculateTriangleArea(const glm::vec3& vertex1, const glm::vec3& vertex2, const glm::vec3& vertex3);
 };
-
+/*
 struct Sphere : public Geometry {
 	glm::vec3 center;
 	float radi;

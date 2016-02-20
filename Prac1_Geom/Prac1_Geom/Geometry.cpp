@@ -69,18 +69,22 @@ void Line::setDirection(const glm::vec3& newDir){
 };
 
 bool Line::isInside(const Point& point){ 
-	float alpha;
-	glm::vec3 extrem = this->point.position + direction;
-	alpha = (glm::length(point.position - this->point.position) / glm::length(extrem - this->point.position));
-	if (alpha >= 0 && alpha <= 1) return true;
+	glm::vec3 Q = this->point.position + direction;
+	glm::vec3 to_P = this->point.position - point.position;
+	glm::vec3 to_Q = Q - point.position;
+	float sumMod = glm::length(to_P) + glm::length(to_Q);
+	float modPQ = glm::length(Q - point.position);
+	if (sumMod == modPQ) return true;
 	return false;
 };
 
 bool Line::isInside(const glm::vec3& punt){ 
-	float alpha;
-	glm::vec3 extrem = this->point.position + direction;
-	alpha = (glm::length(punt - this->point.position) / glm::length(extrem - this->point.position));
-	if (alpha >= 0 && alpha <= 1) return true;
+	glm::vec3 Q = this->point.position + direction;
+	glm::vec3 to_P = this->point.position - punt;
+	glm::vec3 to_Q = Q - punt;
+	float sumMod = glm::length(to_P) + glm::length(to_Q);
+	float modPQ = glm::length(Q - punt);
+	if (sumMod == modPQ) return true;
 	return false;
 };
 
@@ -91,21 +95,9 @@ float Line::distLine2Point(const Point& point){
 };
 
 glm::vec3 Line::closestPointInLine(const Point& point){
-	glm::vec3 perpendicularVec; // vector de la projeccio perpendicular a direction
-	glm::vec3 vectorPA = this->point.position - point.position;
-	glm::vec3 closestPoint;
+	float alpha = projectPointToLine(point);
+	glm::vec3 closestPoint = this->point.position + alpha * direction;
 
-	perpendicularVec = vectorPA - (((glm::dot(direction, vectorPA)) /( (glm::length(direction) * glm::length(direction)))) * direction); // vector perpendicular
-	closestPoint = perpendicularVec + point.position;
-	/*if (direction.x - perpendicularVec.x != 0) closestPoint.x = (point.position.x * direction.x - this->point.position.x * perpendicularVec.x) / (direction.x - perpendicularVec.x);
-	else closestPoint.x = this->point.position.x;
-
-	if (direction.y - perpendicularVec.y != 0) closestPoint.y = (point.position.y * direction.y - this->point.position.y * perpendicularVec.y) / (direction.y - perpendicularVec.y);
-	else closestPoint.y = this->point.position.y;
-
-	if (direction.z - perpendicularVec.z != 0) closestPoint.z = (point.position.z * direction.z - this->point.position.z * perpendicularVec.z) / (direction.z - perpendicularVec.z);
-	else closestPoint.z = this->point.position.z;
-	*/
 	return closestPoint;
 };
 
@@ -113,6 +105,11 @@ float Line::distLine2Line(const Line& line){
 	glm::vec3 PQ = this->point.position - line.point.position; 
 	float distance = (glm::length(PQ * (glm::cross(direction, line.direction))) / glm::length(glm::cross(direction, line.direction)));
 	return distance;
+}
+float Line::projectPointToLine(const Point & point){
+	glm::vec3 vecPQ = point.position - this->point.position;
+	float alpha = glm::dot(direction, vecPQ) / glm::dot(direction, direction);
+	return alpha;
 };
 
 
@@ -160,11 +157,9 @@ bool Plane::intersecSegment(const glm::vec3& point1, const glm::vec3& point2, gl
 	glm::vec3 intersecPoint = point1 + alpha*vectorP1P2;
 	glm::vec3 vectorOneSide = point1 - intersecPoint;
 	glm::vec3 vectorOtherSide = point2 - intersecPoint;
-	float comprovator = glm::dot(vectorOneSide, vectorOtherSide);
-	if (comprovator < 0) {  // si fem el escalar dels vectors P1 a intersecPoint i P2 a intersecPoint i dona < 0 significa que tenen sentit contrari i per tant, el punt es troba dins el segment.
-		if (intersecPoint == pTall)
-			
-			return true;
+	float tester = glm::dot(vectorOneSide, vectorOtherSide);
+	if (tester < 0) {  // si fem el escalar dels vectors P1 a intersecPoint i P2 a intersecPoint i dona < 0 significa que tenen sentit contrari i per tant, el punt es troba dins el segment.
+		if (intersecPoint == pTall) return true;
 	}
 	pTall = intersecPoint;
 	return false;
@@ -186,7 +181,7 @@ bool Plane::intersecLinePlane(const Line& line, glm::vec3& pTall) {
 //****************************************************
 // Triangle
 //****************************************************
-/*
+
 Triangle::Triangle(const glm::vec3& point0, const glm::vec3& point1, const glm::vec3& point2){
 	vertex1 = point0;
 	vertex2 = point1;
@@ -204,17 +199,45 @@ void Triangle::setPosition(const glm::vec3& newPos){
 };
 
 bool Triangle::isInside(const glm::vec3& point){
+	float areaTriangle = CalculateTriangleArea(vertex1, vertex2, vertex3);
+	float area1 = CalculateTriangleArea(point, vertex1, vertex2);
+	float area2 = CalculateTriangleArea(point, vertex2, vertex3);
+	float area3 = CalculateTriangleArea(point, vertex3, vertex1);
+	float totalArea = area1 + area2 + area3;
 
+	if (totalArea - areaTriangle == 0) return true;
+	return false;
 };
 
 bool Triangle::intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall){
+	if (isInside(pTall)) {
+		glm::vec3 normal = glm::normalize(glm::cross(vertex2 - vertex1, vertex3 - vertex1));
+		float dConst = -glm::dot(vertex1, normal);
+		glm::vec3 vectorP1P2 = point1 - point2;
+		float alpha = ((-dconst - glm::dot(normal, point1)) / glm::dot(normal, vectorP1P2));
+		glm::vec3 intersecPoint = point1 + alpha*vectorP1P2;
+		glm::vec3 vectorOneSide = point1 - intersecPoint;
+		glm::vec3 vectorOtherSide = point2 - intersecPoint;
+		float tester = glm::dot(vectorOneSide, vectorOtherSide);
+		if (tester < 0) {  // si fem el escalar dels vectors P1 a intersecPoint i P2 a intersecPoint i dona < 0 significa que tenen sentit contrari i per tant, el punt es troba dins el segment.
+			if (intersecPoint == pTall) return true;
+		}
+		pTall = intersecPoint;
+	}
+	return false;
+};
 
+float Triangle::CalculateTriangleArea(const glm::vec3& vertex1, const glm::vec3& vertex2, const glm::vec3& vertex3){
+	glm::vec3 vector_v = vertex2 - vertex1;
+	glm::vec3 vector_u = vertex3 - vertex1;
+	float areaTriangle = (1 / 2) * glm::length(glm::cross(vector_v, vector_u));
+	return areaTriangle;
 };
 
 //****************************************************
 // Sphere
 //****************************************************
-
+/*
 Sphere::Sphere(const glm::vec3& point, const float& radious){
 	center = point;
 	radi = radious;

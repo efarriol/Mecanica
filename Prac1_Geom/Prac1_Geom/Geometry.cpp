@@ -74,7 +74,7 @@ bool Line::isInside(const Point& point){
 	glm::vec3 to_Q = Q - point.position;
 	float sumMod = glm::length(to_P) + glm::length(to_Q);
 	float modPQ = glm::length(Q - point.position);
-	if (sumMod == modPQ) return true;
+	if (sumMod > modPQ + glm::pow(-10, -7) && sumMod < modPQ + glm::pow(10, -7)) return true;
 	return false;
 };
 
@@ -84,7 +84,7 @@ bool Line::isInside(const glm::vec3& punt){
 	glm::vec3 to_Q = Q - punt;
 	float sumMod = glm::length(to_P) + glm::length(to_Q);
 	float modPQ = glm::length(Q - punt);
-	if (sumMod == modPQ) return true;
+	if (sumMod > modPQ + glm::pow(-10,-7) && sumMod < modPQ + glm::pow(10, -7)) return true;
 	return false;
 };
 
@@ -135,7 +135,7 @@ void Plane::setPosition(const glm::vec3& newPos){
 
 bool Plane::isInside(const glm::vec3& point){
 	float valor = normal.x * point.x + normal.y * point.y + normal.z * point.z + dconst;
-	if (valor == 0) return true; //hay que poner que sea |en valor abs| < 10 ^-7
+	if (valor > glm::pow(-10, -7) && valor < glm::pow(10, -7)) return true; //hay que poner que sea |en valor abs| < 10 ^-7
 	return false;
 
 };
@@ -158,7 +158,7 @@ bool Plane::intersecSegment(const glm::vec3& point1, const glm::vec3& point2, gl
 	glm::vec3 vectorOneSide = point1 - intersecPoint;
 	glm::vec3 vectorOtherSide = point2 - intersecPoint;
 	float tester = glm::dot(vectorOneSide, vectorOtherSide);
-	if (tester < 0) {  // si fem el escalar dels vectors P1 a intersecPoint i P2 a intersecPoint i dona < 0 significa que tenen sentit contrari i per tant, el punt es troba dins el segment.
+	if (tester < 0.0f) {  // si fem el escalar dels vectors P1 a intersecPoint i P2 a intersecPoint i dona < 0 significa que tenen sentit contrari i per tant, el punt es troba dins el segment.
 		if (intersecPoint == pTall) return true;
 	}
 	pTall = intersecPoint;
@@ -237,7 +237,7 @@ float Triangle::CalculateTriangleArea(const glm::vec3& vertex1, const glm::vec3&
 //****************************************************
 // Sphere
 //****************************************************
-/*
+
 Sphere::Sphere(const glm::vec3& point, const float& radious){
 	center = point;
 	radi = radious;
@@ -256,4 +256,3 @@ bool Sphere::isInside(const glm::vec3& point){
 bool Sphere::intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall){
 
 };
-*/

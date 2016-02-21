@@ -74,7 +74,7 @@ bool Line::isInside(const Point& point){
 	glm::vec3 to_Q = Q - point.position;
 	float sumMod = glm::length(to_P) + glm::length(to_Q);
 	float modPQ = glm::length(Q - point.position);
-	if (sumMod == modPQ) return true;
+	if (sumMod > modPQ + glm::pow(-10, -7) && sumMod < modPQ + glm::pow(10, -7)) return true;
 	return false;
 };
 
@@ -205,7 +205,7 @@ bool Triangle::isInside(const glm::vec3& point){
 	float area3 = CalculateTriangleArea(point, vertex3, vertex1);
 	float totalArea = area1 + area2 + area3;
 
-	if (totalArea - areaTriangle == 0) return true;
+	if (totalArea - areaTriangle > glm::pow(-10, -7) && totalArea < glm::pow(10,-7)) return true;
 	return false;
 };
 
@@ -254,5 +254,19 @@ bool Sphere::isInside(const glm::vec3& point){
 };
 
 bool Sphere::intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall){
+	if (isInside(pTall)) {
+		glm::vec3 vect1 = point2 - point1;
+		float a = glm::dot(vect1, vect1);
+		float b = glm::dot(glm::vec3(2)*vect1, (point1 - center));
+		float c = glm::dot(center, center) + glm::dot(point1, point1) - glm::dot(glm::vec3(2)*point1, center) - glm::pow(radi, 2.0f);
 
+		if ((glm::pow(b, 2.0f) - 4 * a*c) / (2 * a) >= 0 && a!= 0) {
+			float result1 = (-b + glm::sqrt(glm::pow(b, 2.0f) - 4 * a*c) / (2 * a));
+			float result2 = (-b - glm::sqrt(glm::pow(b, 2.0f) - 4 * a*c) / (2 * a));
+			glm::vec3 intersectPoint1 = (1-result1)*point1 + result1*vect1;
+			glm::vec3 intersectPoint2 = (1-result2)*point1 + result2*vect1;
+			if (intersectPoint1 == pTall || intersectPoint2 == pTall) return true;
+		}
+	}
+	else return false; 
 };

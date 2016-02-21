@@ -131,10 +131,22 @@ void main()
 	dist = pla.distPoint2Plane(r.position);
 	std::cout << "distancia des de r: " << dist << std::endl;
 	
-	
+	std::cout << "\n------------------------------------Sphere-------------------------------------\n" << std::endl;
+
+	//Sphere variables
+	Sphere sphere(glm::vec3(1, 2, 1), 3.0f);
+	const float angleBeta = 30.0;
+	const float angleDelta = 45.0;
+	const int originRadius = 1;
+	const float maxAlpha = 10.0f;
+	const float increase = 0.01f;
+	glm::vec3 director;
+	director.x = glm::cos(angleBeta) * glm::cos(angleDelta) * originRadius;
+	director.y = glm::sin(angleDelta) * originRadius;
+	director.z = glm::sin(angleBeta) * glm::cos(angleDelta) * originRadius;
 
 	// Gestionar un vector d'estructures (per exemple tipus Point)
-	const int nPunts = 1000000;
+	const int nPunts = increase / maxAlpha;
 	std::cout << " " << std::endl;
 	std::cout << "Numero de Punts = " << nPunts << std::endl;
 
@@ -143,13 +155,18 @@ void main()
 	std::cout << " longitud del vector punts = " << punts.size() << std::endl;
 	//Comptar el temps d'execució
 	tini = tempsActual; //std::chrono::high_resolution_clock::now();
-	for (int i = 0; i < nPunts; i++) {
-		punts[i] = p;
+	for (float i = 0.0f; i < maxAlpha; i += increase) {
+		glm::vec3 rayPoints = glm::vec3(0) + i * director;
+		if (sphere.isInside(rayPoints)) {
+			punts[i].position.x = rayPoints.x;
+			std::cout << punts[i].position.x << std::endl;
+		}
 	}
+
 	tfin = tempsActual; //std::chrono::high_resolution_clock::now();
 	duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();
 	std::cout << "milliseconds = " << duration << std::endl;
-
+/*
 	// Segon metode: vector dimensionat i push_back
 	punts.clear();
 	std::cout << " longitud del vector punts = " << punts.size() << std::endl;
@@ -171,6 +188,7 @@ void main()
 	tfin = tempsActual; //std::chrono::high_resolution_clock::now();
 	duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();
 	std::cout << "milliseconds = " << duration << std::endl;
+	*/
 
 	fileOut.close();
 

@@ -74,7 +74,7 @@ bool Line::isInside(const Point& point){
 	glm::vec3 to_Q = Q - point.position;
 	float sumMod = glm::length(to_P) + glm::length(to_Q);
 	float modPQ = glm::length(Q - point.position);
-	if (sumMod > modPQ + glm::pow(-10, -7) && sumMod < modPQ + glm::pow(10, -7)) return true;
+	if (sumMod > modPQ + glm::pow(-10.0f, -7.0f) && sumMod < modPQ + glm::pow(10.0f, -7.0f)) return true;
 	return false;
 };
 
@@ -84,7 +84,7 @@ bool Line::isInside(const glm::vec3& punt){
 	glm::vec3 to_Q = Q - punt;
 	float sumMod = glm::length(to_P) + glm::length(to_Q);
 	float modPQ = glm::length(Q - punt);
-	if (sumMod > modPQ + glm::pow(-10,-7) && sumMod < modPQ + glm::pow(10, -7)) return true;
+	if (sumMod > modPQ + glm::pow(-10.0f,-7.0f) && sumMod < modPQ + glm::pow(10.0f, -7.0f)) return true;
 	return false;
 };
 
@@ -135,7 +135,7 @@ void Plane::setPosition(const glm::vec3& newPos){
 
 bool Plane::isInside(const glm::vec3& point){
 	float valor = normal.x * point.x + normal.y * point.y + normal.z * point.z + dconst;
-	if (valor > glm::pow(-10, -7) && valor < glm::pow(10, -7)) return true; //hay que poner que sea |en valor abs| < 10 ^-7
+	if (valor > glm::pow(-10.0f, -7.0f) && valor < glm::pow(10.0f, -7.0f)) return true; //hay que poner que sea |en valor abs| < 10 ^-7
 	return false;
 
 };
@@ -205,7 +205,7 @@ bool Triangle::isInside(const glm::vec3& point){
 	float area3 = CalculateTriangleArea(point, vertex3, vertex1);
 	float totalArea = area1 + area2 + area3;
 
-	if (totalArea - areaTriangle > glm::pow(-10, -7) && totalArea < glm::pow(10,-7)) return true;
+	if (totalArea - areaTriangle > glm::pow(-10.0f, -7.0f) && totalArea < glm::pow(10.0f,-7.0f)) return true;
 	return false;
 };
 

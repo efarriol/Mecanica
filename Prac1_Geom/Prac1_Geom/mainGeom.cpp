@@ -113,7 +113,7 @@ void main()
 	std::cout << "plane equation " << std::endl;
 	std::cout << pla.normal.x << " .x + " << pla.normal.y << ".y +" << pla.normal.z << ".z + " << pla.dconst << "  = 0 " << std::endl;
 	std::cout << "verifiquem que esta sobre el pla, bool= : " << pla.isInside(glm::vec3(2.0f)) << std::endl;
-
+	/*
 	q.setPosition(glm::vec3(0, 5, 6));
 	dist = pla.distPoint2Plane(q.position);
 	std::cout << "distancia des de q: " << dist << std::endl;
@@ -130,7 +130,28 @@ void main()
 	std::cout << "r = " << r.position.x << "  " << r.position.y << "  " << r.position.z << std::endl;
 	dist = pla.distPoint2Plane(r.position);
 	std::cout << "distancia des de r: " << dist << std::endl;
-	
+	*/
+
+	q.setPosition(glm::vec3(0, 5, 6));
+	dist = pla.distPoint2Plane(q.position);
+	std::cout << "distancia des de q: " << dist << std::endl;
+	r.setPosition(pla.closestPointInPlane(q.position)); //point in the plane
+	std::cout << "r = " << r.position.x << "  " << r.position.y << "  " << r.position.z << std::endl;
+	dist = pla.distPoint2Plane(r.position);
+	std::cout << "verifiquem distancia: " << dist << std::endl;
+
+	p.setPosition(-5, -6, 0);
+	dist = pla.distPoint2Plane(p.position);
+	std::cout << "distancia des de p: " << dist << std::endl;
+	r.setPosition(pla.closestPointInPlane(p.position)); //point in the plane
+	std::cout << "r = " << r.position.x << "  " << r.position.y << "  " << r.position.z << std::endl;
+	dist = pla.distPoint2Plane(r.position);
+	std::cout << "verifiquem distancia: " << dist << std::endl;
+	std::cout << std::endl;
+
+
+	bool tall = pla.intersecSegment(p.position, q.position, r.position);
+	std::cout << "verifiquem que esta sobre el pla, bool= : " << tall << std::endl;
 	std::cout << "\n------------------------------------Sphere-------------------------------------\n" << std::endl;
 
 	//Sphere variables
@@ -141,12 +162,12 @@ void main()
 	const float maxAlpha = 10.0f;
 	const float increase = 0.01f;
 	glm::vec3 director;
-	director.x = glm::cos(angleBeta) * glm::cos(angleDelta) * originRadius;
-	director.y = glm::sin(angleDelta) * originRadius;
-	director.z = glm::sin(angleBeta) * glm::cos(angleDelta) * originRadius;
+	director.x = glm::cos(glm::radians(angleBeta)) * glm::cos(glm::radians(angleDelta)) * originRadius;
+	director.y = glm::sin(glm::radians(angleDelta)) * originRadius;
+	director.z = glm::sin(glm::radians(angleBeta)) * glm::cos(glm::radians(angleDelta)) * originRadius;
 
 	// Gestionar un vector d'estructures (per exemple tipus Point)
-	const int nPunts = increase / maxAlpha;
+	const float nPunts = maxAlpha / increase;
 	std::cout << " " << std::endl;
 	std::cout << "Numero de Punts = " << nPunts << std::endl;
 
@@ -155,13 +176,19 @@ void main()
 	std::cout << " longitud del vector punts = " << punts.size() << std::endl;
 	//Comptar el temps d'execució
 	tini = tempsActual; //std::chrono::high_resolution_clock::now();
+	static int counter = 0;
 	for (float i = 0.0f; i < maxAlpha; i += increase) {
 		glm::vec3 rayPoints = glm::vec3(0) + i * director;
 		if (sphere.isInside(rayPoints)) {
-			punts[i].position.x = rayPoints.x;
-			std::cout << punts[i].position.x << std::endl;
+			punts[counter].position = rayPoints;
+			//std::cout << punts[counter].position.x << std::endl;
+			//std::cout << punts[counter].position.y << std::endl;
+			//std::cout << punts[counter].position.z << std::endl;
+			//counter++;
 		}
+		
 	}
+	std::cout << counter << std::endl;
 
 	tfin = tempsActual; //std::chrono::high_resolution_clock::now();
 	duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();

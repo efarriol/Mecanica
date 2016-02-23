@@ -116,6 +116,7 @@ float Line::projectPointToLine(const Point & point){
 //****************************************************
 // Plane
 //****************************************************
+Plane::Plane() {};
 
 Plane::Plane(const glm::vec3& point, const glm::vec3& normalVect){
 	normal = glm::normalize(normalVect);
@@ -134,15 +135,14 @@ void Plane::setPosition(const glm::vec3& newPos){
 };
 
 bool Plane::isInside(const glm::vec3& point){
-	float valor = normal.x * point.x + normal.y * point.y + normal.z * point.z + dconst;
-	if (valor > glm::pow(-10.0f, -7.0f) && valor < glm::pow(10.0f, -7.0f)) return true; //hay que poner que sea |en valor abs| < 10 ^-7
+	float value = normal.x * point.x + normal.y * point.y + normal.z * point.z + dconst;
+	if (value > glm::pow(-10.0f, -1.0f) && value < glm::pow(10.0f, -1.0f)) return true; //hay que poner que sea |en valor abs| < 10 ^-7
 	return false;
-
 };
 
 float Plane::distPoint2Plane(const glm::vec3& point){ //return dist with sign	
-	float distance = glm::length(normal.x * point.x + normal.y * point.y + normal.z * point.z + dconst) / (glm::sqrt((normal.x * normal.x) + (normal.y * normal.y) + (normal.z * normal.z)));
-	return distance;
+	float distance = (normal.x * point.x + normal.y * point.y + normal.z * point.z + dconst) / (glm::length(normal));
+	return distance;  
 };
 
 glm::vec3 Plane::closestPointInPlane(const glm::vec3& point){
@@ -205,7 +205,7 @@ bool Triangle::isInside(const glm::vec3& point){
 	float area3 = CalculateTriangleArea(point, vertex3, vertex1);
 	float totalArea = area1 + area2 + area3;
 
-	if (totalArea - areaTriangle > glm::pow(-10.0f, -7.0f) && totalArea < glm::pow(10.0f,-7.0f)) return true;
+	if (totalArea - areaTriangle > glm::pow(-10.0f, -1.0f) && totalArea < glm::pow(10.0f,-1.0f)) return true;
 	return false;
 };
 
@@ -230,7 +230,7 @@ bool Triangle::intersecSegment(const glm::vec3& point1, const glm::vec3& point2,
 float Triangle::CalculateTriangleArea(const glm::vec3& vertex1, const glm::vec3& vertex2, const glm::vec3& vertex3){
 	glm::vec3 vector_v = vertex2 - vertex1;
 	glm::vec3 vector_u = vertex3 - vertex1;
-	float areaTriangle = (1 / 2) * glm::length(glm::cross(vector_v, vector_u));
+	float areaTriangle = (0.5f) * glm::length(glm::cross(vector_v, vector_u));
 	return areaTriangle;
 };
 
@@ -266,7 +266,78 @@ bool Sphere::intersecSegment(const glm::vec3& point1, const glm::vec3& point2, g
 			glm::vec3 intersectPoint1 = (1-result1)*point1 + result1*vect1;
 			glm::vec3 intersectPoint2 = (1-result2)*point1 + result2*vect1;
 			if (intersectPoint1 == pTall || intersectPoint2 == pTall) return true;
-		}
+		} 
 	}
 	else return false; 
 };
+
+//****************************************************
+// Cylinder
+//****************************************************
+
+Cylinder::Cylinder() {};
+
+Cylinder::Cylinder(const float & radious, glm::vec3 & point1, glm::vec3 & point2){
+	radi = radious;
+	topPoint = point1;
+	bottomPoint = point2;
+	director = topPoint - bottomPoint;
+}
+
+void Cylinder::setPosition(const glm::vec3 & newPosTop, const glm::vec3& newPosBottom){
+	topPoint = newPosTop;
+	bottomPoint = newPosBottom;
+}
+
+bool Cylinder::isInside(const glm::vec3 & point){
+	glm::vec3 vect1 = topPoint - point;
+	glm::vec3 vect2 = bottomPoint - point;
+	float tester = glm::dot(vect1, vect2);
+	if (tester < 0) {
+		float distance = glm::length(glm::cross(topPoint - point, director)) / glm::length(director);
+		if (distance <= radi) return true;
+	}
+	return false;
+}
+
+bool Cylinder::intersecSegment(const glm::vec3 & point1, const glm::vec3 & point2, glm::vec3 & ptall){
+
+	return false;
+}
+
+
+//****************************************************
+// Capsule
+//****************************************************
+
+Capsule::Capsule() {};
+
+Capsule::Capsule(const float & radious, glm::vec3 & point1, glm::vec3 & point2){
+	radi = radious;
+	topPoint = point1;
+	bottomPoint = point2;
+	director = topPoint - bottomPoint;
+}
+
+void Capsule::setPosition(const glm::vec3 & newPosTop, const glm::vec3 & newPosBottom)
+{
+	topPoint = newPosTop;
+	bottomPoint = newPosBottom;
+}
+
+bool Capsule::isInside(const glm::vec3 & point)
+{
+	if(Cylinder::isInside(point)) return true;
+
+	else {
+		Sphere topSphere(topPoint, radi);
+		Sphere bottomSphere(bottomPoint, radi);
+		if (topSphere.isInside(point) || bottomSphere.isInside(point)) return true;
+	}
+	return false;
+}
+
+bool Capsule::intersecSegment(const glm::vec3 & point1, const glm::vec3 & point2, glm::vec3 & ptall)
+{
+	return false;
+}

@@ -46,7 +46,6 @@ struct Plane : public Geometry {
 	~Plane() {};
 	Plane(const glm::vec3& point, const glm::vec3& normalVect);
 	Plane(const glm::vec3& point0, const glm::vec3& point1, const glm::vec3& point2);
-
 	void setPosition(const glm::vec3& newPos);
 	bool isInside(const glm::vec3& point);
 	float distPoint2Plane(const glm::vec3& point);
@@ -73,4 +72,24 @@ struct Sphere : public Geometry {
 	void setPosition(const glm::vec3& newPos);
 	bool isInside(const glm::vec3& point);
 	bool intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall);
+};
+
+struct Cylinder : public Geometry {
+	glm::vec3 topPoint, bottomPoint, director;
+	float radi;
+	Cylinder() {};
+	Cylinder(const float& radious, glm::vec3& point1, glm::vec3& point2);
+	~Cylinder() {};
+	void setPosition(const glm::vec3& newPosTop, const glm::vec3& newPosBottom);
+	bool isInside(const glm::vec3& point);
+	bool intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& ptall);
+};
+
+struct Capsule : public Cylinder {
+	Capsule() {};
+	Capsule(const float& radious, glm::vec3& point1, glm::vec3& point2);
+	~Capsule() {};
+	void setPosition(const glm::vec3& newPosTop, const glm::vec3& newPosBottom);
+	bool isInside(const glm::vec3& point);
+	bool intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& ptall);
 };

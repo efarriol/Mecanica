@@ -156,8 +156,10 @@ void main()
 
 	//Sphere variables
 	Sphere sphere(glm::vec3(1, 2, 1), 3.0f);
-	const float angleBeta = 30.0;
-	const float angleDelta = 45.0;
+	Plane plane(glm::vec3(1, 2, 1), glm::vec3(-1, 1, 1));
+	Triangle triangle(glm::vec3(1, 2, 1), glm::vec3(-1, 1, 2), glm::vec3(0, -1, 0));
+	const float angleBeta = 30.0f;
+	const float angleDelta = 45.0f;
 	const int originRadius = 1;
 	const float maxAlpha = 10.0f;
 	const float increase = 0.01f;
@@ -172,24 +174,47 @@ void main()
 	std::cout << "Numero de Punts = " << nPunts << std::endl;
 
 	// Primer metode: vector dimensionat i assignem valors
-	std::vector<Point> punts(nPunts);
+	std::vector<Point> punts(nPunts); // preguntar si fa falta crear un de nou cada cop o si ho sobreescribim o si creem un de 3000
+	std::vector<Point> punts2(nPunts);
 	std::cout << " longitud del vector punts = " << punts.size() << std::endl;
 	//Comptar el temps d'execució
 	tini = tempsActual; //std::chrono::high_resolution_clock::now();
 	static int counter = 0;
-	for (float i = 0.0f; i < maxAlpha; i += increase) {
+
+	//----------------------------------------Sphere--------------------------------------------------------
+
+/*	for (float i = 0.0f; i < maxAlpha; i += increase) {
 		glm::vec3 rayPoints = glm::vec3(0) + i * director;
 		if (sphere.isInside(rayPoints)) {
 			punts[counter].position = rayPoints;
 			//std::cout << punts[counter].position.x << std::endl;
 			//std::cout << punts[counter].position.y << std::endl;
 			//std::cout << punts[counter].position.z << std::endl;
-			//counter++;
+			counter++;
 		}
 		
 	}
-	std::cout << counter << std::endl;
-
+	//std::cout << counter << std::endl;
+*/
+	//----------------------------------------Plane--------------------------------------------------------
+	/*
+	for (float i = 0.0f; i < maxAlpha; i += increase) {
+		glm::vec3 rayPoints = glm::vec3(0) + i * director;
+		if (plane.isInside(rayPoints)) {
+			punts2[counter].position = rayPoints;
+			counter++;
+		}
+	}
+	*/
+	//----------------------------------------Triangle--------------------------------------------------------
+	for (float i = 0.0f; i < maxAlpha; i += increase) {
+		glm::vec3 rayPoints = glm::vec3(0) + i * director;
+		if (triangle.isInside(rayPoints)) {
+			punts2[counter].position = rayPoints;
+			counter++;
+		}
+	}
+	std::cout <<  "Punts triangle " << counter << std::endl;
 	tfin = tempsActual; //std::chrono::high_resolution_clock::now();
 	duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();
 	std::cout << "milliseconds = " << duration << std::endl;
@@ -222,3 +247,14 @@ void main()
 	system("pause");
 	
 };
+
+
+
+
+
+/*
+Preguntar a Susin:
+	- 177
+	- IntersecSegment
+	- Inicializacion de cilindro, capsula...
+*/

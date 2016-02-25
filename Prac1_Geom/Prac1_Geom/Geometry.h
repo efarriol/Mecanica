@@ -1,7 +1,7 @@
 #pragma once
 #include <glm\glm.hpp>
 #include <iostream>
-struct Geometry{
+struct Geometry {
 	virtual void setPosition(const glm::vec3& newPos) = 0;
 	virtual bool isInside(const glm::vec3& point) = 0;
 };
@@ -18,7 +18,7 @@ struct Point : public Geometry {
 	bool isInside(const glm::vec3& point);
 	float distPoint2Point(const Point& punt);
 	Point pointInSegment(const Point& q, const float& alfa);
-}; 
+};
 
 struct Line : public Geometry {
 	Point point;
@@ -28,7 +28,7 @@ struct Line : public Geometry {
 	Line(const glm::vec3& origin, const glm::vec3& vector);
 	Line(const Point& origen, const Point& extrem);
 
-	
+
 	void setPosition(const glm::vec3& newPos);
 	void setDirection(const glm::vec3& newDir);
 	bool isInside(const Point& punt);
@@ -40,9 +40,10 @@ struct Line : public Geometry {
 };
 
 struct Plane : public Geometry {
-	glm::vec3 normal;
+	glm::vec3 normal, punt;
 	float dconst;
-	Plane(){};
+	glm::vec3 puntTall;
+	Plane() {};
 	~Plane() {};
 	Plane(const glm::vec3& point, const glm::vec3& normalVect);
 	Plane(const glm::vec3& point0, const glm::vec3& point1, const glm::vec3& point2);
@@ -52,7 +53,7 @@ struct Plane : public Geometry {
 	glm::vec3 closestPointInPlane(const glm::vec3& point);
 	bool intersecSegment(const glm::vec3& punt1, const glm::vec3& punt2, glm::vec3& pTall);
 	bool intersecLinePlane(const Line& line, glm::vec3& pTall);
-};	
+};
 
 struct Triangle : public Plane {
 	glm::vec3 vertex1, vertex2, vertex3;
@@ -66,6 +67,7 @@ struct Triangle : public Plane {
 
 struct Sphere : public Geometry {
 	glm::vec3 center;
+	glm::vec3 puntTall;
 	float radi;
 	Sphere(const glm::vec3& point, const float& radious);
 	~Sphere() {};

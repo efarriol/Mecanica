@@ -1,6 +1,7 @@
 #pragma once
 #include <glm\glm.hpp>
 #include <iostream>
+#include <vector> 
 struct Geometry {
 	virtual void setPosition(const glm::vec3& newPos) = 0;
 	virtual bool isInside(const glm::vec3& point) = 0;
@@ -56,7 +57,7 @@ struct Plane : public Geometry {
 };
 
 struct Triangle : public Plane {
-	glm::vec3 vertex1, vertex2, vertex3;
+	glm::vec3 vertex1, vertex2, vertex3, puntTall;
 	Triangle(const glm::vec3& point0, const glm::vec3& point1, const glm::vec3& point2);
 	~Triangle() {};
 	void setPosition(const glm::vec3& newPos);
@@ -94,4 +95,19 @@ struct Capsule : public Cylinder {
 	void setPosition(const glm::vec3& newPosTop, const glm::vec3& newPosBottom);
 	bool isInside(const glm::vec3& point);
 	bool intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& ptall);
+};
+
+struct Box : public Plane {
+	glm::vec3 normal1, normal2, normal3, normal4, normal5, normal6;
+	glm::vec3 vertex1, vertex2, vertex3, vertex4, vertex5, vertex6, vertex7, vertex8;
+	Plane pla1, pla2, pla3, pla4, pla5, pla6;
+	int faceCut;
+	Box() {};
+	Box(const glm::vec3& point1, const glm::vec3& point2, const glm::vec3& point3, const glm::vec3& point4, const glm::vec3& vector); //els punts 1, 2, 3, 4 defineixen la base inferior (definits en sentit antihorari) i el vector sumat als punts defineix els altres 4 vertex.
+	~Box() {};
+	void setPosition(const glm::vec3& newPos);
+	bool isInside(const glm::vec3& point);
+	bool intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& ptall);
+	void printSolution(int counter, Box box, std::vector<Point> punts, Plane cutPlane);
+	bool projectsInsidePlane(const glm::vec3& vertex1, const glm::vec3& vertex2, const glm::vec3& vertex3, const glm::vec3& cutPoint);
 };

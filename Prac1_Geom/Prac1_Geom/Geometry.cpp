@@ -189,7 +189,7 @@ Triangle::Triangle(const glm::vec3& point0, const glm::vec3& point1, const glm::
 	vertex2 = point1;
 	vertex3 = point2;
 	normal = glm::normalize(glm::cross(vertex2 - vertex1, vertex3 - vertex2));
-};
+}
 
 void Triangle::setPosition(const glm::vec3& newPos) {
 	glm::vec3 baryc;
@@ -212,19 +212,12 @@ bool Triangle::isInside(const glm::vec3& point) {
 };
 
 bool Triangle::intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall) {
-	if (isInside(pTall)) {
-		glm::vec3 normal = glm::normalize(glm::cross(vertex2 - vertex1, vertex3 - vertex1));
-		float dConst = -glm::dot(vertex1, normal);
-		glm::vec3 vectorP1P2 = point1 - point2;
-		float alpha = ((-dconst - glm::dot(normal, point1)) / glm::dot(normal, vectorP1P2));
-		glm::vec3 intersecPoint = point1 + alpha*vectorP1P2;
-		glm::vec3 vectorOneSide = point1 - intersecPoint;
-		glm::vec3 vectorOtherSide = point2 - intersecPoint;
-		float tester = glm::dot(vectorOneSide, vectorOtherSide);
-		if (tester < 0) {  // si fem el escalar dels vectors P1 a intersecPoint i P2 a intersecPoint i dona < 0 significa que tenen sentit contrari i per tant, el punt es troba dins el segment.
-			if (intersecPoint == pTall) return true;
+	Plane trianglePlane(vertex1, vertex2, vertex3);
+	if (trianglePlane.intersecSegment(point1, point2, pTall)) {
+		if (isInside(pTall)) {
+			puntTall = pTall;
+			return true;
 		}
-		pTall = intersecPoint;
 	}
 	return false;
 };
@@ -346,3 +339,136 @@ bool Capsule::intersecSegment(const glm::vec3 & point1, const glm::vec3 & point2
 {
 	return false;
 }
+
+
+//****************************************************
+// Box
+//****************************************************
+
+
+Box::Box(const glm::vec3 & point1, const glm::vec3 & point2, const glm::vec3 & point3, const glm::vec3 & point4, const glm::vec3 & vector){
+	vertex1 = point1;
+	vertex2 = point2;
+	vertex3 = point3;
+	vertex4 = point4;
+	vertex5 = point1 + vector;
+	vertex6 = point2 + vector;
+	vertex7 = point3 + vector;
+	vertex8 = point4 + vector;
+	
+	normal1 = glm::cross(vertex4 - vertex1, vertex2 - vertex1);		//normal del plano 1,2,3,4
+	normal2 = glm::cross(vertex5 - vertex1, vertex4 - vertex1);		//normal del plano 1,4,5,8
+	normal3 = glm::cross(vertex2 - vertex1, vertex5 - vertex1);		//normal del plano 1,2,5,6
+	normal4 = glm::cross(vertex3 - vertex2, vertex6 - vertex2);		//normal del plano 2,3,7,6
+	normal5 = glm::cross(vertex4 - vertex3, vertex7 - vertex3);		//normal del plano 3,4,7,8
+	normal6 = glm::cross(vertex6 - vertex5, vertex8 - vertex5);		//normal del plano 5,6,7,8
+
+	Plane plane1(vertex1, normal1), plane2(vertex1, normal2),
+		plane3(vertex1, normal3), plane4(vertex2, normal4),
+		plane5(vertex3, normal5), plane6(vertex5, normal6);
+	pla1 = plane1;
+	pla2 = plane2;
+	pla3 = plane3;
+	pla4 = plane4;
+	pla5 = plane5;
+	pla6 = plane6;
+
+	faceCut = 0;
+
+
+}
+
+void Box::setPosition(const glm::vec3 & newPos){
+	vertex1 = vertex1 + newPos;
+	vertex2 = vertex2 + newPos;
+	vertex3 = vertex3 + newPos;
+	vertex4 = vertex4 + newPos;
+	vertex5 = vertex5 + newPos;
+	vertex6 = vertex6 + newPos;
+	vertex7 = vertex7 + newPos;
+	vertex8 = vertex8 + newPos;
+}
+
+bool Box::isInside(const glm::vec3 & point) {
+	glm::vec3 direction1 = vertex1 - point; //cara d'abaix
+	glm::vec3 direction2 = vertex5 - point; //cara de dalt
+	glm::vec3 direction3 = vertex1 - point; //cara izq
+	glm::vec3 direction4 = vertex2 - point; //cara der
+	glm::vec3 direction5 = vertex1 - point; //cara front
+	glm::vec3 direction6 = vertex4 - point; //cara post
+	if (glm::dot(direction1, direction2) < 0 && glm::dot(direction3, direction4) < 0 && glm::dot(direction5, direction6) < 0) return true;
+	return false;
+}
+
+bool Box::intersecSegment(const glm::vec3 & point1, const glm::vec3 & point2, glm::vec3 & ptall){
+	
+
+	faceCut = 0;
+	if(pla1.intersecSegment(point1,point2, ptall)){  
+		if (projectsInsidePlane(vertex1, vertex2, vertex4, pla1.puntTall)) {
+			faceCut = 1;
+			return true;
+		}
+	}
+
+	if (pla2.intersecSegment(point1, point2, ptall)){
+		if (projectsInsidePlane(vertex4, vertex8, vertex1, pla2.puntTall)) {
+			faceCut = 2;
+			return true;
+		}
+	}
+
+	if (pla3.intersecSegment(point1, point2, ptall)) {
+		if (projectsInsidePlane(vertex1, vertex2, vertex5, pla3.puntTall)) {
+			faceCut = 3;
+			return true;
+		}
+	}
+
+	if (pla4.intersecSegment(point1, point2, ptall)) {
+		if (projectsInsidePlane(vertex2, vertex3, vertex6, pla4.puntTall)) {
+			faceCut = 4;
+			return true;
+		}
+	}
+
+	if (pla5.intersecSegment(point1, point2, ptall)) {
+		if (projectsInsidePlane(vertex3, vertex4, vertex7, pla5.puntTall)) {
+			faceCut = 5;
+			return true;
+		}
+	}
+
+	if (pla6.intersecSegment(point1, point2, ptall)) {
+		if (projectsInsidePlane(vertex5, vertex6, vertex8, pla6.puntTall)) {
+			faceCut = 6;
+			return true;
+		}
+	}
+
+	return false;
+}
+
+void Box::printSolution(int counter, Box box, std::vector<Point> punts, Plane cutPlane){
+
+	std::cout << "Punt interseccio entre: " << std::endl;
+	std::cout << "	x: " << punts[counter - 1].position.x << " i x2: " << punts[counter].position.x << std::endl;
+	std::cout << "	y: " << punts[counter - 1].position.y << " i y2: " << punts[counter].position.y << std::endl;
+	std::cout << "	z: " << punts[counter - 1].position.z << " i z2: " << punts[counter].position.z << std::endl;
+	std::cout << "\nPunt interseccio exacte en la cara de la box: " << box.faceCut << std::endl;
+	std::cout << "	x: " << cutPlane.puntTall.x << std::endl;
+	std::cout << "	y: " << cutPlane.puntTall.y << std::endl;
+	std::cout << "	z: " << cutPlane.puntTall.z << std::endl;
+
+}
+
+bool Box::projectsInsidePlane(const glm::vec3 & vertex1, const glm::vec3 & vertex2, const glm::vec3 & vertex3, const glm::vec3 & cutPoint){
+	glm::vec3 vertexVector = vertex2 - vertex1;
+	glm::vec3 vertexVector2 = vertex3 - vertex1;
+	float alpha = glm::dot(vertexVector, cutPoint - vertex1) / glm::dot(vertexVector, vertexVector);
+	if (alpha >= 0 && alpha <= 1) {
+		alpha = glm::dot(vertexVector2, cutPoint - vertex1) / glm::dot(vertexVector2, vertexVector2);
+		if (alpha >= 0 && alpha <= 1) return true;
+	}
+	return false;
+}	

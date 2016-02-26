@@ -1,5 +1,7 @@
 #pragma once
 #include "Geometry.h"
+#include <fstream> 
+#include <string> 
 
 //****************************************************
 // Point
@@ -283,9 +285,9 @@ Cylinder::Cylinder(const float & radious, glm::vec3 & point1, glm::vec3 & point2
 	director = topPoint - bottomPoint;
 }
 
-void Cylinder::setPosition(const glm::vec3 & newPosTop, const glm::vec3& newPosBottom) {
-	topPoint = newPosTop;
-	bottomPoint = newPosBottom;
+void Cylinder::setPosition(const glm::vec3 & newPos) {
+	topPoint += newPos;
+	bottomPoint += newPos;
 }
 
 bool Cylinder::isInside(const glm::vec3 & point) {
@@ -300,29 +302,41 @@ bool Cylinder::isInside(const glm::vec3 & point) {
 }
 
 bool Cylinder::intersecSegment(const glm::vec3 & point1, const glm::vec3 & point2, glm::vec3 & ptall) {
-	glm::vec3 puntMig = (point1 + point2) / 2.0f;
-	glm::vec3 puntMigAnterior = puntMig;
-	for (int i = 0; i < 10; i++) {
-		if (isInside(puntMig) && !isInside(point1)) {
-			puntMig = (point1 + puntMig) / 2.0f;
-		}
-		if (!isInside(puntMig) && isInside(point2)){
 
-		}
-		if (isInside(puntMig) && !isInside(point2)) {
+	if (!isInside(point1) && isInside(point2) || isInside(point1) && !isInside(point2)) {
+		glm::vec3 puntMig = (point1 + point2) / 2.0f;
+		glm::vec3 puntAnterior = point1;
+		glm::vec3 puntSeguent = point2;
+		glm::vec3 puntMigAnterior = puntMig;
+		for (int i = 0; i < 20; i++) {
 
+			if (isInside(puntMig) && !isInside(puntAnterior)) {
+				puntSeguent = puntMig;
+				puntMig = (puntAnterior + puntMig) / 2.0f;
+			}
+			else if (!isInside(puntMig) && isInside(puntSeguent)) {
+				puntAnterior = puntMig;
+				puntMig = (puntAnterior + puntMig) / 2.0f;
+			}
+			else if (isInside(puntMig) && !isInside(puntSeguent)) {
+				puntAnterior = puntMig;
+				puntMig = (puntAnterior + puntMig) / 2.0f;
+			}
+			else if (!isInside(puntMig) && isInside(puntAnterior)) {
+				puntSeguent = puntMig;
+				puntMig = (puntAnterior + puntMig) / 2.0f;
+			}
 		}
-		if (!isInside(puntMig) && isInside(point1)) {
-
-		}
+		puntTall = puntMig;
+		ptall = puntMig;
+		return true;
 	}
-	
 	return false;
 }
 
 
 //****************************************************
-// Capsule
+// Capsule 
 //****************************************************
 
 
@@ -342,7 +356,6 @@ void Capsule::setPosition(const glm::vec3 & newPosTop, const glm::vec3 & newPosB
 bool Capsule::isInside(const glm::vec3 & point)
 {
 	if (Cylinder::isInside(point)) return true;
-
 	else {
 		Sphere topSphere(topPoint, radi);
 		Sphere bottomSphere(bottomPoint, radi);
@@ -353,6 +366,24 @@ bool Capsule::isInside(const glm::vec3 & point)
 
 bool Capsule::intersecSegment(const glm::vec3 & point1, const glm::vec3 & point2, glm::vec3 & ptall)
 {
+	Cylinder capsuleCylinder(radi, topPoint, bottomPoint);
+
+	if (capsuleCylinder.intersecSegment(point1, point2, ptall)) {
+		puntTall = capsuleCylinder.puntTall;
+		return true;
+	}
+	else {
+		Sphere topSphere(topPoint, radi);
+		Sphere bottomSphere(bottomPoint, radi);
+		if (topSphere.intersecSegment(point1, point2, ptall)){
+			puntTall = topSphere.puntTall;
+			return true;
+		}
+		if (bottomSphere.intersecSegment(point1, point2, ptall)) {
+			puntTall = bottomSphere.puntTall;
+			return true;
+		}
+	}
 	return false;
 }
 
@@ -421,14 +452,6 @@ bool Box::isInside(const glm::vec3 & point) {
 	glm::vec3 direction3 = center3 - point; //cara front
 	glm::vec3 direction5 = center5 - point; //cara post
 
-	/*
-	glm::vec3 direction1 = vertex1 - point; //cara d'abaix
-	glm::vec3 direction2 = vertex5 - point; //cara de dalt
-	glm::vec3 direction3 = vertex1 - point; //cara izq
-	glm::vec3 direction4 = vertex2 - point; //cara der
-	glm::vec3 direction5 = vertex1 - point; //cara front
-	glm::vec3 direction6 = vertex4 - point; //cara post
-	*/
 	if (glm::dot(direction1, direction6) <= 0 && glm::dot(direction2, direction4) <= 0 && glm::dot(direction3, direction5) <= 0) return true;
 	return false;
 }
@@ -475,6 +498,7 @@ bool Box::intersecSegment(const glm::vec3 & point1, const glm::vec3 & point2, gl
 	if (pla6.intersecSegment(point1, point2, ptall)) {
 		if (projectsInsidePlane(vertex5, vertex6, vertex8, pla6.puntTall)) {
 			faceCut = 6;
+
 			return true;
 		}
 	}
@@ -482,18 +506,6 @@ bool Box::intersecSegment(const glm::vec3 & point1, const glm::vec3 & point2, gl
 	return false;
 }
 
-void Box::printSolution(int counter, Box box, std::vector<Point> punts, Plane cutPlane){
-
-	std::cout << "Punt interseccio entre: " << std::endl;
-	std::cout << "	x: " << punts[counter - 1].position.x << " i x2: " << punts[counter].position.x << std::endl;
-	std::cout << "	y: " << punts[counter - 1].position.y << " i y2: " << punts[counter].position.y << std::endl;
-	std::cout << "	z: " << punts[counter - 1].position.z << " i z2: " << punts[counter].position.z << std::endl;
-	std::cout << "\nPunt interseccio exacte en la cara de la box: " << box.faceCut << std::endl;
-	std::cout << "	x: " << cutPlane.puntTall.x << std::endl;
-	std::cout << "	y: " << cutPlane.puntTall.y << std::endl;
-	std::cout << "	z: " << cutPlane.puntTall.z << std::endl;
-
-}
 
 bool Box::projectsInsidePlane(const glm::vec3 & vertex1, const glm::vec3 & vertex2, const glm::vec3 & vertex3, const glm::vec3 & cutPoint){
 	glm::vec3 vertexVector = vertex2 - vertex1;
@@ -505,3 +517,43 @@ bool Box::projectsInsidePlane(const glm::vec3 & vertex1, const glm::vec3 & verte
 	}
 	return false;
 }	
+
+
+//****************************************************
+// Tetrahedron
+//****************************************************
+
+
+Tetrahedron::Tetrahedron(const glm::vec3& point1, const glm::vec3& point2, const glm::vec3& point3, const glm::vec3& vector) {
+	vertex1 = point1;
+	vertex2 = point2;
+	vertex3 = point3;
+	this->vector = vector;
+	vertex4 = ((vertex1 + vertex2 + vertex3) / 3.0f) + this->vector;
+
+	barycenter1 = (vertex1 + vertex2 + vertex3) / 3.0f; //Cara abajo
+	barycenter2 = (vertex2 + vertex3 + vertex4) / 3.0f;	//Cara derecha
+	barycenter3 = (vertex3 + vertex1 + vertex4) / 3.0f;	//Cara izquierda
+	barycenter4 = (vertex1 + vertex2 + vertex4) / 3.0f; //Cara delantera
+	barycenter5 = (vertex3 + vertex4) / 2.0f;			//vertice central entre 3 y 4
+}
+
+
+void Tetrahedron::setPosition(const glm::vec3 & newPos){
+	vertex1 += newPos;
+	vertex2 += newPos;
+	vertex3 += newPos;
+	vertex4 += newPos;
+}
+
+bool Tetrahedron::isInside(const glm::vec3 & point){
+
+
+
+
+	return false;
+}
+
+bool Tetrahedron::intersectSegment(const glm::vec3 & point1, const glm::vec3 & point2, glm::vec3 & pTall){
+	return false;
+}

@@ -58,6 +58,7 @@ struct Plane : public Geometry {
 
 struct Triangle : public Plane {
 	glm::vec3 vertex1, vertex2, vertex3, puntTall;
+	Triangle() {};
 	Triangle(const glm::vec3& point0, const glm::vec3& point1, const glm::vec3& point2);
 	~Triangle() {};
 	void setPosition(const glm::vec3& newPos);
@@ -70,6 +71,7 @@ struct Sphere : public Geometry {
 	glm::vec3 center;
 	glm::vec3 puntTall;
 	float radi;
+	Sphere() {};
 	Sphere(const glm::vec3& point, const float& radious);
 	~Sphere() {};
 	void setPosition(const glm::vec3& newPos);
@@ -80,15 +82,17 @@ struct Sphere : public Geometry {
 struct Cylinder : public Geometry {
 	glm::vec3 topPoint, bottomPoint, director;
 	float radi;
+	glm::vec3 puntTall;
 	Cylinder() {};
 	Cylinder(const float& radious, glm::vec3& point1, glm::vec3& point2);
 	~Cylinder() {};
-	void setPosition(const glm::vec3& newPosTop, const glm::vec3& newPosBottom);
+	void setPosition(const glm::vec3& newPos);
 	bool isInside(const glm::vec3& point);
 	bool intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& ptall);
 };
 
 struct Capsule : public Cylinder {
+	glm::vec3 puntTall;
 	Capsule() {};
 	Capsule(const float& radious, glm::vec3& point1, glm::vec3& point2);
 	~Capsule() {};
@@ -108,6 +112,15 @@ struct Box : public Plane {
 	void setPosition(const glm::vec3& newPos);
 	bool isInside(const glm::vec3& point);
 	bool intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& ptall);
-	void printSolution(int counter, Box box, std::vector<Point> punts, Plane cutPlane);
 	bool projectsInsidePlane(const glm::vec3& vertex1, const glm::vec3& vertex2, const glm::vec3& vertex3, const glm::vec3& cutPoint);
+};
+
+struct Tetrahedron : public Triangle {
+	glm::vec3 vertex1, vertex2, vertex3, vertex4, vector, barycenter1, barycenter2, barycenter3, barycenter4, barycenter5;
+	Tetrahedron() {};
+	Tetrahedron(const glm::vec3& point1, const glm::vec3& point2, const glm::vec3& point3, const glm::vec3& vector);
+	~Tetrahedron() {};
+	void setPosition(const glm::vec3& newPos);
+	bool isInside(const glm::vec3& point);
+	bool intersectSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall);
 };

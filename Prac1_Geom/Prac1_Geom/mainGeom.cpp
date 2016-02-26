@@ -254,7 +254,7 @@ void main()
 
 	std::cout << "\n------------------------------------Box------------------------------------\n" << std::endl;
 
-	Box box(glm::vec3(0, 0, 0), glm::vec3(5, 0, 0), glm::vec3(5, 5, 0), glm::vec3(0, 5, 0), glm::vec3(0, 0, 5));
+	Box box(glm::vec3(0, 0, 0), glm::vec3(8, 0, 0), glm::vec3(8, 8, 0), glm::vec3(0, 8, 0), glm::vec3(0, 0, 5));
 	for (counter = 1; counter < (int)nPunts; counter++) {
 		if (box.intersecSegment(punts[counter - 1].position, punts[counter].position, glm::vec3(NULL))) {
 			if(box.faceCut == 1) box.printSolution(counter, box, punts, box.pla1);
@@ -270,7 +270,7 @@ void main()
 			std::cout << "	x: " << punts[counter].position.x << std::endl;
 			std::cout << "	y: " << punts[counter].position.y << std::endl;
 			std::cout << "	z: " << punts[counter].position.z << std::endl;
-			//std::cout << counter << std::endl;
+			std::cout << counter << std::endl;
 		}
 
 	}

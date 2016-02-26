@@ -207,7 +207,7 @@ bool Triangle::isInside(const glm::vec3& point) {
 	float area3 = CalculateTriangleArea(point, vertex3, vertex1);
 	float totalArea = area1 + area2 + area3;
 
-	if (totalArea - areaTriangle > glm::pow(-10.0f, -5.0f) && totalArea < glm::pow(10.0f, -5.0f)) return true;
+	if (totalArea - areaTriangle > glm::pow(-10.0f, -5.0f) && totalArea - areaTriangle < glm::pow(10.0f, -5.0f)) return true;
 	return false;
 };
 
@@ -300,7 +300,23 @@ bool Cylinder::isInside(const glm::vec3 & point) {
 }
 
 bool Cylinder::intersecSegment(const glm::vec3 & point1, const glm::vec3 & point2, glm::vec3 & ptall) {
+	glm::vec3 puntMig = (point1 + point2) / 2.0f;
+	glm::vec3 puntMigAnterior = puntMig;
+	for (int i = 0; i < 10; i++) {
+		if (isInside(puntMig) && !isInside(point1)) {
+			puntMig = (point1 + puntMig) / 2.0f;
+		}
+		if (!isInside(puntMig) && isInside(point2)){
 
+		}
+		if (isInside(puntMig) && !isInside(point2)) {
+
+		}
+		if (!isInside(puntMig) && isInside(point1)) {
+
+		}
+	}
+	
 	return false;
 }
 
@@ -390,13 +406,30 @@ void Box::setPosition(const glm::vec3 & newPos){
 }
 
 bool Box::isInside(const glm::vec3 & point) {
+
+	glm::vec3 center1 = (vertex1 + vertex3) / 2.0f;
+	glm::vec3 center2 = (vertex1 + vertex8) / 2.0f;
+	glm::vec3 center3 = (vertex1 + vertex6) / 2.0f;
+	glm::vec3 center4 = (vertex2 + vertex7) / 2.0f;
+	glm::vec3 center5 = (vertex3 + vertex8) / 2.0f;
+	glm::vec3 center6 = (vertex5 + vertex7) / 2.0f;
+
+	glm::vec3 direction1 = center1 - point; //cara d'abaix
+	glm::vec3 direction6 = center6 - point; //cara de dalt
+	glm::vec3 direction2 = center2 - point; //cara izq
+	glm::vec3 direction4 = center4 - point; //cara der
+	glm::vec3 direction3 = center3 - point; //cara front
+	glm::vec3 direction5 = center5 - point; //cara post
+
+	/*
 	glm::vec3 direction1 = vertex1 - point; //cara d'abaix
 	glm::vec3 direction2 = vertex5 - point; //cara de dalt
 	glm::vec3 direction3 = vertex1 - point; //cara izq
 	glm::vec3 direction4 = vertex2 - point; //cara der
 	glm::vec3 direction5 = vertex1 - point; //cara front
 	glm::vec3 direction6 = vertex4 - point; //cara post
-	if (glm::dot(direction1, direction2) < 0 && glm::dot(direction3, direction4) < 0 && glm::dot(direction5, direction6) < 0) return true;
+	*/
+	if (glm::dot(direction1, direction6) <= 0 && glm::dot(direction2, direction4) <= 0 && glm::dot(direction3, direction5) <= 0) return true;
 	return false;
 }
 

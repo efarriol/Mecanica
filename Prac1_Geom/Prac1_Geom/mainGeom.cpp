@@ -1,3 +1,7 @@
+//----------------------------------------------------------------------------------------------------------
+// Pràctica realitzada per Pol Casamiquela i Eloi Farriol 2n A Grau en Continguts Digitals Interactius ENTI 
+//----------------------------------------------------------------------------------------------------------
+
 #pragma once;
 #include <iostream>  //per escriure a consola
 #include <string>    //per poder passar el nom al cout
@@ -143,7 +147,7 @@ void main()
 	Box box(glm::vec3(0, 0, 0), glm::vec3(5, 0, 0), glm::vec3(5, 5, 0), glm::vec3(0, 5, 0), glm::vec3(0, 0, 5));
 	for (counter = 1; counter < (int)nPunts; counter++) {
 		if (box.intersecSegment(punts[counter - 1].position, punts[counter].position, glm::vec3(NULL))) {
-			if (box.faceCut == 1)// box.printSolution(counter, box, punts, box.pla1);
+			if (box.faceCut == 1)
 			{
 				fileOut << "\nPunt interseccio entre: " << std::endl;
 				fileOut << "	x: " << punts[counter - 1].position.x << " i x2: " << punts[counter].position.x << std::endl;
@@ -276,6 +280,74 @@ void main()
 			fileOut << "	z: " << punts[counter].position.z << std::endl;
 		}
 
+	}
+
+	tfin = tempsActual;
+	duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();
+	fileOut << "\nTemps d'execucio: " << duration << " milisegons" << std::endl;
+
+
+	fileOut << "\n------------------------------------Tetrahedron------------------------------------\n" << std::endl;
+	// En aquest apartat, quan arribem a cert nombre d'iteracions, la funcio que calcula els punts interns al tetraedre, deixa de calcular 
+	// punts que haurien de continuar estant dins del mateix. Hem intetat arreglar-ho pero no hem pogut trobar la solucio
+	tini = tempsActual;
+
+	Tetrahedron tetrahedron(glm::vec3(0, 0, -5), glm::vec3(0, 0, 5), glm::vec3(5, 0, 0), glm::vec3(0, 5, 0));
+	for (counter = 1; counter < (int)nPunts; counter++) {
+		if (tetrahedron.intersecSegment(punts[counter - 1].position, punts[counter].position, glm::vec3(NULL))) {
+			if (tetrahedron.faceCut == 1)
+			{
+				fileOut << "\nPunt interseccio entre: " << std::endl;
+				fileOut << "	x: " << punts[counter - 1].position.x << " i x2: " << punts[counter].position.x << std::endl;
+				fileOut << "	y: " << punts[counter - 1].position.y << " i y2: " << punts[counter].position.y << std::endl;
+				fileOut << "	z: " << punts[counter - 1].position.z << " i z2: " << punts[counter].position.z << std::endl;
+				fileOut << "\nPunt interseccio exacte en la cara del tetraedre: " << tetrahedron.faceCut << std::endl;
+				fileOut << "	x: " << tetrahedron.face1.puntTall.x << std::endl;
+				fileOut << "	y: " << tetrahedron.face1.puntTall.y << std::endl;
+				fileOut << "	z: " << tetrahedron.face1.puntTall.z << std::endl;
+			}
+			else if (tetrahedron.faceCut == 2) {
+				fileOut << "\nPunt interseccio entre: " << std::endl;
+				fileOut << "	x: " << punts[counter - 1].position.x << " i x2: " << punts[counter].position.x << std::endl;
+				fileOut << "	y: " << punts[counter - 1].position.y << " i y2: " << punts[counter].position.y << std::endl;
+				fileOut << "	z: " << punts[counter - 1].position.z << " i z2: " << punts[counter].position.z << std::endl;
+				fileOut << "\nPunt interseccio exacte en la cara del tetraedre: " << tetrahedron.faceCut << std::endl;
+				fileOut << "	x: " << tetrahedron.face2.puntTall.x << std::endl;
+				fileOut << "	y: " << tetrahedron.face2.puntTall.y << std::endl;
+				fileOut << "	z: " << tetrahedron.face2.puntTall.z << std::endl;
+
+			}
+			else if (tetrahedron.faceCut == 3) {
+				fileOut << "\nPunt interseccio entre: " << std::endl;
+				fileOut << "	x: " << punts[counter - 1].position.x << " i x2: " << punts[counter].position.x << std::endl;
+				fileOut << "	y: " << punts[counter - 1].position.y << " i y2: " << punts[counter].position.y << std::endl;
+				fileOut << "	z: " << punts[counter - 1].position.z << " i z2: " << punts[counter].position.z << std::endl;
+				fileOut << "\nPunt interseccio exacte en la cara del tetraedre: " << tetrahedron.faceCut << std::endl;
+				fileOut << "	x: " << tetrahedron.face3.puntTall.x << std::endl;
+				fileOut << "	y: " << tetrahedron.face3.puntTall.y << std::endl;
+				fileOut << "	z: " << tetrahedron.face3.puntTall.z << std::endl;
+
+			}
+			else if (tetrahedron.faceCut == 4) {
+				fileOut << "\nPunt interseccio entre: " << std::endl;
+				fileOut << "	x: " << punts[counter - 1].position.x << " i x2: " << punts[counter].position.x << std::endl;
+				fileOut << "	y: " << punts[counter - 1].position.y << " i y2: " << punts[counter].position.y << std::endl;
+				fileOut << "	z: " << punts[counter - 1].position.z << " i z2: " << punts[counter].position.z << std::endl;
+				fileOut << "\nPunt interseccio exacte en la cara del tetraedre: " << tetrahedron.faceCut << std::endl;
+				fileOut << "	x: " << tetrahedron.face4.puntTall.x << std::endl;
+				fileOut << "	y: " << tetrahedron.face4.puntTall.y << std::endl;
+				fileOut << "	z: " << tetrahedron.face4.puntTall.z << std::endl;
+
+			}
+		
+		}
+		if (tetrahedron.isInside(punts[counter].position)) { 
+			fileOut << "\nPunt contingut en la tetraedre: " << std::endl;
+			fileOut << "	x: " << punts[counter].position.x << std::endl;
+			fileOut << "	y: " << punts[counter].position.y << std::endl;
+			fileOut << "	z: " << punts[counter].position.z << std::endl;
+		}
+		
 	}
 
 	tfin = tempsActual;

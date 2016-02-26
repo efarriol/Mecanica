@@ -116,11 +116,13 @@ struct Box : public Plane {
 };
 
 struct Tetrahedron : public Triangle {
-	glm::vec3 vertex1, vertex2, vertex3, vertex4, vector, barycenter1, barycenter2, barycenter3, barycenter4, barycenter5;
+	glm::vec3 vertex1, vertex2, vertex3, vertex4, vector, barycenter1, barycenter2, barycenter3, barycenter4, puntMig3_4;
+	Triangle face1, face2, face3, face4;
+	int faceCut;
 	Tetrahedron() {};
 	Tetrahedron(const glm::vec3& point1, const glm::vec3& point2, const glm::vec3& point3, const glm::vec3& vector);
 	~Tetrahedron() {};
 	void setPosition(const glm::vec3& newPos);
 	bool isInside(const glm::vec3& point);
-	bool intersectSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall);
+	bool intersecSegment(const glm::vec3& point1, const glm::vec3& point2, glm::vec3& pTall);
 };

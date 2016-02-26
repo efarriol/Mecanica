@@ -138,7 +138,7 @@ void Plane::setPosition(const glm::vec3& newPos) {
 
 bool Plane::isInside(const glm::vec3& point) {
 	float value = normal.x * point.x + normal.y * point.y + normal.z * point.z + dconst;
-	if (value > glm::pow(-10.0f, -5.0f) && value < glm::pow(10.0f, -5.0f)) return true; //hay que poner que sea |en valor abs| < 10 ^-7
+	if (value > glm::pow(-10.0f, -5.0f) && value < glm::pow(10.0f, -5.0f)) return true; 
 	return false;
 };
 
@@ -175,7 +175,6 @@ bool Plane::intersecLinePlane(const Line& line, glm::vec3& pTall) {
 	glm::vec3 intersecPoint = line.point.position + alpha*vectorP1P2;
 
 	if (intersecPoint == pTall)	return true;
-	//pTall = intersecPoint;
 	return false;
 };
 
@@ -534,8 +533,13 @@ Tetrahedron::Tetrahedron(const glm::vec3& point1, const glm::vec3& point2, const
 	barycenter1 = (vertex1 + vertex2 + vertex3) / 3.0f; //Cara abajo
 	barycenter2 = (vertex2 + vertex3 + vertex4) / 3.0f;	//Cara derecha
 	barycenter3 = (vertex3 + vertex1 + vertex4) / 3.0f;	//Cara izquierda
-	barycenter4 = (vertex1 + vertex2 + vertex4) / 3.0f; //Cara delantera
-	barycenter5 = (vertex3 + vertex4) / 2.0f;			//vertice central entre 3 y 4
+	barycenter4 = (vertex1 + vertex2 + vertex4) / 3.0f; //Cara frontal
+	puntMig3_4 = (vertex3 + vertex4) / 2.0f;			//vertice central entre 3 y 4
+	Triangle triangle1(vertex1, vertex2, vertex3), triangle2(vertex2, vertex3, vertex4), triangle3(vertex1, vertex3, vertex4), triangle4(vertex1, vertex2, vertex4);
+	face1 = triangle1;
+	face2 = triangle2;
+	face3 = triangle3;
+	face4 = triangle4;
 }
 
 
@@ -547,13 +551,34 @@ void Tetrahedron::setPosition(const glm::vec3 & newPos){
 }
 
 bool Tetrahedron::isInside(const glm::vec3 & point){
+	glm::vec3 direction1 = barycenter1 - point; // vector punt costat inferior
+	glm::vec3 direction2 = barycenter2 - point; // vector punt a costat dret
+	glm::vec3 direction3 = barycenter3 - point; //vector punt a costat esquerre
+	glm::vec3 direction4 = barycenter4 - point; //vector punt a costat frontal
+	glm::vec3 direction5 = puntMig3_4 - point; //vector punt a puntMig3_4
+	glm::vec3 direction6 = vertex4 - point; //vector punt a punt superior
 
-
-
-
+	if (glm::dot(direction1, direction6) < 0 && glm::dot(direction2, direction3) < 0 && glm::dot(direction5, direction4) < 0) return true;
 	return false;
 }
 
-bool Tetrahedron::intersectSegment(const glm::vec3 & point1, const glm::vec3 & point2, glm::vec3 & pTall){
+bool Tetrahedron::intersecSegment(const glm::vec3 & point1, const glm::vec3 & point2, glm::vec3 & pTall){
+	faceCut = 0;
+	if (face1.intersecSegment(point1, point2, pTall)) {
+		faceCut = 1;
+		return true;
+	}
+	if (face2.intersecSegment(point1, point2, pTall)) {
+		faceCut = 2;
+		return true;
+	}
+	if (face3.intersecSegment(point1, point2, pTall)) {
+		faceCut = 3;
+		return true;
+	}
+	if (face4.intersecSegment(point1, point2, pTall)) {
+		faceCut = 4;
+		return true;
+	}
 	return false;
 }

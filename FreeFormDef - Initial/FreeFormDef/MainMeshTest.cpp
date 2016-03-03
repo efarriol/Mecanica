@@ -1,5 +1,6 @@
 #pragma once
 #include "mesh.h"
+#include "ComputingCoordinates.h"
 #include <iostream>
 #include <chrono>
 
@@ -11,7 +12,7 @@
 */
 
 void main() {
-	std::string name = "cube"; 
+	std::string name = "teapot"; 
 	std::string fileIn = name + ".obj";
 	std::string fileOut = name + "Mod.obj";
 

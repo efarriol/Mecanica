@@ -1,0 +1,20 @@
+﻿Build started 03/03/2016 15:52:07.
+     1>Project "C:\Users\pcasamiquela\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\FreeFormDef\FreeFormDef.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\pcasamiquela\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\\..\deps\include" /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Mesh.cpp MainMeshTest.cpp
+         MainMeshTest.cpp
+     1>c:\users\pcasamiquela\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(72): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\pcasamiquela\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(112): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+     1>c:\users\pcasamiquela\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(113): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+     1>c:\users\pcasamiquela\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(114): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+         Mesh.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\pcasamiquela\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\x64\Debug\FreeFormDef.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\pcasamiquela\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\x64\Debug\FreeFormDef.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\pcasamiquela\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\x64\Debug\FreeFormDef.lib" /MACHINE:X64 x64\Debug\Mesh.obj
+         x64\Debug\MainMeshTest.obj
+         FreeFormDef.vcxproj -> C:\Users\pcasamiquela\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\x64\Debug\FreeFormDef.exe
+     1>Done Building Project "C:\Users\pcasamiquela\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\FreeFormDef\FreeFormDef.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.68

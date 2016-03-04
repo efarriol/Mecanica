@@ -69,6 +69,15 @@ void main() {
 	std::cout << "maxims = " << maxX << " " << maxY << " " << maxZ << std::endl;
 	std::cout << "minims = " << minX << " " << minY << " " << minZ << std::endl;
 
+
+	//Deformar la box
+
+	// Convertir a coord locales de la box original
+
+	//Interpolarlas con la box deformada
+
+
+
 	//As exemple we modify a set of mesh vertices along x-axis
 	float rank = 0.5*maxX; //half part of the model
 	for (int i = 0; i < vertexData.size(); i++)

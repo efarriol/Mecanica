@@ -9,7 +9,7 @@
 
 class ComputingCoordinates{
 	int ndivx, ndivy, ndivz;
-	float xmin, xmax, ymin, ymax, zmin, zmax, l, m, n, dx, dy, dz;
+	float xmin, xmax, ymin, ymax, zmin, zmax, l, m, n, dx, dy, dz, s, t ,u;
 	glm::vec3 Q, U, V, W;
 	std::vector<glm::vec3> grid;
 	std::vector<glm::vec3> gridAABB;
@@ -22,5 +22,6 @@ public:
 	glm::vec3 ComputeLocalCoordinates(glm::vec3& point);
 	void CalcualteLengths(std::vector<glm::vec3>& _vertexData);
 	std::vector<glm::vec3> AABBconstruction();
+	std::vector<glm::vec3> AABBLocalCoordinates();
 };
 

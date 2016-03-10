@@ -78,7 +78,8 @@ std::vector<glm::vec3> ComputingCoordinates::AABBconstruction()
 				gridAABB.push_back(Q + (i*dx, j*dy, k*dz));
 			}
 		}
-	return gridAABB;
+		return gridAABB;
+	}
 }
 
 

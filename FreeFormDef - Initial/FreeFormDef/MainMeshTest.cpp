@@ -55,7 +55,13 @@ void main() {
 	float minX = 100000.f;  //very big value
 	float minY = 100000.f;
 	float minZ = 100000.f;
-
+	int ndivx = 15;
+	int ndivy = 15;
+	int ndivz = 15;
+	float l, m, n, dx, dy, dz, s, t, u, scaleTaper;
+	std::vector<glm::vec3> grid;
+	glm::mat3 taperGrid;
+	glm::vec3 Q, U, V, W;
 	for (int i = 0; i < vertexData.size(); i++)
 	{
 		if (vertexData[i].x > maxX) maxX = vertexData[i].x;
@@ -65,12 +71,59 @@ void main() {
 		if (vertexData[i].y < minY) minY = vertexData[i].y;
 		if (vertexData[i].z < minZ) minZ = vertexData[i].z;
 	}
- 
+
 	std::cout << "maxims = " << maxX << " " << maxY << " " << maxZ << std::endl;
 	std::cout << "minims = " << minX << " " << minY << " " << minZ << std::endl;
 
+	l = maxX - minX;
+	m = maxY - minY;
+	n = maxZ - minZ;
+
+	dx = l / ndivx;
+	dy = m / ndivy;
+	dz = n / ndivz;
+
+	Q =	glm::vec3(minX, minY, minZ);
+	U = glm::vec3(1, 0, 0);
+	V = glm::vec3(0, 1, 0);
+	W = glm::vec3(0, 0, 1);
+
+	for (float i = 0.f; i < ndivx; i++) {
+		for (float j = 0.f; j < ndivy; j++) {
+			for (float k = 0; k < ndivz; k++) {
+				grid.push_back(Q + (i / ndivx)*U + (j / ndivy)*V + (k / ndivz)*W);
+			}
+		}
+	}
+
+	for (int i = 0; i < vertexData.size; i++) {
+		s = (vertexData[i].x - Q.x);
+		t = (vertexData[i].y - Q.y);
+		u = (vertexData[i].z - Q.z);
+		vertexData[i] = Q + s*U + t*V + u*W; 
+	}
 
 	//Deformar la box
+	//Taper
+	for (int i = 0; i < grid.size; i++) {
+		if (grid[i].x > minX && grid[i].x < grid[i - 1].x) {
+			scaleTaper = 1;
+		}
+		else if (grid[i].x > grid[i + 1].x && grid[i].x < maxX) {
+			scaleTaper = 0.5;
+		}
+		else if (grid[i].x > minX && grid[i].x < maxX) {
+			scaleTaper = 1 - 0.5 * ((grid[i].x - grid[i - 1].x) / (grid[i + 1].x - grid[i - 1].x));
+		}
+		taperGrid = glm::mat3(0, 0, 0,
+			0, scaleTaper, 0,
+			0, 0, scaleTaper) * glm::mat3(grid[i].x, 0, 0,
+											0, grid[i].y, 0,
+											0, 0, grid[i].z);
+		grid[i].x = taperGrid.length[0];
+		grid[i].y = taperGrid.length[4];
+		grid[i].z = taperGrid.length[8];
+	}
 
 	// Convertir a coord locales de la box original
 
@@ -89,7 +142,7 @@ void main() {
 			vertexData[i].z = vertexData[i].z * 2.0f;
 		}
 	}
-
+	
 
 	// write the new mesh vertex
 	for (int i = 0; i < vertexData.size(); i++) {

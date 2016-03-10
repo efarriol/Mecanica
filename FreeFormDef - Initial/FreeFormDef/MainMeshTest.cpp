@@ -62,8 +62,7 @@ void main() {
 	std::vector<glm::vec3> grid;
 	glm::mat3 taperGrid;
 	glm::vec3 Q, U, V, W;
-	for (int i = 0; i < vertexData.size(); i++)
-	{
+	for (int i = 0; i < vertexData.size(); i++)	{
 		if (vertexData[i].x > maxX) maxX = vertexData[i].x;
 		if (vertexData[i].y > maxY) maxY = vertexData[i].y;
 		if (vertexData[i].z > maxZ) maxZ = vertexData[i].z;
@@ -96,7 +95,7 @@ void main() {
 		}
 	}
 
-	for (int i = 0; i < vertexData.size; i++) {
+	for (int i = 0; i < vertexData.size(); i++) {
 		s = (vertexData[i].x - Q.x);
 		t = (vertexData[i].y - Q.y);
 		u = (vertexData[i].z - Q.z);
@@ -105,24 +104,26 @@ void main() {
 
 	//Deformar la box
 	//Taper
-	for (int i = 0; i < grid.size; i++) {
+	for (int i = 0; i < grid.size(); i++) {
 		if (grid[i].x > minX && grid[i].x < grid[i - 1].x) {
-			scaleTaper = 1;
+			scaleTaper = 1.0f;
 		}
 		else if (grid[i].x > grid[i + 1].x && grid[i].x < maxX) {
-			scaleTaper = 0.5;
+			scaleTaper = 0.5f;
 		}
 		else if (grid[i].x > minX && grid[i].x < maxX) {
-			scaleTaper = 1 - 0.5 * ((grid[i].x - grid[i - 1].x) / (grid[i + 1].x - grid[i - 1].x));
+			scaleTaper = 1.0f - 0.5f * ((grid[i].x - grid[i - 1.0f].x) / (grid[i + 1].x - grid[i - 1].x));
 		}
 		taperGrid = glm::mat3(0, 0, 0,
 			0, scaleTaper, 0,
 			0, 0, scaleTaper) * glm::mat3(grid[i].x, 0, 0,
 											0, grid[i].y, 0,
 											0, 0, grid[i].z);
-		grid[i].x = taperGrid.length[0];
-		grid[i].y = taperGrid.length[4];
-		grid[i].z = taperGrid.length[8];
+		grid[i].x = taperGrid[0][0];
+		grid[i].y = taperGrid[1][1];
+		grid[i].z = taperGrid[2][2];
+
+
 	}
 
 	// Convertir a coord locales de la box original

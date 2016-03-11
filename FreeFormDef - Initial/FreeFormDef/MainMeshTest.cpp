@@ -60,8 +60,10 @@ void main() {
 	int ndivz = 15;
 	float l, m, n, dx, dy, dz, s, t, u, scaleTaper;
 	std::vector<glm::vec3> grid;
-	glm::mat3 taperGrid;
 	glm::vec3 Q, U, V, W;
+	const int HEIGHT = 15;
+	const int WIDTH = 15;
+	const int DEPTH = 15;
 	for (int i = 0; i < vertexData.size(); i++)	{
 		if (vertexData[i].x > maxX) maxX = vertexData[i].x;
 		if (vertexData[i].y > maxY) maxY = vertexData[i].y;
@@ -73,7 +75,7 @@ void main() {
 
 	std::cout << "maxims = " << maxX << " " << maxY << " " << maxZ << std::endl;
 	std::cout << "minims = " << minX << " " << minY << " " << minZ << std::endl;
-	system("PAUSE");
+	
 
 	maxX++; maxY++; maxZ++;
 	minX--; minY--; minZ--;
@@ -87,24 +89,23 @@ void main() {
 	dz = n / ndivz;
 
 	Q =	glm::vec3(minX, minY, minZ);
-	U = glm::vec3(1, 0, 0);
-	V = glm::vec3(0, 1, 0);
-	W = glm::vec3(0, 0, 1);
 
+	grid.resize((ndivx + 1) * (ndivy + 1) * (ndivz + 1));
 	for (float i = 0.f; i <= ndivx; i++) {
 		for (float j = 0.f; j <= ndivy; j++) {
 			for (float k = 0; k <= ndivz; k++) {
-				grid.push_back(Q + (i / ndivx)*U + (j / ndivy)*V + (k / ndivz)*W);
+				grid[i].x = Q.x + (i / ndivx);
+				grid[i].y = Q.y + (j / ndivy);
+				grid[i].z = Q.z + (k / ndivz);
 			}
 		}
 	}
 
 // Convertir a coord locales de la box original
 	for (int i = 0; i < vertexData.size(); i++) {
-		s = (vertexData[i].x - Q.x);
-		t = (vertexData[i].y - Q.y);
-		u = (vertexData[i].z - Q.z);
-		vertexData[i] = Q + s*U + t*V + u*W; 
+		vertexData[i].x = (vertexData[i].x - Q.x);
+		vertexData[i].y = (vertexData[i].y - Q.y);
+		vertexData[i].z = (vertexData[i].z - Q.z);
 	}
 
 
@@ -125,10 +126,52 @@ void main() {
 			grid[i].z = grid[i].z * scaleTaper;
 		}
 	}
-
+	
 	//Interpolarlas con la box deformada
 
+	for (int i = 0; i < vertexData.size(); i++)
+	{
+		
+		int index1 = floor(vertexData[i].x / dx);
+		int index2 = floor(vertexData[i].y / dy);
+		int index3 = floor(vertexData[i].z / dz);
 
+		
+		float xD = ((vertexData[i].x - index1 * dx) / dx);
+		float yD = ((vertexData[i].y - index2 * dy) / dy);
+		float zD = ((vertexData[i].z - index3 * dz) / dz);
+		
+		int ind1 = (index1*(HEIGHT + 1) + index2)*(WIDTH + 1) + index3;
+		int ind2 = ((index1 + 1)*(HEIGHT + 1) + index2)*(WIDTH + 1) + index3;
+		int ind3 = (index1*(HEIGHT + 1) + (index2 + 1))*(WIDTH + 1) + index3;
+		int ind4 = ((index1 + 1)*(HEIGHT + 1) + (index2 + 1))*(WIDTH + 1) + index3;
+
+		
+		glm::vec3 C000 = grid[ind1];
+		glm::vec3 C100 = grid[ind2];
+		glm::vec3 C010 = grid[ind3];
+		glm::vec3 C110 = grid[ind4];
+		
+		glm::vec3 C001 = grid[ind1];
+		glm::vec3 C101 = grid[ind2];
+		glm::vec3 C011 = grid[ind3];
+		glm::vec3 C111 = grid[ind4];
+
+		 
+		glm::vec3 C00 = C000 * (1 - xD) + C100 * xD;
+		glm::vec3 C10 = C010 * (1 - xD) + C110 * xD;
+		glm::vec3 C01 = C001 * (1 - xD) + C101 * xD;
+		glm::vec3 C11 = C011 * (1 - xD) + C111 * xD;
+		glm::vec3 C0 = C00 * (1 - yD) + C10 * yD;
+		glm::vec3 C1 = C01 * (1 - yD) + C11 * yD;
+		glm::vec3 C = C0 * (1 - zD) + C1 * zD;
+
+	
+		vertexData[i] = C;
+
+	}
+
+	
 
 
 

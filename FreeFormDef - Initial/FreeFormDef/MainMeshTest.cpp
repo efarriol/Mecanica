@@ -31,15 +31,15 @@ void main() {
 	faceData = mesh.returnMeshFaces();
 	//vertexData = model.vertices;
 
-	std::cout << "Number of vertices = " << vertexData.size() << std::endl;
+	//std::cout << "Number of vertices = " << vertexData.size() << std::endl;
 	//	std::cout << "Number of vertices = " << model.OBJIndices.size() << std::endl;
-	for (int i = 0; i < vertexData.size(); i++)
-		std::cout << i << "  " << vertexData[i].x << "  " << vertexData[i].y << "  " << vertexData[i].z << std::endl;
+	//for (int i = 0; i < vertexData.size(); i++)
+		//std::cout << i << "  " << vertexData[i].x << "  " << vertexData[i].y << "  " << vertexData[i].z << std::endl;
 
-	std::cout << "Number of faces = " << faceData.size() << std::endl;
-	for (int i = 0; i < faceData.size(); i++)
-		std::cout << i << "  " << faceData[i].x << "  " << faceData[i].y << "  " << faceData[i].z << std::endl;
-	system("PAUSE");
+	//std::cout << "Number of faces = " << faceData.size() << std::endl;
+	//for (int i = 0; i < faceData.size(); i++)
+		//std::cout << i << "  " << faceData[i].x << "  " << faceData[i].y << "  " << faceData[i].z << std::endl;
+	//system("PAUSE");
 
 	//As exemple we modify one mesh vertex
 	//vertexData[5].x = 2.0f;
@@ -73,6 +73,10 @@ void main() {
 
 	std::cout << "maxims = " << maxX << " " << maxY << " " << maxZ << std::endl;
 	std::cout << "minims = " << minX << " " << minY << " " << minZ << std::endl;
+	system("PAUSE");
+
+	maxX++; maxY++; maxZ++;
+	minX--; minY--; minZ--;
 
 	l = maxX - minX;
 	m = maxY - minY;
@@ -87,14 +91,15 @@ void main() {
 	V = glm::vec3(0, 1, 0);
 	W = glm::vec3(0, 0, 1);
 
-	for (float i = 0.f; i < ndivx; i++) {
-		for (float j = 0.f; j < ndivy; j++) {
-			for (float k = 0; k < ndivz; k++) {
+	for (float i = 0.f; i <= ndivx; i++) {
+		for (float j = 0.f; j <= ndivy; j++) {
+			for (float k = 0; k <= ndivz; k++) {
 				grid.push_back(Q + (i / ndivx)*U + (j / ndivy)*V + (k / ndivz)*W);
 			}
 		}
 	}
 
+// Convertir a coord locales de la box original
 	for (int i = 0; i < vertexData.size(); i++) {
 		s = (vertexData[i].x - Q.x);
 		t = (vertexData[i].y - Q.y);
@@ -102,36 +107,33 @@ void main() {
 		vertexData[i] = Q + s*U + t*V + u*W; 
 	}
 
+
 	//Deformar la box
 	//Taper
 	for (int i = 0; i < grid.size(); i++) {
-		if (grid[i].x > minX && grid[i].x < grid[i - 1].x) {
+		if (grid[i].x == minX ) {
 			scaleTaper = 1.0f;
 		}
-		else if (grid[i].x > grid[i + 1].x && grid[i].x < maxX) {
+		else if (grid[i].x == maxX){
 			scaleTaper = 0.5f;
+			grid[i].y = grid[i].y * scaleTaper;
+			grid[i].z = grid[i].z * scaleTaper;
 		}
-		else if (grid[i].x > minX && grid[i].x < maxX) {
-			scaleTaper = 1.0f - 0.5f * ((grid[i].x - grid[i - 1.0f].x) / (grid[i + 1].x - grid[i - 1].x));
+		else {
+			scaleTaper = 1.0f - 0.5f * ((grid[i].x - minX) / (maxX - minX));
+			grid[i].y = grid[i].y * scaleTaper;
+			grid[i].z = grid[i].z * scaleTaper;
 		}
-		taperGrid = glm::mat3(0, 0, 0,
-			0, scaleTaper, 0,
-			0, 0, scaleTaper) * glm::mat3(grid[i].x, 0, 0,
-											0, grid[i].y, 0,
-											0, 0, grid[i].z);
-		grid[i].x = taperGrid[0][0];
-		grid[i].y = taperGrid[1][1];
-		grid[i].z = taperGrid[2][2];
-
-
 	}
-
-	// Convertir a coord locales de la box original
 
 	//Interpolarlas con la box deformada
 
 
 
+
+
+
+/*
 	//As exemple we modify a set of mesh vertices along x-axis
 	float rank = 0.5*maxX; //half part of the model
 	for (int i = 0; i < vertexData.size(); i++)
@@ -144,7 +146,7 @@ void main() {
 		}
 	}
 	
-
+*/
 	// write the new mesh vertex
 	for (int i = 0; i < vertexData.size(); i++) {
 		mesh.setVertex(i, vertexData[i].x, vertexData[i].y, vertexData[i].z);
@@ -152,7 +154,7 @@ void main() {
 	// create a new file with the modified mesh
 	mesh.printObjModel(mesh, fileOut);
 	system("PAUSE");
-
+/*
 	std::chrono::high_resolution_clock::time_point tini, tfin;
 	const int HEIGHT = 200;
 	const int WIDTH = 200;
@@ -160,8 +162,7 @@ void main() {
 
 	/*--------------------------------------
 	Vector Version of the 3D grid
-	----------------------------------------*/
-
+	----------------------------------------
 	int ind;
 	tini = std::chrono::high_resolution_clock::now();
 	std::vector<glm::vec3> grid3Dv;
@@ -189,5 +190,5 @@ void main() {
 		grid3Dv[ind].x << " " << grid3Dv[ind].y << " " << grid3Dv[ind].z << std::endl;
 
 	system("PAUSE");
-
+	*/
 }

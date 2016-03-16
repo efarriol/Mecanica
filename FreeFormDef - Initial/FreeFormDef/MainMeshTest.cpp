@@ -91,15 +91,18 @@ void main() {
 	Q =	glm::vec3(minX, minY, minZ);
 
 	grid.resize((ndivx + 1) * (ndivy + 1) * (ndivz + 1));
-	for (float i = 0.f; i <= ndivx; i++) {
-		for (float j = 0.f; j <= ndivy; j++) {
-			for (float k = 0; k <= ndivz; k++) {
-				grid[i].x = Q.x + (i / ndivx);
-				grid[i].y = Q.y + (j / ndivy);
-				grid[i].z = Q.z + (k / ndivz);
+	int ind;
+	for (int i = 0; i <= ndivx; i++) {
+		for (int j = 0; j <= ndivy; j++) {
+			for (int k = 0; k <= ndivz; k++) {
+				ind = ind = (i * (ndivx + 1) + j) * (ndivy + 1) + k;
+				grid[ind].x = minX + (i * dx);
+				grid[ind].y = minY + (j * dy);
+				grid[ind].z = minZ + (k * dz);
 			}
 		}
 	}
+
 
 // Convertir a coord locales de la box original
 	for (int i = 0; i < vertexData.size(); i++) {
@@ -145,17 +148,21 @@ void main() {
 		int ind2 = ((index1 + 1)*(HEIGHT + 1) + index2)*(WIDTH + 1) + index3;
 		int ind3 = (index1*(HEIGHT + 1) + (index2 + 1))*(WIDTH + 1) + index3;
 		int ind4 = ((index1 + 1)*(HEIGHT + 1) + (index2 + 1))*(WIDTH + 1) + index3;
-
+		
+		int ind5 = (index1*(HEIGHT + 1) + index2)*(WIDTH + 1) + (index3 + 1);
+		int ind6 = ((index1 + 1)*(HEIGHT + 1) + index2)*(WIDTH + 1) + (index3 + 1);
+		int ind7 = (index1*(HEIGHT + 1) + (index2 + 1))*(WIDTH + 1) + (index3 + 1);
+		int ind8 = ((index1 + 1)*(HEIGHT + 1) + (index2 + 1))*(WIDTH + 1) + (index3 + 1);
 		
 		glm::vec3 C000 = grid[ind1];
 		glm::vec3 C100 = grid[ind2];
 		glm::vec3 C010 = grid[ind3];
 		glm::vec3 C110 = grid[ind4];
 		
-		glm::vec3 C001 = grid[ind1];
-		glm::vec3 C101 = grid[ind2];
-		glm::vec3 C011 = grid[ind3];
-		glm::vec3 C111 = grid[ind4];
+		glm::vec3 C001 = grid[ind5];
+		glm::vec3 C101 = grid[ind6];
+		glm::vec3 C011 = grid[ind7];
+		glm::vec3 C111 = grid[ind8];
 
 		 
 		glm::vec3 C00 = C000 * (1 - xD) + C100 * xD;

@@ -252,14 +252,14 @@ namespace glm
 	GLM_FUNC_DECL detail::tvec3<T, P> project(
 		detail::tvec3<T, P> const & obj,
 		detail::tmat4x4<T, P> const & model,
-		detail::tmat4x4<T, P> const & proj,
+		detail::tmat4x4<T, P> const & projectionMatrix,
 		detail::tvec4<U, P> const & viewport);
 
 	/// Map the specified window coordinates (win.x, win.y, win.z) into object coordinates.
 	///
 	/// @param win
 	/// @param model
-	/// @param proj
+	/// @param _projectionMatrix
 	/// @param viewport
 	/// @tparam T Native type used for the computation. Currently supported: half (not recommanded), float or double.
 	/// @tparam U Currently supported: Floating-point types and integer types.
@@ -268,7 +268,7 @@ namespace glm
 	GLM_FUNC_DECL detail::tvec3<T, P> unProject(
 		detail::tvec3<T, P> const & win,
 		detail::tmat4x4<T, P> const & model,
-		detail::tmat4x4<T, P> const & proj,
+		detail::tmat4x4<T, P> const & _projectionMatrix,
 		detail::tvec4<U, P> const & viewport);
 
 	/// Define a picking region

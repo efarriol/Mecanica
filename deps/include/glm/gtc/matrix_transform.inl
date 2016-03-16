@@ -356,7 +356,7 @@ namespace glm
 	{
 		detail::tvec4<T, P> tmp = detail::tvec4<T, P>(obj, T(1));
 		tmp = model * tmp;
-		tmp = proj * tmp;
+		tmp = projectionMatrix * tmp;
 
 		tmp /= tmp.w;
 		tmp = tmp * T(0.5) + T(0.5);
@@ -371,11 +371,11 @@ namespace glm
 	(
 		detail::tvec3<T, P> const & win,
 		detail::tmat4x4<T, P> const & model,
-		detail::tmat4x4<T, P> const & proj,
+		detail::tmat4x4<T, P> const & _projectionMatrix,
 		detail::tvec4<U, P> const & viewport
 	)
 	{
-		detail::tmat4x4<T, P> Inverse = inverse(proj * model);
+		detail::tmat4x4<T, P> Inverse = inverse(_projectionMatrix * model);
 
 		detail::tvec4<T, P> tmp = detail::tvec4<T, P>(win, T(1));
 		tmp.x = (tmp.x - T(viewport[0])) / T(viewport[2]);

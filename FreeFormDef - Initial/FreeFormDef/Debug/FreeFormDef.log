@@ -1,19 +1,26 @@
-﻿Build started 11/03/2016 12:16:20.
-     1>Project "C:\Users\efarriol\Desktop\mecanica2\FreeFormDef - Initial\FreeFormDef\FreeFormDef.vcxproj" on node 2 (Build target(s)).
+﻿Compilación iniciada a las 11/03/2016 22:30:58.
+     1>Proyecto "C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\FreeFormDef\FreeFormDef.vcxproj" en el nodo 2 (Build destinos).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\efarriol\Desktop\mecanica2\FreeFormDef - Initial\\..\deps\include" /I"C:\Users\efarriol\Desktop\mecanica2\FreeFormDef - Initial\\..\deps\libs" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt MainMeshTest.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\\..\deps\include" /I"C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\\..\deps\libs" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt MainMeshTest.cpp
          MainMeshTest.cpp
-     1>c:\users\efarriol\desktop\mecanica2\freeformdef - initial\freeformdef\mainmeshtest.cpp(65): warning C4018: '<': signed/unsigned mismatch
-     1>c:\users\efarriol\desktop\mecanica2\freeformdef - initial\freeformdef\mainmeshtest.cpp(102): warning C4018: '<': signed/unsigned mismatch
-     1>c:\users\efarriol\desktop\mecanica2\freeformdef - initial\freeformdef\mainmeshtest.cpp(112): warning C4018: '<': signed/unsigned mismatch
-     1>c:\users\efarriol\desktop\mecanica2\freeformdef - initial\freeformdef\mainmeshtest.cpp(161): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(67): warning C4018: '<': no coinciden signed/unsigned
+     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(108): warning C4018: '<': no coinciden signed/unsigned
+     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(117): warning C4018: '<': no coinciden signed/unsigned
+     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(135): warning C4018: '<': no coinciden signed/unsigned
+     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(138): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(139): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(140): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(201): warning C4018: '<': no coinciden signed/unsigned
+     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(61): warning C4101: 's': variable local sin referencia
+     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(61): warning C4101: 't': variable local sin referencia
+     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(61): warning C4101: 'u': variable local sin referencia
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\efarriol\Desktop\mecanica2\FreeFormDef - Initial\Debug\FreeFormDef.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\efarriol\Desktop\mecanica2\FreeFormDef - Initial\Debug\FreeFormDef.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\efarriol\Desktop\mecanica2\FreeFormDef - Initial\Debug\FreeFormDef.lib" /MACHINE:X86 Debug\ComputingCoordinates.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\Debug\FreeFormDef.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\Debug\FreeFormDef.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\Debug\FreeFormDef.lib" /MACHINE:X86 Debug\ComputingCoordinates.obj
          Debug\Mesh.obj
          Debug\MainMeshTest.obj
-         FreeFormDef.vcxproj -> C:\Users\efarriol\Desktop\mecanica2\FreeFormDef - Initial\Debug\FreeFormDef.exe
-     1>Done Building Project "C:\Users\efarriol\Desktop\mecanica2\FreeFormDef - Initial\FreeFormDef\FreeFormDef.vcxproj" (Build target(s)).
+         FreeFormDef.vcxproj -> C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\Debug\FreeFormDef.exe
+     1>Compilación del proyecto terminada "C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\FreeFormDef\FreeFormDef.vcxproj" (Build destinos).
 
-Build succeeded.
+Compilación correcta.
 
-Time Elapsed 00:00:00.73
+Tiempo transcurrido 00:00:02.36

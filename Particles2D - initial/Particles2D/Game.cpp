@@ -103,7 +103,7 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	sysParticles.resize(_Numparticles);
 	// Initialize Particles
 	sysParticles[0].setPosition(0.0f, 0.8f, 0.0f);
-	sysParticles[0].setVelocity(0.5f, 0.0f, 0.0f);
+	sysParticles[0].setVelocity(2.0f, 1.0f, 0.0f);
 	sysParticles[0].setLifetime(50.0f);
 	sysParticles[0].setBouncing(0.8f);
 	sysParticles[0].setFixed(false);
@@ -125,6 +125,10 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	// LOAD the Botton-Plane
 	//----------------------
 	_planeBottom.setPointNormal(glm::vec3(0.0f, -1.0f, 0.0f),glm::vec3(0.0f, -1.0f, 0.0f));
+	_planeRight.setPointNormal(glm::vec3(1.0f, 0.0f, 0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+	_planeLeft.setPointNormal(glm::vec3(-1.0f, 0.0f, 0.0f), glm::vec3(-1.0f, 0.0f, 0.0f));
+	_planeTop.setPointNormal(glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+
 }
 
 /*
@@ -217,22 +221,49 @@ void Game::executeActions() {
 
 	float disact, disant;
 
-	if (sysParticles[0].getLifetime() > 0) {
-		disant = _planeBottom.distPoint2Plane(sysParticles[0].getCurrentPosition());
-		sysParticles[0].setForce(0.0f, 0.0f, 0.0f);  //Avoid to accumulate
-		sysParticles[0].addForce(0.0f, -9.8f, 0.0f); //gravity
-		sysParticles[0].updateParticle(_dt, Particle::UpdateMethod::EulerSemi);
+		if (sysParticles[0].getLifetime() > 0) {
+			disant = _planeBottom.distPoint2Plane(sysParticles[0].getCurrentPosition());
+			sysParticles[0].setForce(0.0f, 0.0f, 0.0f);  //Avoid to accumulate
+			sysParticles[0].addForce(0.0f, -9.8f, 0.0f); //gravity
+			sysParticles[0].updateParticle(_dt, Particle::UpdateMethod::EulerSemi);
 
-		//Check for floor collisions
-		sysParticles[0].setLifetime(sysParticles[0].getLifetime() - _dt); //lifetime is decreased
-		disact = _planeBottom.distPoint2Plane(sysParticles[0].getCurrentPosition());
-		if (disant*disact < 0.0f) {
-			//only valid for the plane y=0 (floor plane)
-			glm::vec3 correcPos = -(1 + sysParticles[0].getBouncing()) * disact *_planeBottom.normal;
-			glm::vec3 correcVel = -(1 + sysParticles[0].getBouncing()) * (sysParticles[0].getVelocity()*_planeBottom.normal)*_planeBottom.normal;
-			sysParticles[0].setPosition(sysParticles[0].getCurrentPosition()+correcPos);
-			sysParticles[0].setVelocity(sysParticles[0].getVelocity()+correcVel);
-		}
+			//Check for floor collisions
+			sysParticles[0].setLifetime(sysParticles[0].getLifetime() - _dt); //lifetime is decreased
+
+			disact = _planeBottom.distPoint2Plane(sysParticles[0].getCurrentPosition());
+			if (disant*disact < 0.0f) {
+				//only valid for the plane y=0 (floor plane)
+				glm::vec3 correcPos = -(1 + sysParticles[0].getBouncing()) * disact *_planeBottom.normal;
+				glm::vec3 correcVel = -(1 + sysParticles[0].getBouncing()) * (sysParticles[0].getVelocity()*_planeBottom.normal)*_planeBottom.normal;
+				sysParticles[0].setPosition(sysParticles[0].getCurrentPosition() + correcPos);
+				sysParticles[0].setVelocity(sysParticles[0].getVelocity() + correcVel);
+			}
+
+			disact = _planeRight.distPoint2Plane(sysParticles[0].getCurrentPosition());
+			if (disant*disact < 0.0f) {
+				//only valid for the plane y=0 (floor plane)
+				glm::vec3 correcPos = -(1 + sysParticles[0].getBouncing()) * disact *_planeRight.normal;
+				glm::vec3 correcVel = -(1 + sysParticles[0].getBouncing()) * (sysParticles[0].getVelocity()*_planeRight.normal)*_planeRight.normal;
+				sysParticles[0].setPosition(sysParticles[0].getCurrentPosition() + correcPos);
+				sysParticles[0].setVelocity(sysParticles[0].getVelocity() + correcVel);
+			}
+			disact = _planeLeft.distPoint2Plane(sysParticles[0].getCurrentPosition());
+			if (disant*disact < 0.0f) {
+				//only valid for the plane y=0 (floor plane)
+				glm::vec3 correcPos = -(1 + sysParticles[0].getBouncing()) * disact *_planeLeft.normal;
+				glm::vec3 correcVel = -(1 + sysParticles[0].getBouncing()) * (sysParticles[0].getVelocity()*_planeLeft.normal)*_planeLeft.normal;
+				sysParticles[0].setPosition(sysParticles[0].getCurrentPosition() + correcPos);
+				sysParticles[0].setVelocity(sysParticles[0].getVelocity() + correcVel);
+			}
+			disact = _planeTop.distPoint2Plane(sysParticles[0].getCurrentPosition());
+			if (disant*disact < 0.0f) {
+				//only valid for the plane y=0 (floor plane)
+				glm::vec3 correcPos = -(1 + sysParticles[0].getBouncing()) * disact *_planeTop.normal;
+				glm::vec3 correcVel = -(1 + sysParticles[0].getBouncing()) * (sysParticles[0].getVelocity()*_planeTop.normal)*_planeTop.normal;
+				sysParticles[0].setPosition(sysParticles[0].getCurrentPosition() + correcPos);
+				sysParticles[0].setVelocity(sysParticles[0].getVelocity() + correcVel);
+			}
+		
 	}
 
 

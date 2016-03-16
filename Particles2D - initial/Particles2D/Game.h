@@ -7,6 +7,7 @@
 #include "InputManager.h"
 #include "GLSLProgram.h"
 #include "Particle.h"
+#include "Constants.h"
 #include "GeometryPlane.h"
 
 // standard C++ libraries
@@ -55,6 +56,9 @@ class Game {
 		int _Numparticles = 1;
 		float _dt = 0.01; //Simulation time step
 		Plane _planeBottom; //
+		Plane _planeRight;
+		Plane _planeLeft;
+		Plane _planeTop;
 //		Polygon _polTriang;
 };
 

@@ -81,7 +81,7 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	//	vertexData[i] = vertexData[i] + glm::vec3(0.4f, 0.4f, 0.0f); //translate to point (0.4,0.4), no matter about z value. 
 	//}
 	glBufferData(GL_ARRAY_BUFFER, vertexData.size()*sizeof(glm::vec3), &vertexData[0], GL_STATIC_DRAW);
-	
+
 	// connect the xyz to the "vert" attribute of the vertex shader
 	glEnableVertexAttribArray(_glProgram.getAttribLocation("vert"));
 	glVertexAttribPointer(_glProgram.getAttribLocation("vert"), 3, GL_FLOAT, GL_FALSE, 0, NULL);
@@ -89,6 +89,11 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	// unbind the VBO and VAO
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	glBindVertexArray(0);
+
+
+	
+
+
 
 	//-------------------------------------
 	// INIT and LOAD the Particle System
@@ -105,7 +110,7 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	sysParticles[0].setPosition(0.0f, 0.8f, 0.0f);
 	sysParticles[0].setVelocity(2.0f, 1.0f, 0.0f);
 	sysParticles[0].setLifetime(50.0f);
-	sysParticles[0].setBouncing(0.8f);
+	sysParticles[0].setBouncing(1.0f);
 	sysParticles[0].setFixed(false);
 
 	posSysPart.resize(_Numparticles);
@@ -120,6 +125,39 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	// unbind the VBO and VAO
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	glBindVertexArray(0);
+
+
+
+	//////////////////////////////////////////////////////////
+	glBindVertexArray(gVAO[2]);
+	// make and bind the VBO
+	glGenBuffers(1, &gVBO[2]);
+	glBindBuffer(GL_ARRAY_BUFFER, gVBO[2]);
+
+	std::vector<glm::vec2> vertexData2;
+	float angle;
+	float radius = 5.f;
+	for (int i = 1; i <= 20; i++) {
+		angle = glm::radians((2 * 3.14159265359) / i);
+		vertexData2.push_back(glm::vec2(radius*glm::cos(angle), radius*glm::sin(angle)));
+	}
+
+	glBufferData(GL_ARRAY_BUFFER, vertexData2.size()*sizeof(glm::vec2), &vertexData2[0], GL_STATIC_DRAW);
+	// connect the xyz to the "vert" attribute of the vertex shader
+	glEnableVertexAttribArray(_glProgram.getAttribLocation("vert"));
+	glVertexAttribPointer(_glProgram.getAttribLocation("vert"), 3, GL_FLOAT, GL_FALSE, 0, NULL);
+
+	// unbind the VBO and VAO
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindVertexArray(0);
+
+
+
+
+
+	/////////////////////////////////////////////////
+
+
 
 	//----------------------
 	// LOAD the Botton-Plane
@@ -224,7 +262,7 @@ void Game::executeActions() {
 		if (sysParticles[0].getLifetime() > 0) {
 			disant = _planeBottom.distPoint2Plane(sysParticles[0].getCurrentPosition());
 			sysParticles[0].setForce(0.0f, 0.0f, 0.0f);  //Avoid to accumulate
-			sysParticles[0].addForce(0.0f, -9.8f, 0.0f); //gravity
+			sysParticles[0].addForce(0.0f, -5.622f, 0.0f); //gravity
 			sysParticles[0].updateParticle(_dt, Particle::UpdateMethod::EulerSemi);
 
 			//Check for floor collisions
@@ -295,10 +333,18 @@ void Game::drawGame() {
 	_glProgram.use();
 
 	/////////
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	// bind the VAO (the triangle)
 	glBindVertexArray(gVAO[0]);
 	// draw the VAO
 	glDrawArrays(GL_TRIANGLES, 0, 3);
+	// unbind the VAO
+	glBindVertexArray(0);
+
+
+	glBindVertexArray(gVAO[2]);
+	// draw the VAO
+	glDrawArrays(GL_LINE_LOOP, 0, 20);
 	// unbind the VAO
 	glBindVertexArray(0);
 

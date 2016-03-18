@@ -10,6 +10,7 @@
 #include "Constants.h"
 #include "GeometryPlane.h"
 
+
 // standard C++ libraries
 #include <iostream>
 //#include <math.h>
@@ -17,7 +18,7 @@
 //Game has two possible states: PLAY or EXIT
 enum class GameState{INIT, PLAY, EXIT};
 
-const int NumGameObj = 2; //Triangle, SysParticles
+const int NumGameObj = 3; //Triangle, SysParticles, Circle
 
 //This class manages the game execution
 class Game {

@@ -2,6 +2,7 @@
 #include <glm\glm.hpp>
 #include <vector>
 
+
 struct Geometry{
 	virtual void setPosition(const glm::vec3& newPos) = 0;
 	virtual bool isInside(const glm::vec3& point) = 0;
@@ -22,5 +23,3 @@ struct Plane : public Geometry {
 	glm::vec3 closestPointInPlane(const glm::vec3& point);
 	bool intersecSegment(const glm::vec3& punt1, const glm::vec3& punt2, glm::vec3& pTall);
 };	
-
-

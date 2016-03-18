@@ -53,5 +53,3 @@ bool Plane::intersecSegment(const glm::vec3& point1, const glm::vec3& point2, gl
 	return true;
 };
 
-
-

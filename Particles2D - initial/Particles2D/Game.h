@@ -61,5 +61,9 @@ class Game {
 		Plane _planeLeft;
 		Plane _planeTop;
 //		Polygon _polTriang;
+		std::vector<glm::vec3> vertexData;
+		std::vector<glm::vec3> vertexCircle;
+		int nCirclePoints;
+		int count = 0;
 };
 

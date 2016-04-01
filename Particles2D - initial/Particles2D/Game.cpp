@@ -68,7 +68,7 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	glBindBuffer(GL_ARRAY_BUFFER, gVBO[0]);
 
 	// define vertex coordinates
-	std::vector<glm::vec3> vertexData;
+
 	float mida = 0.2f;
 //	float altura = sin(M_PI / 4.0f) * (2 * mida);
 	float altura = sqrt(2.0f) * mida;
@@ -134,15 +134,17 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	glGenBuffers(1, &gVBO[2]);
 	glBindBuffer(GL_ARRAY_BUFFER, gVBO[2]);
 
-	std::vector<glm::vec2> vertexData2;
-	float angle;
-	float radius = 5.f;
-	for (int i = 1; i <= 20; i++) {
-		angle = glm::radians((2 * 3.14159265359) / i);
-		vertexData2.push_back(glm::vec2(radius*glm::cos(angle), radius*glm::sin(angle)));
+	nCirclePoints = 20;
+	float slice = 2 * M_PI / nCirclePoints;
+	float radius = 0.30f;
+	for (int i = 0; i < nCirclePoints; i++) {
+		float angle = slice * i;
+		float newX = (radius * glm::cos(angle));
+		float newY = (radius * glm::sin(angle));
+		vertexCircle.push_back(glm::vec3(newX, newY, 0.0f));
 	}
 
-	glBufferData(GL_ARRAY_BUFFER, vertexData2.size()*sizeof(glm::vec2), &vertexData2[0], GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, vertexCircle.size()*sizeof(glm::vec3), &vertexCircle[0], GL_STATIC_DRAW);
 	// connect the xyz to the "vert" attribute of the vertex shader
 	glEnableVertexAttribArray(_glProgram.getAttribLocation("vert"));
 	glVertexAttribPointer(_glProgram.getAttribLocation("vert"), 3, GL_FLOAT, GL_FALSE, 0, NULL);
@@ -193,14 +195,14 @@ void Game::gameLoop() {
 			//Execute actions based on the input events
 		executeActions();
 		time = time + _dt;
-		std::cout << "Total time = " << time << std::endl;
+		//std::cout << "Total time = " << time << std::endl;
 			//Draw the objects on the screen
 		drawGame();			
 			//Delay (or not) the execution for allowing the expected FPS
 		_fps = _fpsLimiter.end();
 			//Draw the current FPS in the console
 		if (frameCounter == 10) {
-			cout << "FPS:" << _fps << endl;
+			//cout << "FPS:" << _fps << endl;
 			frameCounter = 0;
 		}
 		frameCounter++;
@@ -301,6 +303,27 @@ void Game::executeActions() {
 				sysParticles[0].setPosition(sysParticles[0].getCurrentPosition() + correcPos);
 				sysParticles[0].setVelocity(sysParticles[0].getVelocity() + correcVel);
 			}
+
+			float alpha;
+			
+			int intersectCount = 0;
+			for (int i = 0; i < 3 -1; i++) {
+				if (vertexData[i].x > sysParticles[0].getCurrentPosition().x) { /////CACAAAA DE EXCEPCIO
+					alpha = (sysParticles[0].getCurrentPosition().y - vertexData[i].y) / (vertexData[i + 1].y - vertexData[i].y);
+
+					if (alpha > 0 && alpha < 1) {
+						intersectCount++;
+						count++;
+						cout << count << endl;
+					}
+				}
+			}
+			if (intersectCount%2 != 0) {
+				cout << "isInside" << endl;
+				
+			}
+
+
 		
 	}
 
@@ -344,7 +367,7 @@ void Game::drawGame() {
 
 	glBindVertexArray(gVAO[2]);
 	// draw the VAO
-	glDrawArrays(GL_LINE_LOOP, 0, 20);
+	glDrawArrays(GL_LINE_LOOP, 0, nCirclePoints);
 	// unbind the VAO
 	glBindVertexArray(0);
 

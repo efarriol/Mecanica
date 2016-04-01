@@ -1,7 +1,7 @@
 #include "Game.h"
 
 int main(int argc, char ** argv) {
-	Game game("Game Particle2D", 800, 600, 60);
+	Game game("Game Particle2D", 800, 800, 60);
 
 	try {
 		game.run();

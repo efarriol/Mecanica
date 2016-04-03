@@ -55,7 +55,7 @@ class Game {
 		vector<glm::vec3> posSysPart; //Only position is needed for draw
 		vector<Particle> sysParticles;
 		int _Numparticles = 1;
-		float _dt = 0.01; //Simulation time step
+		float _dt = 0.01f; //Simulation time step
 		Plane _planeBottom; //
 		Plane _planeRight;
 		Plane _planeLeft;

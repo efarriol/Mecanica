@@ -107,7 +107,7 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	sysParticles.resize(_Numparticles);
 	// Initialize Particles
 	sysParticles[0].setPosition(0.0f, 0.8f, 0.0f);
-	sysParticles[0].setVelocity(1.0f, 1.0f, 0.0f);
+	sysParticles[0].setVelocity(5.0f, 1.0f, 0.0f);
 	sysParticles[0].setLifetime(50.0f);
 	sysParticles[0].setBouncing(1.0f);
 	sysParticles[0].setFixed(false);
@@ -133,9 +133,9 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	glGenBuffers(1, &gVBO[2]);
 	glBindBuffer(GL_ARRAY_BUFFER, gVBO[2]);
 
-	nCirclePoints = 50;
+	nCirclePoints = 25;
 	float slice = 2 * M_PI / nCirclePoints;
-	float radius = 0.2f;
+	float radius = 0.3f;
 	float centerX = 0.0f;
 	float centerY = 0.0f;
 	for (int i = 0; i < nCirclePoints; i++) {
@@ -321,27 +321,29 @@ void Game::executeActions() {
 				}
 			}
 			if (intersectCount%2 != 0) {
-				int collisionVertex;
+				glm::vec3 n(0);
 				glm::vec3 collisionVector(0);
+				float d;
 				for (int i = 0; i < nCirclePoints; i++) {
 					if (i < nCirclePoints - 1) collisionVector = vertexCircle[i + 1] - vertexCircle[i];
 					else if (i == nCirclePoints - 1) collisionVector = vertexCircle[0] - vertexCircle[i];
-					_intersectPlane.setPointNormal(vertexCircle[i], glm::vec3(collisionVector.y, -collisionVector.x, 0.0f));
-					if (_intersectPlane.intersecSegment(sysParticles[0].getPreviousPosition(), sysParticles[0].getCurrentPosition(), glm::vec3(NULL))) {
-						collisionVertex = i;
+					n = (glm::vec3(collisionVector.y, -collisionVector.x, 0) / glm::length(collisionVector));
+					d = glm::dot(-n, vertexCircle[i]);
+					alpha = (-d - glm::dot(n,sysParticles[0].getPreviousPosition())) / (glm::dot(n,sysParticles[0].getCurrentPosition()));
+					if (alpha > 0 && alpha < 1) {
+						glm::vec3 v = vertexCircle[i + 1] - vertexCircle[i];
+						n = glm::vec3(v.y, -v.x, 0) / glm::length(v);
+						d = glm::dot(-n, vertexCircle[i]);
+						glm::vec3 correcPos =  - (1 + sysParticles[0].getBouncing())*(n*sysParticles[0].getCurrentPosition() + d)*n;
+						glm::vec3 correcVel =  - (1 + sysParticles[0].getBouncing())*(n*sysParticles[0].getVelocity())*n;
+						sysParticles[0].setPosition(sysParticles[0].getPreviousPosition());
+						sysParticles[0].setVelocity(sysParticles[0].getVelocity() + correcVel);
 						break;
 					}
 				}
-				glm::vec3 v = vertexCircle[collisionVertex + 1] - vertexCircle[collisionVertex];
-				glm::vec3 n = glm::vec3(v.y, -v.x, 0) / glm::length(v);
-				float d = glm::dot(-n, vertexCircle[collisionVertex]);
-				glm::vec3 correcPos = sysParticles[0].getCurrentPosition()-(1 + sysParticles[0].getBouncing())*(n*sysParticles[0].getCurrentPosition() + d)*n;
-				glm::vec3 correcVel = sysParticles[0].getVelocity() - (1+sysParticles[0].getBouncing())*(n*sysParticles[0].getVelocity())*n;
-				sysParticles[0].setPosition(correcPos);
-				sysParticles[0].setVelocity(correcVel);
+
 			}
 	}
-
 
 
 	glm::vec3 posicio=sysParticles[0].getCurrentPosition();

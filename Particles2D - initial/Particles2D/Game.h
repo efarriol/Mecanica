@@ -60,6 +60,7 @@ class Game {
 		Plane _planeRight;
 		Plane _planeLeft;
 		Plane _planeTop;
+		Plane _intersectPlane;
 //		Polygon _polTriang;
 		std::vector<glm::vec3> vertexData;
 		std::vector<glm::vec3> vertexCircle;

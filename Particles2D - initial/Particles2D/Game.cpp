@@ -2,7 +2,6 @@
 
 Game::Game(std::string windowTitle, int screenWidth, int screenHeight, int maxFPS) :
 	_windowTitle(windowTitle), _screenWidth(screenWidth), _screenHeight(screenHeight),_gameState(GameState::INIT), _maxFPS(maxFPS) {
-
 }
 
 Game::~Game()
@@ -108,7 +107,7 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	sysParticles.resize(_Numparticles);
 	// Initialize Particles
 	sysParticles[0].setPosition(0.0f, 0.8f, 0.0f);
-	sysParticles[0].setVelocity(2.0f, 1.0f, 0.0f);
+	sysParticles[0].setVelocity(1.0f, 1.0f, 0.0f);
 	sysParticles[0].setLifetime(50.0f);
 	sysParticles[0].setBouncing(1.0f);
 	sysParticles[0].setFixed(false);
@@ -134,13 +133,15 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	glGenBuffers(1, &gVBO[2]);
 	glBindBuffer(GL_ARRAY_BUFFER, gVBO[2]);
 
-	nCirclePoints = 20;
+	nCirclePoints = 50;
 	float slice = 2 * M_PI / nCirclePoints;
-	float radius = 0.30f;
+	float radius = 0.2f;
+	float centerX = 0.0f;
+	float centerY = 0.0f;
 	for (int i = 0; i < nCirclePoints; i++) {
 		float angle = slice * i;
-		float newX = (radius * glm::cos(angle));
-		float newY = (radius * glm::sin(angle));
+		float newX = centerX +radius * glm::cos(angle);
+		float newY = centerY + radius * glm::sin(angle);
 		vertexCircle.push_back(glm::vec3(newX, newY, 0.0f));
 	}
 
@@ -305,12 +306,13 @@ void Game::executeActions() {
 			}
 
 			float alpha;
-			
 			int intersectCount = 0;
-			for (int i = 0; i < 3 -1; i++) {
-				if (vertexData[i].x > sysParticles[0].getCurrentPosition().x) { /////CACAAAA DE EXCEPCIO
-					alpha = (sysParticles[0].getCurrentPosition().y - vertexData[i].y) / (vertexData[i + 1].y - vertexData[i].y);
 
+			for (int i = 0; i < nCirclePoints; i++) {
+				if (vertexCircle[i].x >= sysParticles[0].getCurrentPosition().x) { /////CACAAAA DE EXCEPCIO
+
+					if(i < nCirclePoints - 1) alpha = (sysParticles[0].getCurrentPosition().y - vertexCircle[i].y) / (vertexCircle[i + 1].y - vertexCircle[i].y);
+					else if(i == nCirclePoints-1 ) alpha = (sysParticles[0].getCurrentPosition().y - vertexCircle[i].y) / (vertexCircle[0].y - vertexCircle[i].y);
 					if (alpha > 0 && alpha < 1) {
 						intersectCount++;
 						count++;
@@ -319,12 +321,25 @@ void Game::executeActions() {
 				}
 			}
 			if (intersectCount%2 != 0) {
-				cout << "isInside" << endl;
-				
+				int collisionVertex;
+				glm::vec3 collisionVector(0);
+				for (int i = 0; i < nCirclePoints; i++) {
+					if (i < nCirclePoints - 1) collisionVector = vertexCircle[i + 1] - vertexCircle[i];
+					else if (i == nCirclePoints - 1) collisionVector = vertexCircle[0] - vertexCircle[i];
+					_intersectPlane.setPointNormal(vertexCircle[i], glm::vec3(collisionVector.y, -collisionVector.x, 0.0f));
+					if (_intersectPlane.intersecSegment(sysParticles[0].getPreviousPosition(), sysParticles[0].getCurrentPosition(), glm::vec3(NULL))) {
+						collisionVertex = i;
+						break;
+					}
+				}
+				glm::vec3 v = vertexCircle[collisionVertex + 1] - vertexCircle[collisionVertex];
+				glm::vec3 n = glm::vec3(v.y, -v.x, 0) / glm::length(v);
+				float d = glm::dot(-n, vertexCircle[collisionVertex]);
+				glm::vec3 correcPos = sysParticles[0].getCurrentPosition()-(1 + sysParticles[0].getBouncing())*(n*sysParticles[0].getCurrentPosition() + d)*n;
+				glm::vec3 correcVel = sysParticles[0].getVelocity() - (1+sysParticles[0].getBouncing())*(n*sysParticles[0].getVelocity())*n;
+				sysParticles[0].setPosition(correcPos);
+				sysParticles[0].setVelocity(correcVel);
 			}
-
-
-		
 	}
 
 

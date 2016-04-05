@@ -329,14 +329,14 @@ void Game::executeActions() {
 					else if (i == nCirclePoints - 1) collisionVector = vertexCircle[0] - vertexCircle[i];
 					n = (glm::vec3(collisionVector.y, -collisionVector.x, 0) / glm::length(collisionVector));
 					d = glm::dot(-n, vertexCircle[i]);
-					alpha = (-d - glm::dot(n,sysParticles[0].getPreviousPosition())) / (glm::dot(n,sysParticles[0].getCurrentPosition()));
+					alpha = (-d - glm::dot(n,sysParticles[0].getPreviousPosition())) / (glm::dot(n,sysParticles[0].getCurrentPosition()- sysParticles[0].getPreviousPosition()));
 					if (alpha > 0 && alpha < 1) {
 						glm::vec3 v = vertexCircle[i + 1] - vertexCircle[i];
 						n = glm::vec3(v.y, -v.x, 0) / glm::length(v);
 						d = glm::dot(-n, vertexCircle[i]);
-						glm::vec3 correcPos =  - (1 + sysParticles[0].getBouncing())*(n*sysParticles[0].getCurrentPosition() + d)*n;
-						glm::vec3 correcVel =  - (1 + sysParticles[0].getBouncing())*(n*sysParticles[0].getVelocity())*n;
-						sysParticles[0].setPosition(sysParticles[0].getPreviousPosition());
+						glm::vec3 correcPos =  - (1 + sysParticles[0].getBouncing())*(glm::dot(n,sysParticles[0].getCurrentPosition()) + d)*n;
+						glm::vec3 correcVel =  - (1 + sysParticles[0].getBouncing())*glm::dot(n,sysParticles[0].getVelocity())*n;
+						sysParticles[0].setPosition(sysParticles[0].getPreviousPosition() + correcPos);
 						sysParticles[0].setVelocity(sysParticles[0].getVelocity() + correcVel);
 						break;
 					}

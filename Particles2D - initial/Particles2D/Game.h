@@ -16,55 +16,53 @@
 //#include <math.h>
 
 //Game has two possible states: PLAY or EXIT
-enum class GameState{INIT, PLAY, EXIT};
+enum class GameState { INIT, PLAY, EXIT };
 
 const int NumGameObj = 3; //Triangle, SysParticles, Circle
 
-//This class manages the game execution
+						  //This class manages the game execution
 class Game {
-	public:			
-			//Constructor			
-		Game(std::string windowTitle, int screenWidth, int screenHeight, int maxFPS);
-		~Game();				//Destructor
-		void run();					//Game execution
+public:
+	//Constructor			
+	Game(std::string windowTitle, int screenWidth, int screenHeight, int maxFPS);
+	~Game();				//Destructor
+	void run();					//Game execution
 
-	private:
-			//Attributes	
-		std::string _windowTitle;
-		int _screenWidth;			//Screen width in pixels				
-		int _screenHeight;			//Screen height in pixels				
-		int _maxFPS;				//The maximum FPS that we will generate
-		GameState _gameState;		//It describes the game state		
-		GLuint gVAO[NumGameObj];
-		GLuint gVBO[NumGameObj];
-	
-			//Internal methods
-		void initSystems();
-		void loadShaders();
-		void loadGameObjects(const int& NumGameObj);
-//		void loadTextures();
-		void gameLoop();
-		void processInput();
-		void executeActions();
-		void drawGame();
+private:
+	//Attributes	
+	std::string _windowTitle;
+	int _screenWidth;			//Screen width in pixels				
+	int _screenHeight;			//Screen height in pixels				
+	int _maxFPS;				//The maximum FPS that we will generate
+	GameState _gameState;		//It describes the game state		
+	GLuint gVAO[NumGameObj];
+	GLuint gVBO[NumGameObj];
 
-		Window _window;
-		FpsLimiter _fpsLimiter;
-		InputManager _inputManager;
-		GLSLProgram _glProgram;
-		vector<glm::vec3> posSysPart; //Only position is needed for draw
-		vector<Particle> sysParticles;
-		int _Numparticles = 1;
-		float _dt = 0.01f; //Simulation time step
-		Plane _planeBottom; //
-		Plane _planeRight;
-		Plane _planeLeft;
-		Plane _planeTop;
-		Plane _intersectPlane;
-//		Polygon _polTriang;
-		std::vector<glm::vec3> vertexData;
-		std::vector<glm::vec3> vertexCircle;
-		int nCirclePoints;
-		int count = 0;
+	//Internal methods
+	void initSystems();
+	void loadShaders();
+	void loadGameObjects(const int& NumGameObj);
+	//		void loadTextures();
+	void gameLoop();
+	void processInput();
+	void executeActions();
+	void drawGame();
+
+	Window _window;
+	FpsLimiter _fpsLimiter;
+	InputManager _inputManager;
+	GLSLProgram _glProgram;
+	vector<glm::vec3> posSysPart; //Only position is needed for draw
+	vector<Particle> sysParticles;
+	int _Numparticles = 10;
+	float _dt = 0.01f; //Simulation time step
+	Plane _planeBottom; //
+	Plane _planeRight;
+	Plane _planeLeft;
+	Plane _planeTop;
+	Plane _intersectPlane;
+	//		Polygon _polTriang;
+	std::vector<glm::vec3> vertexData[NumGameObj - 1];
+	int nCirclePoints;
 };
 

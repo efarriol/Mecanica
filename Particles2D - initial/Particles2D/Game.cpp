@@ -1,7 +1,9 @@
 #include "Game.h"
-
+#include <time.h>
+#include <random>
+#define rand01() ((float)std::rand()/RAND_MAX)
 Game::Game(std::string windowTitle, int screenWidth, int screenHeight, int maxFPS) :
-	_windowTitle(windowTitle), _screenWidth(screenWidth), _screenHeight(screenHeight),_gameState(GameState::INIT), _maxFPS(maxFPS) {
+	_windowTitle(windowTitle), _screenWidth(screenWidth), _screenHeight(screenHeight), _gameState(GameState::INIT), _maxFPS(maxFPS) {
 }
 
 Game::~Game()
@@ -12,9 +14,9 @@ Game::~Game()
 * Game execution
 */
 void Game::run() {
-		//System initializations
+	//System initializations
 	initSystems();
-		//Start the game if all the elements are ready
+	//Start the game if all the elements are ready
 	gameLoop();
 	//system("pause"); //Don't close the command window
 }
@@ -23,15 +25,15 @@ void Game::run() {
 * Initializes all the game engine components
 */
 void Game::initSystems() {
-		//Create an Opengl window using SDL
+	//Create an Opengl window using SDL
 	_window.create(_windowTitle, _screenWidth, _screenHeight, 0);
-		//Set the max fps
+	//Set the max fps
 	_fpsLimiter.setMaxFPS(_maxFPS);
-		//Compile and Link shader
+	//Compile and Link shader
 	loadShaders();
-		//Load all the Game Objects
+	//Load all the Game Objects
 	loadGameObjects(NumGameObj);
-		//Load and prepare the textures
+	//Load and prepare the textures
 	//loadTextures();	
 }
 
@@ -39,13 +41,13 @@ void Game::initSystems() {
 * Compiles, sets the variables between C++ and the Shader program and links the shader program
 */
 void Game::loadShaders() {
-		//Compile the shaders
+	//Compile the shaders
 	_glProgram.addShader(GL_VERTEX_SHADER, "./vertex-shader.txt");
 	_glProgram.addShader(GL_FRAGMENT_SHADER, "./fragment-shader.txt");
 	_glProgram.compileShaders();
-		//Attributes must be added before linking the code
+	//Attributes must be added before linking the code
 	_glProgram.addAttribute("vert");
-		//Link the compiled shaders
+	//Link the compiled shaders
 	_glProgram.linkShaders();
 }
 
@@ -55,7 +57,7 @@ void Game::loadShaders() {
 void Game::loadGameObjects(const int& NumGameObj) {
 	// make and bind the VAO
 	glGenVertexArrays(NumGameObj, &gVAO[0]);
-	
+
 	//----------------------
 	// LOAD the Triangle
 	//----------------------
@@ -69,17 +71,17 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	// define vertex coordinates
 
 	float mida = 0.2f;
-//	float altura = sin(M_PI / 4.0f) * (2 * mida);
+	//	float altura = sin(M_PI / 4.0f) * (2 * mida);
 	float altura = sqrt(2.0f) * mida;
-	vertexData.push_back(glm::vec3(-mida+0.1f, 0.0f, 0.0f));
-	vertexData.push_back(glm::vec3(mida+0.1f, 0.0f, 0.0f));
-	vertexData.push_back(glm::vec3(0.1f, altura, 0.0f));
+	vertexData[0].push_back(glm::vec3(-mida + 0.1f, 0.0f, 0.0f));
+	vertexData[0].push_back(glm::vec3(mida + 0.1f, 0.0f, 0.0f));
+	vertexData[0].push_back(glm::vec3(0.1f, altura, 0.0f));
 
 
 	//for (int i = 0; i < 3; i++) {
 	//	vertexData[i] = vertexData[i] + glm::vec3(0.4f, 0.4f, 0.0f); //translate to point (0.4,0.4), no matter about z value. 
 	//}
-	glBufferData(GL_ARRAY_BUFFER, vertexData.size()*sizeof(glm::vec3), &vertexData[0], GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, vertexData[0].size()*sizeof(glm::vec3), &vertexData[0][0], GL_STATIC_DRAW);
 
 	// connect the xyz to the "vert" attribute of the vertex shader
 	glEnableVertexAttribArray(_glProgram.getAttribLocation("vert"));
@@ -90,14 +92,14 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	glBindVertexArray(0);
 
 
-	
+
 
 
 
 	//-------------------------------------
 	// INIT and LOAD the Particle System
 	//-------------------------------------
-	
+
 	// make and bind the VAO
 	glBindVertexArray(gVAO[1]);
 	// make and bind the VBO
@@ -106,16 +108,18 @@ void Game::loadGameObjects(const int& NumGameObj) {
 
 	sysParticles.resize(_Numparticles);
 	// Initialize Particles
-	sysParticles[0].setPosition(0.0f, 0.8f, 0.0f);
-	sysParticles[0].setVelocity(5.0f, 1.0f, 0.0f);
-	sysParticles[0].setLifetime(50.0f);
-	sysParticles[0].setBouncing(1.0f);
-	sysParticles[0].setFixed(false);
+	srand(time(NULL));
+	for (int i = 0; i < _Numparticles; i++) {
+		sysParticles[i].setPosition(0.0f, 1.0f, 0.0f);
+		sysParticles[i].setVelocity((rand01() -0.5), 3, 0);
+		sysParticles[i].setLifetime(50.0f);
+		sysParticles[i].setBouncing(1.0f);
+		sysParticles[i].setFixed(false);
 
-	posSysPart.resize(_Numparticles);
-	posSysPart[0] = sysParticles[0].getCurrentPosition(); //Copy position values
-
-//	glBufferData(GL_ARRAY_BUFFER, sizeof(posSysPart), posSysPart, GL_STATIC_DRAW);
+		posSysPart.resize(_Numparticles);
+		posSysPart[i] = sysParticles[i].getCurrentPosition(); //Copy position values
+	}
+	//	glBufferData(GL_ARRAY_BUFFER, sizeof(posSysPart), posSysPart, GL_STATIC_DRAW);
 	glBufferData(GL_ARRAY_BUFFER, posSysPart.size()*sizeof(glm::vec3), &posSysPart[0], GL_STREAM_DRAW);
 	// connect the xyz to the "vert" attribute of the vertex shader
 	glEnableVertexAttribArray(_glProgram.getAttribLocation("vert"));
@@ -133,19 +137,19 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	glGenBuffers(1, &gVBO[2]);
 	glBindBuffer(GL_ARRAY_BUFFER, gVBO[2]);
 
-	nCirclePoints = 25;
+	nCirclePoints = 10;
 	float slice = 2 * M_PI / nCirclePoints;
 	float radius = 0.3f;
-	float centerX = 0.0f;
-	float centerY = 0.0f;
+	float centerX = -0.5f;
+	float centerY = -0.3f;
 	for (int i = 0; i < nCirclePoints; i++) {
 		float angle = slice * i;
-		float newX = centerX +radius * glm::cos(angle);
+		float newX = centerX + radius * glm::cos(angle);
 		float newY = centerY + radius * glm::sin(angle);
-		vertexCircle.push_back(glm::vec3(newX, newY, 0.0f));
+		vertexData[1].push_back(glm::vec3(newX, newY, 0.0f));
 	}
 
-	glBufferData(GL_ARRAY_BUFFER, vertexCircle.size()*sizeof(glm::vec3), &vertexCircle[0], GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, vertexData[1].size()*sizeof(glm::vec3), &vertexData[1][0], GL_STATIC_DRAW);
 	// connect the xyz to the "vert" attribute of the vertex shader
 	glEnableVertexAttribArray(_glProgram.getAttribLocation("vert"));
 	glVertexAttribPointer(_glProgram.getAttribLocation("vert"), 3, GL_FLOAT, GL_FALSE, 0, NULL);
@@ -165,7 +169,7 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	//----------------------
 	// LOAD the Botton-Plane
 	//----------------------
-	_planeBottom.setPointNormal(glm::vec3(0.0f, -1.0f, 0.0f),glm::vec3(0.0f, -1.0f, 0.0f));
+	_planeBottom.setPointNormal(glm::vec3(0.0f, -1.0f, 0.0f), glm::vec3(0.0f, -1.0f, 0.0f));
 	_planeRight.setPointNormal(glm::vec3(1.0f, 0.0f, 0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 	_planeLeft.setPointNormal(glm::vec3(-1.0f, 0.0f, 0.0f), glm::vec3(-1.0f, 0.0f, 0.0f));
 	_planeTop.setPointNormal(glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
@@ -176,7 +180,7 @@ void Game::loadGameObjects(const int& NumGameObj) {
 * Loads and prepares the textures
 */
 //void Game::loadTextures() {
-	//	
+//	
 //}
 
 
@@ -189,19 +193,19 @@ void Game::gameLoop() {
 	_gameState = GameState::PLAY;
 	float time = 0.0f;
 	while (_gameState != GameState::EXIT) {
-			//Start the fps limiter for the current frame
+		//Start the fps limiter for the current frame
 		_fpsLimiter.begin();
-			//Process the input information (keyboard and mouse)
+		//Process the input information (keyboard and mouse)
 		processInput();
-			//Execute actions based on the input events
+		//Execute actions based on the input events
 		executeActions();
 		time = time + _dt;
 		//std::cout << "Total time = " << time << std::endl;
-			//Draw the objects on the screen
-		drawGame();			
-			//Delay (or not) the execution for allowing the expected FPS
+		//Draw the objects on the screen
+		drawGame();
+		//Delay (or not) the execution for allowing the expected FPS
 		_fps = _fpsLimiter.end();
-			//Draw the current FPS in the console
+		//Draw the current FPS in the console
 		if (frameCounter == 10) {
 			//cout << "FPS:" << _fps << endl;
 			frameCounter = 0;
@@ -219,7 +223,7 @@ void Game::processInput() {
 	//Moreover, table show the property affected for each event type
 	SDL_Event evnt;
 
-		//Update the input event states. Current states are moved to the previous states for being able to detect pressed keys
+	//Update the input event states. Current states are moved to the previous states for being able to detect pressed keys
 	_inputManager.update();
 
 	//Will keep looping until there are no more events to process
@@ -254,108 +258,135 @@ void Game::processInput() {
 */
 void Game::executeActions() {
 
-	if (_inputManager.isKeyPressed(SDL_BUTTON_LEFT)){
+	if (_inputManager.isKeyPressed(SDL_BUTTON_LEFT)) {
 		glm::ivec2 mouseCoords = _inputManager.getMouseCoords();
 		//mouseCoords = _camera.convertScreenToWorld(mouseCoords);
 		cout << mouseCoords.x << ", " << mouseCoords.y << endl;
 	}
 
 	float disact, disant;
-
-		if (sysParticles[0].getLifetime() > 0) {
-			disant = _planeBottom.distPoint2Plane(sysParticles[0].getCurrentPosition());
-			sysParticles[0].setForce(0.0f, 0.0f, 0.0f);  //Avoid to accumulate
-			sysParticles[0].addForce(0.0f, -5.622f, 0.0f); //gravity
-			sysParticles[0].updateParticle(_dt, Particle::UpdateMethod::EulerSemi);
+	for (int a = 0; a < _Numparticles; a++) {
+		if (sysParticles[a].getLifetime() > 0) {
+			disant = _planeBottom.distPoint2Plane(sysParticles[a].getCurrentPosition());
+			sysParticles[a].setForce(0.0f, 0.0f, 0.0f);  //Avoid to accumulate
+			sysParticles[a].addForce(0.0f, -5.622f, 0.0f); //gravity
+			sysParticles[a].updateParticle(_dt, Particle::UpdateMethod::EulerSemi);
 
 			//Check for floor collisions
-			sysParticles[0].setLifetime(sysParticles[0].getLifetime() - _dt); //lifetime is decreased
+			sysParticles[a].setLifetime(sysParticles[a].getLifetime() - _dt); //lifetime is decreased
 
-			disact = _planeBottom.distPoint2Plane(sysParticles[0].getCurrentPosition());
+			disact = _planeBottom.distPoint2Plane(sysParticles[a].getCurrentPosition());
 			if (disant*disact < 0.0f) {
 				//only valid for the plane y=0 (floor plane)
-				glm::vec3 correcPos = -(1 + sysParticles[0].getBouncing()) * disact *_planeBottom.normal;
-				glm::vec3 correcVel = -(1 + sysParticles[0].getBouncing()) * (sysParticles[0].getVelocity()*_planeBottom.normal)*_planeBottom.normal;
-				sysParticles[0].setPosition(sysParticles[0].getCurrentPosition() + correcPos);
-				sysParticles[0].setVelocity(sysParticles[0].getVelocity() + correcVel);
-			}
-
-			disact = _planeRight.distPoint2Plane(sysParticles[0].getCurrentPosition());
-			if (disant*disact < 0.0f) {
-				//only valid for the plane y=0 (floor plane)
-				glm::vec3 correcPos = -(1 + sysParticles[0].getBouncing()) * disact *_planeRight.normal;
-				glm::vec3 correcVel = -(1 + sysParticles[0].getBouncing()) * (sysParticles[0].getVelocity()*_planeRight.normal)*_planeRight.normal;
-				sysParticles[0].setPosition(sysParticles[0].getCurrentPosition() + correcPos);
-				sysParticles[0].setVelocity(sysParticles[0].getVelocity() + correcVel);
-			}
-			disact = _planeLeft.distPoint2Plane(sysParticles[0].getCurrentPosition());
-			if (disant*disact < 0.0f) {
-				//only valid for the plane y=0 (floor plane)
-				glm::vec3 correcPos = -(1 + sysParticles[0].getBouncing()) * disact *_planeLeft.normal;
-				glm::vec3 correcVel = -(1 + sysParticles[0].getBouncing()) * (sysParticles[0].getVelocity()*_planeLeft.normal)*_planeLeft.normal;
-				sysParticles[0].setPosition(sysParticles[0].getCurrentPosition() + correcPos);
-				sysParticles[0].setVelocity(sysParticles[0].getVelocity() + correcVel);
-			}
-			disact = _planeTop.distPoint2Plane(sysParticles[0].getCurrentPosition());
-			if (disant*disact < 0.0f) {
-				//only valid for the plane y=0 (floor plane)
-				glm::vec3 correcPos = -(1 + sysParticles[0].getBouncing()) * disact *_planeTop.normal;
-				glm::vec3 correcVel = -(1 + sysParticles[0].getBouncing()) * (sysParticles[0].getVelocity()*_planeTop.normal)*_planeTop.normal;
-				sysParticles[0].setPosition(sysParticles[0].getCurrentPosition() + correcPos);
-				sysParticles[0].setVelocity(sysParticles[0].getVelocity() + correcVel);
+				glm::vec3 correcPos = -(1 + sysParticles[a].getBouncing()) * disact *_planeBottom.normal;
+				glm::vec3 correcVel = -(1 + sysParticles[a].getBouncing()) * (sysParticles[a].getVelocity()*_planeBottom.normal)*_planeBottom.normal;
+				sysParticles[a].setPosition(sysParticles[a].getCurrentPosition() + correcPos);
+				sysParticles[a].setVelocity(sysParticles[a].getVelocity() + correcVel);
 			}
 
-			float alpha;
+			disact = _planeRight.distPoint2Plane(sysParticles[a].getCurrentPosition());
+			if (disant*disact < 0.0f) {
+				//only valid for the plane y=0 (floor plane)
+				glm::vec3 correcPos = -(1 + sysParticles[a].getBouncing()) * disact *_planeRight.normal;
+				glm::vec3 correcVel = -(1 + sysParticles[a].getBouncing()) * (sysParticles[a].getVelocity()*_planeRight.normal)*_planeRight.normal;
+				sysParticles[a].setPosition(sysParticles[a].getCurrentPosition() + correcPos);
+				sysParticles[a].setVelocity(sysParticles[a].getVelocity() + correcVel);
+			}
+			disact = _planeLeft.distPoint2Plane(sysParticles[a].getCurrentPosition());
+			if (disant*disact < 0.0f) {
+				//only valid for the plane y=0 (floor plane)
+				glm::vec3 correcPos = -(1 + sysParticles[a].getBouncing()) * disact *_planeLeft.normal;
+				glm::vec3 correcVel = -(1 + sysParticles[a].getBouncing()) * (sysParticles[a].getVelocity()*_planeLeft.normal)*_planeLeft.normal;
+				sysParticles[a].setPosition(sysParticles[a].getCurrentPosition() + correcPos);
+				sysParticles[a].setVelocity(sysParticles[a].getVelocity() + correcVel);
+			}
+			disact = _planeTop.distPoint2Plane(sysParticles[a].getCurrentPosition());
+			if (disant*disact < 0.0f) {
+				//only valid for the plane y=0 (floor plane)
+				glm::vec3 correcPos = -(1 + sysParticles[a].getBouncing()) * disact *_planeTop.normal;
+				glm::vec3 correcVel = -(1 + sysParticles[a].getBouncing()) * (sysParticles[a].getVelocity()*_planeTop.normal)*_planeTop.normal;
+				sysParticles[a].setPosition(sysParticles[a].getCurrentPosition() + correcPos);
+				sysParticles[a].setVelocity(sysParticles[a].getVelocity() + correcVel);
+			}
+
+			float alpha = 5; //valor por defecto que indica que en un inicio no esta en el segmento
 			int intersectCount = 0;
-
-			for (int i = 0; i < nCirclePoints; i++) {
-				if (vertexCircle[i].x >= sysParticles[0].getCurrentPosition().x) { /////CACAAAA DE EXCEPCIO
-
-					if(i < nCirclePoints - 1) alpha = (sysParticles[0].getCurrentPosition().y - vertexCircle[i].y) / (vertexCircle[i + 1].y - vertexCircle[i].y);
-					else if(i == nCirclePoints-1 ) alpha = (sysParticles[0].getCurrentPosition().y - vertexCircle[i].y) / (vertexCircle[0].y - vertexCircle[i].y);
+			glm::vec3 r(0);
+			for (int x = 0; x < NumGameObj - 1; x++) {
+				for (int i = 0; i < vertexData[x].size(); i++) {
+				/*	if (i < vertexData[x].size() - 1) {
+					//	if (vertexData[x][i + 1].y != vertexData[x][i].y) {
+							alpha = (sysParticles[a].getCurrentPosition().y - vertexData[x][i].y) / (vertexData[x][i + 1].y - vertexData[x][i].y);
+					//	}
+					}
+					else if (i == vertexData[x].size() - 1) {
+					//	if (vertexData[x][0].y != vertexData[x][i].y) {
+							alpha = (sysParticles[a].getCurrentPosition().y - vertexData[x][i].y) / (vertexData[x][0].y - vertexData[x][i].y);
+					//	}
+					}
 					if (alpha > 0 && alpha < 1) {
-						intersectCount++;
-						count++;
-						cout << count << endl;
+						if (i ==  vertexData[x].size() - 1) r = vertexData[x][i] + alpha*(vertexData[x][0] - vertexData[x][i]);
+						else  r = vertexData[x][i] + alpha*(vertexData[x][i + 1] - vertexData[x][i]); 
+						if(r.x > sysParticles[a].getCurrentPosition().x) intersectCount++;
+					}
+				}
+				*/
+				if (i == vertexData[x].size() - 1) {
+					if (vertexData[x][i].y != vertexData[x][0].y) {
+						float alfa = (sysParticles[a].getCurrentPosition().y - vertexData[x][i].y) / (vertexData[x][0].y - vertexData[x][i].y);
+						if (alfa > 0 && alfa < 1) {
+							glm::vec3 r = vertexData[x][i] + alfa * (vertexData[x][0] - vertexData[x][i]);
+							if (r.x > sysParticles[a].getCurrentPosition().x) intersectCount++;
+						}
+					}
+				}
+				else {
+					if (vertexData[x][i].y != vertexData[x][i + 1].y) {
+						float alfa = (sysParticles[a].getCurrentPosition().y - vertexData[x][i].y) / (vertexData[x][i + 1].y - vertexData[x][i].y);
+						if (alfa > 0 && alfa < 1) {
+							glm::vec3 r = vertexData[x][i] + alfa * (vertexData[x][i + 1] - vertexData[x][i]);
+							if (r.x > sysParticles[a].getCurrentPosition().x) intersectCount++;
+						}
 					}
 				}
 			}
-			if (intersectCount%2 != 0) {
-				glm::vec3 n(0);
-				glm::vec3 collisionVector(0);
-				float d;
-				for (int i = 0; i < nCirclePoints; i++) {
-					if (i < nCirclePoints - 1) collisionVector = vertexCircle[i + 1] - vertexCircle[i];
-					else if (i == nCirclePoints - 1) collisionVector = vertexCircle[0] - vertexCircle[i];
-					n = (glm::vec3(collisionVector.y, -collisionVector.x, 0) / glm::length(collisionVector));
-					d = glm::dot(-n, vertexCircle[i]);
-					alpha = (-d - glm::dot(n,sysParticles[0].getPreviousPosition())) / (glm::dot(n,sysParticles[0].getCurrentPosition()- sysParticles[0].getPreviousPosition()));
-					if (alpha > 0 && alpha < 1) {
-						glm::vec3 v = vertexCircle[i + 1] - vertexCircle[i];
-						n = glm::vec3(v.y, -v.x, 0) / glm::length(v);
-						d = glm::dot(-n, vertexCircle[i]);
-						glm::vec3 correcPos =  - (1 + sysParticles[0].getBouncing())*(glm::dot(n,sysParticles[0].getCurrentPosition()) + d)*n;
-						glm::vec3 correcVel =  - (1 + sysParticles[0].getBouncing())*glm::dot(n,sysParticles[0].getVelocity())*n;
-						sysParticles[0].setPosition(sysParticles[0].getPreviousPosition() + correcPos);
-						sysParticles[0].setVelocity(sysParticles[0].getVelocity() + correcVel);
-						break;
-					}
-				}
 
+
+				if (intersectCount % 2 != 0) {
+					glm::vec3 n(0);
+					glm::vec3 collisionVector(0);
+					float d;
+					for (int i = 0; i < vertexData[x].size(); i++) {
+						if (i <  vertexData[x].size() - 1) collisionVector = vertexData[x][i + 1] - vertexData[x][i];
+						else if (i == vertexData[x].size() - 1) collisionVector = vertexData[x][0] - vertexData[x][i];
+						n = (glm::cross(collisionVector, glm::vec3(0,0,1)) / glm::length(collisionVector));
+						d = glm::dot(-n, vertexData[x][i]);
+						alpha = (-d - glm::dot(n, sysParticles[a].getPreviousPosition())) / (glm::dot(n, sysParticles[a].getCurrentPosition() - sysParticles[a].getPreviousPosition()));
+						if (alpha > 0 && alpha < 1) {
+							glm::vec3 correcPos = -(1 + sysParticles[a].getBouncing())*(glm::dot(n, sysParticles[a].getCurrentPosition()) + d)*n;
+							glm::vec3 correcVel = -(1 + sysParticles[a].getBouncing())*glm::dot(n, sysParticles[a].getVelocity())*n;
+							sysParticles[a].setPosition(sysParticles[a].getPreviousPosition() + correcPos);
+							sysParticles[a].setVelocity(sysParticles[a].getVelocity() + correcVel);
+							break;
+						}
+					}
+
+				}
 			}
+		}
+
+
+		glm::vec3 posicio = sysParticles[a].getCurrentPosition();
+		posSysPart[a] = posicio;
+		// Pass to OpenGL
+		glBindBuffer(GL_ARRAY_BUFFER, gVBO[1]);
+		glBufferData(GL_ARRAY_BUFFER, posSysPart.size()*sizeof(glm::vec3), &posSysPart[0], GL_STREAM_DRAW);
+		// connect the xyz to the "vert" attribute of the vertex shader
+		glEnableVertexAttribArray(_glProgram.getAttribLocation("vert"));
+		glVertexAttribPointer(_glProgram.getAttribLocation("vert"), 3, GL_FLOAT, GL_FALSE, 0, NULL);
+		// unbind the VBO and VAO
+		glBindBuffer(GL_ARRAY_BUFFER, 0);
 	}
-
-
-	glm::vec3 posicio=sysParticles[0].getCurrentPosition();
-	posSysPart[0] = posicio;
-	// Pass to OpenGL
-	glBindBuffer(GL_ARRAY_BUFFER, gVBO[1]);
-	glBufferData(GL_ARRAY_BUFFER, posSysPart.size()*sizeof(glm::vec3), &posSysPart[0], GL_STREAM_DRAW);
-	// connect the xyz to the "vert" attribute of the vertex shader
-	glEnableVertexAttribArray(_glProgram.getAttribLocation("vert"));
-	glVertexAttribPointer(_glProgram.getAttribLocation("vert"), 3, GL_FLOAT, GL_FALSE, 0, NULL);
-	// unbind the VBO and VAO
-	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
 }
 
@@ -377,14 +408,14 @@ void Game::drawGame() {
 	// bind the VAO (the triangle)
 	glBindVertexArray(gVAO[0]);
 	// draw the VAO
-	glDrawArrays(GL_TRIANGLES, 0, 3);
+	glDrawArrays(GL_TRIANGLES, 0, vertexData[0].size());
 	// unbind the VAO
 	glBindVertexArray(0);
 
 
 	glBindVertexArray(gVAO[2]);
 	// draw the VAO
-	glDrawArrays(GL_LINE_LOOP, 0, nCirclePoints);
+	glDrawArrays(GL_LINE_LOOP, 0, vertexData[1].size());
 	// unbind the VAO
 	glBindVertexArray(0);
 
@@ -392,16 +423,16 @@ void Game::drawGame() {
 	glBindVertexArray(gVAO[1]);
 	// draw the VAO
 	glPointSize(6);
-	glDrawArrays(GL_POINTS, 0, 1);
+	glDrawArrays(GL_POINTS, 0, _Numparticles);
 	// unbind the VAO
 	glBindVertexArray(0);
 
 	/////////
 
-		//Unbind the program
+	//Unbind the program
 	_glProgram.unuse();
 
-		//Swap the display buffers (displays what was just drawn)
+	//Swap the display buffers (displays what was just drawn)
 	_window.swapBuffer();
 }
 

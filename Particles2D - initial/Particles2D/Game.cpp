@@ -110,10 +110,10 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	// Initialize Particles
 	srand(time(NULL));
 	for (int i = 0; i < _Numparticles; i++) {
-		sysParticles[i].setPosition(0.0f, 1.0f, 0.0f);
-		sysParticles[i].setVelocity((rand01() -0.5), 3, 0);
-		sysParticles[i].setLifetime(50.0f);
-		sysParticles[i].setBouncing(1.0f);
+		sysParticles[i].setPosition(0.1f, 0.3f, 0.0f);
+		sysParticles[i].setVelocity((rand01() -0.5), (rand01() + 2), 0);
+		sysParticles[i].setLifetime(rand01()*10);
+		sysParticles[i].setBouncing(0.8f);
 		sysParticles[i].setFixed(false);
 
 		posSysPart.resize(_Numparticles);
@@ -137,7 +137,7 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	glGenBuffers(1, &gVBO[2]);
 	glBindBuffer(GL_ARRAY_BUFFER, gVBO[2]);
 
-	nCirclePoints = 10;
+	nCirclePoints = 5;
 	float slice = 2 * M_PI / nCirclePoints;
 	float radius = 0.3f;
 	float centerX = -0.5f;
@@ -164,6 +164,47 @@ void Game::loadGameObjects(const int& NumGameObj) {
 
 	/////////////////////////////////////////////////
 
+	//////////////////////////////////////////////////////////
+	glBindVertexArray(gVAO[3]);
+	// make and bind the VBO
+	glGenBuffers(1, &gVBO[3]);
+	glBindBuffer(GL_ARRAY_BUFFER, gVBO[3]);
+	vertexData[2].push_back(glm::vec3(0.8f, 0, 0));
+	vertexData[2].push_back(glm::vec3(0.5f, 0, 0));
+	vertexData[2].push_back(glm::vec3(0.5f, -0.8, 0));
+	vertexData[2].push_back(glm::vec3(0.8f, -0.8, 0));
+
+
+
+	glBufferData(GL_ARRAY_BUFFER, vertexData[2].size()*sizeof(glm::vec3), &vertexData[2][0], GL_STATIC_DRAW);
+	// connect the xyz to the "vert" attribute of the vertex shader
+	glEnableVertexAttribArray(_glProgram.getAttribLocation("vert"));
+	glVertexAttribPointer(_glProgram.getAttribLocation("vert"), 3, GL_FLOAT, GL_FALSE, 0, NULL);
+
+	// unbind the VBO and VAO
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindVertexArray(0);
+
+	//////////////////////////////////////////////////////////
+	glBindVertexArray(gVAO[4]);
+	// make and bind the VBO
+	glGenBuffers(1, &gVBO[4]);
+	glBindBuffer(GL_ARRAY_BUFFER, gVBO[4]);
+	vertexData[3].push_back(glm::vec3(0.2, 0, 0));
+	vertexData[3].push_back(glm::vec3(-0.1f, 0, 0));
+	vertexData[3].push_back(glm::vec3(-0.1f, -0.8, 0));
+	vertexData[3].push_back(glm::vec3(0.2, -0.8, 0));
+
+
+
+	glBufferData(GL_ARRAY_BUFFER, vertexData[3].size()*sizeof(glm::vec3), &vertexData[3][0], GL_STATIC_DRAW);
+	// connect the xyz to the "vert" attribute of the vertex shader
+	glEnableVertexAttribArray(_glProgram.getAttribLocation("vert"));
+	glVertexAttribPointer(_glProgram.getAttribLocation("vert"), 3, GL_FLOAT, GL_FALSE, 0, NULL);
+
+	// unbind the VBO and VAO
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindVertexArray(0);
 
 
 	//----------------------
@@ -266,6 +307,11 @@ void Game::executeActions() {
 
 	float disact, disant;
 	for (int a = 0; a < _Numparticles; a++) {
+		if (sysParticles[a].getLifetime() < 0.009f ) {
+			sysParticles[a].setPosition(0.1f, 0.3f, 0.0f);
+			sysParticles[a].setVelocity((rand01() - 0.5), (rand01() + 2), 0);
+			sysParticles[a].setLifetime(rand01()*10);
+		}
 		if (sysParticles[a].getLifetime() > 0) {
 			disant = _planeBottom.distPoint2Plane(sysParticles[a].getCurrentPosition());
 			sysParticles[a].setForce(0.0f, 0.0f, 0.0f);  //Avoid to accumulate
@@ -423,12 +469,23 @@ void Game::drawGame() {
 	glBindVertexArray(gVAO[1]);
 	// draw the VAO
 	glPointSize(6);
+
 	glDrawArrays(GL_POINTS, 0, _Numparticles);
 	// unbind the VAO
 	glBindVertexArray(0);
 
 	/////////
+	glBindVertexArray(gVAO[3]);
+	// draw the VAO
+	glDrawArrays(GL_LINE_LOOP, 0, vertexData[2].size());
+	// unbind the VAO
+	glBindVertexArray(0);
 
+	glBindVertexArray(gVAO[4]);
+	// draw the VAO
+	glDrawArrays(GL_LINE_LOOP, 0, vertexData[3].size());
+	// unbind the VAO
+	glBindVertexArray(0);
 	//Unbind the program
 	_glProgram.unuse();
 

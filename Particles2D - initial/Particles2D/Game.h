@@ -18,7 +18,7 @@
 //Game has two possible states: PLAY or EXIT
 enum class GameState { INIT, PLAY, EXIT };
 
-const int NumGameObj = 3; //Triangle, SysParticles, Circle
+const int NumGameObj = 5; //Triangle, SysParticles, Circle
 
 						  //This class manages the game execution
 class Game {
@@ -54,7 +54,7 @@ private:
 	GLSLProgram _glProgram;
 	vector<glm::vec3> posSysPart; //Only position is needed for draw
 	vector<Particle> sysParticles;
-	int _Numparticles = 10;
+	int _Numparticles = 500;
 	float _dt = 0.01f; //Simulation time step
 	Plane _planeBottom; //
 	Plane _planeRight;

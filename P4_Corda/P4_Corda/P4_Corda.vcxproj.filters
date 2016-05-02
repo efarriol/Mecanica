@@ -36,12 +36,6 @@
     <ClInclude Include="Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CollisionAABB.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ComputeCollision.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Constants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -95,9 +89,6 @@
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ComputeCollision.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ErrorManagement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -116,5 +107,16 @@
     <ClCompile Include="GeometryPlane.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="resources\scene2D.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="resources\shaders\fragment-shader.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="resources\shaders\vertex-shader.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

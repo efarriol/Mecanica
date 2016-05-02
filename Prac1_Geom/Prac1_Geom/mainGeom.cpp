@@ -32,8 +32,8 @@ void main()
 	tiniGlobal = tempsActual;
 
 	//General variables
-	const float angleBeta = 30.0f;
-	const float angleDelta = 45.0f;
+	const float angleBeta = 31.0f;
+	const float angleDelta = -34.0f;
 	const int originRadius = 1;
 	const float maxAlpha = 10.0f;
 	const float increase = 0.01f;
@@ -82,7 +82,22 @@ void main()
 	auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();
 	fileOut << "\nTemps d'execucio: " << duration << " milisegons" << std::endl;
 
-
+/*	Sphere sphere2(glm::vec3(5, -4, 3), 3.0f);
+	for (counter = 1; counter < int(nPunts); counter++) {
+		if (sphere2.intersecSegment(punts[counter - 1].position, punts[counter].position, glm::vec3(NULL))) {
+			std::cout << "\nPunt interseccio exacte: " << std::endl;
+			std::cout << "	x: " << sphere2.puntTall.x << std::endl;
+			std::cout << "	y: " << sphere2.puntTall.y << std::endl;
+			std::cout << "	z: " << sphere2.puntTall.z << std::endl;
+			std::cout << counter << std::endl;
+		}
+	
+	}*/
+	Point Origen(-1.0f, 2.0f, 1.0f);
+	Point Final(6.0f, -3.0f, 0.0f);
+	Point toCompare(-4.0f, 1.0f, -1.0f);
+	Line miBonitaLinea(Origen, Final);
+//	std::cout << miBonitaLinea.distLine2Point(toCompare) << std::endl;
 	fileOut << "\n------------------------------------Plane-------------------------------------\n" << std::endl;
 
 	tini = tempsActual;
@@ -112,10 +127,15 @@ void main()
 	duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();
 	fileOut << "\nTemps d'execucio: " << duration << " milisegons" << std::endl;
 
+	Plane plane2(glm::vec3(2, -4, 3), glm::vec3(glm::cross(glm::vec3(5, -3, 1), glm::vec3(6, 0, 4))));
+	std::cout << plane2.closestPointInPlane(glm::vec3(-1, -4, 3)).x << std::endl;
+	std::cout << plane2.closestPointInPlane(glm::vec3(-1, -4, 3)).y << std::endl;
+	std::cout << plane2.closestPointInPlane(glm::vec3(-1, -4, 3)).z << std::endl;
+	
 	fileOut << "\n------------------------------------Triangle------------------------------------\n" << std::endl;
 
 	tini = tempsActual;
-	Triangle triangle(glm::vec3(0, 0, 0), glm::vec3(1, 5, 1), glm::vec3(-1, 3, 2));
+	Triangle triangle(glm::vec3(-1, 1, 1), glm::vec3(1, 1, 2), glm::vec3(4, 3, 6));
 
 	for (counter = 1; counter < (int)nPunts; counter++) {
 		if (triangle.intersecSegment(punts[counter - 1].position, punts[counter].position, glm::vec3(NULL))) {
@@ -140,6 +160,14 @@ void main()
 	duration = std::chrono::duration_cast<std::chrono::milliseconds>(tfin - tini).count();
 	fileOut << "\nTemps d'execucio: " << duration << " milisegons" << std::endl;
 	
+
+	Triangle triangle2(glm::vec3(-4.0f, -3.0f, 4.0f), glm::vec3(-5.0f, 3.0f, 3.0f), glm::vec3(0.0f, -4.0f, 9.0f));
+	glm::vec3 Result;
+	triangle2.intersecSegment(glm::vec3(-2.0f, -1.0f, 5.0f), glm::vec3(-3.0f, -1.0f, 7.0f), Result);
+	std::cout << Result.x << std::endl;
+	std::cout << Result.y << std::endl;
+	std::cout << Result.z << std::endl;
+
 	fileOut << "\n------------------------------------Box------------------------------------\n" << std::endl;
 
 	tini = tempsActual;

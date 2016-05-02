@@ -17,7 +17,6 @@
 #include "InputManager.h"
 #include "Constants.h"
 #include "Camera.h"
-#include "ComputeCollision.h"
 #include <time.h>
 #include <random> 
 #include "Particle.h"
@@ -33,11 +32,6 @@ class Game {
 		Game(std::string windowTitle, int screenWidth, int screenHeight, bool enableLimiterFPS, int maxFPS, bool printFPS);	//Constructor
 		~Game();					//Destructor
 		void run();					//Game execution
-		time_t start;
-		double seconds_since_start;
-		double previousTime;
-		float velocity;
-		int score;
 			
 	private:
 			//Attributes	
@@ -52,7 +46,6 @@ class Game {
 		OpenGLBuffers _openGLBuffers;	//Manage the openGL buffers
 		Geometry _gameElements;			//Manage the game elements
 		InputManager _inputManager;		//Manage the input devices
-		AABB AABBOne;
 		GLuint modelMatrixUniform;
 			//Internal methods
 		void initSystems();
@@ -62,7 +55,6 @@ class Game {
 		void doPhysics();
 		void executePlayerCommands();
 		void renderGame();	
-		bool up;
 
 		// De aqui a arriba es CG hacia abajo Mecanica
 	
@@ -78,8 +70,5 @@ class Game {
 		Plane _planeLeft;
 		Plane _planeTop;
 		Plane _intersectPlane;
-		//		Polygon _polTriang;
-		std::vector<glm::vec3> vertexData[NUMBASICOBJECTS - 1];
-		int nCirclePoints;
 };
 

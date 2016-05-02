@@ -6,2684 +6,889 @@ Longitud del vector punts = 1000
 
 
 Punt contingut en la esfera: 
-	x: 0.00612372
-	y: 0.00707107
-	z: 0.00353553
+	x: 0.00710624
+	y: -0.00559193
+	z: 0.00426986
 
 Punt contingut en la esfera: 
-	x: 0.0122474
-	y: 0.0141421
-	z: 0.00707107
+	x: 0.0142125
+	y: -0.0111839
+	z: 0.00853972
 
 Punt contingut en la esfera: 
-	x: 0.0183712
-	y: 0.0212132
-	z: 0.0106066
+	x: 0.0213187
+	y: -0.0167758
+	z: 0.0128096
 
 Punt contingut en la esfera: 
-	x: 0.0244949
-	y: 0.0282843
-	z: 0.0141421
+	x: 0.028425
+	y: -0.0223677
+	z: 0.0170794
 
 Punt contingut en la esfera: 
-	x: 0.0306186
-	y: 0.0353553
-	z: 0.0176777
+	x: 0.0355312
+	y: -0.0279596
+	z: 0.0213493
 
 Punt contingut en la esfera: 
-	x: 0.0367423
-	y: 0.0424264
-	z: 0.0212132
+	x: 0.0426374
+	y: -0.0335516
+	z: 0.0256192
 
 Punt contingut en la esfera: 
-	x: 0.0428661
-	y: 0.0494975
-	z: 0.0247487
+	x: 0.0497437
+	y: -0.0391435
+	z: 0.029889
 
 Punt contingut en la esfera: 
-	x: 0.0489898
-	y: 0.0565685
-	z: 0.0282843
+	x: 0.0568499
+	y: -0.0447354
+	z: 0.0341589
 
 Punt contingut en la esfera: 
-	x: 0.0551135
-	y: 0.0636396
-	z: 0.0318198
+	x: 0.0639561
+	y: -0.0503274
+	z: 0.0384287
 
 Punt contingut en la esfera: 
-	x: 0.0612372
-	y: 0.0707107
-	z: 0.0353553
+	x: 0.0710624
+	y: -0.0559193
+	z: 0.0426986
 
 Punt contingut en la esfera: 
-	x: 0.067361
-	y: 0.0777817
-	z: 0.0388909
+	x: 0.0781686
+	y: -0.0615112
+	z: 0.0469684
 
 Punt contingut en la esfera: 
-	x: 0.0734847
-	y: 0.0848528
-	z: 0.0424264
+	x: 0.0852749
+	y: -0.0671031
+	z: 0.0512383
 
 Punt contingut en la esfera: 
-	x: 0.0796084
-	y: 0.0919239
-	z: 0.0459619
+	x: 0.0923811
+	y: -0.0726951
+	z: 0.0555082
 
 Punt contingut en la esfera: 
-	x: 0.0857321
-	y: 0.0989949
-	z: 0.0494975
+	x: 0.0994873
+	y: -0.078287
+	z: 0.059778
 
 Punt contingut en la esfera: 
-	x: 0.0918559
-	y: 0.106066
-	z: 0.053033
+	x: 0.106594
+	y: -0.0838789
+	z: 0.0640479
 
 Punt contingut en la esfera: 
-	x: 0.0979796
-	y: 0.113137
-	z: 0.0565685
+	x: 0.1137
+	y: -0.0894709
+	z: 0.0683177
 
 Punt contingut en la esfera: 
-	x: 0.104103
-	y: 0.120208
-	z: 0.0601041
+	x: 0.120806
+	y: -0.0950628
+	z: 0.0725876
 
 Punt contingut en la esfera: 
-	x: 0.110227
-	y: 0.127279
-	z: 0.0636396
+	x: 0.127912
+	y: -0.100655
+	z: 0.0768575
 
 Punt contingut en la esfera: 
-	x: 0.116351
-	y: 0.13435
-	z: 0.0671751
+	x: 0.135019
+	y: -0.106247
+	z: 0.0811273
 
 Punt contingut en la esfera: 
-	x: 0.122474
-	y: 0.141421
-	z: 0.0707107
+	x: 0.142125
+	y: -0.111839
+	z: 0.0853972
 
 Punt contingut en la esfera: 
-	x: 0.128598
-	y: 0.148492
-	z: 0.0742462
+	x: 0.149231
+	y: -0.117431
+	z: 0.0896671
 
 Punt contingut en la esfera: 
-	x: 0.134722
-	y: 0.155564
-	z: 0.0777818
+	x: 0.156337
+	y: -0.123022
+	z: 0.0939369
 
 Punt contingut en la esfera: 
-	x: 0.140846
-	y: 0.162635
-	z: 0.0813173
+	x: 0.163444
+	y: -0.128614
+	z: 0.0982068
 
 Punt contingut en la esfera: 
-	x: 0.146969
-	y: 0.169706
-	z: 0.0848528
+	x: 0.17055
+	y: -0.134206
+	z: 0.102477
 
 Punt contingut en la esfera: 
-	x: 0.153093
-	y: 0.176777
-	z: 0.0883884
+	x: 0.177656
+	y: -0.139798
+	z: 0.106746
 
 Punt contingut en la esfera: 
-	x: 0.159217
-	y: 0.183848
-	z: 0.0919239
+	x: 0.184762
+	y: -0.14539
+	z: 0.111016
 
 Punt contingut en la esfera: 
-	x: 0.165341
-	y: 0.190919
-	z: 0.0954594
+	x: 0.191868
+	y: -0.150982
+	z: 0.115286
 
 Punt contingut en la esfera: 
-	x: 0.171464
-	y: 0.19799
-	z: 0.0989949
+	x: 0.198975
+	y: -0.156574
+	z: 0.119556
 
 Punt contingut en la esfera: 
-	x: 0.177588
-	y: 0.205061
-	z: 0.10253
+	x: 0.206081
+	y: -0.162166
+	z: 0.123826
 
 Punt contingut en la esfera: 
-	x: 0.183712
-	y: 0.212132
-	z: 0.106066
+	x: 0.213187
+	y: -0.167758
+	z: 0.128096
 
 Punt contingut en la esfera: 
-	x: 0.189835
-	y: 0.219203
-	z: 0.109602
+	x: 0.220293
+	y: -0.17335
+	z: 0.132366
 
 Punt contingut en la esfera: 
-	x: 0.195959
-	y: 0.226274
-	z: 0.113137
+	x: 0.2274
+	y: -0.178942
+	z: 0.136635
 
 Punt contingut en la esfera: 
-	x: 0.202083
-	y: 0.233345
-	z: 0.116673
+	x: 0.234506
+	y: -0.184534
+	z: 0.140905
 
 Punt contingut en la esfera: 
-	x: 0.208207
-	y: 0.240416
-	z: 0.120208
+	x: 0.241612
+	y: -0.190126
+	z: 0.145175
 
 Punt contingut en la esfera: 
-	x: 0.21433
-	y: 0.247487
-	z: 0.123744
+	x: 0.248718
+	y: -0.195717
+	z: 0.149445
 
 Punt contingut en la esfera: 
-	x: 0.220454
-	y: 0.254558
-	z: 0.127279
+	x: 0.255825
+	y: -0.201309
+	z: 0.153715
 
 Punt contingut en la esfera: 
-	x: 0.226578
-	y: 0.261629
-	z: 0.130815
+	x: 0.262931
+	y: -0.206901
+	z: 0.157985
 
 Punt contingut en la esfera: 
-	x: 0.232701
-	y: 0.268701
-	z: 0.13435
+	x: 0.270037
+	y: -0.212493
+	z: 0.162255
 
 Punt contingut en la esfera: 
-	x: 0.238825
-	y: 0.275772
-	z: 0.137886
+	x: 0.277143
+	y: -0.218085
+	z: 0.166524
 
 Punt contingut en la esfera: 
-	x: 0.244949
-	y: 0.282843
-	z: 0.141421
+	x: 0.284249
+	y: -0.223677
+	z: 0.170794
 
 Punt contingut en la esfera: 
-	x: 0.251073
-	y: 0.289914
-	z: 0.144957
+	x: 0.291356
+	y: -0.229269
+	z: 0.175064
 
 Punt contingut en la esfera: 
-	x: 0.257196
-	y: 0.296985
-	z: 0.148492
+	x: 0.298462
+	y: -0.234861
+	z: 0.179334
 
 Punt contingut en la esfera: 
-	x: 0.26332
-	y: 0.304056
-	z: 0.152028
+	x: 0.305568
+	y: -0.240453
+	z: 0.183604
 
 Punt contingut en la esfera: 
-	x: 0.269444
-	y: 0.311127
-	z: 0.155563
+	x: 0.312674
+	y: -0.246045
+	z: 0.187874
 
 Punt contingut en la esfera: 
-	x: 0.275567
-	y: 0.318198
-	z: 0.159099
+	x: 0.319781
+	y: -0.251637
+	z: 0.192144
 
 Punt contingut en la esfera: 
-	x: 0.281691
-	y: 0.325269
-	z: 0.162634
+	x: 0.326887
+	y: -0.257229
+	z: 0.196413
 
 Punt contingut en la esfera: 
-	x: 0.287815
-	y: 0.33234
-	z: 0.16617
+	x: 0.333993
+	y: -0.262821
+	z: 0.200683
 
 Punt contingut en la esfera: 
-	x: 0.293939
-	y: 0.339411
-	z: 0.169706
+	x: 0.341099
+	y: -0.268412
+	z: 0.204953
 
 Punt contingut en la esfera: 
-	x: 0.300062
-	y: 0.346482
-	z: 0.173241
+	x: 0.348206
+	y: -0.274004
+	z: 0.209223
 
 Punt contingut en la esfera: 
-	x: 0.306186
-	y: 0.353553
-	z: 0.176777
+	x: 0.355312
+	y: -0.279596
+	z: 0.213493
 
 Punt contingut en la esfera: 
-	x: 0.31231
-	y: 0.360624
-	z: 0.180312
+	x: 0.362418
+	y: -0.285188
+	z: 0.217763
 
 Punt contingut en la esfera: 
-	x: 0.318434
-	y: 0.367695
-	z: 0.183848
+	x: 0.369524
+	y: -0.29078
+	z: 0.222033
 
 Punt contingut en la esfera: 
-	x: 0.324557
-	y: 0.374766
-	z: 0.187383
+	x: 0.376631
+	y: -0.296372
+	z: 0.226302
 
 Punt contingut en la esfera: 
-	x: 0.330681
-	y: 0.381837
-	z: 0.190919
+	x: 0.383737
+	y: -0.301964
+	z: 0.230572
 
 Punt contingut en la esfera: 
-	x: 0.336805
-	y: 0.388909
-	z: 0.194454
+	x: 0.390843
+	y: -0.307556
+	z: 0.234842
 
 Punt contingut en la esfera: 
-	x: 0.342928
-	y: 0.39598
-	z: 0.19799
+	x: 0.397949
+	y: -0.313148
+	z: 0.239112
 
 Punt contingut en la esfera: 
-	x: 0.349052
-	y: 0.403051
-	z: 0.201525
+	x: 0.405055
+	y: -0.31874
+	z: 0.243382
 
 Punt contingut en la esfera: 
-	x: 0.355176
-	y: 0.410122
-	z: 0.205061
+	x: 0.412162
+	y: -0.324332
+	z: 0.247652
 
 Punt contingut en la esfera: 
-	x: 0.3613
-	y: 0.417193
-	z: 0.208596
+	x: 0.419268
+	y: -0.329924
+	z: 0.251922
 
 Punt contingut en la esfera: 
-	x: 0.367423
-	y: 0.424264
-	z: 0.212132
+	x: 0.426374
+	y: -0.335516
+	z: 0.256191
 
 Punt contingut en la esfera: 
-	x: 0.373547
-	y: 0.431335
-	z: 0.215667
+	x: 0.43348
+	y: -0.341108
+	z: 0.260461
 
 Punt contingut en la esfera: 
-	x: 0.379671
-	y: 0.438406
-	z: 0.219203
+	x: 0.440587
+	y: -0.346699
+	z: 0.264731
 
 Punt contingut en la esfera: 
-	x: 0.385794
-	y: 0.445477
-	z: 0.222739
+	x: 0.447693
+	y: -0.352291
+	z: 0.269001
 
 Punt contingut en la esfera: 
-	x: 0.391918
-	y: 0.452548
-	z: 0.226274
+	x: 0.454799
+	y: -0.357883
+	z: 0.273271
 
 Punt contingut en la esfera: 
-	x: 0.398042
-	y: 0.459619
-	z: 0.22981
+	x: 0.461905
+	y: -0.363475
+	z: 0.277541
 
 Punt contingut en la esfera: 
-	x: 0.404166
-	y: 0.46669
-	z: 0.233345
+	x: 0.469012
+	y: -0.369067
+	z: 0.281811
 
 Punt contingut en la esfera: 
-	x: 0.410289
-	y: 0.473761
-	z: 0.236881
+	x: 0.476118
+	y: -0.374659
+	z: 0.28608
 
 Punt contingut en la esfera: 
-	x: 0.416413
-	y: 0.480832
-	z: 0.240416
+	x: 0.483224
+	y: -0.380251
+	z: 0.29035
 
 Punt contingut en la esfera: 
-	x: 0.422537
-	y: 0.487903
-	z: 0.243952
+	x: 0.49033
+	y: -0.385843
+	z: 0.29462
 
 Punt contingut en la esfera: 
-	x: 0.42866
-	y: 0.494974
-	z: 0.247487
+	x: 0.497436
+	y: -0.391435
+	z: 0.29889
 
 Punt contingut en la esfera: 
-	x: 0.434784
-	y: 0.502046
-	z: 0.251023
+	x: 0.504543
+	y: -0.397027
+	z: 0.30316
 
 Punt contingut en la esfera: 
-	x: 0.440908
-	y: 0.509117
-	z: 0.254558
+	x: 0.511649
+	y: -0.402619
+	z: 0.30743
 
 Punt contingut en la esfera: 
-	x: 0.447032
-	y: 0.516188
-	z: 0.258094
+	x: 0.518755
+	y: -0.408211
+	z: 0.3117
 
 Punt contingut en la esfera: 
-	x: 0.453155
-	y: 0.523259
-	z: 0.261629
+	x: 0.525861
+	y: -0.413803
+	z: 0.315969
 
 Punt contingut en la esfera: 
-	x: 0.459279
-	y: 0.53033
-	z: 0.265165
+	x: 0.532968
+	y: -0.419394
+	z: 0.320239
 
 Punt contingut en la esfera: 
-	x: 0.465403
-	y: 0.537401
-	z: 0.2687
+	x: 0.540074
+	y: -0.424986
+	z: 0.324509
 
 Punt contingut en la esfera: 
-	x: 0.471526
-	y: 0.544472
-	z: 0.272236
+	x: 0.54718
+	y: -0.430578
+	z: 0.328779
 
 Punt contingut en la esfera: 
-	x: 0.47765
-	y: 0.551543
-	z: 0.275771
+	x: 0.554286
+	y: -0.43617
+	z: 0.333049
 
 Punt contingut en la esfera: 
-	x: 0.483774
-	y: 0.558614
-	z: 0.279307
+	x: 0.561393
+	y: -0.441762
+	z: 0.337319
 
 Punt contingut en la esfera: 
-	x: 0.489898
-	y: 0.565685
-	z: 0.282843
+	x: 0.568499
+	y: -0.447354
+	z: 0.341589
 
 Punt contingut en la esfera: 
-	x: 0.496021
-	y: 0.572756
-	z: 0.286378
+	x: 0.575605
+	y: -0.452946
+	z: 0.345858
 
 Punt contingut en la esfera: 
-	x: 0.502145
-	y: 0.579827
-	z: 0.289914
+	x: 0.582711
+	y: -0.458538
+	z: 0.350128
 
 Punt contingut en la esfera: 
-	x: 0.508269
-	y: 0.586898
-	z: 0.293449
+	x: 0.589818
+	y: -0.46413
+	z: 0.354398
 
 Punt contingut en la esfera: 
-	x: 0.514392
-	y: 0.593969
-	z: 0.296985
+	x: 0.596924
+	y: -0.469722
+	z: 0.358668
 
 Punt contingut en la esfera: 
-	x: 0.520516
-	y: 0.60104
-	z: 0.30052
+	x: 0.60403
+	y: -0.475314
+	z: 0.362938
 
 Punt contingut en la esfera: 
-	x: 0.52664
-	y: 0.608111
-	z: 0.304056
+	x: 0.611136
+	y: -0.480906
+	z: 0.367208
 
 Punt contingut en la esfera: 
-	x: 0.532764
-	y: 0.615183
-	z: 0.307591
+	x: 0.618242
+	y: -0.486498
+	z: 0.371478
 
 Punt contingut en la esfera: 
-	x: 0.538887
-	y: 0.622254
-	z: 0.311127
+	x: 0.625349
+	y: -0.492089
+	z: 0.375747
 
 Punt contingut en la esfera: 
-	x: 0.545011
-	y: 0.629325
-	z: 0.314662
+	x: 0.632455
+	y: -0.497681
+	z: 0.380017
 
 Punt contingut en la esfera: 
-	x: 0.551135
-	y: 0.636396
-	z: 0.318198
+	x: 0.639561
+	y: -0.503273
+	z: 0.384287
 
 Punt contingut en la esfera: 
-	x: 0.557259
-	y: 0.643467
-	z: 0.321733
+	x: 0.646667
+	y: -0.508865
+	z: 0.388557
 
 Punt contingut en la esfera: 
-	x: 0.563382
-	y: 0.650538
-	z: 0.325269
+	x: 0.653774
+	y: -0.514457
+	z: 0.392827
 
 Punt contingut en la esfera: 
-	x: 0.569506
-	y: 0.657609
-	z: 0.328804
+	x: 0.66088
+	y: -0.520049
+	z: 0.397097
 
 Punt contingut en la esfera: 
-	x: 0.57563
-	y: 0.66468
-	z: 0.33234
+	x: 0.667986
+	y: -0.525641
+	z: 0.401367
 
 Punt contingut en la esfera: 
-	x: 0.581753
-	y: 0.671751
-	z: 0.335876
+	x: 0.675092
+	y: -0.531233
+	z: 0.405636
 
 Punt contingut en la esfera: 
-	x: 0.587877
-	y: 0.678822
-	z: 0.339411
+	x: 0.682199
+	y: -0.536825
+	z: 0.409906
 
 Punt contingut en la esfera: 
-	x: 0.594001
-	y: 0.685893
-	z: 0.342947
+	x: 0.689305
+	y: -0.542417
+	z: 0.414176
 
 Punt contingut en la esfera: 
-	x: 0.600125
-	y: 0.692964
-	z: 0.346482
+	x: 0.696411
+	y: -0.548009
+	z: 0.418446
 
 Punt contingut en la esfera: 
-	x: 0.606248
-	y: 0.700035
-	z: 0.350018
+	x: 0.703517
+	y: -0.553601
+	z: 0.422716
 
 Punt contingut en la esfera: 
-	x: 0.612372
-	y: 0.707106
-	z: 0.353553
+	x: 0.710623
+	y: -0.559193
+	z: 0.426986
 
 Punt contingut en la esfera: 
-	x: 0.618496
-	y: 0.714177
-	z: 0.357089
+	x: 0.71773
+	y: -0.564784
+	z: 0.431256
 
 Punt contingut en la esfera: 
-	x: 0.624619
-	y: 0.721248
-	z: 0.360624
+	x: 0.724836
+	y: -0.570376
+	z: 0.435525
 
 Punt contingut en la esfera: 
-	x: 0.630743
-	y: 0.72832
-	z: 0.36416
+	x: 0.731942
+	y: -0.575968
+	z: 0.439795
 
 Punt contingut en la esfera: 
-	x: 0.636867
-	y: 0.735391
-	z: 0.367695
+	x: 0.739048
+	y: -0.58156
+	z: 0.444065
 
 Punt contingut en la esfera: 
-	x: 0.642991
-	y: 0.742462
-	z: 0.371231
+	x: 0.746155
+	y: -0.587152
+	z: 0.448335
 
 Punt contingut en la esfera: 
-	x: 0.649114
-	y: 0.749533
-	z: 0.374766
+	x: 0.753261
+	y: -0.592744
+	z: 0.452605
 
 Punt contingut en la esfera: 
-	x: 0.655238
-	y: 0.756604
-	z: 0.378302
+	x: 0.760367
+	y: -0.598336
+	z: 0.456875
 
 Punt contingut en la esfera: 
-	x: 0.661362
-	y: 0.763675
-	z: 0.381837
+	x: 0.767473
+	y: -0.603928
+	z: 0.461145
 
 Punt contingut en la esfera: 
-	x: 0.667485
-	y: 0.770746
-	z: 0.385373
+	x: 0.77458
+	y: -0.60952
+	z: 0.465414
 
 Punt contingut en la esfera: 
-	x: 0.673609
-	y: 0.777817
-	z: 0.388908
+	x: 0.781686
+	y: -0.615112
+	z: 0.469684
 
 Punt contingut en la esfera: 
-	x: 0.679733
-	y: 0.784888
-	z: 0.392444
+	x: 0.788792
+	y: -0.620704
+	z: 0.473954
 
 Punt contingut en la esfera: 
-	x: 0.685857
-	y: 0.791959
-	z: 0.39598
+	x: 0.795898
+	y: -0.626296
+	z: 0.478224
 
 Punt contingut en la esfera: 
-	x: 0.69198
-	y: 0.79903
-	z: 0.399515
+	x: 0.803005
+	y: -0.631888
+	z: 0.482494
 
 Punt contingut en la esfera: 
-	x: 0.698104
-	y: 0.806101
-	z: 0.403051
+	x: 0.810111
+	y: -0.637479
+	z: 0.486764
 
 Punt contingut en la esfera: 
-	x: 0.704228
-	y: 0.813172
-	z: 0.406586
+	x: 0.817217
+	y: -0.643071
+	z: 0.491033
 
 Punt contingut en la esfera: 
-	x: 0.710352
-	y: 0.820243
-	z: 0.410122
+	x: 0.824323
+	y: -0.648663
+	z: 0.495303
 
 Punt contingut en la esfera: 
-	x: 0.716475
-	y: 0.827314
-	z: 0.413657
+	x: 0.831429
+	y: -0.654255
+	z: 0.499573
 
 Punt contingut en la esfera: 
-	x: 0.722599
-	y: 0.834385
-	z: 0.417193
+	x: 0.838536
+	y: -0.659847
+	z: 0.503843
 
 Punt contingut en la esfera: 
-	x: 0.728723
-	y: 0.841457
-	z: 0.420728
+	x: 0.845642
+	y: -0.665439
+	z: 0.508113
 
 Punt contingut en la esfera: 
-	x: 0.734846
-	y: 0.848528
-	z: 0.424264
+	x: 0.852748
+	y: -0.671031
+	z: 0.512383
 
 Punt contingut en la esfera: 
-	x: 0.74097
-	y: 0.855599
-	z: 0.427799
+	x: 0.859854
+	y: -0.676623
+	z: 0.516653
 
 Punt contingut en la esfera: 
-	x: 0.747094
-	y: 0.86267
-	z: 0.431335
+	x: 0.866961
+	y: -0.682215
+	z: 0.520922
 
 Punt contingut en la esfera: 
-	x: 0.753218
-	y: 0.869741
-	z: 0.43487
+	x: 0.874067
+	y: -0.687807
+	z: 0.525192
 
 Punt contingut en la esfera: 
-	x: 0.759341
-	y: 0.876812
-	z: 0.438406
+	x: 0.881173
+	y: -0.693399
+	z: 0.529462
 
 Punt contingut en la esfera: 
-	x: 0.765465
-	y: 0.883883
-	z: 0.441941
+	x: 0.888279
+	y: -0.698991
+	z: 0.533732
 
 Punt contingut en la esfera: 
-	x: 0.771589
-	y: 0.890954
-	z: 0.445477
+	x: 0.895386
+	y: -0.704583
+	z: 0.538002
 
 Punt contingut en la esfera: 
-	x: 0.777712
-	y: 0.898025
-	z: 0.449012
+	x: 0.902492
+	y: -0.710175
+	z: 0.542272
 
 Punt contingut en la esfera: 
-	x: 0.783836
-	y: 0.905096
-	z: 0.452548
+	x: 0.909598
+	y: -0.715766
+	z: 0.546542
 
 Punt contingut en la esfera: 
-	x: 0.78996
-	y: 0.912167
-	z: 0.456084
+	x: 0.916704
+	y: -0.721358
+	z: 0.550811
 
 Punt contingut en la esfera: 
-	x: 0.796084
-	y: 0.919238
-	z: 0.459619
+	x: 0.92381
+	y: -0.72695
+	z: 0.555081
 
 Punt contingut en la esfera: 
-	x: 0.802207
-	y: 0.926309
-	z: 0.463155
+	x: 0.930917
+	y: -0.732542
+	z: 0.559351
 
 Punt contingut en la esfera: 
-	x: 0.808331
-	y: 0.93338
-	z: 0.46669
+	x: 0.938023
+	y: -0.738134
+	z: 0.563621
 
 Punt contingut en la esfera: 
-	x: 0.814455
-	y: 0.940451
-	z: 0.470226
+	x: 0.945129
+	y: -0.743726
+	z: 0.567891
 
 Punt contingut en la esfera: 
-	x: 0.820578
-	y: 0.947522
-	z: 0.473761
+	x: 0.952235
+	y: -0.749318
+	z: 0.572161
 
 Punt contingut en la esfera: 
-	x: 0.826702
-	y: 0.954593
-	z: 0.477297
+	x: 0.959342
+	y: -0.75491
+	z: 0.576431
 
 Punt contingut en la esfera: 
-	x: 0.832826
-	y: 0.961665
-	z: 0.480832
+	x: 0.966448
+	y: -0.760502
+	z: 0.5807
 
 Punt contingut en la esfera: 
-	x: 0.83895
-	y: 0.968736
-	z: 0.484368
+	x: 0.973554
+	y: -0.766094
+	z: 0.58497
 
 Punt contingut en la esfera: 
-	x: 0.845073
-	y: 0.975807
-	z: 0.487903
+	x: 0.98066
+	y: -0.771686
+	z: 0.58924
 
 Punt contingut en la esfera: 
-	x: 0.851197
-	y: 0.982878
-	z: 0.491439
+	x: 0.987767
+	y: -0.777278
+	z: 0.59351
 
 Punt contingut en la esfera: 
-	x: 0.857321
-	y: 0.989949
-	z: 0.494974
+	x: 0.994873
+	y: -0.78287
+	z: 0.59778
 
 Punt contingut en la esfera: 
-	x: 0.863444
-	y: 0.99702
-	z: 0.49851
+	x: 1.00198
+	y: -0.788461
+	z: 0.60205
 
 Punt contingut en la esfera: 
-	x: 0.869568
-	y: 1.00409
-	z: 0.502045
+	x: 1.00909
+	y: -0.794053
+	z: 0.60632
 
 Punt contingut en la esfera: 
-	x: 0.875692
-	y: 1.01116
-	z: 0.505581
+	x: 1.01619
+	y: -0.799645
+	z: 0.610589
 
 Punt contingut en la esfera: 
-	x: 0.881816
-	y: 1.01823
-	z: 0.509117
+	x: 1.0233
+	y: -0.805237
+	z: 0.614859
 
 Punt contingut en la esfera: 
-	x: 0.887939
-	y: 1.0253
-	z: 0.512652
+	x: 1.0304
+	y: -0.810829
+	z: 0.619129
 
 Punt contingut en la esfera: 
-	x: 0.894063
-	y: 1.03238
-	z: 0.516188
+	x: 1.03751
+	y: -0.816421
+	z: 0.623399
 
 Punt contingut en la esfera: 
-	x: 0.900187
-	y: 1.03945
-	z: 0.519723
+	x: 1.04462
+	y: -0.822013
+	z: 0.627669
 
 Punt contingut en la esfera: 
-	x: 0.90631
-	y: 1.04652
-	z: 0.523259
+	x: 1.05172
+	y: -0.827605
+	z: 0.631939
 
 Punt contingut en la esfera: 
-	x: 0.912434
-	y: 1.05359
-	z: 0.526794
+	x: 1.05883
+	y: -0.833197
+	z: 0.636209
 
 Punt contingut en la esfera: 
-	x: 0.918558
-	y: 1.06066
-	z: 0.53033
+	x: 1.06594
+	y: -0.838789
+	z: 0.640478
 
 Punt contingut en la esfera: 
-	x: 0.924682
-	y: 1.06773
-	z: 0.533865
+	x: 1.07304
+	y: -0.844381
+	z: 0.644748
 
 Punt contingut en la esfera: 
-	x: 0.930805
-	y: 1.0748
-	z: 0.537401
+	x: 1.08015
+	y: -0.849973
+	z: 0.649018
 
 Punt contingut en la esfera: 
-	x: 0.936929
-	y: 1.08187
-	z: 0.540936
+	x: 1.08725
+	y: -0.855565
+	z: 0.653288
 
 Punt contingut en la esfera: 
-	x: 0.943053
-	y: 1.08894
-	z: 0.544472
+	x: 1.09436
+	y: -0.861156
+	z: 0.657558
 
 Punt contingut en la esfera: 
-	x: 0.949177
-	y: 1.09601
-	z: 0.548007
+	x: 1.10147
+	y: -0.866748
+	z: 0.661828
 
 Punt contingut en la esfera: 
-	x: 0.9553
-	y: 1.10309
-	z: 0.551543
+	x: 1.10857
+	y: -0.87234
+	z: 0.666098
 
 Punt contingut en la esfera: 
-	x: 0.961424
-	y: 1.11016
-	z: 0.555078
+	x: 1.11568
+	y: -0.877932
+	z: 0.670367
 
 Punt contingut en la esfera: 
-	x: 0.967548
-	y: 1.11723
-	z: 0.558614
+	x: 1.12278
+	y: -0.883524
+	z: 0.674637
 
 Punt contingut en la esfera: 
-	x: 0.973671
-	y: 1.1243
-	z: 0.562149
+	x: 1.12989
+	y: -0.889116
+	z: 0.678907
 
 Punt contingut en la esfera: 
-	x: 0.979795
-	y: 1.13137
-	z: 0.565685
+	x: 1.137
+	y: -0.894708
+	z: 0.683177
 
 Punt contingut en la esfera: 
-	x: 0.985919
-	y: 1.13844
-	z: 0.569221
+	x: 1.1441
+	y: -0.9003
+	z: 0.687447
 
 Punt contingut en la esfera: 
-	x: 0.992043
-	y: 1.14551
-	z: 0.572756
+	x: 1.15121
+	y: -0.905892
+	z: 0.691717
 
 Punt contingut en la esfera: 
-	x: 0.998166
-	y: 1.15258
-	z: 0.576292
+	x: 1.15832
+	y: -0.911484
+	z: 0.695987
 
 Punt contingut en la esfera: 
-	x: 1.00429
-	y: 1.15965
-	z: 0.579827
+	x: 1.16542
+	y: -0.917076
+	z: 0.700256
 
 Punt contingut en la esfera: 
-	x: 1.01041
-	y: 1.16673
-	z: 0.583363
+	x: 1.17253
+	y: -0.922668
+	z: 0.704526
 
 Punt contingut en la esfera: 
-	x: 1.01654
-	y: 1.1738
-	z: 0.586898
+	x: 1.17963
+	y: -0.92826
+	z: 0.708796
 
 Punt contingut en la esfera: 
-	x: 1.02266
-	y: 1.18087
-	z: 0.590434
+	x: 1.18674
+	y: -0.933851
+	z: 0.713066
 
 Punt contingut en la esfera: 
-	x: 1.02878
-	y: 1.18794
-	z: 0.593969
+	x: 1.19385
+	y: -0.939443
+	z: 0.717336
 
 Punt contingut en la esfera: 
-	x: 1.03491
-	y: 1.19501
-	z: 0.597505
+	x: 1.20095
+	y: -0.945035
+	z: 0.721606
 
 Punt contingut en la esfera: 
-	x: 1.04103
-	y: 1.20208
-	z: 0.60104
+	x: 1.20806
+	y: -0.950627
+	z: 0.725875
 
 Punt contingut en la esfera: 
-	x: 1.04716
-	y: 1.20915
-	z: 0.604576
+	x: 1.21517
+	y: -0.956219
+	z: 0.730145
 
 Punt contingut en la esfera: 
-	x: 1.05328
-	y: 1.21622
-	z: 0.608111
+	x: 1.22227
+	y: -0.961811
+	z: 0.734415
 
 Punt contingut en la esfera: 
-	x: 1.0594
-	y: 1.22329
-	z: 0.611647
+	x: 1.22938
+	y: -0.967403
+	z: 0.738685
 
 Punt contingut en la esfera: 
-	x: 1.06553
-	y: 1.23036
-	z: 0.615182
+	x: 1.23648
+	y: -0.972995
+	z: 0.742955
 
 Punt contingut en la esfera: 
-	x: 1.07165
-	y: 1.23744
-	z: 0.618718
-
-Punt contingut en la esfera: 
-	x: 1.07777
-	y: 1.24451
-	z: 0.622253
-
-Punt contingut en la esfera: 
-	x: 1.0839
-	y: 1.25158
-	z: 0.625789
-
-Punt contingut en la esfera: 
-	x: 1.09002
-	y: 1.25865
-	z: 0.629325
-
-Punt contingut en la esfera: 
-	x: 1.09615
-	y: 1.26572
-	z: 0.63286
-
-Punt contingut en la esfera: 
-	x: 1.10227
-	y: 1.27279
-	z: 0.636396
-
-Punt contingut en la esfera: 
-	x: 1.10839
-	y: 1.27986
-	z: 0.639931
-
-Punt contingut en la esfera: 
-	x: 1.11452
-	y: 1.28693
-	z: 0.643467
-
-Punt contingut en la esfera: 
-	x: 1.12064
-	y: 1.294
-	z: 0.647002
-
-Punt contingut en la esfera: 
-	x: 1.12676
-	y: 1.30108
-	z: 0.650538
-
-Punt contingut en la esfera: 
-	x: 1.13289
-	y: 1.30815
-	z: 0.654073
-
-Punt contingut en la esfera: 
-	x: 1.13901
-	y: 1.31522
-	z: 0.657609
-
-Punt contingut en la esfera: 
-	x: 1.14514
-	y: 1.32229
-	z: 0.661144
-
-Punt contingut en la esfera: 
-	x: 1.15126
-	y: 1.32936
-	z: 0.66468
-
-Punt contingut en la esfera: 
-	x: 1.15738
-	y: 1.33643
-	z: 0.668215
-
-Punt contingut en la esfera: 
-	x: 1.16351
-	y: 1.3435
-	z: 0.671751
-
-Punt contingut en la esfera: 
-	x: 1.16963
-	y: 1.35057
-	z: 0.675286
-
-Punt contingut en la esfera: 
-	x: 1.17575
-	y: 1.35764
-	z: 0.678822
-
-Punt contingut en la esfera: 
-	x: 1.18188
-	y: 1.36471
-	z: 0.682357
-
-Punt contingut en la esfera: 
-	x: 1.188
-	y: 1.37179
-	z: 0.685893
-
-Punt contingut en la esfera: 
-	x: 1.19413
-	y: 1.37886
-	z: 0.689429
-
-Punt contingut en la esfera: 
-	x: 1.20025
-	y: 1.38593
-	z: 0.692964
-
-Punt contingut en la esfera: 
-	x: 1.20637
-	y: 1.393
-	z: 0.6965
-
-Punt contingut en la esfera: 
-	x: 1.2125
-	y: 1.40007
-	z: 0.700035
-
-Punt contingut en la esfera: 
-	x: 1.21862
-	y: 1.40714
-	z: 0.703571
-
-Punt contingut en la esfera: 
-	x: 1.22474
-	y: 1.41421
-	z: 0.707106
-
-Punt contingut en la esfera: 
-	x: 1.23087
-	y: 1.42128
-	z: 0.710642
-
-Punt contingut en la esfera: 
-	x: 1.23699
-	y: 1.42835
-	z: 0.714177
-
-Punt contingut en la esfera: 
-	x: 1.24312
-	y: 1.43543
-	z: 0.717713
-
-Punt contingut en la esfera: 
-	x: 1.24924
-	y: 1.4425
-	z: 0.721248
-
-Punt contingut en la esfera: 
-	x: 1.25536
-	y: 1.44957
-	z: 0.724784
-
-Punt contingut en la esfera: 
-	x: 1.26149
-	y: 1.45664
-	z: 0.728319
-
-Punt contingut en la esfera: 
-	x: 1.26761
-	y: 1.46371
-	z: 0.731855
-
-Punt contingut en la esfera: 
-	x: 1.27373
-	y: 1.47078
-	z: 0.73539
-
-Punt contingut en la esfera: 
-	x: 1.27986
-	y: 1.47785
-	z: 0.738926
-
-Punt contingut en la esfera: 
-	x: 1.28598
-	y: 1.48492
-	z: 0.742462
-
-Punt contingut en la esfera: 
-	x: 1.2921
-	y: 1.49199
-	z: 0.745997
-
-Punt contingut en la esfera: 
-	x: 1.29823
-	y: 1.49907
-	z: 0.749533
-
-Punt contingut en la esfera: 
-	x: 1.30435
-	y: 1.50614
-	z: 0.753068
-
-Punt contingut en la esfera: 
-	x: 1.31048
-	y: 1.51321
-	z: 0.756604
-
-Punt contingut en la esfera: 
-	x: 1.3166
-	y: 1.52028
-	z: 0.760139
-
-Punt contingut en la esfera: 
-	x: 1.32272
-	y: 1.52735
-	z: 0.763675
-
-Punt contingut en la esfera: 
-	x: 1.32885
-	y: 1.53442
-	z: 0.76721
-
-Punt contingut en la esfera: 
-	x: 1.33497
-	y: 1.54149
-	z: 0.770746
-
-Punt contingut en la esfera: 
-	x: 1.34109
-	y: 1.54856
-	z: 0.774281
-
-Punt contingut en la esfera: 
-	x: 1.34722
-	y: 1.55563
-	z: 0.777817
-
-Punt contingut en la esfera: 
-	x: 1.35334
-	y: 1.5627
-	z: 0.781352
-
-Punt contingut en la esfera: 
-	x: 1.35947
-	y: 1.56978
-	z: 0.784888
-
-Punt contingut en la esfera: 
-	x: 1.36559
-	y: 1.57685
-	z: 0.788423
-
-Punt contingut en la esfera: 
-	x: 1.37171
-	y: 1.58392
-	z: 0.791959
-
-Punt contingut en la esfera: 
-	x: 1.37784
-	y: 1.59099
-	z: 0.795494
-
-Punt contingut en la esfera: 
-	x: 1.38396
-	y: 1.59806
-	z: 0.79903
-
-Punt contingut en la esfera: 
-	x: 1.39008
-	y: 1.60513
-	z: 0.802566
-
-Punt contingut en la esfera: 
-	x: 1.39621
-	y: 1.6122
-	z: 0.806101
-
-Punt contingut en la esfera: 
-	x: 1.40233
-	y: 1.61927
-	z: 0.809637
-
-Punt contingut en la esfera: 
-	x: 1.40846
-	y: 1.62634
-	z: 0.813172
-
-Punt contingut en la esfera: 
-	x: 1.41458
-	y: 1.63342
-	z: 0.816708
-
-Punt contingut en la esfera: 
-	x: 1.4207
-	y: 1.64049
-	z: 0.820243
-
-Punt contingut en la esfera: 
-	x: 1.42683
-	y: 1.64756
-	z: 0.823779
-
-Punt contingut en la esfera: 
-	x: 1.43295
-	y: 1.65463
-	z: 0.827314
-
-Punt contingut en la esfera: 
-	x: 1.43907
-	y: 1.6617
-	z: 0.83085
-
-Punt contingut en la esfera: 
-	x: 1.4452
-	y: 1.66877
-	z: 0.834385
-
-Punt contingut en la esfera: 
-	x: 1.45132
-	y: 1.67584
-	z: 0.837921
-
-Punt contingut en la esfera: 
-	x: 1.45745
-	y: 1.68291
-	z: 0.841456
-
-Punt contingut en la esfera: 
-	x: 1.46357
-	y: 1.68998
-	z: 0.844992
-
-Punt contingut en la esfera: 
-	x: 1.46969
-	y: 1.69705
-	z: 0.848527
-
-Punt contingut en la esfera: 
-	x: 1.47582
-	y: 1.70413
-	z: 0.852063
-
-Punt contingut en la esfera: 
-	x: 1.48194
-	y: 1.7112
-	z: 0.855599
-
-Punt contingut en la esfera: 
-	x: 1.48806
-	y: 1.71827
-	z: 0.859134
-
-Punt contingut en la esfera: 
-	x: 1.49419
-	y: 1.72534
-	z: 0.86267
-
-Punt contingut en la esfera: 
-	x: 1.50031
-	y: 1.73241
-	z: 0.866205
-
-Punt contingut en la esfera: 
-	x: 1.50643
-	y: 1.73948
-	z: 0.869741
-
-Punt contingut en la esfera: 
-	x: 1.51256
-	y: 1.74655
-	z: 0.873276
-
-Punt contingut en la esfera: 
-	x: 1.51868
-	y: 1.75362
-	z: 0.876812
-
-Punt contingut en la esfera: 
-	x: 1.52481
-	y: 1.76069
-	z: 0.880347
-
-Punt contingut en la esfera: 
-	x: 1.53093
-	y: 1.76777
-	z: 0.883883
-
-Punt contingut en la esfera: 
-	x: 1.53705
-	y: 1.77484
-	z: 0.887418
-
-Punt contingut en la esfera: 
-	x: 1.54318
-	y: 1.78191
-	z: 0.890954
-
-Punt contingut en la esfera: 
-	x: 1.5493
-	y: 1.78898
-	z: 0.894489
-
-Punt contingut en la esfera: 
-	x: 1.55542
-	y: 1.79605
-	z: 0.898025
-
-Punt contingut en la esfera: 
-	x: 1.56155
-	y: 1.80312
-	z: 0.90156
-
-Punt contingut en la esfera: 
-	x: 1.56767
-	y: 1.81019
-	z: 0.905096
-
-Punt contingut en la esfera: 
-	x: 1.5738
-	y: 1.81726
-	z: 0.908632
-
-Punt contingut en la esfera: 
-	x: 1.57992
-	y: 1.82433
-	z: 0.912167
-
-Punt contingut en la esfera: 
-	x: 1.58604
-	y: 1.83141
-	z: 0.915703
-
-Punt contingut en la esfera: 
-	x: 1.59217
-	y: 1.83848
-	z: 0.919238
-
-Punt contingut en la esfera: 
-	x: 1.59829
-	y: 1.84555
-	z: 0.922774
-
-Punt contingut en la esfera: 
-	x: 1.60441
-	y: 1.85262
-	z: 0.926309
-
-Punt contingut en la esfera: 
-	x: 1.61054
-	y: 1.85969
-	z: 0.929845
-
-Punt contingut en la esfera: 
-	x: 1.61666
-	y: 1.86676
-	z: 0.93338
-
-Punt contingut en la esfera: 
-	x: 1.62279
-	y: 1.87383
-	z: 0.936916
-
-Punt contingut en la esfera: 
-	x: 1.62891
-	y: 1.8809
-	z: 0.940451
-
-Punt contingut en la esfera: 
-	x: 1.63503
-	y: 1.88797
-	z: 0.943987
-
-Punt contingut en la esfera: 
-	x: 1.64116
-	y: 1.89504
-	z: 0.947522
-
-Punt contingut en la esfera: 
-	x: 1.64728
-	y: 1.90212
-	z: 0.951058
-
-Punt contingut en la esfera: 
-	x: 1.6534
-	y: 1.90919
-	z: 0.954593
-
-Punt contingut en la esfera: 
-	x: 1.65953
-	y: 1.91626
-	z: 0.958129
-
-Punt contingut en la esfera: 
-	x: 1.66565
-	y: 1.92333
-	z: 0.961664
-
-Punt contingut en la esfera: 
-	x: 1.67178
-	y: 1.9304
-	z: 0.9652
-
-Punt contingut en la esfera: 
-	x: 1.6779
-	y: 1.93747
-	z: 0.968736
-
-Punt contingut en la esfera: 
-	x: 1.68402
-	y: 1.94454
-	z: 0.972271
-
-Punt contingut en la esfera: 
-	x: 1.69015
-	y: 1.95161
-	z: 0.975807
-
-Punt contingut en la esfera: 
-	x: 1.69627
-	y: 1.95868
-	z: 0.979342
-
-Punt contingut en la esfera: 
-	x: 1.70239
-	y: 1.96576
-	z: 0.982878
-
-Punt contingut en la esfera: 
-	x: 1.70852
-	y: 1.97283
-	z: 0.986413
-
-Punt contingut en la esfera: 
-	x: 1.71464
-	y: 1.9799
-	z: 0.989949
-
-Punt contingut en la esfera: 
-	x: 1.72077
-	y: 1.98697
-	z: 0.993484
-
-Punt contingut en la esfera: 
-	x: 1.72689
-	y: 1.99404
-	z: 0.99702
-
-Punt contingut en la esfera: 
-	x: 1.73301
-	y: 2.00111
-	z: 1.00056
-
-Punt contingut en la esfera: 
-	x: 1.73914
-	y: 2.00818
-	z: 1.00409
-
-Punt contingut en la esfera: 
-	x: 1.74526
-	y: 2.01525
-	z: 1.00763
-
-Punt contingut en la esfera: 
-	x: 1.75138
-	y: 2.02232
-	z: 1.01116
-
-Punt contingut en la esfera: 
-	x: 1.75751
-	y: 2.02939
-	z: 1.0147
-
-Punt contingut en la esfera: 
-	x: 1.76363
-	y: 2.03647
-	z: 1.01823
-
-Punt contingut en la esfera: 
-	x: 1.76975
-	y: 2.04354
-	z: 1.02177
-
-Punt contingut en la esfera: 
-	x: 1.77588
-	y: 2.05061
-	z: 1.0253
-
-Punt contingut en la esfera: 
-	x: 1.782
-	y: 2.05768
-	z: 1.02884
-
-Punt contingut en la esfera: 
-	x: 1.78813
-	y: 2.06475
-	z: 1.03238
-
-Punt contingut en la esfera: 
-	x: 1.79425
-	y: 2.07182
-	z: 1.03591
-
-Punt contingut en la esfera: 
-	x: 1.80037
-	y: 2.07889
-	z: 1.03945
-
-Punt contingut en la esfera: 
-	x: 1.8065
-	y: 2.08596
-	z: 1.04298
-
-Punt contingut en la esfera: 
-	x: 1.81262
-	y: 2.09303
-	z: 1.04652
-
-Punt contingut en la esfera: 
-	x: 1.81874
-	y: 2.10011
-	z: 1.05005
-
-Punt contingut en la esfera: 
-	x: 1.82487
-	y: 2.10718
-	z: 1.05359
-
-Punt contingut en la esfera: 
-	x: 1.83099
-	y: 2.11425
-	z: 1.05712
-
-Punt contingut en la esfera: 
-	x: 1.83712
-	y: 2.12132
-	z: 1.06066
-
-Punt contingut en la esfera: 
-	x: 1.84324
-	y: 2.12839
-	z: 1.06419
-
-Punt contingut en la esfera: 
-	x: 1.84936
-	y: 2.13546
-	z: 1.06773
-
-Punt contingut en la esfera: 
-	x: 1.85549
-	y: 2.14253
-	z: 1.07127
-
-Punt contingut en la esfera: 
-	x: 1.86161
-	y: 2.1496
-	z: 1.0748
-
-Punt contingut en la esfera: 
-	x: 1.86773
-	y: 2.15667
-	z: 1.07834
-
-Punt contingut en la esfera: 
-	x: 1.87386
-	y: 2.16374
-	z: 1.08187
-
-Punt contingut en la esfera: 
-	x: 1.87998
-	y: 2.17082
-	z: 1.08541
-
-Punt contingut en la esfera: 
-	x: 1.88611
-	y: 2.17789
-	z: 1.08894
-
-Punt contingut en la esfera: 
-	x: 1.89223
-	y: 2.18496
-	z: 1.09248
-
-Punt contingut en la esfera: 
-	x: 1.89835
-	y: 2.19203
-	z: 1.09601
-
-Punt contingut en la esfera: 
-	x: 1.90448
-	y: 2.1991
-	z: 1.09955
-
-Punt contingut en la esfera: 
-	x: 1.9106
-	y: 2.20617
-	z: 1.10309
-
-Punt contingut en la esfera: 
-	x: 1.91672
-	y: 2.21324
-	z: 1.10662
-
-Punt contingut en la esfera: 
-	x: 1.92285
-	y: 2.22031
-	z: 1.11016
-
-Punt contingut en la esfera: 
-	x: 1.92897
-	y: 2.22738
-	z: 1.11369
-
-Punt contingut en la esfera: 
-	x: 1.9351
-	y: 2.23446
-	z: 1.11723
-
-Punt contingut en la esfera: 
-	x: 1.94122
-	y: 2.24153
-	z: 1.12076
-
-Punt contingut en la esfera: 
-	x: 1.94734
-	y: 2.2486
-	z: 1.1243
-
-Punt contingut en la esfera: 
-	x: 1.95347
-	y: 2.25567
-	z: 1.12783
-
-Punt contingut en la esfera: 
-	x: 1.95959
-	y: 2.26274
-	z: 1.13137
-
-Punt contingut en la esfera: 
-	x: 1.96571
-	y: 2.26981
-	z: 1.13491
-
-Punt contingut en la esfera: 
-	x: 1.97184
-	y: 2.27688
-	z: 1.13844
-
-Punt contingut en la esfera: 
-	x: 1.97796
-	y: 2.28395
-	z: 1.14198
-
-Punt contingut en la esfera: 
-	x: 1.98408
-	y: 2.29102
-	z: 1.14551
-
-Punt contingut en la esfera: 
-	x: 1.99021
-	y: 2.2981
-	z: 1.14905
-
-Punt contingut en la esfera: 
-	x: 1.99633
-	y: 2.30517
-	z: 1.15258
-
-Punt contingut en la esfera: 
-	x: 2.00246
-	y: 2.31224
-	z: 1.15612
-
-Punt contingut en la esfera: 
-	x: 2.00858
-	y: 2.31931
-	z: 1.15965
-
-Punt contingut en la esfera: 
-	x: 2.0147
-	y: 2.32638
-	z: 1.16319
-
-Punt contingut en la esfera: 
-	x: 2.02083
-	y: 2.33345
-	z: 1.16673
-
-Punt contingut en la esfera: 
-	x: 2.02695
-	y: 2.34052
-	z: 1.17026
-
-Punt contingut en la esfera: 
-	x: 2.03307
-	y: 2.34759
-	z: 1.1738
-
-Punt contingut en la esfera: 
-	x: 2.0392
-	y: 2.35466
-	z: 1.17733
-
-Punt contingut en la esfera: 
-	x: 2.04532
-	y: 2.36173
-	z: 1.18087
-
-Punt contingut en la esfera: 
-	x: 2.05145
-	y: 2.36881
-	z: 1.1844
-
-Punt contingut en la esfera: 
-	x: 2.05757
-	y: 2.37588
-	z: 1.18794
-
-Punt contingut en la esfera: 
-	x: 2.06369
-	y: 2.38295
-	z: 1.19147
-
-Punt contingut en la esfera: 
-	x: 2.06982
-	y: 2.39002
-	z: 1.19501
-
-Punt contingut en la esfera: 
-	x: 2.07594
-	y: 2.39709
-	z: 1.19854
-
-Punt contingut en la esfera: 
-	x: 2.08206
-	y: 2.40416
-	z: 1.20208
-
-Punt contingut en la esfera: 
-	x: 2.08819
-	y: 2.41123
-	z: 1.20562
-
-Punt contingut en la esfera: 
-	x: 2.09431
-	y: 2.4183
-	z: 1.20915
-
-Punt contingut en la esfera: 
-	x: 2.10044
-	y: 2.42537
-	z: 1.21269
-
-Punt contingut en la esfera: 
-	x: 2.10656
-	y: 2.43245
-	z: 1.21622
-
-Punt contingut en la esfera: 
-	x: 2.11268
-	y: 2.43952
-	z: 1.21976
-
-Punt contingut en la esfera: 
-	x: 2.11881
-	y: 2.44659
-	z: 1.22329
-
-Punt contingut en la esfera: 
-	x: 2.12493
-	y: 2.45366
-	z: 1.22683
-
-Punt contingut en la esfera: 
-	x: 2.13105
-	y: 2.46073
-	z: 1.23036
-
-Punt contingut en la esfera: 
-	x: 2.13718
-	y: 2.4678
-	z: 1.2339
-
-Punt contingut en la esfera: 
-	x: 2.1433
-	y: 2.47487
-	z: 1.23744
-
-Punt contingut en la esfera: 
-	x: 2.14943
-	y: 2.48194
-	z: 1.24097
-
-Punt contingut en la esfera: 
-	x: 2.15555
-	y: 2.48901
-	z: 1.24451
-
-Punt contingut en la esfera: 
-	x: 2.16167
-	y: 2.49608
-	z: 1.24804
-
-Punt contingut en la esfera: 
-	x: 2.1678
-	y: 2.50316
-	z: 1.25158
-
-Punt contingut en la esfera: 
-	x: 2.17392
-	y: 2.51023
-	z: 1.25511
-
-Punt contingut en la esfera: 
-	x: 2.18004
-	y: 2.5173
-	z: 1.25865
-
-Punt contingut en la esfera: 
-	x: 2.18617
-	y: 2.52437
-	z: 1.26218
-
-Punt contingut en la esfera: 
-	x: 2.19229
-	y: 2.53144
-	z: 1.26572
-
-Punt contingut en la esfera: 
-	x: 2.19842
-	y: 2.53851
-	z: 1.26926
-
-Punt contingut en la esfera: 
-	x: 2.20454
-	y: 2.54558
-	z: 1.27279
-
-Punt contingut en la esfera: 
-	x: 2.21066
-	y: 2.55265
-	z: 1.27633
-
-Punt contingut en la esfera: 
-	x: 2.21679
-	y: 2.55972
-	z: 1.27986
-
-Punt contingut en la esfera: 
-	x: 2.22291
-	y: 2.5668
-	z: 1.2834
-
-Punt contingut en la esfera: 
-	x: 2.22903
-	y: 2.57387
-	z: 1.28693
-
-Punt contingut en la esfera: 
-	x: 2.23516
-	y: 2.58094
-	z: 1.29047
-
-Punt contingut en la esfera: 
-	x: 2.24128
-	y: 2.58801
-	z: 1.294
-
-Punt contingut en la esfera: 
-	x: 2.2474
-	y: 2.59508
-	z: 1.29754
-
-Punt contingut en la esfera: 
-	x: 2.25353
-	y: 2.60215
-	z: 1.30108
-
-Punt contingut en la esfera: 
-	x: 2.25965
-	y: 2.60922
-	z: 1.30461
-
-Punt contingut en la esfera: 
-	x: 2.26578
-	y: 2.61629
-	z: 1.30815
-
-Punt contingut en la esfera: 
-	x: 2.2719
-	y: 2.62336
-	z: 1.31168
-
-Punt contingut en la esfera: 
-	x: 2.27802
-	y: 2.63043
-	z: 1.31522
-
-Punt contingut en la esfera: 
-	x: 2.28415
-	y: 2.63751
-	z: 1.31875
-
-Punt contingut en la esfera: 
-	x: 2.29027
-	y: 2.64458
-	z: 1.32229
-
-Punt contingut en la esfera: 
-	x: 2.29639
-	y: 2.65165
-	z: 1.32582
-
-Punt contingut en la esfera: 
-	x: 2.30252
-	y: 2.65872
-	z: 1.32936
-
-Punt contingut en la esfera: 
-	x: 2.30864
-	y: 2.66579
-	z: 1.3329
-
-Punt contingut en la esfera: 
-	x: 2.31477
-	y: 2.67286
-	z: 1.33643
-
-Punt contingut en la esfera: 
-	x: 2.32089
-	y: 2.67993
-	z: 1.33997
-
-Punt contingut en la esfera: 
-	x: 2.32701
-	y: 2.687
-	z: 1.3435
-
-Punt contingut en la esfera: 
-	x: 2.33314
-	y: 2.69407
-	z: 1.34704
-
-Punt contingut en la esfera: 
-	x: 2.33926
-	y: 2.70115
-	z: 1.35057
-
-Punt contingut en la esfera: 
-	x: 2.34538
-	y: 2.70822
-	z: 1.35411
-
-Punt contingut en la esfera: 
-	x: 2.35151
-	y: 2.71529
-	z: 1.35764
-
-Punt contingut en la esfera: 
-	x: 2.35763
-	y: 2.72236
-	z: 1.36118
-
-Punt contingut en la esfera: 
-	x: 2.36376
-	y: 2.72943
-	z: 1.36471
-
-Punt contingut en la esfera: 
-	x: 2.36988
-	y: 2.7365
-	z: 1.36825
-
-Punt contingut en la esfera: 
-	x: 2.376
-	y: 2.74357
-	z: 1.37179
-
-Punt contingut en la esfera: 
-	x: 2.38213
-	y: 2.75064
-	z: 1.37532
-
-Punt contingut en la esfera: 
-	x: 2.38825
-	y: 2.75771
-	z: 1.37886
-
-Punt contingut en la esfera: 
-	x: 2.39437
-	y: 2.76479
-	z: 1.38239
-
-Punt contingut en la esfera: 
-	x: 2.4005
-	y: 2.77186
-	z: 1.38593
-
-Punt contingut en la esfera: 
-	x: 2.40662
-	y: 2.77893
-	z: 1.38946
-
-Punt contingut en la esfera: 
-	x: 2.41275
-	y: 2.786
-	z: 1.393
-
-Punt contingut en la esfera: 
-	x: 2.41887
-	y: 2.79307
-	z: 1.39653
-
-Punt contingut en la esfera: 
-	x: 2.42499
-	y: 2.80014
-	z: 1.40007
-
-Punt contingut en la esfera: 
-	x: 2.43112
-	y: 2.80721
-	z: 1.40361
-
-Punt contingut en la esfera: 
-	x: 2.43724
-	y: 2.81428
-	z: 1.40714
-
-Punt contingut en la esfera: 
-	x: 2.44336
-	y: 2.82135
-	z: 1.41068
-
-Punt contingut en la esfera: 
-	x: 2.44949
-	y: 2.82842
-	z: 1.41421
-
-Punt contingut en la esfera: 
-	x: 2.45561
-	y: 2.8355
-	z: 1.41775
-
-Punt contingut en la esfera: 
-	x: 2.46174
-	y: 2.84257
-	z: 1.42128
-
-Punt contingut en la esfera: 
-	x: 2.46786
-	y: 2.84964
-	z: 1.42482
-
-Punt contingut en la esfera: 
-	x: 2.47398
-	y: 2.85671
-	z: 1.42835
-
-Punt contingut en la esfera: 
-	x: 2.48011
-	y: 2.86378
-	z: 1.43189
-
-Punt contingut en la esfera: 
-	x: 2.48623
-	y: 2.87085
-	z: 1.43543
-
-Punt contingut en la esfera: 
-	x: 2.49235
-	y: 2.87792
-	z: 1.43896
-
-Punt contingut en la esfera: 
-	x: 2.49848
-	y: 2.88499
-	z: 1.4425
-
-Punt contingut en la esfera: 
-	x: 2.5046
-	y: 2.89207
-	z: 1.44603
-
-Punt contingut en la esfera: 
-	x: 2.51073
-	y: 2.89914
-	z: 1.44957
-
-Punt contingut en la esfera: 
-	x: 2.51685
-	y: 2.90621
-	z: 1.4531
-
-Punt contingut en la esfera: 
-	x: 2.52297
-	y: 2.91328
-	z: 1.45664
-
-Punt contingut en la esfera: 
-	x: 2.5291
-	y: 2.92035
-	z: 1.46018
-
-Punt contingut en la esfera: 
-	x: 2.53522
-	y: 2.92742
-	z: 1.46371
-
-Punt contingut en la esfera: 
-	x: 2.54135
-	y: 2.93449
-	z: 1.46725
-
-Punt contingut en la esfera: 
-	x: 2.54747
-	y: 2.94156
-	z: 1.47078
-
-Punt contingut en la esfera: 
-	x: 2.55359
-	y: 2.94864
-	z: 1.47432
-
-Punt contingut en la esfera: 
-	x: 2.55972
-	y: 2.95571
-	z: 1.47785
-
-Punt contingut en la esfera: 
-	x: 2.56584
-	y: 2.96278
-	z: 1.48139
-
-Punt contingut en la esfera: 
-	x: 2.57196
-	y: 2.96985
-	z: 1.48492
-
-Punt contingut en la esfera: 
-	x: 2.57809
-	y: 2.97692
-	z: 1.48846
-
-Punt contingut en la esfera: 
-	x: 2.58421
-	y: 2.98399
-	z: 1.492
-
-Punt contingut en la esfera: 
-	x: 2.59034
-	y: 2.99106
-	z: 1.49553
-
-Punt contingut en la esfera: 
-	x: 2.59646
-	y: 2.99813
-	z: 1.49907
-
-Punt contingut en la esfera: 
-	x: 2.60258
-	y: 3.00521
-	z: 1.5026
-
-Punt contingut en la esfera: 
-	x: 2.60871
-	y: 3.01228
-	z: 1.50614
-
-Punt contingut en la esfera: 
-	x: 2.61483
-	y: 3.01935
-	z: 1.50967
-
-Punt contingut en la esfera: 
-	x: 2.62096
-	y: 3.02642
-	z: 1.51321
-
-Punt contingut en la esfera: 
-	x: 2.62708
-	y: 3.03349
-	z: 1.51675
-
-Punt contingut en la esfera: 
-	x: 2.6332
-	y: 3.04056
-	z: 1.52028
-
-Punt contingut en la esfera: 
-	x: 2.63933
-	y: 3.04763
-	z: 1.52382
-
-Punt contingut en la esfera: 
-	x: 2.64545
-	y: 3.0547
-	z: 1.52735
-
-Punt contingut en la esfera: 
-	x: 2.65158
-	y: 3.06178
-	z: 1.53089
-
-Punt contingut en la esfera: 
-	x: 2.6577
-	y: 3.06885
-	z: 1.53442
-
-Punt contingut en la esfera: 
-	x: 2.66382
-	y: 3.07592
-	z: 1.53796
-
-Punt contingut en la esfera: 
-	x: 2.66995
-	y: 3.08299
-	z: 1.54149
-
-Punt contingut en la esfera: 
-	x: 2.67607
-	y: 3.09006
-	z: 1.54503
-
-Punt contingut en la esfera: 
-	x: 2.68219
-	y: 3.09713
-	z: 1.54857
-
-Punt contingut en la esfera: 
-	x: 2.68832
-	y: 3.1042
-	z: 1.5521
-
-Punt contingut en la esfera: 
-	x: 2.69444
-	y: 3.11127
-	z: 1.55564
-
-Punt contingut en la esfera: 
-	x: 2.70057
-	y: 3.11835
-	z: 1.55917
-
-Punt contingut en la esfera: 
-	x: 2.70669
-	y: 3.12542
-	z: 1.56271
-
-Punt contingut en la esfera: 
-	x: 2.71281
-	y: 3.13249
-	z: 1.56624
-
-Punt contingut en la esfera: 
-	x: 2.71894
-	y: 3.13956
-	z: 1.56978
-
-Punt contingut en la esfera: 
-	x: 2.72506
-	y: 3.14663
-	z: 1.57332
-
-Punt contingut en la esfera: 
-	x: 2.73119
-	y: 3.1537
-	z: 1.57685
-
-Punt contingut en la esfera: 
-	x: 2.73731
-	y: 3.16077
-	z: 1.58039
-
-Punt contingut en la esfera: 
-	x: 2.74343
-	y: 3.16784
-	z: 1.58392
-
-Punt contingut en la esfera: 
-	x: 2.74956
-	y: 3.17492
-	z: 1.58746
-
-Punt contingut en la esfera: 
-	x: 2.75568
-	y: 3.18199
-	z: 1.59099
-
-Punt contingut en la esfera: 
-	x: 2.7618
-	y: 3.18906
-	z: 1.59453
-
-Punt contingut en la esfera: 
-	x: 2.76793
-	y: 3.19613
-	z: 1.59806
-
-Punt contingut en la esfera: 
-	x: 2.77405
-	y: 3.2032
-	z: 1.6016
-
-Punt contingut en la esfera: 
-	x: 2.78018
-	y: 3.21027
-	z: 1.60514
-
-Punt contingut en la esfera: 
-	x: 2.7863
-	y: 3.21734
-	z: 1.60867
-
-Punt contingut en la esfera: 
-	x: 2.79242
-	y: 3.22441
-	z: 1.61221
-
-Punt contingut en la esfera: 
-	x: 2.79855
-	y: 3.23148
-	z: 1.61574
-
-Punt contingut en la esfera: 
-	x: 2.80467
-	y: 3.23856
-	z: 1.61928
-
-Punt contingut en la esfera: 
-	x: 2.8108
-	y: 3.24563
-	z: 1.62281
-
-Punt contingut en la esfera: 
-	x: 2.81692
-	y: 3.2527
-	z: 1.62635
-
-Punt contingut en la esfera: 
-	x: 2.82304
-	y: 3.25977
-	z: 1.62988
-
-Punt contingut en la esfera: 
-	x: 2.82917
-	y: 3.26684
-	z: 1.63342
-
-Punt contingut en la esfera: 
-	x: 2.83529
-	y: 3.27391
-	z: 1.63696
-
-Punt contingut en la esfera: 
-	x: 2.84141
-	y: 3.28098
-	z: 1.64049
-
-Punt contingut en la esfera: 
-	x: 2.84754
-	y: 3.28805
-	z: 1.64403
-
-Punt contingut en la esfera: 
-	x: 2.85366
-	y: 3.29513
-	z: 1.64756
-
-Punt contingut en la esfera: 
-	x: 2.85979
-	y: 3.3022
-	z: 1.6511
-
-Punt contingut en la esfera: 
-	x: 2.86591
-	y: 3.30927
-	z: 1.65463
-
-Punt contingut en la esfera: 
-	x: 2.87203
-	y: 3.31634
-	z: 1.65817
-
-Punt contingut en la esfera: 
-	x: 2.87816
-	y: 3.32341
-	z: 1.66171
-
-Punt contingut en la esfera: 
-	x: 2.88428
-	y: 3.33048
-	z: 1.66524
-
-Punt contingut en la esfera: 
-	x: 2.89041
-	y: 3.33755
-	z: 1.66878
-
-Punt contingut en la esfera: 
-	x: 2.89653
-	y: 3.34462
-	z: 1.67231
-
-Punt contingut en la esfera: 
-	x: 2.90265
-	y: 3.3517
-	z: 1.67585
-
-Punt contingut en la esfera: 
-	x: 2.90878
-	y: 3.35877
-	z: 1.67938
-
-Punt contingut en la esfera: 
-	x: 2.9149
-	y: 3.36584
-	z: 1.68292
-
-Punt contingut en la esfera: 
-	x: 2.92103
-	y: 3.37291
-	z: 1.68645
-
-Punt contingut en la esfera: 
-	x: 2.92715
-	y: 3.37998
-	z: 1.68999
-
-Punt contingut en la esfera: 
-	x: 2.93327
-	y: 3.38705
-	z: 1.69353
-
-Punt contingut en la esfera: 
-	x: 2.9394
-	y: 3.39412
-	z: 1.69706
-
-Punt contingut en la esfera: 
-	x: 2.94552
-	y: 3.40119
-	z: 1.7006
-
-Punt contingut en la esfera: 
-	x: 2.95164
-	y: 3.40827
-	z: 1.70413
-
-Punt contingut en la esfera: 
-	x: 2.95777
-	y: 3.41534
-	z: 1.70767
-
-Punt contingut en la esfera: 
-	x: 2.96389
-	y: 3.42241
-	z: 1.7112
-
-Punt contingut en la esfera: 
-	x: 2.97002
-	y: 3.42948
-	z: 1.71474
-
-Punt contingut en la esfera: 
-	x: 2.97614
-	y: 3.43655
-	z: 1.71828
-
-Punt contingut en la esfera: 
-	x: 2.98226
-	y: 3.44362
-	z: 1.72181
-
-Punt contingut en la esfera: 
-	x: 2.98839
-	y: 3.45069
-	z: 1.72535
-
-Punt contingut en la esfera: 
-	x: 2.99451
-	y: 3.45776
-	z: 1.72888
-
-Punt contingut en la esfera: 
-	x: 3.00064
-	y: 3.46484
-	z: 1.73242
-
-Punt contingut en la esfera: 
-	x: 3.00676
-	y: 3.47191
-	z: 1.73595
-
-Punt contingut en la esfera: 
-	x: 3.01288
-	y: 3.47898
-	z: 1.73949
-
-Punt contingut en la esfera: 
-	x: 3.01901
-	y: 3.48605
-	z: 1.74302
-
-Punt contingut en la esfera: 
-	x: 3.02513
-	y: 3.49312
-	z: 1.74656
-
-Punt contingut en la esfera: 
-	x: 3.03125
-	y: 3.50019
-	z: 1.7501
-
-Punt contingut en la esfera: 
-	x: 3.03738
-	y: 3.50726
-	z: 1.75363
-
-Punt contingut en la esfera: 
-	x: 3.0435
-	y: 3.51433
-	z: 1.75717
-
-Punt contingut en la esfera: 
-	x: 3.04963
-	y: 3.52141
-	z: 1.7607
-
-Punt contingut en la esfera: 
-	x: 3.05575
-	y: 3.52848
-	z: 1.76424
-
-Punt contingut en la esfera: 
-	x: 3.06187
-	y: 3.53555
-	z: 1.76777
-
-Punt contingut en la esfera: 
-	x: 3.068
-	y: 3.54262
-	z: 1.77131
-
-Punt contingut en la esfera: 
-	x: 3.07412
-	y: 3.54969
-	z: 1.77485
-
-Punt contingut en la esfera: 
-	x: 3.08025
-	y: 3.55676
-	z: 1.77838
-
-Punt contingut en la esfera: 
-	x: 3.08637
-	y: 3.56383
-	z: 1.78192
-
-Punt contingut en la esfera: 
-	x: 3.09249
-	y: 3.5709
-	z: 1.78545
-
-Punt contingut en la esfera: 
-	x: 3.09862
-	y: 3.57798
-	z: 1.78899
-
-Punt contingut en la esfera: 
-	x: 3.10474
-	y: 3.58505
-	z: 1.79252
-
-Punt contingut en la esfera: 
-	x: 3.11086
-	y: 3.59212
-	z: 1.79606
-
-Punt contingut en la esfera: 
-	x: 3.11699
-	y: 3.59919
-	z: 1.79959
-
-Punt contingut en la esfera: 
-	x: 3.12311
-	y: 3.60626
-	z: 1.80313
-
-Punt contingut en la esfera: 
-	x: 3.12924
-	y: 3.61333
-	z: 1.80667
-
-Punt contingut en la esfera: 
-	x: 3.13536
-	y: 3.6204
-	z: 1.8102
-
-Punt contingut en la esfera: 
-	x: 3.14148
-	y: 3.62747
-	z: 1.81374
-
-Punt contingut en la esfera: 
-	x: 3.14761
-	y: 3.63454
-	z: 1.81727
-
-Punt contingut en la esfera: 
-	x: 3.15373
-	y: 3.64162
-	z: 1.82081
-
-Punt contingut en la esfera: 
-	x: 3.15986
-	y: 3.64869
-	z: 1.82434
-
-Punt contingut en la esfera: 
-	x: 3.16598
-	y: 3.65576
-	z: 1.82788
-
-Punt contingut en la esfera: 
-	x: 3.1721
-	y: 3.66283
-	z: 1.83141
-
-Punt contingut en la esfera: 
-	x: 3.17823
-	y: 3.6699
-	z: 1.83495
-
-Punt contingut en la esfera: 
-	x: 3.18435
-	y: 3.67697
-	z: 1.83849
-
-Punt contingut en la esfera: 
-	x: 3.19048
-	y: 3.68404
-	z: 1.84202
-
-Punt contingut en la esfera: 
-	x: 3.1966
-	y: 3.69111
-	z: 1.84556
-
-Punt contingut en la esfera: 
-	x: 3.20272
-	y: 3.69819
-	z: 1.84909
-
-Punt contingut en la esfera: 
-	x: 3.20885
-	y: 3.70526
-	z: 1.85263
-
-Punt contingut en la esfera: 
-	x: 3.21497
-	y: 3.71233
-	z: 1.85616
-
-Punt contingut en la esfera: 
-	x: 3.22109
-	y: 3.7194
-	z: 1.8597
-
-Punt contingut en la esfera: 
-	x: 3.22722
-	y: 3.72647
-	z: 1.86324
-
-Punt contingut en la esfera: 
-	x: 3.23334
-	y: 3.73354
-	z: 1.86677
-
-Punt contingut en la esfera: 
-	x: 3.23947
-	y: 3.74061
-	z: 1.87031
-
-Punt contingut en la esfera: 
-	x: 3.24559
-	y: 3.74768
-	z: 1.87384
-
-Punt contingut en la esfera: 
-	x: 3.25171
-	y: 3.75476
-	z: 1.87738
-
-Punt contingut en la esfera: 
-	x: 3.25784
-	y: 3.76183
-	z: 1.88091
+	x: 1.24359
+	y: -0.978587
+	z: 0.747225
 
 Punt interseccio exacte: 
-	x: 3.24789
-	y: 3.75034
-	z: 1.87517
+	x: 1.24285
+	y: -0.978007
+	z: 0.746782
 
-Temps d'execucio: 9 milisegons
+Temps d'execucio: 4 milisegons
 
 ------------------------------------Plane-------------------------------------
 
-
-Punt interseccio entre: 
-	x: 2.73119 i x2: 2.73731
-	y: 3.1537 i y2: 3.16077
-	z: 1.57685 i z2: 1.58039
-
-Punt interseccio exacte: 
-	x: 2.73205
-	y: 3.1547
-	z: 1.57735
 
 Temps d'execucio: 0 milisegons
 
@@ -2696,8673 +901,2563 @@ Temps d'execucio: 0 milisegons
 
 
 Punt interseccio entre: 
-	x: 0 i x2: 0.00612372
-	y: 0 i y2: 0.00707107
-	z: 0 i z2: 0.00353553
+	x: 0 i x2: 0.00710624
+	y: 0 i y2: -0.00559193
+	z: 0 i z2: 0.00426986
 
 Punt interseccio exacte en la cara de la box: 1
 	x: 0
 	y: 0
 	z: 0
 
-Punt contingut en la capsa: 
-	x: 1.19413
-	y: 1.37886
-	z: 0.689429
-
-Punt contingut en la capsa: 
-	x: 1.20025
-	y: 1.38593
-	z: 0.692964
-
-Punt contingut en la capsa: 
-	x: 1.20637
-	y: 1.393
-	z: 0.6965
-
-Punt contingut en la capsa: 
-	x: 1.2125
-	y: 1.40007
-	z: 0.700035
-
-Punt contingut en la capsa: 
-	x: 1.21862
-	y: 1.40714
-	z: 0.703571
-
-Punt contingut en la capsa: 
-	x: 1.22474
-	y: 1.41421
-	z: 0.707106
-
-Punt contingut en la capsa: 
-	x: 1.23087
-	y: 1.42128
-	z: 0.710642
-
-Punt contingut en la capsa: 
-	x: 1.23699
-	y: 1.42835
-	z: 0.714177
-
-Punt contingut en la capsa: 
-	x: 1.24312
-	y: 1.43543
-	z: 0.717713
-
-Punt contingut en la capsa: 
-	x: 1.24924
-	y: 1.4425
-	z: 0.721248
-
-Punt contingut en la capsa: 
-	x: 1.25536
-	y: 1.44957
-	z: 0.724784
-
-Punt contingut en la capsa: 
-	x: 1.26149
-	y: 1.45664
-	z: 0.728319
-
-Punt contingut en la capsa: 
-	x: 1.26761
-	y: 1.46371
-	z: 0.731855
-
-Punt contingut en la capsa: 
-	x: 1.27373
-	y: 1.47078
-	z: 0.73539
-
-Punt contingut en la capsa: 
-	x: 1.27986
-	y: 1.47785
-	z: 0.738926
-
-Punt contingut en la capsa: 
-	x: 1.28598
-	y: 1.48492
-	z: 0.742462
-
-Punt contingut en la capsa: 
-	x: 1.2921
-	y: 1.49199
-	z: 0.745997
-
-Punt contingut en la capsa: 
-	x: 1.29823
-	y: 1.49907
-	z: 0.749533
-
-Punt contingut en la capsa: 
-	x: 1.30435
-	y: 1.50614
-	z: 0.753068
-
-Punt contingut en la capsa: 
-	x: 1.31048
-	y: 1.51321
-	z: 0.756604
-
-Punt contingut en la capsa: 
-	x: 1.3166
-	y: 1.52028
-	z: 0.760139
-
-Punt contingut en la capsa: 
-	x: 1.32272
-	y: 1.52735
-	z: 0.763675
-
-Punt contingut en la capsa: 
-	x: 1.32885
-	y: 1.53442
-	z: 0.76721
-
-Punt contingut en la capsa: 
-	x: 1.33497
-	y: 1.54149
-	z: 0.770746
-
-Punt contingut en la capsa: 
-	x: 1.34109
-	y: 1.54856
-	z: 0.774281
-
-Punt contingut en la capsa: 
-	x: 1.34722
-	y: 1.55563
-	z: 0.777817
-
-Punt contingut en la capsa: 
-	x: 1.35334
-	y: 1.5627
-	z: 0.781352
-
-Punt contingut en la capsa: 
-	x: 1.35947
-	y: 1.56978
-	z: 0.784888
-
-Punt contingut en la capsa: 
-	x: 1.36559
-	y: 1.57685
-	z: 0.788423
-
-Punt contingut en la capsa: 
-	x: 1.37171
-	y: 1.58392
-	z: 0.791959
-
-Punt contingut en la capsa: 
-	x: 1.37784
-	y: 1.59099
-	z: 0.795494
-
-Punt contingut en la capsa: 
-	x: 1.38396
-	y: 1.59806
-	z: 0.79903
-
-Punt contingut en la capsa: 
-	x: 1.39008
-	y: 1.60513
-	z: 0.802566
-
-Punt contingut en la capsa: 
-	x: 1.39621
-	y: 1.6122
-	z: 0.806101
-
-Punt contingut en la capsa: 
-	x: 1.40233
-	y: 1.61927
-	z: 0.809637
-
-Punt contingut en la capsa: 
-	x: 1.40846
-	y: 1.62634
-	z: 0.813172
-
-Punt contingut en la capsa: 
-	x: 1.41458
-	y: 1.63342
-	z: 0.816708
-
-Punt contingut en la capsa: 
-	x: 1.4207
-	y: 1.64049
-	z: 0.820243
-
-Punt contingut en la capsa: 
-	x: 1.42683
-	y: 1.64756
-	z: 0.823779
-
-Punt contingut en la capsa: 
-	x: 1.43295
-	y: 1.65463
-	z: 0.827314
-
-Punt contingut en la capsa: 
-	x: 1.43907
-	y: 1.6617
-	z: 0.83085
-
-Punt contingut en la capsa: 
-	x: 1.4452
-	y: 1.66877
-	z: 0.834385
-
-Punt contingut en la capsa: 
-	x: 1.45132
-	y: 1.67584
-	z: 0.837921
-
-Punt contingut en la capsa: 
-	x: 1.45745
-	y: 1.68291
-	z: 0.841456
-
-Punt contingut en la capsa: 
-	x: 1.46357
-	y: 1.68998
-	z: 0.844992
-
-Punt contingut en la capsa: 
-	x: 1.46969
-	y: 1.69705
-	z: 0.848527
-
-Punt contingut en la capsa: 
-	x: 1.47582
-	y: 1.70413
-	z: 0.852063
-
-Punt contingut en la capsa: 
-	x: 1.48194
-	y: 1.7112
-	z: 0.855599
-
-Punt contingut en la capsa: 
-	x: 1.48806
-	y: 1.71827
-	z: 0.859134
-
-Punt contingut en la capsa: 
-	x: 1.49419
-	y: 1.72534
-	z: 0.86267
-
-Punt contingut en la capsa: 
-	x: 1.50031
-	y: 1.73241
-	z: 0.866205
-
-Punt contingut en la capsa: 
-	x: 1.50643
-	y: 1.73948
-	z: 0.869741
-
-Punt contingut en la capsa: 
-	x: 1.51256
-	y: 1.74655
-	z: 0.873276
-
-Punt contingut en la capsa: 
-	x: 1.51868
-	y: 1.75362
-	z: 0.876812
-
-Punt contingut en la capsa: 
-	x: 1.52481
-	y: 1.76069
-	z: 0.880347
-
-Punt contingut en la capsa: 
-	x: 1.53093
-	y: 1.76777
-	z: 0.883883
-
-Punt contingut en la capsa: 
-	x: 1.53705
-	y: 1.77484
-	z: 0.887418
-
-Punt contingut en la capsa: 
-	x: 1.54318
-	y: 1.78191
-	z: 0.890954
-
-Punt contingut en la capsa: 
-	x: 1.5493
-	y: 1.78898
-	z: 0.894489
-
-Punt contingut en la capsa: 
-	x: 1.55542
-	y: 1.79605
-	z: 0.898025
-
-Punt contingut en la capsa: 
-	x: 1.56155
-	y: 1.80312
-	z: 0.90156
-
-Punt contingut en la capsa: 
-	x: 1.56767
-	y: 1.81019
-	z: 0.905096
-
-Punt contingut en la capsa: 
-	x: 1.5738
-	y: 1.81726
-	z: 0.908632
-
-Punt contingut en la capsa: 
-	x: 1.57992
-	y: 1.82433
-	z: 0.912167
-
-Punt contingut en la capsa: 
-	x: 1.58604
-	y: 1.83141
-	z: 0.915703
-
-Punt contingut en la capsa: 
-	x: 1.59217
-	y: 1.83848
-	z: 0.919238
-
-Punt contingut en la capsa: 
-	x: 1.59829
-	y: 1.84555
-	z: 0.922774
-
-Punt contingut en la capsa: 
-	x: 1.60441
-	y: 1.85262
-	z: 0.926309
-
-Punt contingut en la capsa: 
-	x: 1.61054
-	y: 1.85969
-	z: 0.929845
-
-Punt contingut en la capsa: 
-	x: 1.61666
-	y: 1.86676
-	z: 0.93338
-
-Punt contingut en la capsa: 
-	x: 1.62279
-	y: 1.87383
-	z: 0.936916
-
-Punt contingut en la capsa: 
-	x: 1.62891
-	y: 1.8809
-	z: 0.940451
-
-Punt contingut en la capsa: 
-	x: 1.63503
-	y: 1.88797
-	z: 0.943987
-
-Punt contingut en la capsa: 
-	x: 1.64116
-	y: 1.89504
-	z: 0.947522
-
-Punt contingut en la capsa: 
-	x: 1.64728
-	y: 1.90212
-	z: 0.951058
-
-Punt contingut en la capsa: 
-	x: 1.6534
-	y: 1.90919
-	z: 0.954593
-
-Punt contingut en la capsa: 
-	x: 1.65953
-	y: 1.91626
-	z: 0.958129
-
-Punt contingut en la capsa: 
-	x: 1.66565
-	y: 1.92333
-	z: 0.961664
-
-Punt contingut en la capsa: 
-	x: 1.67178
-	y: 1.9304
-	z: 0.9652
-
-Punt contingut en la capsa: 
-	x: 1.6779
-	y: 1.93747
-	z: 0.968736
-
-Punt contingut en la capsa: 
-	x: 1.68402
-	y: 1.94454
-	z: 0.972271
-
-Punt contingut en la capsa: 
-	x: 1.69015
-	y: 1.95161
-	z: 0.975807
-
-Punt contingut en la capsa: 
-	x: 1.69627
-	y: 1.95868
-	z: 0.979342
-
-Punt contingut en la capsa: 
-	x: 1.70239
-	y: 1.96576
-	z: 0.982878
-
-Punt contingut en la capsa: 
-	x: 1.70852
-	y: 1.97283
-	z: 0.986413
-
-Punt contingut en la capsa: 
-	x: 1.71464
-	y: 1.9799
-	z: 0.989949
-
-Punt contingut en la capsa: 
-	x: 1.72077
-	y: 1.98697
-	z: 0.993484
-
-Punt contingut en la capsa: 
-	x: 1.72689
-	y: 1.99404
-	z: 0.99702
-
-Punt contingut en la capsa: 
-	x: 1.73301
-	y: 2.00111
-	z: 1.00056
-
-Punt contingut en la capsa: 
-	x: 1.73914
-	y: 2.00818
-	z: 1.00409
-
-Punt contingut en la capsa: 
-	x: 1.74526
-	y: 2.01525
-	z: 1.00763
-
-Punt contingut en la capsa: 
-	x: 1.75138
-	y: 2.02232
-	z: 1.01116
-
-Punt contingut en la capsa: 
-	x: 1.75751
-	y: 2.02939
-	z: 1.0147
-
-Punt contingut en la capsa: 
-	x: 1.76363
-	y: 2.03647
-	z: 1.01823
-
-Punt contingut en la capsa: 
-	x: 1.76975
-	y: 2.04354
-	z: 1.02177
-
-Punt contingut en la capsa: 
-	x: 1.77588
-	y: 2.05061
-	z: 1.0253
-
-Punt contingut en la capsa: 
-	x: 1.782
-	y: 2.05768
-	z: 1.02884
-
-Punt contingut en la capsa: 
-	x: 1.78813
-	y: 2.06475
-	z: 1.03238
-
-Punt contingut en la capsa: 
-	x: 1.79425
-	y: 2.07182
-	z: 1.03591
-
-Punt contingut en la capsa: 
-	x: 1.80037
-	y: 2.07889
-	z: 1.03945
-
-Punt contingut en la capsa: 
-	x: 1.8065
-	y: 2.08596
-	z: 1.04298
-
-Punt contingut en la capsa: 
-	x: 1.81262
-	y: 2.09303
-	z: 1.04652
-
-Punt contingut en la capsa: 
-	x: 1.81874
-	y: 2.10011
-	z: 1.05005
-
-Punt contingut en la capsa: 
-	x: 1.82487
-	y: 2.10718
-	z: 1.05359
-
-Punt contingut en la capsa: 
-	x: 1.83099
-	y: 2.11425
-	z: 1.05712
-
-Punt contingut en la capsa: 
-	x: 1.83712
-	y: 2.12132
-	z: 1.06066
-
-Punt contingut en la capsa: 
-	x: 1.84324
-	y: 2.12839
-	z: 1.06419
-
-Punt contingut en la capsa: 
-	x: 1.84936
-	y: 2.13546
-	z: 1.06773
-
-Punt contingut en la capsa: 
-	x: 1.85549
-	y: 2.14253
-	z: 1.07127
-
-Punt contingut en la capsa: 
-	x: 1.86161
-	y: 2.1496
-	z: 1.0748
-
-Punt contingut en la capsa: 
-	x: 1.86773
-	y: 2.15667
-	z: 1.07834
-
-Punt contingut en la capsa: 
-	x: 1.87386
-	y: 2.16374
-	z: 1.08187
-
-Punt contingut en la capsa: 
-	x: 1.87998
-	y: 2.17082
-	z: 1.08541
-
-Punt contingut en la capsa: 
-	x: 1.88611
-	y: 2.17789
-	z: 1.08894
-
-Punt contingut en la capsa: 
-	x: 1.89223
-	y: 2.18496
-	z: 1.09248
-
-Punt contingut en la capsa: 
-	x: 1.89835
-	y: 2.19203
-	z: 1.09601
-
-Punt contingut en la capsa: 
-	x: 1.90448
-	y: 2.1991
-	z: 1.09955
-
-Punt contingut en la capsa: 
-	x: 1.9106
-	y: 2.20617
-	z: 1.10309
-
-Punt contingut en la capsa: 
-	x: 1.91672
-	y: 2.21324
-	z: 1.10662
-
-Punt contingut en la capsa: 
-	x: 1.92285
-	y: 2.22031
-	z: 1.11016
-
-Punt contingut en la capsa: 
-	x: 1.92897
-	y: 2.22738
-	z: 1.11369
-
-Punt contingut en la capsa: 
-	x: 1.9351
-	y: 2.23446
-	z: 1.11723
-
-Punt contingut en la capsa: 
-	x: 1.94122
-	y: 2.24153
-	z: 1.12076
-
-Punt contingut en la capsa: 
-	x: 1.94734
-	y: 2.2486
-	z: 1.1243
-
-Punt contingut en la capsa: 
-	x: 1.95347
-	y: 2.25567
-	z: 1.12783
-
-Punt contingut en la capsa: 
-	x: 1.95959
-	y: 2.26274
-	z: 1.13137
-
-Punt contingut en la capsa: 
-	x: 1.96571
-	y: 2.26981
-	z: 1.13491
-
-Punt contingut en la capsa: 
-	x: 1.97184
-	y: 2.27688
-	z: 1.13844
-
-Punt contingut en la capsa: 
-	x: 1.97796
-	y: 2.28395
-	z: 1.14198
-
-Punt contingut en la capsa: 
-	x: 1.98408
-	y: 2.29102
-	z: 1.14551
-
-Punt contingut en la capsa: 
-	x: 1.99021
-	y: 2.2981
-	z: 1.14905
-
-Punt contingut en la capsa: 
-	x: 1.99633
-	y: 2.30517
-	z: 1.15258
-
-Punt contingut en la capsa: 
-	x: 2.00246
-	y: 2.31224
-	z: 1.15612
-
-Punt contingut en la capsa: 
-	x: 2.00858
-	y: 2.31931
-	z: 1.15965
-
-Punt contingut en la capsa: 
-	x: 2.0147
-	y: 2.32638
-	z: 1.16319
-
-Punt contingut en la capsa: 
-	x: 2.02083
-	y: 2.33345
-	z: 1.16673
-
-Punt contingut en la capsa: 
-	x: 2.02695
-	y: 2.34052
-	z: 1.17026
-
-Punt contingut en la capsa: 
-	x: 2.03307
-	y: 2.34759
-	z: 1.1738
-
-Punt contingut en la capsa: 
-	x: 2.0392
-	y: 2.35466
-	z: 1.17733
-
-Punt contingut en la capsa: 
-	x: 2.04532
-	y: 2.36173
-	z: 1.18087
-
-Punt contingut en la capsa: 
-	x: 2.05145
-	y: 2.36881
-	z: 1.1844
-
-Punt contingut en la capsa: 
-	x: 2.05757
-	y: 2.37588
-	z: 1.18794
-
-Punt contingut en la capsa: 
-	x: 2.06369
-	y: 2.38295
-	z: 1.19147
-
-Punt contingut en la capsa: 
-	x: 2.06982
-	y: 2.39002
-	z: 1.19501
-
-Punt contingut en la capsa: 
-	x: 2.07594
-	y: 2.39709
-	z: 1.19854
-
-Punt contingut en la capsa: 
-	x: 2.08206
-	y: 2.40416
-	z: 1.20208
-
-Punt contingut en la capsa: 
-	x: 2.08819
-	y: 2.41123
-	z: 1.20562
-
-Punt contingut en la capsa: 
-	x: 2.09431
-	y: 2.4183
-	z: 1.20915
-
-Punt contingut en la capsa: 
-	x: 2.10044
-	y: 2.42537
-	z: 1.21269
-
-Punt contingut en la capsa: 
-	x: 2.10656
-	y: 2.43245
-	z: 1.21622
-
-Punt contingut en la capsa: 
-	x: 2.11268
-	y: 2.43952
-	z: 1.21976
-
-Punt contingut en la capsa: 
-	x: 2.11881
-	y: 2.44659
-	z: 1.22329
-
-Punt contingut en la capsa: 
-	x: 2.12493
-	y: 2.45366
-	z: 1.22683
-
-Punt contingut en la capsa: 
-	x: 2.13105
-	y: 2.46073
-	z: 1.23036
-
-Punt contingut en la capsa: 
-	x: 2.13718
-	y: 2.4678
-	z: 1.2339
-
-Punt contingut en la capsa: 
-	x: 2.1433
-	y: 2.47487
-	z: 1.23744
-
-Punt contingut en la capsa: 
-	x: 2.14943
-	y: 2.48194
-	z: 1.24097
-
-Punt contingut en la capsa: 
-	x: 2.15555
-	y: 2.48901
-	z: 1.24451
-
-Punt contingut en la capsa: 
-	x: 2.16167
-	y: 2.49608
-	z: 1.24804
-
-Punt contingut en la capsa: 
-	x: 2.1678
-	y: 2.50316
-	z: 1.25158
-
-Punt contingut en la capsa: 
-	x: 2.17392
-	y: 2.51023
-	z: 1.25511
-
-Punt contingut en la capsa: 
-	x: 2.18004
-	y: 2.5173
-	z: 1.25865
-
-Punt contingut en la capsa: 
-	x: 2.18617
-	y: 2.52437
-	z: 1.26218
-
-Punt contingut en la capsa: 
-	x: 2.19229
-	y: 2.53144
-	z: 1.26572
-
-Punt contingut en la capsa: 
-	x: 2.19842
-	y: 2.53851
-	z: 1.26926
-
-Punt contingut en la capsa: 
-	x: 2.20454
-	y: 2.54558
-	z: 1.27279
-
-Punt contingut en la capsa: 
-	x: 2.21066
-	y: 2.55265
-	z: 1.27633
-
-Punt contingut en la capsa: 
-	x: 2.21679
-	y: 2.55972
-	z: 1.27986
-
-Punt contingut en la capsa: 
-	x: 2.22291
-	y: 2.5668
-	z: 1.2834
-
-Punt contingut en la capsa: 
-	x: 2.22903
-	y: 2.57387
-	z: 1.28693
-
-Punt contingut en la capsa: 
-	x: 2.23516
-	y: 2.58094
-	z: 1.29047
-
-Punt contingut en la capsa: 
-	x: 2.24128
-	y: 2.58801
-	z: 1.294
-
-Punt contingut en la capsa: 
-	x: 2.2474
-	y: 2.59508
-	z: 1.29754
-
-Punt contingut en la capsa: 
-	x: 2.25353
-	y: 2.60215
-	z: 1.30108
-
-Punt contingut en la capsa: 
-	x: 2.25965
-	y: 2.60922
-	z: 1.30461
-
-Punt contingut en la capsa: 
-	x: 2.26578
-	y: 2.61629
-	z: 1.30815
-
-Punt contingut en la capsa: 
-	x: 2.2719
-	y: 2.62336
-	z: 1.31168
-
-Punt contingut en la capsa: 
-	x: 2.27802
-	y: 2.63043
-	z: 1.31522
-
-Punt contingut en la capsa: 
-	x: 2.28415
-	y: 2.63751
-	z: 1.31875
-
-Punt contingut en la capsa: 
-	x: 2.29027
-	y: 2.64458
-	z: 1.32229
-
-Punt contingut en la capsa: 
-	x: 2.29639
-	y: 2.65165
-	z: 1.32582
-
-Punt contingut en la capsa: 
-	x: 2.30252
-	y: 2.65872
-	z: 1.32936
-
-Punt contingut en la capsa: 
-	x: 2.30864
-	y: 2.66579
-	z: 1.3329
-
-Punt contingut en la capsa: 
-	x: 2.31477
-	y: 2.67286
-	z: 1.33643
-
-Punt contingut en la capsa: 
-	x: 2.32089
-	y: 2.67993
-	z: 1.33997
-
-Punt contingut en la capsa: 
-	x: 2.32701
-	y: 2.687
-	z: 1.3435
-
-Punt contingut en la capsa: 
-	x: 2.33314
-	y: 2.69407
-	z: 1.34704
-
-Punt contingut en la capsa: 
-	x: 2.33926
-	y: 2.70115
-	z: 1.35057
-
-Punt contingut en la capsa: 
-	x: 2.34538
-	y: 2.70822
-	z: 1.35411
-
-Punt contingut en la capsa: 
-	x: 2.35151
-	y: 2.71529
-	z: 1.35764
-
-Punt contingut en la capsa: 
-	x: 2.35763
-	y: 2.72236
-	z: 1.36118
-
-Punt contingut en la capsa: 
-	x: 2.36376
-	y: 2.72943
-	z: 1.36471
-
-Punt contingut en la capsa: 
-	x: 2.36988
-	y: 2.7365
-	z: 1.36825
-
-Punt contingut en la capsa: 
-	x: 2.376
-	y: 2.74357
-	z: 1.37179
-
-Punt contingut en la capsa: 
-	x: 2.38213
-	y: 2.75064
-	z: 1.37532
-
-Punt contingut en la capsa: 
-	x: 2.38825
-	y: 2.75771
-	z: 1.37886
-
-Punt contingut en la capsa: 
-	x: 2.39437
-	y: 2.76479
-	z: 1.38239
-
-Punt contingut en la capsa: 
-	x: 2.4005
-	y: 2.77186
-	z: 1.38593
-
-Punt contingut en la capsa: 
-	x: 2.40662
-	y: 2.77893
-	z: 1.38946
-
-Punt contingut en la capsa: 
-	x: 2.41275
-	y: 2.786
-	z: 1.393
-
-Punt contingut en la capsa: 
-	x: 2.41887
-	y: 2.79307
-	z: 1.39653
-
-Punt contingut en la capsa: 
-	x: 2.42499
-	y: 2.80014
-	z: 1.40007
-
-Punt contingut en la capsa: 
-	x: 2.43112
-	y: 2.80721
-	z: 1.40361
-
-Punt contingut en la capsa: 
-	x: 2.43724
-	y: 2.81428
-	z: 1.40714
-
-Punt contingut en la capsa: 
-	x: 2.44336
-	y: 2.82135
-	z: 1.41068
-
-Punt contingut en la capsa: 
-	x: 2.44949
-	y: 2.82842
-	z: 1.41421
-
-Punt contingut en la capsa: 
-	x: 2.45561
-	y: 2.8355
-	z: 1.41775
-
-Punt contingut en la capsa: 
-	x: 2.46174
-	y: 2.84257
-	z: 1.42128
-
-Punt contingut en la capsa: 
-	x: 2.46786
-	y: 2.84964
-	z: 1.42482
-
-Punt contingut en la capsa: 
-	x: 2.47398
-	y: 2.85671
-	z: 1.42835
-
-Punt contingut en la capsa: 
-	x: 2.48011
-	y: 2.86378
-	z: 1.43189
-
-Punt contingut en la capsa: 
-	x: 2.48623
-	y: 2.87085
-	z: 1.43543
-
-Punt contingut en la capsa: 
-	x: 2.49235
-	y: 2.87792
-	z: 1.43896
-
-Punt contingut en la capsa: 
-	x: 2.49848
-	y: 2.88499
-	z: 1.4425
-
-Punt contingut en la capsa: 
-	x: 2.5046
-	y: 2.89207
-	z: 1.44603
-
-Punt contingut en la capsa: 
-	x: 2.51073
-	y: 2.89914
-	z: 1.44957
-
-Punt contingut en la capsa: 
-	x: 2.51685
-	y: 2.90621
-	z: 1.4531
-
-Punt contingut en la capsa: 
-	x: 2.52297
-	y: 2.91328
-	z: 1.45664
-
-Punt contingut en la capsa: 
-	x: 2.5291
-	y: 2.92035
-	z: 1.46018
-
-Punt contingut en la capsa: 
-	x: 2.53522
-	y: 2.92742
-	z: 1.46371
-
-Punt contingut en la capsa: 
-	x: 2.54135
-	y: 2.93449
-	z: 1.46725
-
-Punt contingut en la capsa: 
-	x: 2.54747
-	y: 2.94156
-	z: 1.47078
-
-Punt contingut en la capsa: 
-	x: 2.55359
-	y: 2.94864
-	z: 1.47432
-
-Punt contingut en la capsa: 
-	x: 2.55972
-	y: 2.95571
-	z: 1.47785
-
-Punt contingut en la capsa: 
-	x: 2.56584
-	y: 2.96278
-	z: 1.48139
-
-Punt contingut en la capsa: 
-	x: 2.57196
-	y: 2.96985
-	z: 1.48492
-
-Punt contingut en la capsa: 
-	x: 2.57809
-	y: 2.97692
-	z: 1.48846
-
-Punt contingut en la capsa: 
-	x: 2.58421
-	y: 2.98399
-	z: 1.492
-
-Punt contingut en la capsa: 
-	x: 2.59034
-	y: 2.99106
-	z: 1.49553
-
-Punt contingut en la capsa: 
-	x: 2.59646
-	y: 2.99813
-	z: 1.49907
-
-Punt contingut en la capsa: 
-	x: 2.60258
-	y: 3.00521
-	z: 1.5026
-
-Punt contingut en la capsa: 
-	x: 2.60871
-	y: 3.01228
-	z: 1.50614
-
-Punt contingut en la capsa: 
-	x: 2.61483
-	y: 3.01935
-	z: 1.50967
-
-Punt contingut en la capsa: 
-	x: 2.62096
-	y: 3.02642
-	z: 1.51321
-
-Punt contingut en la capsa: 
-	x: 2.62708
-	y: 3.03349
-	z: 1.51675
-
-Punt contingut en la capsa: 
-	x: 2.6332
-	y: 3.04056
-	z: 1.52028
-
-Punt contingut en la capsa: 
-	x: 2.63933
-	y: 3.04763
-	z: 1.52382
-
-Punt contingut en la capsa: 
-	x: 2.64545
-	y: 3.0547
-	z: 1.52735
-
-Punt contingut en la capsa: 
-	x: 2.65158
-	y: 3.06178
-	z: 1.53089
-
-Punt contingut en la capsa: 
-	x: 2.6577
-	y: 3.06885
-	z: 1.53442
-
-Punt contingut en la capsa: 
-	x: 2.66382
-	y: 3.07592
-	z: 1.53796
-
-Punt contingut en la capsa: 
-	x: 2.66995
-	y: 3.08299
-	z: 1.54149
-
-Punt contingut en la capsa: 
-	x: 2.67607
-	y: 3.09006
-	z: 1.54503
-
-Punt contingut en la capsa: 
-	x: 2.68219
-	y: 3.09713
-	z: 1.54857
-
-Punt contingut en la capsa: 
-	x: 2.68832
-	y: 3.1042
-	z: 1.5521
-
-Punt contingut en la capsa: 
-	x: 2.69444
-	y: 3.11127
-	z: 1.55564
-
-Punt contingut en la capsa: 
-	x: 2.70057
-	y: 3.11835
-	z: 1.55917
-
-Punt contingut en la capsa: 
-	x: 2.70669
-	y: 3.12542
-	z: 1.56271
-
-Punt contingut en la capsa: 
-	x: 2.71281
-	y: 3.13249
-	z: 1.56624
-
-Punt contingut en la capsa: 
-	x: 2.71894
-	y: 3.13956
-	z: 1.56978
-
-Punt contingut en la capsa: 
-	x: 2.72506
-	y: 3.14663
-	z: 1.57332
-
-Punt contingut en la capsa: 
-	x: 2.73119
-	y: 3.1537
-	z: 1.57685
-
-Punt contingut en la capsa: 
-	x: 2.73731
-	y: 3.16077
-	z: 1.58039
-
-Punt contingut en la capsa: 
-	x: 2.74343
-	y: 3.16784
-	z: 1.58392
-
-Punt contingut en la capsa: 
-	x: 2.74956
-	y: 3.17492
-	z: 1.58746
-
-Punt contingut en la capsa: 
-	x: 2.75568
-	y: 3.18199
-	z: 1.59099
-
-Punt contingut en la capsa: 
-	x: 2.7618
-	y: 3.18906
-	z: 1.59453
-
-Punt contingut en la capsa: 
-	x: 2.76793
-	y: 3.19613
-	z: 1.59806
-
-Punt contingut en la capsa: 
-	x: 2.77405
-	y: 3.2032
-	z: 1.6016
-
-Punt contingut en la capsa: 
-	x: 2.78018
-	y: 3.21027
-	z: 1.60514
-
-Punt contingut en la capsa: 
-	x: 2.7863
-	y: 3.21734
-	z: 1.60867
-
-Punt contingut en la capsa: 
-	x: 2.79242
-	y: 3.22441
-	z: 1.61221
-
-Punt contingut en la capsa: 
-	x: 2.79855
-	y: 3.23148
-	z: 1.61574
-
-Punt contingut en la capsa: 
-	x: 2.80467
-	y: 3.23856
-	z: 1.61928
-
-Punt contingut en la capsa: 
-	x: 2.8108
-	y: 3.24563
-	z: 1.62281
-
-Punt contingut en la capsa: 
-	x: 2.81692
-	y: 3.2527
-	z: 1.62635
-
-Punt contingut en la capsa: 
-	x: 2.82304
-	y: 3.25977
-	z: 1.62988
-
-Punt contingut en la capsa: 
-	x: 2.82917
-	y: 3.26684
-	z: 1.63342
-
-Punt contingut en la capsa: 
-	x: 2.83529
-	y: 3.27391
-	z: 1.63696
-
-Punt contingut en la capsa: 
-	x: 2.84141
-	y: 3.28098
-	z: 1.64049
-
-Punt contingut en la capsa: 
-	x: 2.84754
-	y: 3.28805
-	z: 1.64403
-
-Punt contingut en la capsa: 
-	x: 2.85366
-	y: 3.29513
-	z: 1.64756
-
-Punt contingut en la capsa: 
-	x: 2.85979
-	y: 3.3022
-	z: 1.6511
-
-Punt contingut en la capsa: 
-	x: 2.86591
-	y: 3.30927
-	z: 1.65463
-
-Punt contingut en la capsa: 
-	x: 2.87203
-	y: 3.31634
-	z: 1.65817
-
-Punt contingut en la capsa: 
-	x: 2.87816
-	y: 3.32341
-	z: 1.66171
-
-Punt contingut en la capsa: 
-	x: 2.88428
-	y: 3.33048
-	z: 1.66524
-
-Punt contingut en la capsa: 
-	x: 2.89041
-	y: 3.33755
-	z: 1.66878
-
-Punt contingut en la capsa: 
-	x: 2.89653
-	y: 3.34462
-	z: 1.67231
-
-Punt contingut en la capsa: 
-	x: 2.90265
-	y: 3.3517
-	z: 1.67585
-
-Punt contingut en la capsa: 
-	x: 2.90878
-	y: 3.35877
-	z: 1.67938
-
-Punt contingut en la capsa: 
-	x: 2.9149
-	y: 3.36584
-	z: 1.68292
-
-Punt contingut en la capsa: 
-	x: 2.92103
-	y: 3.37291
-	z: 1.68645
-
-Punt contingut en la capsa: 
-	x: 2.92715
-	y: 3.37998
-	z: 1.68999
-
-Punt contingut en la capsa: 
-	x: 2.93327
-	y: 3.38705
-	z: 1.69353
-
-Punt contingut en la capsa: 
-	x: 2.9394
-	y: 3.39412
-	z: 1.69706
-
-Punt contingut en la capsa: 
-	x: 2.94552
-	y: 3.40119
-	z: 1.7006
-
-Punt contingut en la capsa: 
-	x: 2.95164
-	y: 3.40827
-	z: 1.70413
-
-Punt contingut en la capsa: 
-	x: 2.95777
-	y: 3.41534
-	z: 1.70767
-
-Punt contingut en la capsa: 
-	x: 2.96389
-	y: 3.42241
-	z: 1.7112
-
-Punt contingut en la capsa: 
-	x: 2.97002
-	y: 3.42948
-	z: 1.71474
-
-Punt contingut en la capsa: 
-	x: 2.97614
-	y: 3.43655
-	z: 1.71828
-
-Punt contingut en la capsa: 
-	x: 2.98226
-	y: 3.44362
-	z: 1.72181
-
-Punt contingut en la capsa: 
-	x: 2.98839
-	y: 3.45069
-	z: 1.72535
-
-Punt contingut en la capsa: 
-	x: 2.99451
-	y: 3.45776
-	z: 1.72888
-
-Punt contingut en la capsa: 
-	x: 3.00064
-	y: 3.46484
-	z: 1.73242
-
-Punt contingut en la capsa: 
-	x: 3.00676
-	y: 3.47191
-	z: 1.73595
-
-Punt contingut en la capsa: 
-	x: 3.01288
-	y: 3.47898
-	z: 1.73949
-
-Punt contingut en la capsa: 
-	x: 3.01901
-	y: 3.48605
-	z: 1.74302
-
-Punt contingut en la capsa: 
-	x: 3.02513
-	y: 3.49312
-	z: 1.74656
-
-Punt contingut en la capsa: 
-	x: 3.03125
-	y: 3.50019
-	z: 1.7501
-
-Punt contingut en la capsa: 
-	x: 3.03738
-	y: 3.50726
-	z: 1.75363
-
-Punt contingut en la capsa: 
-	x: 3.0435
-	y: 3.51433
-	z: 1.75717
-
-Punt contingut en la capsa: 
-	x: 3.04963
-	y: 3.52141
-	z: 1.7607
-
-Punt contingut en la capsa: 
-	x: 3.05575
-	y: 3.52848
-	z: 1.76424
-
-Punt contingut en la capsa: 
-	x: 3.06187
-	y: 3.53555
-	z: 1.76777
-
-Punt contingut en la capsa: 
-	x: 3.068
-	y: 3.54262
-	z: 1.77131
-
-Punt contingut en la capsa: 
-	x: 3.07412
-	y: 3.54969
-	z: 1.77485
-
-Punt contingut en la capsa: 
-	x: 3.08025
-	y: 3.55676
-	z: 1.77838
-
-Punt contingut en la capsa: 
-	x: 3.08637
-	y: 3.56383
-	z: 1.78192
-
-Punt contingut en la capsa: 
-	x: 3.09249
-	y: 3.5709
-	z: 1.78545
-
-Punt contingut en la capsa: 
-	x: 3.09862
-	y: 3.57798
-	z: 1.78899
-
-Punt contingut en la capsa: 
-	x: 3.10474
-	y: 3.58505
-	z: 1.79252
-
-Punt contingut en la capsa: 
-	x: 3.11086
-	y: 3.59212
-	z: 1.79606
-
-Punt contingut en la capsa: 
-	x: 3.11699
-	y: 3.59919
-	z: 1.79959
-
-Punt contingut en la capsa: 
-	x: 3.12311
-	y: 3.60626
-	z: 1.80313
-
-Punt contingut en la capsa: 
-	x: 3.12924
-	y: 3.61333
-	z: 1.80667
-
-Punt contingut en la capsa: 
-	x: 3.13536
-	y: 3.6204
-	z: 1.8102
-
-Punt contingut en la capsa: 
-	x: 3.14148
-	y: 3.62747
-	z: 1.81374
-
-Punt contingut en la capsa: 
-	x: 3.14761
-	y: 3.63454
-	z: 1.81727
-
-Punt contingut en la capsa: 
-	x: 3.15373
-	y: 3.64162
-	z: 1.82081
-
-Punt contingut en la capsa: 
-	x: 3.15986
-	y: 3.64869
-	z: 1.82434
-
-Punt contingut en la capsa: 
-	x: 3.16598
-	y: 3.65576
-	z: 1.82788
-
-Punt contingut en la capsa: 
-	x: 3.1721
-	y: 3.66283
-	z: 1.83141
-
-Punt contingut en la capsa: 
-	x: 3.17823
-	y: 3.6699
-	z: 1.83495
-
-Punt contingut en la capsa: 
-	x: 3.18435
-	y: 3.67697
-	z: 1.83849
-
-Punt contingut en la capsa: 
-	x: 3.19048
-	y: 3.68404
-	z: 1.84202
-
-Punt contingut en la capsa: 
-	x: 3.1966
-	y: 3.69111
-	z: 1.84556
-
-Punt contingut en la capsa: 
-	x: 3.20272
-	y: 3.69819
-	z: 1.84909
-
-Punt contingut en la capsa: 
-	x: 3.20885
-	y: 3.70526
-	z: 1.85263
-
-Punt contingut en la capsa: 
-	x: 3.21497
-	y: 3.71233
-	z: 1.85616
-
-Punt contingut en la capsa: 
-	x: 3.22109
-	y: 3.7194
-	z: 1.8597
-
-Punt contingut en la capsa: 
-	x: 3.22722
-	y: 3.72647
-	z: 1.86324
-
-Punt contingut en la capsa: 
-	x: 3.23334
-	y: 3.73354
-	z: 1.86677
-
-Punt contingut en la capsa: 
-	x: 3.23947
-	y: 3.74061
-	z: 1.87031
-
-Punt contingut en la capsa: 
-	x: 3.24559
-	y: 3.74768
-	z: 1.87384
-
-Punt contingut en la capsa: 
-	x: 3.25171
-	y: 3.75476
-	z: 1.87738
-
-Punt contingut en la capsa: 
-	x: 3.25784
-	y: 3.76183
-	z: 1.88091
-
-Punt contingut en la capsa: 
-	x: 3.26396
-	y: 3.7689
-	z: 1.88445
-
-Punt contingut en la capsa: 
-	x: 3.27009
-	y: 3.77597
-	z: 1.88798
-
-Punt contingut en la capsa: 
-	x: 3.27621
-	y: 3.78304
-	z: 1.89152
-
-Punt contingut en la capsa: 
-	x: 3.28233
-	y: 3.79011
-	z: 1.89506
-
-Punt contingut en la capsa: 
-	x: 3.28846
-	y: 3.79718
-	z: 1.89859
-
-Punt contingut en la capsa: 
-	x: 3.29458
-	y: 3.80425
-	z: 1.90213
-
-Punt contingut en la capsa: 
-	x: 3.3007
-	y: 3.81133
-	z: 1.90566
-
-Punt contingut en la capsa: 
-	x: 3.30683
-	y: 3.8184
-	z: 1.9092
-
-Punt contingut en la capsa: 
-	x: 3.31295
-	y: 3.82547
-	z: 1.91273
-
-Punt contingut en la capsa: 
-	x: 3.31908
-	y: 3.83254
-	z: 1.91627
-
-Punt contingut en la capsa: 
-	x: 3.3252
-	y: 3.83961
-	z: 1.91981
-
-Punt contingut en la capsa: 
-	x: 3.33132
-	y: 3.84668
-	z: 1.92334
-
-Punt contingut en la capsa: 
-	x: 3.33745
-	y: 3.85375
-	z: 1.92688
-
-Punt contingut en la capsa: 
-	x: 3.34357
-	y: 3.86082
-	z: 1.93041
-
-Punt contingut en la capsa: 
-	x: 3.3497
-	y: 3.8679
-	z: 1.93395
-
-Punt contingut en la capsa: 
-	x: 3.35582
-	y: 3.87497
-	z: 1.93748
-
-Punt contingut en la capsa: 
-	x: 3.36194
-	y: 3.88204
-	z: 1.94102
-
-Punt contingut en la capsa: 
-	x: 3.36807
-	y: 3.88911
-	z: 1.94455
-
-Punt contingut en la capsa: 
-	x: 3.37419
-	y: 3.89618
-	z: 1.94809
-
-Punt contingut en la capsa: 
-	x: 3.38031
-	y: 3.90325
-	z: 1.95163
-
-Punt contingut en la capsa: 
-	x: 3.38644
-	y: 3.91032
-	z: 1.95516
-
-Punt contingut en la capsa: 
-	x: 3.39256
-	y: 3.91739
-	z: 1.9587
-
-Punt contingut en la capsa: 
-	x: 3.39869
-	y: 3.92447
-	z: 1.96223
-
-Punt contingut en la capsa: 
-	x: 3.40481
-	y: 3.93154
-	z: 1.96577
-
-Punt contingut en la capsa: 
-	x: 3.41093
-	y: 3.93861
-	z: 1.9693
-
-Punt contingut en la capsa: 
-	x: 3.41706
-	y: 3.94568
-	z: 1.97284
-
-Punt contingut en la capsa: 
-	x: 3.42318
-	y: 3.95275
-	z: 1.97638
-
-Punt contingut en la capsa: 
-	x: 3.42931
-	y: 3.95982
-	z: 1.97991
-
-Punt contingut en la capsa: 
-	x: 3.43543
-	y: 3.96689
-	z: 1.98345
-
-Punt contingut en la capsa: 
-	x: 3.44155
-	y: 3.97396
-	z: 1.98698
-
-Punt contingut en la capsa: 
-	x: 3.44768
-	y: 3.98104
-	z: 1.99052
-
-Punt contingut en la capsa: 
-	x: 3.4538
-	y: 3.98811
-	z: 1.99405
-
-Punt contingut en la capsa: 
-	x: 3.45993
-	y: 3.99518
-	z: 1.99759
-
-Punt contingut en la capsa: 
-	x: 3.46605
-	y: 4.00225
-	z: 2.00112
-
-Punt contingut en la capsa: 
-	x: 3.47217
-	y: 4.00932
-	z: 2.00466
-
-Punt contingut en la capsa: 
-	x: 3.4783
-	y: 4.01639
-	z: 2.0082
-
-Punt contingut en la capsa: 
-	x: 3.48442
-	y: 4.02346
-	z: 2.01173
-
-Punt contingut en la capsa: 
-	x: 3.49054
-	y: 4.03053
-	z: 2.01527
-
-Punt contingut en la capsa: 
-	x: 3.49667
-	y: 4.0376
-	z: 2.0188
-
-Punt contingut en la capsa: 
-	x: 3.50279
-	y: 4.04468
-	z: 2.02234
-
-Punt contingut en la capsa: 
-	x: 3.50892
-	y: 4.05175
-	z: 2.02587
-
-Punt contingut en la capsa: 
-	x: 3.51504
-	y: 4.05882
-	z: 2.02941
-
-Punt contingut en la capsa: 
-	x: 3.52116
-	y: 4.06589
-	z: 2.03294
-
-Punt contingut en la capsa: 
-	x: 3.52729
-	y: 4.07296
-	z: 2.03648
-
-Punt contingut en la capsa: 
-	x: 3.53341
-	y: 4.08003
-	z: 2.04002
-
-Punt contingut en la capsa: 
-	x: 3.53954
-	y: 4.0871
-	z: 2.04355
-
-Punt contingut en la capsa: 
-	x: 3.54566
-	y: 4.09417
-	z: 2.04709
-
-Punt contingut en la capsa: 
-	x: 3.55178
-	y: 4.10125
-	z: 2.05062
-
-Punt contingut en la capsa: 
-	x: 3.55791
-	y: 4.10832
-	z: 2.05416
-
-Punt contingut en la capsa: 
-	x: 3.56403
-	y: 4.11539
-	z: 2.05769
-
-Punt contingut en la capsa: 
-	x: 3.57015
-	y: 4.12246
-	z: 2.06123
-
-Punt contingut en la capsa: 
-	x: 3.57628
-	y: 4.12953
-	z: 2.06477
-
-Punt contingut en la capsa: 
-	x: 3.5824
-	y: 4.1366
-	z: 2.0683
-
-Punt contingut en la capsa: 
-	x: 3.58853
-	y: 4.14367
-	z: 2.07184
-
-Punt contingut en la capsa: 
-	x: 3.59465
-	y: 4.15074
-	z: 2.07537
-
-Punt contingut en la capsa: 
-	x: 3.60077
-	y: 4.15782
-	z: 2.07891
-
-Punt contingut en la capsa: 
-	x: 3.6069
-	y: 4.16489
-	z: 2.08244
-
-Punt contingut en la capsa: 
-	x: 3.61302
-	y: 4.17196
-	z: 2.08598
-
-Punt contingut en la capsa: 
-	x: 3.61915
-	y: 4.17903
-	z: 2.08951
-
-Punt contingut en la capsa: 
-	x: 3.62527
-	y: 4.1861
-	z: 2.09305
-
-Punt contingut en la capsa: 
-	x: 3.63139
-	y: 4.19317
-	z: 2.09659
-
-Punt contingut en la capsa: 
-	x: 3.63752
-	y: 4.20024
-	z: 2.10012
-
-Punt contingut en la capsa: 
-	x: 3.64364
-	y: 4.20731
-	z: 2.10366
-
-Punt contingut en la capsa: 
-	x: 3.64977
-	y: 4.21439
-	z: 2.10719
-
-Punt contingut en la capsa: 
-	x: 3.65589
-	y: 4.22146
-	z: 2.11073
-
-Punt contingut en la capsa: 
-	x: 3.66201
-	y: 4.22853
-	z: 2.11426
-
-Punt contingut en la capsa: 
-	x: 3.66814
-	y: 4.2356
-	z: 2.1178
-
-Punt contingut en la capsa: 
-	x: 3.67426
-	y: 4.24267
-	z: 2.12134
-
-Punt contingut en la capsa: 
-	x: 3.68038
-	y: 4.24974
-	z: 2.12487
-
-Punt contingut en la capsa: 
-	x: 3.68651
-	y: 4.25681
-	z: 2.12841
-
-Punt contingut en la capsa: 
-	x: 3.69263
-	y: 4.26388
-	z: 2.13194
-
-Punt contingut en la capsa: 
-	x: 3.69876
-	y: 4.27096
-	z: 2.13548
-
-Punt contingut en la capsa: 
-	x: 3.70488
-	y: 4.27803
-	z: 2.13901
-
-Punt contingut en la capsa: 
-	x: 3.711
-	y: 4.2851
-	z: 2.14255
-
-Punt contingut en la capsa: 
-	x: 3.71713
-	y: 4.29217
-	z: 2.14608
-
-Punt contingut en la capsa: 
-	x: 3.72325
-	y: 4.29924
-	z: 2.14962
-
-Punt contingut en la capsa: 
-	x: 3.72938
-	y: 4.30631
-	z: 2.15316
-
-Punt contingut en la capsa: 
-	x: 3.7355
-	y: 4.31338
-	z: 2.15669
-
-Punt contingut en la capsa: 
-	x: 3.74162
-	y: 4.32045
-	z: 2.16023
-
-Punt contingut en la capsa: 
-	x: 3.74775
-	y: 4.32753
-	z: 2.16376
-
-Punt contingut en la capsa: 
-	x: 3.75387
-	y: 4.3346
-	z: 2.1673
-
-Punt contingut en la capsa: 
-	x: 3.75999
-	y: 4.34167
-	z: 2.17083
-
-Punt contingut en la capsa: 
-	x: 3.76612
-	y: 4.34874
-	z: 2.17437
-
-Punt contingut en la capsa: 
-	x: 3.77224
-	y: 4.35581
-	z: 2.17791
-
-Punt contingut en la capsa: 
-	x: 3.77837
-	y: 4.36288
-	z: 2.18144
-
-Punt contingut en la capsa: 
-	x: 3.78449
-	y: 4.36995
-	z: 2.18498
-
-Punt contingut en la capsa: 
-	x: 3.79061
-	y: 4.37702
-	z: 2.18851
-
-Punt contingut en la capsa: 
-	x: 3.79674
-	y: 4.3841
-	z: 2.19205
-
-Punt contingut en la capsa: 
-	x: 3.80286
-	y: 4.39117
-	z: 2.19558
-
-Punt contingut en la capsa: 
-	x: 3.80899
-	y: 4.39824
-	z: 2.19912
-
-Punt contingut en la capsa: 
-	x: 3.81511
-	y: 4.40531
-	z: 2.20265
-
-Punt contingut en la capsa: 
-	x: 3.82123
-	y: 4.41238
-	z: 2.20619
-
-Punt contingut en la capsa: 
-	x: 3.82736
-	y: 4.41945
-	z: 2.20973
-
-Punt contingut en la capsa: 
-	x: 3.83348
-	y: 4.42652
-	z: 2.21326
-
-Punt contingut en la capsa: 
-	x: 3.8396
-	y: 4.43359
-	z: 2.2168
-
-Punt contingut en la capsa: 
-	x: 3.84573
-	y: 4.44067
-	z: 2.22033
-
-Punt contingut en la capsa: 
-	x: 3.85185
-	y: 4.44774
-	z: 2.22387
-
-Punt contingut en la capsa: 
-	x: 3.85798
-	y: 4.45481
-	z: 2.2274
-
-Punt contingut en la capsa: 
-	x: 3.8641
-	y: 4.46188
-	z: 2.23094
-
-Punt contingut en la capsa: 
-	x: 3.87022
-	y: 4.46895
-	z: 2.23447
-
-Punt contingut en la capsa: 
-	x: 3.87635
-	y: 4.47602
-	z: 2.23801
-
-Punt contingut en la capsa: 
-	x: 3.88247
-	y: 4.48309
-	z: 2.24155
-
-Punt contingut en la capsa: 
-	x: 3.8886
-	y: 4.49016
-	z: 2.24508
-
-Punt contingut en la capsa: 
-	x: 3.89472
-	y: 4.49723
-	z: 2.24862
-
-Punt contingut en la capsa: 
-	x: 3.90084
-	y: 4.50431
-	z: 2.25215
-
-Punt contingut en la capsa: 
-	x: 3.90697
-	y: 4.51138
-	z: 2.25569
-
-Punt contingut en la capsa: 
-	x: 3.91309
-	y: 4.51845
-	z: 2.25922
-
-Punt contingut en la capsa: 
-	x: 3.91921
-	y: 4.52552
-	z: 2.26276
-
-Punt contingut en la capsa: 
-	x: 3.92534
-	y: 4.53259
-	z: 2.2663
-
-Punt interseccio entre: 
-	x: 4.32951 i x2: 4.33564
-	y: 4.99929 i y2: 5.00636
-	z: 2.49965 i z2: 2.50318
-
-Punt interseccio exacte en la cara de la box: 5
-	x: 4.33013
-	y: 5
-	z: 2.5
-
-Temps d'execucio: 9 milisegons
+Temps d'execucio: 0 milisegons
 
 ------------------------------------Cylinder------------------------------------
 
 
-Punt interseccio entre: 
-	x: 0 i x2: 0.00612372
-	y: 0 i y2: 0.00707107
-	z: 0 i z2: 0.00353553
-
-Punt interseccio exacte: 
-	x: 2.92002e-09
-	y: 3.37175e-09
-	z: 1.68587e-09
-
-Punt contingut en el cilindre: 
-	x: 0.00612372
-	y: 0.00707107
-	z: 0.00353553
-
-Punt contingut en el cilindre: 
-	x: 0.0122474
-	y: 0.0141421
-	z: 0.00707107
-
-Punt contingut en el cilindre: 
-	x: 0.0183712
-	y: 0.0212132
-	z: 0.0106066
-
-Punt contingut en el cilindre: 
-	x: 0.0244949
-	y: 0.0282843
-	z: 0.0141421
-
-Punt contingut en el cilindre: 
-	x: 0.0306186
-	y: 0.0353553
-	z: 0.0176777
-
-Punt contingut en el cilindre: 
-	x: 0.0367423
-	y: 0.0424264
-	z: 0.0212132
-
-Punt contingut en el cilindre: 
-	x: 0.0428661
-	y: 0.0494975
-	z: 0.0247487
-
-Punt contingut en el cilindre: 
-	x: 0.0489898
-	y: 0.0565685
-	z: 0.0282843
-
-Punt contingut en el cilindre: 
-	x: 0.0551135
-	y: 0.0636396
-	z: 0.0318198
-
-Punt contingut en el cilindre: 
-	x: 0.0612372
-	y: 0.0707107
-	z: 0.0353553
-
-Punt contingut en el cilindre: 
-	x: 0.067361
-	y: 0.0777817
-	z: 0.0388909
-
-Punt contingut en el cilindre: 
-	x: 0.0734847
-	y: 0.0848528
-	z: 0.0424264
-
-Punt contingut en el cilindre: 
-	x: 0.0796084
-	y: 0.0919239
-	z: 0.0459619
-
-Punt contingut en el cilindre: 
-	x: 0.0857321
-	y: 0.0989949
-	z: 0.0494975
-
-Punt contingut en el cilindre: 
-	x: 0.0918559
-	y: 0.106066
-	z: 0.053033
-
-Punt contingut en el cilindre: 
-	x: 0.0979796
-	y: 0.113137
-	z: 0.0565685
-
-Punt contingut en el cilindre: 
-	x: 0.104103
-	y: 0.120208
-	z: 0.0601041
-
-Punt contingut en el cilindre: 
-	x: 0.110227
-	y: 0.127279
-	z: 0.0636396
-
-Punt contingut en el cilindre: 
-	x: 0.116351
-	y: 0.13435
-	z: 0.0671751
-
-Punt contingut en el cilindre: 
-	x: 0.122474
-	y: 0.141421
-	z: 0.0707107
-
-Punt contingut en el cilindre: 
-	x: 0.128598
-	y: 0.148492
-	z: 0.0742462
-
-Punt contingut en el cilindre: 
-	x: 0.134722
-	y: 0.155564
-	z: 0.0777818
-
-Punt contingut en el cilindre: 
-	x: 0.140846
-	y: 0.162635
-	z: 0.0813173
-
-Punt contingut en el cilindre: 
-	x: 0.146969
-	y: 0.169706
-	z: 0.0848528
-
-Punt contingut en el cilindre: 
-	x: 0.153093
-	y: 0.176777
-	z: 0.0883884
-
-Punt contingut en el cilindre: 
-	x: 0.159217
-	y: 0.183848
-	z: 0.0919239
-
-Punt contingut en el cilindre: 
-	x: 0.165341
-	y: 0.190919
-	z: 0.0954594
-
-Punt contingut en el cilindre: 
-	x: 0.171464
-	y: 0.19799
-	z: 0.0989949
-
-Punt contingut en el cilindre: 
-	x: 0.177588
-	y: 0.205061
-	z: 0.10253
-
-Punt contingut en el cilindre: 
-	x: 0.183712
-	y: 0.212132
-	z: 0.106066
-
-Punt contingut en el cilindre: 
-	x: 0.189835
-	y: 0.219203
-	z: 0.109602
-
-Punt contingut en el cilindre: 
-	x: 0.195959
-	y: 0.226274
-	z: 0.113137
-
-Punt contingut en el cilindre: 
-	x: 0.202083
-	y: 0.233345
-	z: 0.116673
-
-Punt contingut en el cilindre: 
-	x: 0.208207
-	y: 0.240416
-	z: 0.120208
-
-Punt contingut en el cilindre: 
-	x: 0.21433
-	y: 0.247487
-	z: 0.123744
-
-Punt contingut en el cilindre: 
-	x: 0.220454
-	y: 0.254558
-	z: 0.127279
-
-Punt contingut en el cilindre: 
-	x: 0.226578
-	y: 0.261629
-	z: 0.130815
-
-Punt contingut en el cilindre: 
-	x: 0.232701
-	y: 0.268701
-	z: 0.13435
-
-Punt contingut en el cilindre: 
-	x: 0.238825
-	y: 0.275772
-	z: 0.137886
-
-Punt contingut en el cilindre: 
-	x: 0.244949
-	y: 0.282843
-	z: 0.141421
-
-Punt contingut en el cilindre: 
-	x: 0.251073
-	y: 0.289914
-	z: 0.144957
-
-Punt contingut en el cilindre: 
-	x: 0.257196
-	y: 0.296985
-	z: 0.148492
-
-Punt contingut en el cilindre: 
-	x: 0.26332
-	y: 0.304056
-	z: 0.152028
-
-Punt contingut en el cilindre: 
-	x: 0.269444
-	y: 0.311127
-	z: 0.155563
-
-Punt contingut en el cilindre: 
-	x: 0.275567
-	y: 0.318198
-	z: 0.159099
-
-Punt contingut en el cilindre: 
-	x: 0.281691
-	y: 0.325269
-	z: 0.162634
-
-Punt contingut en el cilindre: 
-	x: 0.287815
-	y: 0.33234
-	z: 0.16617
-
-Punt contingut en el cilindre: 
-	x: 0.293939
-	y: 0.339411
-	z: 0.169706
-
-Punt contingut en el cilindre: 
-	x: 0.300062
-	y: 0.346482
-	z: 0.173241
-
-Punt contingut en el cilindre: 
-	x: 0.306186
-	y: 0.353553
-	z: 0.176777
-
-Punt contingut en el cilindre: 
-	x: 0.31231
-	y: 0.360624
-	z: 0.180312
-
-Punt contingut en el cilindre: 
-	x: 0.318434
-	y: 0.367695
-	z: 0.183848
-
-Punt contingut en el cilindre: 
-	x: 0.324557
-	y: 0.374766
-	z: 0.187383
-
-Punt contingut en el cilindre: 
-	x: 0.330681
-	y: 0.381837
-	z: 0.190919
-
-Punt contingut en el cilindre: 
-	x: 0.336805
-	y: 0.388909
-	z: 0.194454
-
-Punt contingut en el cilindre: 
-	x: 0.342928
-	y: 0.39598
-	z: 0.19799
-
-Punt contingut en el cilindre: 
-	x: 0.349052
-	y: 0.403051
-	z: 0.201525
-
-Punt contingut en el cilindre: 
-	x: 0.355176
-	y: 0.410122
-	z: 0.205061
-
-Punt contingut en el cilindre: 
-	x: 0.3613
-	y: 0.417193
-	z: 0.208596
-
-Punt contingut en el cilindre: 
-	x: 0.367423
-	y: 0.424264
-	z: 0.212132
-
-Punt contingut en el cilindre: 
-	x: 0.373547
-	y: 0.431335
-	z: 0.215667
-
-Punt contingut en el cilindre: 
-	x: 0.379671
-	y: 0.438406
-	z: 0.219203
-
-Punt contingut en el cilindre: 
-	x: 0.385794
-	y: 0.445477
-	z: 0.222739
-
-Punt contingut en el cilindre: 
-	x: 0.391918
-	y: 0.452548
-	z: 0.226274
-
-Punt contingut en el cilindre: 
-	x: 0.398042
-	y: 0.459619
-	z: 0.22981
-
-Punt contingut en el cilindre: 
-	x: 0.404166
-	y: 0.46669
-	z: 0.233345
-
-Punt contingut en el cilindre: 
-	x: 0.410289
-	y: 0.473761
-	z: 0.236881
-
-Punt contingut en el cilindre: 
-	x: 0.416413
-	y: 0.480832
-	z: 0.240416
-
-Punt contingut en el cilindre: 
-	x: 0.422537
-	y: 0.487903
-	z: 0.243952
-
-Punt contingut en el cilindre: 
-	x: 0.42866
-	y: 0.494974
-	z: 0.247487
-
-Punt contingut en el cilindre: 
-	x: 0.434784
-	y: 0.502046
-	z: 0.251023
-
-Punt contingut en el cilindre: 
-	x: 0.440908
-	y: 0.509117
-	z: 0.254558
-
-Punt contingut en el cilindre: 
-	x: 0.447032
-	y: 0.516188
-	z: 0.258094
-
-Punt contingut en el cilindre: 
-	x: 0.453155
-	y: 0.523259
-	z: 0.261629
-
-Punt contingut en el cilindre: 
-	x: 0.459279
-	y: 0.53033
-	z: 0.265165
-
-Punt contingut en el cilindre: 
-	x: 0.465403
-	y: 0.537401
-	z: 0.2687
-
-Punt contingut en el cilindre: 
-	x: 0.471526
-	y: 0.544472
-	z: 0.272236
-
-Punt contingut en el cilindre: 
-	x: 0.47765
-	y: 0.551543
-	z: 0.275771
-
-Punt contingut en el cilindre: 
-	x: 0.483774
-	y: 0.558614
-	z: 0.279307
-
-Punt contingut en el cilindre: 
-	x: 0.489898
-	y: 0.565685
-	z: 0.282843
-
-Punt contingut en el cilindre: 
-	x: 0.496021
-	y: 0.572756
-	z: 0.286378
-
-Punt contingut en el cilindre: 
-	x: 0.502145
-	y: 0.579827
-	z: 0.289914
-
-Punt contingut en el cilindre: 
-	x: 0.508269
-	y: 0.586898
-	z: 0.293449
-
-Punt contingut en el cilindre: 
-	x: 0.514392
-	y: 0.593969
-	z: 0.296985
-
-Punt contingut en el cilindre: 
-	x: 0.520516
-	y: 0.60104
-	z: 0.30052
-
-Punt contingut en el cilindre: 
-	x: 0.52664
-	y: 0.608111
-	z: 0.304056
-
-Punt contingut en el cilindre: 
-	x: 0.532764
-	y: 0.615183
-	z: 0.307591
-
-Punt contingut en el cilindre: 
-	x: 0.538887
-	y: 0.622254
-	z: 0.311127
-
-Punt contingut en el cilindre: 
-	x: 0.545011
-	y: 0.629325
-	z: 0.314662
-
-Punt contingut en el cilindre: 
-	x: 0.551135
-	y: 0.636396
-	z: 0.318198
-
-Punt contingut en el cilindre: 
-	x: 0.557259
-	y: 0.643467
-	z: 0.321733
-
-Punt contingut en el cilindre: 
-	x: 0.563382
-	y: 0.650538
-	z: 0.325269
-
-Punt contingut en el cilindre: 
-	x: 0.569506
-	y: 0.657609
-	z: 0.328804
-
-Punt contingut en el cilindre: 
-	x: 0.57563
-	y: 0.66468
-	z: 0.33234
-
-Punt contingut en el cilindre: 
-	x: 0.581753
-	y: 0.671751
-	z: 0.335876
-
-Punt contingut en el cilindre: 
-	x: 0.587877
-	y: 0.678822
-	z: 0.339411
-
-Punt contingut en el cilindre: 
-	x: 0.594001
-	y: 0.685893
-	z: 0.342947
-
-Punt contingut en el cilindre: 
-	x: 0.600125
-	y: 0.692964
-	z: 0.346482
-
-Punt contingut en el cilindre: 
-	x: 0.606248
-	y: 0.700035
-	z: 0.350018
-
-Punt contingut en el cilindre: 
-	x: 0.612372
-	y: 0.707106
-	z: 0.353553
-
-Punt contingut en el cilindre: 
-	x: 0.618496
-	y: 0.714177
-	z: 0.357089
-
-Punt contingut en el cilindre: 
-	x: 0.624619
-	y: 0.721248
-	z: 0.360624
-
-Punt contingut en el cilindre: 
-	x: 0.630743
-	y: 0.72832
-	z: 0.36416
-
-Punt contingut en el cilindre: 
-	x: 0.636867
-	y: 0.735391
-	z: 0.367695
-
-Punt contingut en el cilindre: 
-	x: 0.642991
-	y: 0.742462
-	z: 0.371231
-
-Punt contingut en el cilindre: 
-	x: 0.649114
-	y: 0.749533
-	z: 0.374766
-
-Punt contingut en el cilindre: 
-	x: 0.655238
-	y: 0.756604
-	z: 0.378302
-
-Punt contingut en el cilindre: 
-	x: 0.661362
-	y: 0.763675
-	z: 0.381837
-
-Punt contingut en el cilindre: 
-	x: 0.667485
-	y: 0.770746
-	z: 0.385373
-
-Punt contingut en el cilindre: 
-	x: 0.673609
-	y: 0.777817
-	z: 0.388908
-
-Punt contingut en el cilindre: 
-	x: 0.679733
-	y: 0.784888
-	z: 0.392444
-
-Punt contingut en el cilindre: 
-	x: 0.685857
-	y: 0.791959
-	z: 0.39598
-
-Punt contingut en el cilindre: 
-	x: 0.69198
-	y: 0.79903
-	z: 0.399515
-
-Punt contingut en el cilindre: 
-	x: 0.698104
-	y: 0.806101
-	z: 0.403051
-
-Punt contingut en el cilindre: 
-	x: 0.704228
-	y: 0.813172
-	z: 0.406586
-
-Punt contingut en el cilindre: 
-	x: 0.710352
-	y: 0.820243
-	z: 0.410122
-
-Punt contingut en el cilindre: 
-	x: 0.716475
-	y: 0.827314
-	z: 0.413657
-
-Punt contingut en el cilindre: 
-	x: 0.722599
-	y: 0.834385
-	z: 0.417193
-
-Punt contingut en el cilindre: 
-	x: 0.728723
-	y: 0.841457
-	z: 0.420728
-
-Punt contingut en el cilindre: 
-	x: 0.734846
-	y: 0.848528
-	z: 0.424264
-
-Punt contingut en el cilindre: 
-	x: 0.74097
-	y: 0.855599
-	z: 0.427799
-
-Punt contingut en el cilindre: 
-	x: 0.747094
-	y: 0.86267
-	z: 0.431335
-
-Punt contingut en el cilindre: 
-	x: 0.753218
-	y: 0.869741
-	z: 0.43487
-
-Punt contingut en el cilindre: 
-	x: 0.759341
-	y: 0.876812
-	z: 0.438406
-
-Punt contingut en el cilindre: 
-	x: 0.765465
-	y: 0.883883
-	z: 0.441941
-
-Punt contingut en el cilindre: 
-	x: 0.771589
-	y: 0.890954
-	z: 0.445477
-
-Punt contingut en el cilindre: 
-	x: 0.777712
-	y: 0.898025
-	z: 0.449012
-
-Punt contingut en el cilindre: 
-	x: 0.783836
-	y: 0.905096
-	z: 0.452548
-
-Punt contingut en el cilindre: 
-	x: 0.78996
-	y: 0.912167
-	z: 0.456084
-
-Punt contingut en el cilindre: 
-	x: 0.796084
-	y: 0.919238
-	z: 0.459619
-
-Punt contingut en el cilindre: 
-	x: 0.802207
-	y: 0.926309
-	z: 0.463155
-
-Punt contingut en el cilindre: 
-	x: 0.808331
-	y: 0.93338
-	z: 0.46669
-
-Punt contingut en el cilindre: 
-	x: 0.814455
-	y: 0.940451
-	z: 0.470226
-
-Punt contingut en el cilindre: 
-	x: 0.820578
-	y: 0.947522
-	z: 0.473761
-
-Punt contingut en el cilindre: 
-	x: 0.826702
-	y: 0.954593
-	z: 0.477297
-
-Punt contingut en el cilindre: 
-	x: 0.832826
-	y: 0.961665
-	z: 0.480832
-
-Punt contingut en el cilindre: 
-	x: 0.83895
-	y: 0.968736
-	z: 0.484368
-
-Punt contingut en el cilindre: 
-	x: 0.845073
-	y: 0.975807
-	z: 0.487903
-
-Punt contingut en el cilindre: 
-	x: 0.851197
-	y: 0.982878
-	z: 0.491439
-
-Punt contingut en el cilindre: 
-	x: 0.857321
-	y: 0.989949
-	z: 0.494974
-
-Punt contingut en el cilindre: 
-	x: 0.863444
-	y: 0.99702
-	z: 0.49851
-
-Punt contingut en el cilindre: 
-	x: 0.869568
-	y: 1.00409
-	z: 0.502045
-
-Punt contingut en el cilindre: 
-	x: 0.875692
-	y: 1.01116
-	z: 0.505581
-
-Punt contingut en el cilindre: 
-	x: 0.881816
-	y: 1.01823
-	z: 0.509117
-
-Punt contingut en el cilindre: 
-	x: 0.887939
-	y: 1.0253
-	z: 0.512652
-
-Punt contingut en el cilindre: 
-	x: 0.894063
-	y: 1.03238
-	z: 0.516188
-
-Punt contingut en el cilindre: 
-	x: 0.900187
-	y: 1.03945
-	z: 0.519723
-
-Punt contingut en el cilindre: 
-	x: 0.90631
-	y: 1.04652
-	z: 0.523259
-
-Punt contingut en el cilindre: 
-	x: 0.912434
-	y: 1.05359
-	z: 0.526794
-
-Punt contingut en el cilindre: 
-	x: 0.918558
-	y: 1.06066
-	z: 0.53033
-
-Punt contingut en el cilindre: 
-	x: 0.924682
-	y: 1.06773
-	z: 0.533865
-
-Punt contingut en el cilindre: 
-	x: 0.930805
-	y: 1.0748
-	z: 0.537401
-
-Punt contingut en el cilindre: 
-	x: 0.936929
-	y: 1.08187
-	z: 0.540936
-
-Punt contingut en el cilindre: 
-	x: 0.943053
-	y: 1.08894
-	z: 0.544472
-
-Punt contingut en el cilindre: 
-	x: 0.949177
-	y: 1.09601
-	z: 0.548007
-
-Punt contingut en el cilindre: 
-	x: 0.9553
-	y: 1.10309
-	z: 0.551543
-
-Punt contingut en el cilindre: 
-	x: 0.961424
-	y: 1.11016
-	z: 0.555078
-
-Punt contingut en el cilindre: 
-	x: 0.967548
-	y: 1.11723
-	z: 0.558614
-
-Punt contingut en el cilindre: 
-	x: 0.973671
-	y: 1.1243
-	z: 0.562149
-
-Punt contingut en el cilindre: 
-	x: 0.979795
-	y: 1.13137
-	z: 0.565685
-
-Punt contingut en el cilindre: 
-	x: 0.985919
-	y: 1.13844
-	z: 0.569221
-
-Punt contingut en el cilindre: 
-	x: 0.992043
-	y: 1.14551
-	z: 0.572756
-
-Punt contingut en el cilindre: 
-	x: 0.998166
-	y: 1.15258
-	z: 0.576292
-
-Punt contingut en el cilindre: 
-	x: 1.00429
-	y: 1.15965
-	z: 0.579827
-
-Punt contingut en el cilindre: 
-	x: 1.01041
-	y: 1.16673
-	z: 0.583363
-
-Punt contingut en el cilindre: 
-	x: 1.01654
-	y: 1.1738
-	z: 0.586898
-
-Punt contingut en el cilindre: 
-	x: 1.02266
-	y: 1.18087
-	z: 0.590434
-
-Punt contingut en el cilindre: 
-	x: 1.02878
-	y: 1.18794
-	z: 0.593969
-
-Punt contingut en el cilindre: 
-	x: 1.03491
-	y: 1.19501
-	z: 0.597505
-
-Punt contingut en el cilindre: 
-	x: 1.04103
-	y: 1.20208
-	z: 0.60104
-
-Punt contingut en el cilindre: 
-	x: 1.04716
-	y: 1.20915
-	z: 0.604576
-
-Punt contingut en el cilindre: 
-	x: 1.05328
-	y: 1.21622
-	z: 0.608111
-
-Punt contingut en el cilindre: 
-	x: 1.0594
-	y: 1.22329
-	z: 0.611647
-
-Punt contingut en el cilindre: 
-	x: 1.06553
-	y: 1.23036
-	z: 0.615182
-
-Punt contingut en el cilindre: 
-	x: 1.07165
-	y: 1.23744
-	z: 0.618718
-
-Punt contingut en el cilindre: 
-	x: 1.07777
-	y: 1.24451
-	z: 0.622253
-
-Punt contingut en el cilindre: 
-	x: 1.0839
-	y: 1.25158
-	z: 0.625789
-
-Punt contingut en el cilindre: 
-	x: 1.09002
-	y: 1.25865
-	z: 0.629325
-
-Punt contingut en el cilindre: 
-	x: 1.09615
-	y: 1.26572
-	z: 0.63286
-
-Punt contingut en el cilindre: 
-	x: 1.10227
-	y: 1.27279
-	z: 0.636396
-
-Punt contingut en el cilindre: 
-	x: 1.10839
-	y: 1.27986
-	z: 0.639931
-
-Punt contingut en el cilindre: 
-	x: 1.11452
-	y: 1.28693
-	z: 0.643467
-
-Punt contingut en el cilindre: 
-	x: 1.12064
-	y: 1.294
-	z: 0.647002
-
-Punt contingut en el cilindre: 
-	x: 1.12676
-	y: 1.30108
-	z: 0.650538
-
-Punt contingut en el cilindre: 
-	x: 1.13289
-	y: 1.30815
-	z: 0.654073
-
-Punt contingut en el cilindre: 
-	x: 1.13901
-	y: 1.31522
-	z: 0.657609
-
-Punt contingut en el cilindre: 
-	x: 1.14514
-	y: 1.32229
-	z: 0.661144
-
-Punt contingut en el cilindre: 
-	x: 1.15126
-	y: 1.32936
-	z: 0.66468
-
-Punt contingut en el cilindre: 
-	x: 1.15738
-	y: 1.33643
-	z: 0.668215
-
-Punt contingut en el cilindre: 
-	x: 1.16351
-	y: 1.3435
-	z: 0.671751
-
-Punt contingut en el cilindre: 
-	x: 1.16963
-	y: 1.35057
-	z: 0.675286
-
-Punt contingut en el cilindre: 
-	x: 1.17575
-	y: 1.35764
-	z: 0.678822
-
-Punt contingut en el cilindre: 
-	x: 1.18188
-	y: 1.36471
-	z: 0.682357
-
-Punt contingut en el cilindre: 
-	x: 1.188
-	y: 1.37179
-	z: 0.685893
-
-Punt contingut en el cilindre: 
-	x: 1.19413
-	y: 1.37886
-	z: 0.689429
-
-Punt contingut en el cilindre: 
-	x: 1.20025
-	y: 1.38593
-	z: 0.692964
-
-Punt contingut en el cilindre: 
-	x: 1.20637
-	y: 1.393
-	z: 0.6965
-
-Punt contingut en el cilindre: 
-	x: 1.2125
-	y: 1.40007
-	z: 0.700035
-
-Punt contingut en el cilindre: 
-	x: 1.21862
-	y: 1.40714
-	z: 0.703571
-
-Punt contingut en el cilindre: 
-	x: 1.22474
-	y: 1.41421
-	z: 0.707106
-
-Punt contingut en el cilindre: 
-	x: 1.23087
-	y: 1.42128
-	z: 0.710642
-
-Punt contingut en el cilindre: 
-	x: 1.23699
-	y: 1.42835
-	z: 0.714177
-
-Punt contingut en el cilindre: 
-	x: 1.24312
-	y: 1.43543
-	z: 0.717713
-
-Punt contingut en el cilindre: 
-	x: 1.24924
-	y: 1.4425
-	z: 0.721248
-
-Punt contingut en el cilindre: 
-	x: 1.25536
-	y: 1.44957
-	z: 0.724784
-
-Punt contingut en el cilindre: 
-	x: 1.26149
-	y: 1.45664
-	z: 0.728319
-
-Punt contingut en el cilindre: 
-	x: 1.26761
-	y: 1.46371
-	z: 0.731855
-
-Punt contingut en el cilindre: 
-	x: 1.27373
-	y: 1.47078
-	z: 0.73539
-
-Punt contingut en el cilindre: 
-	x: 1.27986
-	y: 1.47785
-	z: 0.738926
-
-Punt contingut en el cilindre: 
-	x: 1.28598
-	y: 1.48492
-	z: 0.742462
-
-Punt contingut en el cilindre: 
-	x: 1.2921
-	y: 1.49199
-	z: 0.745997
-
-Punt contingut en el cilindre: 
-	x: 1.29823
-	y: 1.49907
-	z: 0.749533
-
-Punt contingut en el cilindre: 
-	x: 1.30435
-	y: 1.50614
-	z: 0.753068
-
-Punt contingut en el cilindre: 
-	x: 1.31048
-	y: 1.51321
-	z: 0.756604
-
-Punt contingut en el cilindre: 
-	x: 1.3166
-	y: 1.52028
-	z: 0.760139
-
-Punt contingut en el cilindre: 
-	x: 1.32272
-	y: 1.52735
-	z: 0.763675
-
-Punt contingut en el cilindre: 
-	x: 1.32885
-	y: 1.53442
-	z: 0.76721
-
-Punt contingut en el cilindre: 
-	x: 1.33497
-	y: 1.54149
-	z: 0.770746
-
-Punt contingut en el cilindre: 
-	x: 1.34109
-	y: 1.54856
-	z: 0.774281
-
-Punt contingut en el cilindre: 
-	x: 1.34722
-	y: 1.55563
-	z: 0.777817
-
-Punt contingut en el cilindre: 
-	x: 1.35334
-	y: 1.5627
-	z: 0.781352
-
-Punt contingut en el cilindre: 
-	x: 1.35947
-	y: 1.56978
-	z: 0.784888
-
-Punt contingut en el cilindre: 
-	x: 1.36559
-	y: 1.57685
-	z: 0.788423
-
-Punt contingut en el cilindre: 
-	x: 1.37171
-	y: 1.58392
-	z: 0.791959
-
-Punt contingut en el cilindre: 
-	x: 1.37784
-	y: 1.59099
-	z: 0.795494
-
-Punt contingut en el cilindre: 
-	x: 1.38396
-	y: 1.59806
-	z: 0.79903
-
-Punt contingut en el cilindre: 
-	x: 1.39008
-	y: 1.60513
-	z: 0.802566
-
-Punt contingut en el cilindre: 
-	x: 1.39621
-	y: 1.6122
-	z: 0.806101
-
-Punt contingut en el cilindre: 
-	x: 1.40233
-	y: 1.61927
-	z: 0.809637
-
-Punt contingut en el cilindre: 
-	x: 1.40846
-	y: 1.62634
-	z: 0.813172
-
-Punt contingut en el cilindre: 
-	x: 1.41458
-	y: 1.63342
-	z: 0.816708
-
-Punt contingut en el cilindre: 
-	x: 1.4207
-	y: 1.64049
-	z: 0.820243
-
-Punt contingut en el cilindre: 
-	x: 1.42683
-	y: 1.64756
-	z: 0.823779
-
-Punt contingut en el cilindre: 
-	x: 1.43295
-	y: 1.65463
-	z: 0.827314
-
-Punt contingut en el cilindre: 
-	x: 1.43907
-	y: 1.6617
-	z: 0.83085
-
-Punt contingut en el cilindre: 
-	x: 1.4452
-	y: 1.66877
-	z: 0.834385
-
-Punt contingut en el cilindre: 
-	x: 1.45132
-	y: 1.67584
-	z: 0.837921
-
-Punt contingut en el cilindre: 
-	x: 1.45745
-	y: 1.68291
-	z: 0.841456
-
-Punt contingut en el cilindre: 
-	x: 1.46357
-	y: 1.68998
-	z: 0.844992
-
-Punt contingut en el cilindre: 
-	x: 1.46969
-	y: 1.69705
-	z: 0.848527
-
-Punt contingut en el cilindre: 
-	x: 1.47582
-	y: 1.70413
-	z: 0.852063
-
-Punt contingut en el cilindre: 
-	x: 1.48194
-	y: 1.7112
-	z: 0.855599
-
-Punt contingut en el cilindre: 
-	x: 1.48806
-	y: 1.71827
-	z: 0.859134
-
-Punt contingut en el cilindre: 
-	x: 1.49419
-	y: 1.72534
-	z: 0.86267
-
-Punt contingut en el cilindre: 
-	x: 1.50031
-	y: 1.73241
-	z: 0.866205
-
-Punt contingut en el cilindre: 
-	x: 1.50643
-	y: 1.73948
-	z: 0.869741
-
-Punt contingut en el cilindre: 
-	x: 1.51256
-	y: 1.74655
-	z: 0.873276
-
-Punt contingut en el cilindre: 
-	x: 1.51868
-	y: 1.75362
-	z: 0.876812
-
-Punt contingut en el cilindre: 
-	x: 1.52481
-	y: 1.76069
-	z: 0.880347
-
-Punt contingut en el cilindre: 
-	x: 1.53093
-	y: 1.76777
-	z: 0.883883
-
-Punt contingut en el cilindre: 
-	x: 1.53705
-	y: 1.77484
-	z: 0.887418
-
-Punt contingut en el cilindre: 
-	x: 1.54318
-	y: 1.78191
-	z: 0.890954
-
-Punt contingut en el cilindre: 
-	x: 1.5493
-	y: 1.78898
-	z: 0.894489
-
-Punt contingut en el cilindre: 
-	x: 1.55542
-	y: 1.79605
-	z: 0.898025
-
-Punt contingut en el cilindre: 
-	x: 1.56155
-	y: 1.80312
-	z: 0.90156
-
-Punt contingut en el cilindre: 
-	x: 1.56767
-	y: 1.81019
-	z: 0.905096
-
-Punt contingut en el cilindre: 
-	x: 1.5738
-	y: 1.81726
-	z: 0.908632
-
-Punt contingut en el cilindre: 
-	x: 1.57992
-	y: 1.82433
-	z: 0.912167
-
-Punt contingut en el cilindre: 
-	x: 1.58604
-	y: 1.83141
-	z: 0.915703
-
-Punt contingut en el cilindre: 
-	x: 1.59217
-	y: 1.83848
-	z: 0.919238
-
-Punt contingut en el cilindre: 
-	x: 1.59829
-	y: 1.84555
-	z: 0.922774
-
-Punt contingut en el cilindre: 
-	x: 1.60441
-	y: 1.85262
-	z: 0.926309
-
-Punt contingut en el cilindre: 
-	x: 1.61054
-	y: 1.85969
-	z: 0.929845
-
-Punt contingut en el cilindre: 
-	x: 1.61666
-	y: 1.86676
-	z: 0.93338
-
-Punt contingut en el cilindre: 
-	x: 1.62279
-	y: 1.87383
-	z: 0.936916
-
-Punt contingut en el cilindre: 
-	x: 1.62891
-	y: 1.8809
-	z: 0.940451
-
-Punt contingut en el cilindre: 
-	x: 1.63503
-	y: 1.88797
-	z: 0.943987
-
-Punt contingut en el cilindre: 
-	x: 1.64116
-	y: 1.89504
-	z: 0.947522
-
-Punt contingut en el cilindre: 
-	x: 1.64728
-	y: 1.90212
-	z: 0.951058
-
-Punt contingut en el cilindre: 
-	x: 1.6534
-	y: 1.90919
-	z: 0.954593
-
-Punt contingut en el cilindre: 
-	x: 1.65953
-	y: 1.91626
-	z: 0.958129
-
-Punt contingut en el cilindre: 
-	x: 1.66565
-	y: 1.92333
-	z: 0.961664
-
-Punt contingut en el cilindre: 
-	x: 1.67178
-	y: 1.9304
-	z: 0.9652
-
-Punt contingut en el cilindre: 
-	x: 1.6779
-	y: 1.93747
-	z: 0.968736
-
-Punt contingut en el cilindre: 
-	x: 1.68402
-	y: 1.94454
-	z: 0.972271
-
-Punt contingut en el cilindre: 
-	x: 1.69015
-	y: 1.95161
-	z: 0.975807
-
-Punt contingut en el cilindre: 
-	x: 1.69627
-	y: 1.95868
-	z: 0.979342
-
-Punt contingut en el cilindre: 
-	x: 1.70239
-	y: 1.96576
-	z: 0.982878
-
-Punt contingut en el cilindre: 
-	x: 1.70852
-	y: 1.97283
-	z: 0.986413
-
-Punt contingut en el cilindre: 
-	x: 1.71464
-	y: 1.9799
-	z: 0.989949
-
-Punt contingut en el cilindre: 
-	x: 1.72077
-	y: 1.98697
-	z: 0.993484
-
-Punt contingut en el cilindre: 
-	x: 1.72689
-	y: 1.99404
-	z: 0.99702
-
-Punt contingut en el cilindre: 
-	x: 1.73301
-	y: 2.00111
-	z: 1.00056
-
-Punt contingut en el cilindre: 
-	x: 1.73914
-	y: 2.00818
-	z: 1.00409
-
-Punt contingut en el cilindre: 
-	x: 1.74526
-	y: 2.01525
-	z: 1.00763
-
-Punt contingut en el cilindre: 
-	x: 1.75138
-	y: 2.02232
-	z: 1.01116
-
-Punt contingut en el cilindre: 
-	x: 1.75751
-	y: 2.02939
-	z: 1.0147
-
-Punt contingut en el cilindre: 
-	x: 1.76363
-	y: 2.03647
-	z: 1.01823
-
-Punt contingut en el cilindre: 
-	x: 1.76975
-	y: 2.04354
-	z: 1.02177
-
-Punt contingut en el cilindre: 
-	x: 1.77588
-	y: 2.05061
-	z: 1.0253
-
-Punt contingut en el cilindre: 
-	x: 1.782
-	y: 2.05768
-	z: 1.02884
-
-Punt contingut en el cilindre: 
-	x: 1.78813
-	y: 2.06475
-	z: 1.03238
-
-Punt contingut en el cilindre: 
-	x: 1.79425
-	y: 2.07182
-	z: 1.03591
-
-Punt contingut en el cilindre: 
-	x: 1.80037
-	y: 2.07889
-	z: 1.03945
-
-Punt contingut en el cilindre: 
-	x: 1.8065
-	y: 2.08596
-	z: 1.04298
-
-Punt contingut en el cilindre: 
-	x: 1.81262
-	y: 2.09303
-	z: 1.04652
-
-Punt contingut en el cilindre: 
-	x: 1.81874
-	y: 2.10011
-	z: 1.05005
-
-Punt contingut en el cilindre: 
-	x: 1.82487
-	y: 2.10718
-	z: 1.05359
-
-Punt contingut en el cilindre: 
-	x: 1.83099
-	y: 2.11425
-	z: 1.05712
-
-Punt contingut en el cilindre: 
-	x: 1.83712
-	y: 2.12132
-	z: 1.06066
-
-Punt contingut en el cilindre: 
-	x: 1.84324
-	y: 2.12839
-	z: 1.06419
-
-Punt contingut en el cilindre: 
-	x: 1.84936
-	y: 2.13546
-	z: 1.06773
-
-Punt contingut en el cilindre: 
-	x: 1.85549
-	y: 2.14253
-	z: 1.07127
-
-Punt contingut en el cilindre: 
-	x: 1.86161
-	y: 2.1496
-	z: 1.0748
-
-Punt contingut en el cilindre: 
-	x: 1.86773
-	y: 2.15667
-	z: 1.07834
-
-Punt contingut en el cilindre: 
-	x: 1.87386
-	y: 2.16374
-	z: 1.08187
-
-Punt contingut en el cilindre: 
-	x: 1.87998
-	y: 2.17082
-	z: 1.08541
-
-Punt contingut en el cilindre: 
-	x: 1.88611
-	y: 2.17789
-	z: 1.08894
-
-Punt contingut en el cilindre: 
-	x: 1.89223
-	y: 2.18496
-	z: 1.09248
-
-Punt contingut en el cilindre: 
-	x: 1.89835
-	y: 2.19203
-	z: 1.09601
-
-Punt contingut en el cilindre: 
-	x: 1.90448
-	y: 2.1991
-	z: 1.09955
-
-Punt contingut en el cilindre: 
-	x: 1.9106
-	y: 2.20617
-	z: 1.10309
-
-Punt contingut en el cilindre: 
-	x: 1.91672
-	y: 2.21324
-	z: 1.10662
-
-Punt contingut en el cilindre: 
-	x: 1.92285
-	y: 2.22031
-	z: 1.11016
-
-Punt contingut en el cilindre: 
-	x: 1.92897
-	y: 2.22738
-	z: 1.11369
-
-Punt contingut en el cilindre: 
-	x: 1.9351
-	y: 2.23446
-	z: 1.11723
-
-Punt contingut en el cilindre: 
-	x: 1.94122
-	y: 2.24153
-	z: 1.12076
-
-Punt contingut en el cilindre: 
-	x: 1.94734
-	y: 2.2486
-	z: 1.1243
-
-Punt contingut en el cilindre: 
-	x: 1.95347
-	y: 2.25567
-	z: 1.12783
-
-Punt contingut en el cilindre: 
-	x: 1.95959
-	y: 2.26274
-	z: 1.13137
-
-Punt contingut en el cilindre: 
-	x: 1.96571
-	y: 2.26981
-	z: 1.13491
-
-Punt contingut en el cilindre: 
-	x: 1.97184
-	y: 2.27688
-	z: 1.13844
-
-Punt contingut en el cilindre: 
-	x: 1.97796
-	y: 2.28395
-	z: 1.14198
-
-Punt contingut en el cilindre: 
-	x: 1.98408
-	y: 2.29102
-	z: 1.14551
-
-Punt contingut en el cilindre: 
-	x: 1.99021
-	y: 2.2981
-	z: 1.14905
-
-Punt contingut en el cilindre: 
-	x: 1.99633
-	y: 2.30517
-	z: 1.15258
-
-Punt contingut en el cilindre: 
-	x: 2.00246
-	y: 2.31224
-	z: 1.15612
-
-Punt contingut en el cilindre: 
-	x: 2.00858
-	y: 2.31931
-	z: 1.15965
-
-Punt contingut en el cilindre: 
-	x: 2.0147
-	y: 2.32638
-	z: 1.16319
-
-Punt contingut en el cilindre: 
-	x: 2.02083
-	y: 2.33345
-	z: 1.16673
-
-Punt contingut en el cilindre: 
-	x: 2.02695
-	y: 2.34052
-	z: 1.17026
-
-Punt contingut en el cilindre: 
-	x: 2.03307
-	y: 2.34759
-	z: 1.1738
-
-Punt contingut en el cilindre: 
-	x: 2.0392
-	y: 2.35466
-	z: 1.17733
-
-Punt contingut en el cilindre: 
-	x: 2.04532
-	y: 2.36173
-	z: 1.18087
-
-Punt contingut en el cilindre: 
-	x: 2.05145
-	y: 2.36881
-	z: 1.1844
-
-Punt contingut en el cilindre: 
-	x: 2.05757
-	y: 2.37588
-	z: 1.18794
-
-Punt contingut en el cilindre: 
-	x: 2.06369
-	y: 2.38295
-	z: 1.19147
-
-Punt contingut en el cilindre: 
-	x: 2.06982
-	y: 2.39002
-	z: 1.19501
-
-Punt contingut en el cilindre: 
-	x: 2.07594
-	y: 2.39709
-	z: 1.19854
-
-Punt contingut en el cilindre: 
-	x: 2.08206
-	y: 2.40416
-	z: 1.20208
-
-Punt contingut en el cilindre: 
-	x: 2.08819
-	y: 2.41123
-	z: 1.20562
-
-Punt contingut en el cilindre: 
-	x: 2.09431
-	y: 2.4183
-	z: 1.20915
-
-Punt contingut en el cilindre: 
-	x: 2.10044
-	y: 2.42537
-	z: 1.21269
-
-Punt contingut en el cilindre: 
-	x: 2.10656
-	y: 2.43245
-	z: 1.21622
-
-Punt contingut en el cilindre: 
-	x: 2.11268
-	y: 2.43952
-	z: 1.21976
-
-Punt contingut en el cilindre: 
-	x: 2.11881
-	y: 2.44659
-	z: 1.22329
-
-Punt contingut en el cilindre: 
-	x: 2.12493
-	y: 2.45366
-	z: 1.22683
-
-Punt contingut en el cilindre: 
-	x: 2.13105
-	y: 2.46073
-	z: 1.23036
-
-Punt contingut en el cilindre: 
-	x: 2.13718
-	y: 2.4678
-	z: 1.2339
-
-Punt contingut en el cilindre: 
-	x: 2.1433
-	y: 2.47487
-	z: 1.23744
-
-Punt contingut en el cilindre: 
-	x: 2.14943
-	y: 2.48194
-	z: 1.24097
-
-Punt contingut en el cilindre: 
-	x: 2.15555
-	y: 2.48901
-	z: 1.24451
-
-Punt contingut en el cilindre: 
-	x: 2.16167
-	y: 2.49608
-	z: 1.24804
-
-Punt contingut en el cilindre: 
-	x: 2.1678
-	y: 2.50316
-	z: 1.25158
-
-Punt contingut en el cilindre: 
-	x: 2.17392
-	y: 2.51023
-	z: 1.25511
-
-Punt contingut en el cilindre: 
-	x: 2.18004
-	y: 2.5173
-	z: 1.25865
-
-Punt contingut en el cilindre: 
-	x: 2.18617
-	y: 2.52437
-	z: 1.26218
-
-Punt contingut en el cilindre: 
-	x: 2.19229
-	y: 2.53144
-	z: 1.26572
-
-Punt contingut en el cilindre: 
-	x: 2.19842
-	y: 2.53851
-	z: 1.26926
-
-Punt contingut en el cilindre: 
-	x: 2.20454
-	y: 2.54558
-	z: 1.27279
-
-Punt contingut en el cilindre: 
-	x: 2.21066
-	y: 2.55265
-	z: 1.27633
-
-Punt contingut en el cilindre: 
-	x: 2.21679
-	y: 2.55972
-	z: 1.27986
-
-Punt contingut en el cilindre: 
-	x: 2.22291
-	y: 2.5668
-	z: 1.2834
-
-Punt contingut en el cilindre: 
-	x: 2.22903
-	y: 2.57387
-	z: 1.28693
-
-Punt contingut en el cilindre: 
-	x: 2.23516
-	y: 2.58094
-	z: 1.29047
-
-Punt contingut en el cilindre: 
-	x: 2.24128
-	y: 2.58801
-	z: 1.294
-
-Punt contingut en el cilindre: 
-	x: 2.2474
-	y: 2.59508
-	z: 1.29754
-
-Punt contingut en el cilindre: 
-	x: 2.25353
-	y: 2.60215
-	z: 1.30108
-
-Punt contingut en el cilindre: 
-	x: 2.25965
-	y: 2.60922
-	z: 1.30461
-
-Punt contingut en el cilindre: 
-	x: 2.26578
-	y: 2.61629
-	z: 1.30815
-
-Punt contingut en el cilindre: 
-	x: 2.2719
-	y: 2.62336
-	z: 1.31168
-
-Punt contingut en el cilindre: 
-	x: 2.27802
-	y: 2.63043
-	z: 1.31522
-
-Punt contingut en el cilindre: 
-	x: 2.28415
-	y: 2.63751
-	z: 1.31875
-
-Punt contingut en el cilindre: 
-	x: 2.29027
-	y: 2.64458
-	z: 1.32229
-
-Punt contingut en el cilindre: 
-	x: 2.29639
-	y: 2.65165
-	z: 1.32582
-
-Punt contingut en el cilindre: 
-	x: 2.30252
-	y: 2.65872
-	z: 1.32936
-
-Punt contingut en el cilindre: 
-	x: 2.30864
-	y: 2.66579
-	z: 1.3329
-
-Punt contingut en el cilindre: 
-	x: 2.31477
-	y: 2.67286
-	z: 1.33643
-
-Punt contingut en el cilindre: 
-	x: 2.32089
-	y: 2.67993
-	z: 1.33997
-
-Punt contingut en el cilindre: 
-	x: 2.32701
-	y: 2.687
-	z: 1.3435
-
-Punt contingut en el cilindre: 
-	x: 2.33314
-	y: 2.69407
-	z: 1.34704
-
-Punt contingut en el cilindre: 
-	x: 2.33926
-	y: 2.70115
-	z: 1.35057
-
-Punt contingut en el cilindre: 
-	x: 2.34538
-	y: 2.70822
-	z: 1.35411
-
-Punt contingut en el cilindre: 
-	x: 2.35151
-	y: 2.71529
-	z: 1.35764
-
-Punt contingut en el cilindre: 
-	x: 2.35763
-	y: 2.72236
-	z: 1.36118
-
-Punt contingut en el cilindre: 
-	x: 2.36376
-	y: 2.72943
-	z: 1.36471
-
-Punt contingut en el cilindre: 
-	x: 2.36988
-	y: 2.7365
-	z: 1.36825
-
-Punt contingut en el cilindre: 
-	x: 2.376
-	y: 2.74357
-	z: 1.37179
-
-Punt contingut en el cilindre: 
-	x: 2.38213
-	y: 2.75064
-	z: 1.37532
-
-Punt contingut en el cilindre: 
-	x: 2.38825
-	y: 2.75771
-	z: 1.37886
-
-Punt contingut en el cilindre: 
-	x: 2.39437
-	y: 2.76479
-	z: 1.38239
-
-Punt contingut en el cilindre: 
-	x: 2.4005
-	y: 2.77186
-	z: 1.38593
-
-Punt contingut en el cilindre: 
-	x: 2.40662
-	y: 2.77893
-	z: 1.38946
-
-Punt contingut en el cilindre: 
-	x: 2.41275
-	y: 2.786
-	z: 1.393
-
-Punt contingut en el cilindre: 
-	x: 2.41887
-	y: 2.79307
-	z: 1.39653
-
-Punt contingut en el cilindre: 
-	x: 2.42499
-	y: 2.80014
-	z: 1.40007
-
-Punt contingut en el cilindre: 
-	x: 2.43112
-	y: 2.80721
-	z: 1.40361
-
-Punt contingut en el cilindre: 
-	x: 2.43724
-	y: 2.81428
-	z: 1.40714
-
-Punt contingut en el cilindre: 
-	x: 2.44336
-	y: 2.82135
-	z: 1.41068
-
-Punt contingut en el cilindre: 
-	x: 2.44949
-	y: 2.82842
-	z: 1.41421
-
-Punt contingut en el cilindre: 
-	x: 2.45561
-	y: 2.8355
-	z: 1.41775
-
-Punt contingut en el cilindre: 
-	x: 2.46174
-	y: 2.84257
-	z: 1.42128
-
-Punt contingut en el cilindre: 
-	x: 2.46786
-	y: 2.84964
-	z: 1.42482
-
-Punt contingut en el cilindre: 
-	x: 2.47398
-	y: 2.85671
-	z: 1.42835
-
-Punt contingut en el cilindre: 
-	x: 2.48011
-	y: 2.86378
-	z: 1.43189
-
-Punt contingut en el cilindre: 
-	x: 2.48623
-	y: 2.87085
-	z: 1.43543
-
-Punt contingut en el cilindre: 
-	x: 2.49235
-	y: 2.87792
-	z: 1.43896
-
-Punt contingut en el cilindre: 
-	x: 2.49848
-	y: 2.88499
-	z: 1.4425
-
-Punt contingut en el cilindre: 
-	x: 2.5046
-	y: 2.89207
-	z: 1.44603
-
-Punt contingut en el cilindre: 
-	x: 2.51073
-	y: 2.89914
-	z: 1.44957
-
-Punt contingut en el cilindre: 
-	x: 2.51685
-	y: 2.90621
-	z: 1.4531
-
-Punt contingut en el cilindre: 
-	x: 2.52297
-	y: 2.91328
-	z: 1.45664
-
-Punt contingut en el cilindre: 
-	x: 2.5291
-	y: 2.92035
-	z: 1.46018
-
-Punt contingut en el cilindre: 
-	x: 2.53522
-	y: 2.92742
-	z: 1.46371
-
-Punt contingut en el cilindre: 
-	x: 2.54135
-	y: 2.93449
-	z: 1.46725
-
-Punt contingut en el cilindre: 
-	x: 2.54747
-	y: 2.94156
-	z: 1.47078
-
-Punt contingut en el cilindre: 
-	x: 2.55359
-	y: 2.94864
-	z: 1.47432
-
-Punt contingut en el cilindre: 
-	x: 2.55972
-	y: 2.95571
-	z: 1.47785
-
-Punt contingut en el cilindre: 
-	x: 2.56584
-	y: 2.96278
-	z: 1.48139
-
-Punt contingut en el cilindre: 
-	x: 2.57196
-	y: 2.96985
-	z: 1.48492
-
-Punt contingut en el cilindre: 
-	x: 2.57809
-	y: 2.97692
-	z: 1.48846
-
-Punt contingut en el cilindre: 
-	x: 2.58421
-	y: 2.98399
-	z: 1.492
-
-Punt contingut en el cilindre: 
-	x: 2.59034
-	y: 2.99106
-	z: 1.49553
-
-Punt contingut en el cilindre: 
-	x: 2.59646
-	y: 2.99813
-	z: 1.49907
-
-Punt contingut en el cilindre: 
-	x: 2.60258
-	y: 3.00521
-	z: 1.5026
-
-Punt contingut en el cilindre: 
-	x: 2.60871
-	y: 3.01228
-	z: 1.50614
-
-Punt contingut en el cilindre: 
-	x: 2.61483
-	y: 3.01935
-	z: 1.50967
-
-Punt contingut en el cilindre: 
-	x: 2.62096
-	y: 3.02642
-	z: 1.51321
-
-Punt contingut en el cilindre: 
-	x: 2.62708
-	y: 3.03349
-	z: 1.51675
-
-Punt contingut en el cilindre: 
-	x: 2.6332
-	y: 3.04056
-	z: 1.52028
-
-Punt contingut en el cilindre: 
-	x: 2.63933
-	y: 3.04763
-	z: 1.52382
-
-Punt contingut en el cilindre: 
-	x: 2.64545
-	y: 3.0547
-	z: 1.52735
-
-Punt contingut en el cilindre: 
-	x: 2.65158
-	y: 3.06178
-	z: 1.53089
-
-Punt contingut en el cilindre: 
-	x: 2.6577
-	y: 3.06885
-	z: 1.53442
-
-Punt contingut en el cilindre: 
-	x: 2.66382
-	y: 3.07592
-	z: 1.53796
-
-Punt contingut en el cilindre: 
-	x: 2.66995
-	y: 3.08299
-	z: 1.54149
-
-Punt contingut en el cilindre: 
-	x: 2.67607
-	y: 3.09006
-	z: 1.54503
-
-Punt contingut en el cilindre: 
-	x: 2.68219
-	y: 3.09713
-	z: 1.54857
-
-Punt contingut en el cilindre: 
-	x: 2.68832
-	y: 3.1042
-	z: 1.5521
-
-Punt contingut en el cilindre: 
-	x: 2.69444
-	y: 3.11127
-	z: 1.55564
-
-Punt contingut en el cilindre: 
-	x: 2.70057
-	y: 3.11835
-	z: 1.55917
-
-Punt contingut en el cilindre: 
-	x: 2.70669
-	y: 3.12542
-	z: 1.56271
-
-Punt contingut en el cilindre: 
-	x: 2.71281
-	y: 3.13249
-	z: 1.56624
-
-Punt contingut en el cilindre: 
-	x: 2.71894
-	y: 3.13956
-	z: 1.56978
-
-Punt contingut en el cilindre: 
-	x: 2.72506
-	y: 3.14663
-	z: 1.57332
-
-Punt contingut en el cilindre: 
-	x: 2.73119
-	y: 3.1537
-	z: 1.57685
-
-Punt contingut en el cilindre: 
-	x: 2.73731
-	y: 3.16077
-	z: 1.58039
-
-Punt contingut en el cilindre: 
-	x: 2.74343
-	y: 3.16784
-	z: 1.58392
-
-Punt contingut en el cilindre: 
-	x: 2.74956
-	y: 3.17492
-	z: 1.58746
-
-Punt contingut en el cilindre: 
-	x: 2.75568
-	y: 3.18199
-	z: 1.59099
-
-Punt contingut en el cilindre: 
-	x: 2.7618
-	y: 3.18906
-	z: 1.59453
-
-Punt contingut en el cilindre: 
-	x: 2.76793
-	y: 3.19613
-	z: 1.59806
-
-Punt contingut en el cilindre: 
-	x: 2.77405
-	y: 3.2032
-	z: 1.6016
-
-Punt contingut en el cilindre: 
-	x: 2.78018
-	y: 3.21027
-	z: 1.60514
-
-Punt contingut en el cilindre: 
-	x: 2.7863
-	y: 3.21734
-	z: 1.60867
-
-Punt contingut en el cilindre: 
-	x: 2.79242
-	y: 3.22441
-	z: 1.61221
-
-Punt contingut en el cilindre: 
-	x: 2.79855
-	y: 3.23148
-	z: 1.61574
-
-Punt contingut en el cilindre: 
-	x: 2.80467
-	y: 3.23856
-	z: 1.61928
-
-Punt contingut en el cilindre: 
-	x: 2.8108
-	y: 3.24563
-	z: 1.62281
-
-Punt contingut en el cilindre: 
-	x: 2.81692
-	y: 3.2527
-	z: 1.62635
-
-Punt contingut en el cilindre: 
-	x: 2.82304
-	y: 3.25977
-	z: 1.62988
-
-Punt contingut en el cilindre: 
-	x: 2.82917
-	y: 3.26684
-	z: 1.63342
-
-Punt contingut en el cilindre: 
-	x: 2.83529
-	y: 3.27391
-	z: 1.63696
-
-Punt contingut en el cilindre: 
-	x: 2.84141
-	y: 3.28098
-	z: 1.64049
-
-Punt contingut en el cilindre: 
-	x: 2.84754
-	y: 3.28805
-	z: 1.64403
-
-Punt contingut en el cilindre: 
-	x: 2.85366
-	y: 3.29513
-	z: 1.64756
-
-Punt contingut en el cilindre: 
-	x: 2.85979
-	y: 3.3022
-	z: 1.6511
-
-Punt contingut en el cilindre: 
-	x: 2.86591
-	y: 3.30927
-	z: 1.65463
-
-Punt contingut en el cilindre: 
-	x: 2.87203
-	y: 3.31634
-	z: 1.65817
-
-Punt contingut en el cilindre: 
-	x: 2.87816
-	y: 3.32341
-	z: 1.66171
-
-Punt contingut en el cilindre: 
-	x: 2.88428
-	y: 3.33048
-	z: 1.66524
-
-Punt contingut en el cilindre: 
-	x: 2.89041
-	y: 3.33755
-	z: 1.66878
-
-Punt contingut en el cilindre: 
-	x: 2.89653
-	y: 3.34462
-	z: 1.67231
-
-Punt contingut en el cilindre: 
-	x: 2.90265
-	y: 3.3517
-	z: 1.67585
-
-Punt contingut en el cilindre: 
-	x: 2.90878
-	y: 3.35877
-	z: 1.67938
-
-Punt contingut en el cilindre: 
-	x: 2.9149
-	y: 3.36584
-	z: 1.68292
-
-Punt contingut en el cilindre: 
-	x: 2.92103
-	y: 3.37291
-	z: 1.68645
-
-Punt contingut en el cilindre: 
-	x: 2.92715
-	y: 3.37998
-	z: 1.68999
-
-Punt contingut en el cilindre: 
-	x: 2.93327
-	y: 3.38705
-	z: 1.69353
-
-Punt contingut en el cilindre: 
-	x: 2.9394
-	y: 3.39412
-	z: 1.69706
-
-Punt contingut en el cilindre: 
-	x: 2.94552
-	y: 3.40119
-	z: 1.7006
-
-Punt contingut en el cilindre: 
-	x: 2.95164
-	y: 3.40827
-	z: 1.70413
-
-Punt contingut en el cilindre: 
-	x: 2.95777
-	y: 3.41534
-	z: 1.70767
-
-Punt contingut en el cilindre: 
-	x: 2.96389
-	y: 3.42241
-	z: 1.7112
-
-Punt contingut en el cilindre: 
-	x: 2.97002
-	y: 3.42948
-	z: 1.71474
-
-Punt contingut en el cilindre: 
-	x: 2.97614
-	y: 3.43655
-	z: 1.71828
-
-Punt contingut en el cilindre: 
-	x: 2.98226
-	y: 3.44362
-	z: 1.72181
-
-Punt contingut en el cilindre: 
-	x: 2.98839
-	y: 3.45069
-	z: 1.72535
-
-Punt contingut en el cilindre: 
-	x: 2.99451
-	y: 3.45776
-	z: 1.72888
-
-Punt contingut en el cilindre: 
-	x: 3.00064
-	y: 3.46484
-	z: 1.73242
-
-Punt contingut en el cilindre: 
-	x: 3.00676
-	y: 3.47191
-	z: 1.73595
-
-Punt contingut en el cilindre: 
-	x: 3.01288
-	y: 3.47898
-	z: 1.73949
-
-Punt contingut en el cilindre: 
-	x: 3.01901
-	y: 3.48605
-	z: 1.74302
-
-Punt contingut en el cilindre: 
-	x: 3.02513
-	y: 3.49312
-	z: 1.74656
-
-Punt contingut en el cilindre: 
-	x: 3.03125
-	y: 3.50019
-	z: 1.7501
-
-Punt contingut en el cilindre: 
-	x: 3.03738
-	y: 3.50726
-	z: 1.75363
-
-Punt contingut en el cilindre: 
-	x: 3.0435
-	y: 3.51433
-	z: 1.75717
-
-Punt contingut en el cilindre: 
-	x: 3.04963
-	y: 3.52141
-	z: 1.7607
-
-Punt contingut en el cilindre: 
-	x: 3.05575
-	y: 3.52848
-	z: 1.76424
-
-Punt contingut en el cilindre: 
-	x: 3.06187
-	y: 3.53555
-	z: 1.76777
-
-Punt contingut en el cilindre: 
-	x: 3.068
-	y: 3.54262
-	z: 1.77131
-
-Punt contingut en el cilindre: 
-	x: 3.07412
-	y: 3.54969
-	z: 1.77485
-
-Punt contingut en el cilindre: 
-	x: 3.08025
-	y: 3.55676
-	z: 1.77838
-
-Punt contingut en el cilindre: 
-	x: 3.08637
-	y: 3.56383
-	z: 1.78192
-
-Punt contingut en el cilindre: 
-	x: 3.09249
-	y: 3.5709
-	z: 1.78545
-
-Punt contingut en el cilindre: 
-	x: 3.09862
-	y: 3.57798
-	z: 1.78899
-
-Punt contingut en el cilindre: 
-	x: 3.10474
-	y: 3.58505
-	z: 1.79252
-
-Punt contingut en el cilindre: 
-	x: 3.11086
-	y: 3.59212
-	z: 1.79606
-
-Punt contingut en el cilindre: 
-	x: 3.11699
-	y: 3.59919
-	z: 1.79959
-
-Punt contingut en el cilindre: 
-	x: 3.12311
-	y: 3.60626
-	z: 1.80313
-
-Punt contingut en el cilindre: 
-	x: 3.12924
-	y: 3.61333
-	z: 1.80667
-
-Punt contingut en el cilindre: 
-	x: 3.13536
-	y: 3.6204
-	z: 1.8102
-
-Punt contingut en el cilindre: 
-	x: 3.14148
-	y: 3.62747
-	z: 1.81374
-
-Punt contingut en el cilindre: 
-	x: 3.14761
-	y: 3.63454
-	z: 1.81727
-
-Punt contingut en el cilindre: 
-	x: 3.15373
-	y: 3.64162
-	z: 1.82081
-
-Punt contingut en el cilindre: 
-	x: 3.15986
-	y: 3.64869
-	z: 1.82434
-
-Punt contingut en el cilindre: 
-	x: 3.16598
-	y: 3.65576
-	z: 1.82788
-
-Punt contingut en el cilindre: 
-	x: 3.1721
-	y: 3.66283
-	z: 1.83141
-
-Punt contingut en el cilindre: 
-	x: 3.17823
-	y: 3.6699
-	z: 1.83495
-
-Punt contingut en el cilindre: 
-	x: 3.18435
-	y: 3.67697
-	z: 1.83849
-
-Punt contingut en el cilindre: 
-	x: 3.19048
-	y: 3.68404
-	z: 1.84202
-
-Punt contingut en el cilindre: 
-	x: 3.1966
-	y: 3.69111
-	z: 1.84556
-
-Punt contingut en el cilindre: 
-	x: 3.20272
-	y: 3.69819
-	z: 1.84909
-
-Punt contingut en el cilindre: 
-	x: 3.20885
-	y: 3.70526
-	z: 1.85263
-
-Punt contingut en el cilindre: 
-	x: 3.21497
-	y: 3.71233
-	z: 1.85616
-
-Punt contingut en el cilindre: 
-	x: 3.22109
-	y: 3.7194
-	z: 1.8597
-
-Punt contingut en el cilindre: 
-	x: 3.22722
-	y: 3.72647
-	z: 1.86324
-
-Punt contingut en el cilindre: 
-	x: 3.23334
-	y: 3.73354
-	z: 1.86677
-
-Punt contingut en el cilindre: 
-	x: 3.23947
-	y: 3.74061
-	z: 1.87031
-
-Punt contingut en el cilindre: 
-	x: 3.24559
-	y: 3.74768
-	z: 1.87384
-
-Punt contingut en el cilindre: 
-	x: 3.25171
-	y: 3.75476
-	z: 1.87738
-
-Punt contingut en el cilindre: 
-	x: 3.25784
-	y: 3.76183
-	z: 1.88091
-
-Punt contingut en el cilindre: 
-	x: 3.26396
-	y: 3.7689
-	z: 1.88445
-
-Punt contingut en el cilindre: 
-	x: 3.27009
-	y: 3.77597
-	z: 1.88798
-
-Punt contingut en el cilindre: 
-	x: 3.27621
-	y: 3.78304
-	z: 1.89152
-
-Punt contingut en el cilindre: 
-	x: 3.28233
-	y: 3.79011
-	z: 1.89506
-
-Punt contingut en el cilindre: 
-	x: 3.28846
-	y: 3.79718
-	z: 1.89859
-
-Punt contingut en el cilindre: 
-	x: 3.29458
-	y: 3.80425
-	z: 1.90213
-
-Punt contingut en el cilindre: 
-	x: 3.3007
-	y: 3.81133
-	z: 1.90566
-
-Punt contingut en el cilindre: 
-	x: 3.30683
-	y: 3.8184
-	z: 1.9092
-
-Punt contingut en el cilindre: 
-	x: 3.31295
-	y: 3.82547
-	z: 1.91273
-
-Punt contingut en el cilindre: 
-	x: 3.31908
-	y: 3.83254
-	z: 1.91627
-
-Punt contingut en el cilindre: 
-	x: 3.3252
-	y: 3.83961
-	z: 1.91981
-
-Punt contingut en el cilindre: 
-	x: 3.33132
-	y: 3.84668
-	z: 1.92334
-
-Punt contingut en el cilindre: 
-	x: 3.33745
-	y: 3.85375
-	z: 1.92688
-
-Punt contingut en el cilindre: 
-	x: 3.34357
-	y: 3.86082
-	z: 1.93041
-
-Punt contingut en el cilindre: 
-	x: 3.3497
-	y: 3.8679
-	z: 1.93395
-
-Punt contingut en el cilindre: 
-	x: 3.35582
-	y: 3.87497
-	z: 1.93748
-
-Punt contingut en el cilindre: 
-	x: 3.36194
-	y: 3.88204
-	z: 1.94102
-
-Punt contingut en el cilindre: 
-	x: 3.36807
-	y: 3.88911
-	z: 1.94455
-
-Punt contingut en el cilindre: 
-	x: 3.37419
-	y: 3.89618
-	z: 1.94809
-
-Punt contingut en el cilindre: 
-	x: 3.38031
-	y: 3.90325
-	z: 1.95163
-
-Punt contingut en el cilindre: 
-	x: 3.38644
-	y: 3.91032
-	z: 1.95516
-
-Punt contingut en el cilindre: 
-	x: 3.39256
-	y: 3.91739
-	z: 1.9587
-
-Punt contingut en el cilindre: 
-	x: 3.39869
-	y: 3.92447
-	z: 1.96223
-
-Punt contingut en el cilindre: 
-	x: 3.40481
-	y: 3.93154
-	z: 1.96577
-
-Punt contingut en el cilindre: 
-	x: 3.41093
-	y: 3.93861
-	z: 1.9693
-
-Punt contingut en el cilindre: 
-	x: 3.41706
-	y: 3.94568
-	z: 1.97284
-
-Punt contingut en el cilindre: 
-	x: 3.42318
-	y: 3.95275
-	z: 1.97638
-
-Punt contingut en el cilindre: 
-	x: 3.42931
-	y: 3.95982
-	z: 1.97991
-
-Punt contingut en el cilindre: 
-	x: 3.43543
-	y: 3.96689
-	z: 1.98345
-
-Punt contingut en el cilindre: 
-	x: 3.44155
-	y: 3.97396
-	z: 1.98698
-
-Punt contingut en el cilindre: 
-	x: 3.44768
-	y: 3.98104
-	z: 1.99052
-
-Punt contingut en el cilindre: 
-	x: 3.4538
-	y: 3.98811
-	z: 1.99405
-
-Punt contingut en el cilindre: 
-	x: 3.45993
-	y: 3.99518
-	z: 1.99759
-
-Punt interseccio entre: 
-	x: 3.45993 i x2: 3.46605
-	y: 3.99518 i y2: 4.00225
-	z: 1.99759 i z2: 2.00112
-
-Punt interseccio exacte: 
-	x: 3.46299
-	y: 3.99871
-	z: 1.99936
-
-Temps d'execucio: 9 milisegons
+Temps d'execucio: 0 milisegons
 
 ------------------------------------Capsule------------------------------------
 
 
-Punt contingut en la capsula: 
-	x: 0.00612372
-	y: 0.00707107
-	z: 0.00353553
-
-Punt contingut en la capsula: 
-	x: 0.0122474
-	y: 0.0141421
-	z: 0.00707107
-
-Punt contingut en la capsula: 
-	x: 0.0183712
-	y: 0.0212132
-	z: 0.0106066
-
-Punt contingut en la capsula: 
-	x: 0.0244949
-	y: 0.0282843
-	z: 0.0141421
-
-Punt contingut en la capsula: 
-	x: 0.0306186
-	y: 0.0353553
-	z: 0.0176777
-
-Punt contingut en la capsula: 
-	x: 0.0367423
-	y: 0.0424264
-	z: 0.0212132
-
-Punt contingut en la capsula: 
-	x: 0.0428661
-	y: 0.0494975
-	z: 0.0247487
-
-Punt contingut en la capsula: 
-	x: 0.0489898
-	y: 0.0565685
-	z: 0.0282843
-
-Punt contingut en la capsula: 
-	x: 0.0551135
-	y: 0.0636396
-	z: 0.0318198
-
-Punt contingut en la capsula: 
-	x: 0.0612372
-	y: 0.0707107
-	z: 0.0353553
-
-Punt contingut en la capsula: 
-	x: 0.067361
-	y: 0.0777817
-	z: 0.0388909
-
-Punt contingut en la capsula: 
-	x: 0.0734847
-	y: 0.0848528
-	z: 0.0424264
-
-Punt contingut en la capsula: 
-	x: 0.0796084
-	y: 0.0919239
-	z: 0.0459619
-
-Punt contingut en la capsula: 
-	x: 0.0857321
-	y: 0.0989949
-	z: 0.0494975
-
-Punt contingut en la capsula: 
-	x: 0.0918559
-	y: 0.106066
-	z: 0.053033
-
-Punt contingut en la capsula: 
-	x: 0.0979796
-	y: 0.113137
-	z: 0.0565685
-
-Punt contingut en la capsula: 
-	x: 0.104103
-	y: 0.120208
-	z: 0.0601041
-
-Punt contingut en la capsula: 
-	x: 0.110227
-	y: 0.127279
-	z: 0.0636396
-
-Punt contingut en la capsula: 
-	x: 0.116351
-	y: 0.13435
-	z: 0.0671751
-
-Punt contingut en la capsula: 
-	x: 0.122474
-	y: 0.141421
-	z: 0.0707107
-
-Punt contingut en la capsula: 
-	x: 0.128598
-	y: 0.148492
-	z: 0.0742462
-
-Punt contingut en la capsula: 
-	x: 0.134722
-	y: 0.155564
-	z: 0.0777818
-
-Punt contingut en la capsula: 
-	x: 0.140846
-	y: 0.162635
-	z: 0.0813173
-
-Punt contingut en la capsula: 
-	x: 0.146969
-	y: 0.169706
-	z: 0.0848528
-
-Punt contingut en la capsula: 
-	x: 0.153093
-	y: 0.176777
-	z: 0.0883884
-
-Punt contingut en la capsula: 
-	x: 0.159217
-	y: 0.183848
-	z: 0.0919239
-
-Punt contingut en la capsula: 
-	x: 0.165341
-	y: 0.190919
-	z: 0.0954594
+Punt interseccio entre: 
+	x: 0 i x2: 0.00710624
+	y: 0 i y2: -0.00559193
+	z: 0 i z2: 0.00426986
 
-Punt contingut en la capsula: 
-	x: 0.171464
-	y: 0.19799
-	z: 0.0989949
-
-Punt contingut en la capsula: 
-	x: 0.177588
-	y: 0.205061
-	z: 0.10253
-
-Punt contingut en la capsula: 
-	x: 0.183712
-	y: 0.212132
-	z: 0.106066
-
-Punt contingut en la capsula: 
-	x: 0.189835
-	y: 0.219203
-	z: 0.109602
-
-Punt contingut en la capsula: 
-	x: 0.195959
-	y: 0.226274
-	z: 0.113137
-
-Punt contingut en la capsula: 
-	x: 0.202083
-	y: 0.233345
-	z: 0.116673
-
-Punt contingut en la capsula: 
-	x: 0.208207
-	y: 0.240416
-	z: 0.120208
-
-Punt contingut en la capsula: 
-	x: 0.21433
-	y: 0.247487
-	z: 0.123744
-
-Punt contingut en la capsula: 
-	x: 0.220454
-	y: 0.254558
-	z: 0.127279
-
-Punt contingut en la capsula: 
-	x: 0.226578
-	y: 0.261629
-	z: 0.130815
-
-Punt contingut en la capsula: 
-	x: 0.232701
-	y: 0.268701
-	z: 0.13435
-
-Punt contingut en la capsula: 
-	x: 0.238825
-	y: 0.275772
-	z: 0.137886
-
-Punt contingut en la capsula: 
-	x: 0.244949
-	y: 0.282843
-	z: 0.141421
-
-Punt contingut en la capsula: 
-	x: 0.251073
-	y: 0.289914
-	z: 0.144957
-
-Punt contingut en la capsula: 
-	x: 0.257196
-	y: 0.296985
-	z: 0.148492
-
-Punt contingut en la capsula: 
-	x: 0.26332
-	y: 0.304056
-	z: 0.152028
-
-Punt contingut en la capsula: 
-	x: 0.269444
-	y: 0.311127
-	z: 0.155563
-
-Punt contingut en la capsula: 
-	x: 0.275567
-	y: 0.318198
-	z: 0.159099
-
-Punt contingut en la capsula: 
-	x: 0.281691
-	y: 0.325269
-	z: 0.162634
-
-Punt contingut en la capsula: 
-	x: 0.287815
-	y: 0.33234
-	z: 0.16617
-
-Punt contingut en la capsula: 
-	x: 0.293939
-	y: 0.339411
-	z: 0.169706
-
-Punt contingut en la capsula: 
-	x: 0.300062
-	y: 0.346482
-	z: 0.173241
-
-Punt contingut en la capsula: 
-	x: 0.306186
-	y: 0.353553
-	z: 0.176777
-
-Punt contingut en la capsula: 
-	x: 0.31231
-	y: 0.360624
-	z: 0.180312
-
-Punt contingut en la capsula: 
-	x: 0.318434
-	y: 0.367695
-	z: 0.183848
-
-Punt contingut en la capsula: 
-	x: 0.324557
-	y: 0.374766
-	z: 0.187383
-
-Punt contingut en la capsula: 
-	x: 0.330681
-	y: 0.381837
-	z: 0.190919
+Punt interseccio exacte: 
+	x: 3.38852e-09
+	y: -2.66644e-09
+	z: 2.03603e-09
 
 Punt contingut en la capsula: 
-	x: 0.336805
-	y: 0.388909
-	z: 0.194454
+	x: 0.00710624
+	y: -0.00559193
+	z: 0.00426986
 
 Punt contingut en la capsula: 
-	x: 0.342928
-	y: 0.39598
-	z: 0.19799
+	x: 0.0142125
+	y: -0.0111839
+	z: 0.00853972
 
 Punt contingut en la capsula: 
-	x: 0.349052
-	y: 0.403051
-	z: 0.201525
+	x: 0.0213187
+	y: -0.0167758
+	z: 0.0128096
 
 Punt contingut en la capsula: 
-	x: 0.355176
-	y: 0.410122
-	z: 0.205061
+	x: 0.028425
+	y: -0.0223677
+	z: 0.0170794
 
 Punt contingut en la capsula: 
-	x: 0.3613
-	y: 0.417193
-	z: 0.208596
+	x: 0.0355312
+	y: -0.0279596
+	z: 0.0213493
 
 Punt contingut en la capsula: 
-	x: 0.367423
-	y: 0.424264
-	z: 0.212132
+	x: 0.0426374
+	y: -0.0335516
+	z: 0.0256192
 
 Punt contingut en la capsula: 
-	x: 0.373547
-	y: 0.431335
-	z: 0.215667
+	x: 0.0497437
+	y: -0.0391435
+	z: 0.029889
 
 Punt contingut en la capsula: 
-	x: 0.379671
-	y: 0.438406
-	z: 0.219203
+	x: 0.0568499
+	y: -0.0447354
+	z: 0.0341589
 
 Punt contingut en la capsula: 
-	x: 0.385794
-	y: 0.445477
-	z: 0.222739
+	x: 0.0639561
+	y: -0.0503274
+	z: 0.0384287
 
 Punt contingut en la capsula: 
-	x: 0.391918
-	y: 0.452548
-	z: 0.226274
+	x: 0.0710624
+	y: -0.0559193
+	z: 0.0426986
 
 Punt contingut en la capsula: 
-	x: 0.398042
-	y: 0.459619
-	z: 0.22981
+	x: 0.0781686
+	y: -0.0615112
+	z: 0.0469684
 
 Punt contingut en la capsula: 
-	x: 0.404166
-	y: 0.46669
-	z: 0.233345
+	x: 0.0852749
+	y: -0.0671031
+	z: 0.0512383
 
 Punt contingut en la capsula: 
-	x: 0.410289
-	y: 0.473761
-	z: 0.236881
+	x: 0.0923811
+	y: -0.0726951
+	z: 0.0555082
 
 Punt contingut en la capsula: 
-	x: 0.416413
-	y: 0.480832
-	z: 0.240416
+	x: 0.0994873
+	y: -0.078287
+	z: 0.059778
 
 Punt contingut en la capsula: 
-	x: 0.422537
-	y: 0.487903
-	z: 0.243952
+	x: 0.106594
+	y: -0.0838789
+	z: 0.0640479
 
 Punt contingut en la capsula: 
-	x: 0.42866
-	y: 0.494974
-	z: 0.247487
+	x: 0.1137
+	y: -0.0894709
+	z: 0.0683177
 
 Punt contingut en la capsula: 
-	x: 0.434784
-	y: 0.502046
-	z: 0.251023
+	x: 0.120806
+	y: -0.0950628
+	z: 0.0725876
 
 Punt contingut en la capsula: 
-	x: 0.440908
-	y: 0.509117
-	z: 0.254558
+	x: 0.127912
+	y: -0.100655
+	z: 0.0768575
 
 Punt contingut en la capsula: 
-	x: 0.447032
-	y: 0.516188
-	z: 0.258094
+	x: 0.135019
+	y: -0.106247
+	z: 0.0811273
 
 Punt contingut en la capsula: 
-	x: 0.453155
-	y: 0.523259
-	z: 0.261629
+	x: 0.142125
+	y: -0.111839
+	z: 0.0853972
 
 Punt contingut en la capsula: 
-	x: 0.459279
-	y: 0.53033
-	z: 0.265165
+	x: 0.149231
+	y: -0.117431
+	z: 0.0896671
 
 Punt contingut en la capsula: 
-	x: 0.465403
-	y: 0.537401
-	z: 0.2687
+	x: 0.156337
+	y: -0.123022
+	z: 0.0939369
 
 Punt contingut en la capsula: 
-	x: 0.471526
-	y: 0.544472
-	z: 0.272236
+	x: 0.163444
+	y: -0.128614
+	z: 0.0982068
 
 Punt contingut en la capsula: 
-	x: 0.47765
-	y: 0.551543
-	z: 0.275771
+	x: 0.17055
+	y: -0.134206
+	z: 0.102477
 
 Punt contingut en la capsula: 
-	x: 0.483774
-	y: 0.558614
-	z: 0.279307
+	x: 0.177656
+	y: -0.139798
+	z: 0.106746
 
 Punt contingut en la capsula: 
-	x: 0.489898
-	y: 0.565685
-	z: 0.282843
+	x: 0.184762
+	y: -0.14539
+	z: 0.111016
 
 Punt contingut en la capsula: 
-	x: 0.496021
-	y: 0.572756
-	z: 0.286378
+	x: 0.191868
+	y: -0.150982
+	z: 0.115286
 
 Punt contingut en la capsula: 
-	x: 0.502145
-	y: 0.579827
-	z: 0.289914
+	x: 0.198975
+	y: -0.156574
+	z: 0.119556
 
 Punt contingut en la capsula: 
-	x: 0.508269
-	y: 0.586898
-	z: 0.293449
+	x: 0.206081
+	y: -0.162166
+	z: 0.123826
 
 Punt contingut en la capsula: 
-	x: 0.514392
-	y: 0.593969
-	z: 0.296985
+	x: 0.213187
+	y: -0.167758
+	z: 0.128096
 
 Punt contingut en la capsula: 
-	x: 0.520516
-	y: 0.60104
-	z: 0.30052
+	x: 0.220293
+	y: -0.17335
+	z: 0.132366
 
 Punt contingut en la capsula: 
-	x: 0.52664
-	y: 0.608111
-	z: 0.304056
+	x: 0.2274
+	y: -0.178942
+	z: 0.136635
 
 Punt contingut en la capsula: 
-	x: 0.532764
-	y: 0.615183
-	z: 0.307591
+	x: 0.234506
+	y: -0.184534
+	z: 0.140905
 
 Punt contingut en la capsula: 
-	x: 0.538887
-	y: 0.622254
-	z: 0.311127
+	x: 0.241612
+	y: -0.190126
+	z: 0.145175
 
 Punt contingut en la capsula: 
-	x: 0.545011
-	y: 0.629325
-	z: 0.314662
+	x: 0.248718
+	y: -0.195717
+	z: 0.149445
 
 Punt contingut en la capsula: 
-	x: 0.551135
-	y: 0.636396
-	z: 0.318198
+	x: 0.255825
+	y: -0.201309
+	z: 0.153715
 
 Punt contingut en la capsula: 
-	x: 0.557259
-	y: 0.643467
-	z: 0.321733
+	x: 0.262931
+	y: -0.206901
+	z: 0.157985
 
 Punt contingut en la capsula: 
-	x: 0.563382
-	y: 0.650538
-	z: 0.325269
+	x: 0.270037
+	y: -0.212493
+	z: 0.162255
 
 Punt contingut en la capsula: 
-	x: 0.569506
-	y: 0.657609
-	z: 0.328804
+	x: 0.277143
+	y: -0.218085
+	z: 0.166524
 
 Punt contingut en la capsula: 
-	x: 0.57563
-	y: 0.66468
-	z: 0.33234
+	x: 0.284249
+	y: -0.223677
+	z: 0.170794
 
 Punt contingut en la capsula: 
-	x: 0.581753
-	y: 0.671751
-	z: 0.335876
+	x: 0.291356
+	y: -0.229269
+	z: 0.175064
 
 Punt contingut en la capsula: 
-	x: 0.587877
-	y: 0.678822
-	z: 0.339411
+	x: 0.298462
+	y: -0.234861
+	z: 0.179334
 
 Punt contingut en la capsula: 
-	x: 0.594001
-	y: 0.685893
-	z: 0.342947
+	x: 0.305568
+	y: -0.240453
+	z: 0.183604
 
 Punt contingut en la capsula: 
-	x: 0.600125
-	y: 0.692964
-	z: 0.346482
+	x: 0.312674
+	y: -0.246045
+	z: 0.187874
 
 Punt contingut en la capsula: 
-	x: 0.606248
-	y: 0.700035
-	z: 0.350018
+	x: 0.319781
+	y: -0.251637
+	z: 0.192144
 
 Punt contingut en la capsula: 
-	x: 0.612372
-	y: 0.707106
-	z: 0.353553
+	x: 0.326887
+	y: -0.257229
+	z: 0.196413
 
 Punt contingut en la capsula: 
-	x: 0.618496
-	y: 0.714177
-	z: 0.357089
+	x: 0.333993
+	y: -0.262821
+	z: 0.200683
 
 Punt contingut en la capsula: 
-	x: 0.624619
-	y: 0.721248
-	z: 0.360624
+	x: 0.341099
+	y: -0.268412
+	z: 0.204953
 
 Punt contingut en la capsula: 
-	x: 0.630743
-	y: 0.72832
-	z: 0.36416
+	x: 0.348206
+	y: -0.274004
+	z: 0.209223
 
 Punt contingut en la capsula: 
-	x: 0.636867
-	y: 0.735391
-	z: 0.367695
+	x: 0.355312
+	y: -0.279596
+	z: 0.213493
 
 Punt contingut en la capsula: 
-	x: 0.642991
-	y: 0.742462
-	z: 0.371231
+	x: 0.362418
+	y: -0.285188
+	z: 0.217763
 
 Punt contingut en la capsula: 
-	x: 0.649114
-	y: 0.749533
-	z: 0.374766
+	x: 0.369524
+	y: -0.29078
+	z: 0.222033
 
 Punt contingut en la capsula: 
-	x: 0.655238
-	y: 0.756604
-	z: 0.378302
+	x: 0.376631
+	y: -0.296372
+	z: 0.226302
 
 Punt contingut en la capsula: 
-	x: 0.661362
-	y: 0.763675
-	z: 0.381837
+	x: 0.383737
+	y: -0.301964
+	z: 0.230572
 
 Punt contingut en la capsula: 
-	x: 0.667485
-	y: 0.770746
-	z: 0.385373
+	x: 0.390843
+	y: -0.307556
+	z: 0.234842
 
 Punt contingut en la capsula: 
-	x: 0.673609
-	y: 0.777817
-	z: 0.388908
+	x: 0.397949
+	y: -0.313148
+	z: 0.239112
 
 Punt contingut en la capsula: 
-	x: 0.679733
-	y: 0.784888
-	z: 0.392444
+	x: 0.405055
+	y: -0.31874
+	z: 0.243382
 
 Punt contingut en la capsula: 
-	x: 0.685857
-	y: 0.791959
-	z: 0.39598
+	x: 0.412162
+	y: -0.324332
+	z: 0.247652
 
 Punt contingut en la capsula: 
-	x: 0.69198
-	y: 0.79903
-	z: 0.399515
+	x: 0.419268
+	y: -0.329924
+	z: 0.251922
 
 Punt contingut en la capsula: 
-	x: 0.698104
-	y: 0.806101
-	z: 0.403051
+	x: 0.426374
+	y: -0.335516
+	z: 0.256191
 
 Punt contingut en la capsula: 
-	x: 0.704228
-	y: 0.813172
-	z: 0.406586
+	x: 0.43348
+	y: -0.341108
+	z: 0.260461
 
 Punt contingut en la capsula: 
-	x: 0.710352
-	y: 0.820243
-	z: 0.410122
+	x: 0.440587
+	y: -0.346699
+	z: 0.264731
 
 Punt contingut en la capsula: 
-	x: 0.716475
-	y: 0.827314
-	z: 0.413657
+	x: 0.447693
+	y: -0.352291
+	z: 0.269001
 
 Punt contingut en la capsula: 
-	x: 0.722599
-	y: 0.834385
-	z: 0.417193
+	x: 0.454799
+	y: -0.357883
+	z: 0.273271
 
 Punt contingut en la capsula: 
-	x: 0.728723
-	y: 0.841457
-	z: 0.420728
+	x: 0.461905
+	y: -0.363475
+	z: 0.277541
 
 Punt contingut en la capsula: 
-	x: 0.734846
-	y: 0.848528
-	z: 0.424264
+	x: 0.469012
+	y: -0.369067
+	z: 0.281811
 
 Punt contingut en la capsula: 
-	x: 0.74097
-	y: 0.855599
-	z: 0.427799
+	x: 0.476118
+	y: -0.374659
+	z: 0.28608
 
 Punt contingut en la capsula: 
-	x: 0.747094
-	y: 0.86267
-	z: 0.431335
+	x: 0.483224
+	y: -0.380251
+	z: 0.29035
 
 Punt contingut en la capsula: 
-	x: 0.753218
-	y: 0.869741
-	z: 0.43487
+	x: 0.49033
+	y: -0.385843
+	z: 0.29462
 
 Punt contingut en la capsula: 
-	x: 0.759341
-	y: 0.876812
-	z: 0.438406
+	x: 0.497436
+	y: -0.391435
+	z: 0.29889
 
 Punt contingut en la capsula: 
-	x: 0.765465
-	y: 0.883883
-	z: 0.441941
+	x: 0.504543
+	y: -0.397027
+	z: 0.30316
 
 Punt contingut en la capsula: 
-	x: 0.771589
-	y: 0.890954
-	z: 0.445477
+	x: 0.511649
+	y: -0.402619
+	z: 0.30743
 
 Punt contingut en la capsula: 
-	x: 0.777712
-	y: 0.898025
-	z: 0.449012
+	x: 0.518755
+	y: -0.408211
+	z: 0.3117
 
 Punt contingut en la capsula: 
-	x: 0.783836
-	y: 0.905096
-	z: 0.452548
+	x: 0.525861
+	y: -0.413803
+	z: 0.315969
 
 Punt contingut en la capsula: 
-	x: 0.78996
-	y: 0.912167
-	z: 0.456084
+	x: 0.532968
+	y: -0.419394
+	z: 0.320239
 
 Punt contingut en la capsula: 
-	x: 0.796084
-	y: 0.919238
-	z: 0.459619
+	x: 0.540074
+	y: -0.424986
+	z: 0.324509
 
 Punt contingut en la capsula: 
-	x: 0.802207
-	y: 0.926309
-	z: 0.463155
+	x: 0.54718
+	y: -0.430578
+	z: 0.328779
 
 Punt contingut en la capsula: 
-	x: 0.808331
-	y: 0.93338
-	z: 0.46669
+	x: 0.554286
+	y: -0.43617
+	z: 0.333049
 
 Punt contingut en la capsula: 
-	x: 0.814455
-	y: 0.940451
-	z: 0.470226
+	x: 0.561393
+	y: -0.441762
+	z: 0.337319
 
 Punt contingut en la capsula: 
-	x: 0.820578
-	y: 0.947522
-	z: 0.473761
+	x: 0.568499
+	y: -0.447354
+	z: 0.341589
 
 Punt contingut en la capsula: 
-	x: 0.826702
-	y: 0.954593
-	z: 0.477297
+	x: 0.575605
+	y: -0.452946
+	z: 0.345858
 
 Punt contingut en la capsula: 
-	x: 0.832826
-	y: 0.961665
-	z: 0.480832
+	x: 0.582711
+	y: -0.458538
+	z: 0.350128
 
 Punt contingut en la capsula: 
-	x: 0.83895
-	y: 0.968736
-	z: 0.484368
+	x: 0.589818
+	y: -0.46413
+	z: 0.354398
 
 Punt contingut en la capsula: 
-	x: 0.845073
-	y: 0.975807
-	z: 0.487903
+	x: 0.596924
+	y: -0.469722
+	z: 0.358668
 
 Punt contingut en la capsula: 
-	x: 0.851197
-	y: 0.982878
-	z: 0.491439
+	x: 0.60403
+	y: -0.475314
+	z: 0.362938
 
 Punt contingut en la capsula: 
-	x: 0.857321
-	y: 0.989949
-	z: 0.494974
+	x: 0.611136
+	y: -0.480906
+	z: 0.367208
 
 Punt contingut en la capsula: 
-	x: 0.863444
-	y: 0.99702
-	z: 0.49851
+	x: 0.618242
+	y: -0.486498
+	z: 0.371478
 
 Punt contingut en la capsula: 
-	x: 0.869568
-	y: 1.00409
-	z: 0.502045
+	x: 0.625349
+	y: -0.492089
+	z: 0.375747
 
 Punt contingut en la capsula: 
-	x: 0.875692
-	y: 1.01116
-	z: 0.505581
+	x: 0.632455
+	y: -0.497681
+	z: 0.380017
 
 Punt contingut en la capsula: 
-	x: 0.881816
-	y: 1.01823
-	z: 0.509117
+	x: 0.639561
+	y: -0.503273
+	z: 0.384287
 
 Punt contingut en la capsula: 
-	x: 0.887939
-	y: 1.0253
-	z: 0.512652
+	x: 0.646667
+	y: -0.508865
+	z: 0.388557
 
 Punt contingut en la capsula: 
-	x: 0.894063
-	y: 1.03238
-	z: 0.516188
+	x: 0.653774
+	y: -0.514457
+	z: 0.392827
 
 Punt contingut en la capsula: 
-	x: 0.900187
-	y: 1.03945
-	z: 0.519723
+	x: 0.66088
+	y: -0.520049
+	z: 0.397097
 
 Punt contingut en la capsula: 
-	x: 0.90631
-	y: 1.04652
-	z: 0.523259
+	x: 0.667986
+	y: -0.525641
+	z: 0.401367
 
 Punt contingut en la capsula: 
-	x: 0.912434
-	y: 1.05359
-	z: 0.526794
+	x: 0.675092
+	y: -0.531233
+	z: 0.405636
 
 Punt contingut en la capsula: 
-	x: 0.918558
-	y: 1.06066
-	z: 0.53033
+	x: 0.682199
+	y: -0.536825
+	z: 0.409906
 
 Punt contingut en la capsula: 
-	x: 0.924682
-	y: 1.06773
-	z: 0.533865
+	x: 0.689305
+	y: -0.542417
+	z: 0.414176
 
 Punt contingut en la capsula: 
-	x: 0.930805
-	y: 1.0748
-	z: 0.537401
+	x: 0.696411
+	y: -0.548009
+	z: 0.418446
 
 Punt contingut en la capsula: 
-	x: 0.936929
-	y: 1.08187
-	z: 0.540936
+	x: 0.703517
+	y: -0.553601
+	z: 0.422716
 
 Punt contingut en la capsula: 
-	x: 0.943053
-	y: 1.08894
-	z: 0.544472
+	x: 0.710623
+	y: -0.559193
+	z: 0.426986
 
 Punt contingut en la capsula: 
-	x: 0.949177
-	y: 1.09601
-	z: 0.548007
+	x: 0.71773
+	y: -0.564784
+	z: 0.431256
 
 Punt contingut en la capsula: 
-	x: 0.9553
-	y: 1.10309
-	z: 0.551543
+	x: 0.724836
+	y: -0.570376
+	z: 0.435525
 
 Punt contingut en la capsula: 
-	x: 0.961424
-	y: 1.11016
-	z: 0.555078
+	x: 0.731942
+	y: -0.575968
+	z: 0.439795
 
 Punt contingut en la capsula: 
-	x: 0.967548
-	y: 1.11723
-	z: 0.558614
+	x: 0.739048
+	y: -0.58156
+	z: 0.444065
 
 Punt contingut en la capsula: 
-	x: 0.973671
-	y: 1.1243
-	z: 0.562149
+	x: 0.746155
+	y: -0.587152
+	z: 0.448335
 
 Punt contingut en la capsula: 
-	x: 0.979795
-	y: 1.13137
-	z: 0.565685
+	x: 0.753261
+	y: -0.592744
+	z: 0.452605
 
 Punt contingut en la capsula: 
-	x: 0.985919
-	y: 1.13844
-	z: 0.569221
+	x: 0.760367
+	y: -0.598336
+	z: 0.456875
 
 Punt contingut en la capsula: 
-	x: 0.992043
-	y: 1.14551
-	z: 0.572756
+	x: 0.767473
+	y: -0.603928
+	z: 0.461145
 
 Punt contingut en la capsula: 
-	x: 0.998166
-	y: 1.15258
-	z: 0.576292
+	x: 0.77458
+	y: -0.60952
+	z: 0.465414
 
 Punt contingut en la capsula: 
-	x: 1.00429
-	y: 1.15965
-	z: 0.579827
+	x: 0.781686
+	y: -0.615112
+	z: 0.469684
 
 Punt contingut en la capsula: 
-	x: 1.01041
-	y: 1.16673
-	z: 0.583363
+	x: 0.788792
+	y: -0.620704
+	z: 0.473954
 
 Punt contingut en la capsula: 
-	x: 1.01654
-	y: 1.1738
-	z: 0.586898
+	x: 0.795898
+	y: -0.626296
+	z: 0.478224
 
 Punt contingut en la capsula: 
-	x: 1.02266
-	y: 1.18087
-	z: 0.590434
+	x: 0.803005
+	y: -0.631888
+	z: 0.482494
 
 Punt contingut en la capsula: 
-	x: 1.02878
-	y: 1.18794
-	z: 0.593969
+	x: 0.810111
+	y: -0.637479
+	z: 0.486764
 
 Punt contingut en la capsula: 
-	x: 1.03491
-	y: 1.19501
-	z: 0.597505
+	x: 0.817217
+	y: -0.643071
+	z: 0.491033
 
 Punt contingut en la capsula: 
-	x: 1.04103
-	y: 1.20208
-	z: 0.60104
+	x: 0.824323
+	y: -0.648663
+	z: 0.495303
 
 Punt contingut en la capsula: 
-	x: 1.04716
-	y: 1.20915
-	z: 0.604576
+	x: 0.831429
+	y: -0.654255
+	z: 0.499573
 
 Punt contingut en la capsula: 
-	x: 1.05328
-	y: 1.21622
-	z: 0.608111
+	x: 0.838536
+	y: -0.659847
+	z: 0.503843
 
 Punt contingut en la capsula: 
-	x: 1.0594
-	y: 1.22329
-	z: 0.611647
+	x: 0.845642
+	y: -0.665439
+	z: 0.508113
 
 Punt contingut en la capsula: 
-	x: 1.06553
-	y: 1.23036
-	z: 0.615182
+	x: 0.852748
+	y: -0.671031
+	z: 0.512383
 
 Punt contingut en la capsula: 
-	x: 1.07165
-	y: 1.23744
-	z: 0.618718
+	x: 0.859854
+	y: -0.676623
+	z: 0.516653
 
 Punt contingut en la capsula: 
-	x: 1.07777
-	y: 1.24451
-	z: 0.622253
+	x: 0.866961
+	y: -0.682215
+	z: 0.520922
 
 Punt contingut en la capsula: 
-	x: 1.0839
-	y: 1.25158
-	z: 0.625789
+	x: 0.874067
+	y: -0.687807
+	z: 0.525192
 
 Punt contingut en la capsula: 
-	x: 1.09002
-	y: 1.25865
-	z: 0.629325
+	x: 0.881173
+	y: -0.693399
+	z: 0.529462
 
 Punt contingut en la capsula: 
-	x: 1.09615
-	y: 1.26572
-	z: 0.63286
+	x: 0.888279
+	y: -0.698991
+	z: 0.533732
 
 Punt contingut en la capsula: 
-	x: 1.10227
-	y: 1.27279
-	z: 0.636396
+	x: 0.895386
+	y: -0.704583
+	z: 0.538002
 
 Punt contingut en la capsula: 
-	x: 1.10839
-	y: 1.27986
-	z: 0.639931
+	x: 0.902492
+	y: -0.710175
+	z: 0.542272
 
 Punt contingut en la capsula: 
-	x: 1.11452
-	y: 1.28693
-	z: 0.643467
+	x: 0.909598
+	y: -0.715766
+	z: 0.546542
 
 Punt contingut en la capsula: 
-	x: 1.12064
-	y: 1.294
-	z: 0.647002
+	x: 0.916704
+	y: -0.721358
+	z: 0.550811
 
 Punt contingut en la capsula: 
-	x: 1.12676
-	y: 1.30108
-	z: 0.650538
+	x: 0.92381
+	y: -0.72695
+	z: 0.555081
 
 Punt contingut en la capsula: 
-	x: 1.13289
-	y: 1.30815
-	z: 0.654073
+	x: 0.930917
+	y: -0.732542
+	z: 0.559351
 
 Punt contingut en la capsula: 
-	x: 1.13901
-	y: 1.31522
-	z: 0.657609
+	x: 0.938023
+	y: -0.738134
+	z: 0.563621
 
 Punt contingut en la capsula: 
-	x: 1.14514
-	y: 1.32229
-	z: 0.661144
+	x: 0.945129
+	y: -0.743726
+	z: 0.567891
 
 Punt contingut en la capsula: 
-	x: 1.15126
-	y: 1.32936
-	z: 0.66468
+	x: 0.952235
+	y: -0.749318
+	z: 0.572161
 
 Punt contingut en la capsula: 
-	x: 1.15738
-	y: 1.33643
-	z: 0.668215
+	x: 0.959342
+	y: -0.75491
+	z: 0.576431
 
 Punt contingut en la capsula: 
-	x: 1.16351
-	y: 1.3435
-	z: 0.671751
+	x: 0.966448
+	y: -0.760502
+	z: 0.5807
 
 Punt contingut en la capsula: 
-	x: 1.16963
-	y: 1.35057
-	z: 0.675286
+	x: 0.973554
+	y: -0.766094
+	z: 0.58497
 
 Punt contingut en la capsula: 
-	x: 1.17575
-	y: 1.35764
-	z: 0.678822
+	x: 0.98066
+	y: -0.771686
+	z: 0.58924
 
 Punt contingut en la capsula: 
-	x: 1.18188
-	y: 1.36471
-	z: 0.682357
+	x: 0.987767
+	y: -0.777278
+	z: 0.59351
 
 Punt contingut en la capsula: 
-	x: 1.188
-	y: 1.37179
-	z: 0.685893
+	x: 0.994873
+	y: -0.78287
+	z: 0.59778
 
 Punt contingut en la capsula: 
-	x: 1.19413
-	y: 1.37886
-	z: 0.689429
+	x: 1.00198
+	y: -0.788461
+	z: 0.60205
 
 Punt contingut en la capsula: 
-	x: 1.20025
-	y: 1.38593
-	z: 0.692964
+	x: 1.00909
+	y: -0.794053
+	z: 0.60632
 
 Punt contingut en la capsula: 
-	x: 1.20637
-	y: 1.393
-	z: 0.6965
+	x: 1.01619
+	y: -0.799645
+	z: 0.610589
 
 Punt contingut en la capsula: 
-	x: 1.2125
-	y: 1.40007
-	z: 0.700035
+	x: 1.0233
+	y: -0.805237
+	z: 0.614859
 
 Punt contingut en la capsula: 
-	x: 1.21862
-	y: 1.40714
-	z: 0.703571
+	x: 1.0304
+	y: -0.810829
+	z: 0.619129
 
 Punt contingut en la capsula: 
-	x: 1.22474
-	y: 1.41421
-	z: 0.707106
+	x: 1.03751
+	y: -0.816421
+	z: 0.623399
 
 Punt contingut en la capsula: 
-	x: 1.23087
-	y: 1.42128
-	z: 0.710642
+	x: 1.04462
+	y: -0.822013
+	z: 0.627669
 
 Punt contingut en la capsula: 
-	x: 1.23699
-	y: 1.42835
-	z: 0.714177
+	x: 1.05172
+	y: -0.827605
+	z: 0.631939
 
 Punt contingut en la capsula: 
-	x: 1.24312
-	y: 1.43543
-	z: 0.717713
+	x: 1.05883
+	y: -0.833197
+	z: 0.636209
 
 Punt contingut en la capsula: 
-	x: 1.24924
-	y: 1.4425
-	z: 0.721248
+	x: 1.06594
+	y: -0.838789
+	z: 0.640478
 
 Punt contingut en la capsula: 
-	x: 1.25536
-	y: 1.44957
-	z: 0.724784
+	x: 1.07304
+	y: -0.844381
+	z: 0.644748
 
 Punt contingut en la capsula: 
-	x: 1.26149
-	y: 1.45664
-	z: 0.728319
+	x: 1.08015
+	y: -0.849973
+	z: 0.649018
 
 Punt contingut en la capsula: 
-	x: 1.26761
-	y: 1.46371
-	z: 0.731855
+	x: 1.08725
+	y: -0.855565
+	z: 0.653288
 
 Punt contingut en la capsula: 
-	x: 1.27373
-	y: 1.47078
-	z: 0.73539
+	x: 1.09436
+	y: -0.861156
+	z: 0.657558
 
 Punt contingut en la capsula: 
-	x: 1.27986
-	y: 1.47785
-	z: 0.738926
+	x: 1.10147
+	y: -0.866748
+	z: 0.661828
 
 Punt contingut en la capsula: 
-	x: 1.28598
-	y: 1.48492
-	z: 0.742462
+	x: 1.10857
+	y: -0.87234
+	z: 0.666098
 
 Punt contingut en la capsula: 
-	x: 1.2921
-	y: 1.49199
-	z: 0.745997
+	x: 1.11568
+	y: -0.877932
+	z: 0.670367
 
 Punt contingut en la capsula: 
-	x: 1.29823
-	y: 1.49907
-	z: 0.749533
+	x: 1.12278
+	y: -0.883524
+	z: 0.674637
 
 Punt contingut en la capsula: 
-	x: 1.30435
-	y: 1.50614
-	z: 0.753068
+	x: 1.12989
+	y: -0.889116
+	z: 0.678907
 
 Punt contingut en la capsula: 
-	x: 1.31048
-	y: 1.51321
-	z: 0.756604
+	x: 1.137
+	y: -0.894708
+	z: 0.683177
 
 Punt contingut en la capsula: 
-	x: 1.3166
-	y: 1.52028
-	z: 0.760139
+	x: 1.1441
+	y: -0.9003
+	z: 0.687447
 
 Punt contingut en la capsula: 
-	x: 1.32272
-	y: 1.52735
-	z: 0.763675
+	x: 1.15121
+	y: -0.905892
+	z: 0.691717
 
 Punt contingut en la capsula: 
-	x: 1.32885
-	y: 1.53442
-	z: 0.76721
+	x: 1.15832
+	y: -0.911484
+	z: 0.695987
 
 Punt contingut en la capsula: 
-	x: 1.33497
-	y: 1.54149
-	z: 0.770746
+	x: 1.16542
+	y: -0.917076
+	z: 0.700256
 
 Punt contingut en la capsula: 
-	x: 1.34109
-	y: 1.54856
-	z: 0.774281
+	x: 1.17253
+	y: -0.922668
+	z: 0.704526
 
 Punt contingut en la capsula: 
-	x: 1.34722
-	y: 1.55563
-	z: 0.777817
+	x: 1.17963
+	y: -0.92826
+	z: 0.708796
 
 Punt contingut en la capsula: 
-	x: 1.35334
-	y: 1.5627
-	z: 0.781352
+	x: 1.18674
+	y: -0.933851
+	z: 0.713066
 
 Punt contingut en la capsula: 
-	x: 1.35947
-	y: 1.56978
-	z: 0.784888
+	x: 1.19385
+	y: -0.939443
+	z: 0.717336
 
 Punt contingut en la capsula: 
-	x: 1.36559
-	y: 1.57685
-	z: 0.788423
+	x: 1.20095
+	y: -0.945035
+	z: 0.721606
 
 Punt contingut en la capsula: 
-	x: 1.37171
-	y: 1.58392
-	z: 0.791959
+	x: 1.20806
+	y: -0.950627
+	z: 0.725875
 
 Punt contingut en la capsula: 
-	x: 1.37784
-	y: 1.59099
-	z: 0.795494
+	x: 1.21517
+	y: -0.956219
+	z: 0.730145
 
 Punt contingut en la capsula: 
-	x: 1.38396
-	y: 1.59806
-	z: 0.79903
+	x: 1.22227
+	y: -0.961811
+	z: 0.734415
 
 Punt contingut en la capsula: 
-	x: 1.39008
-	y: 1.60513
-	z: 0.802566
+	x: 1.22938
+	y: -0.967403
+	z: 0.738685
 
 Punt contingut en la capsula: 
-	x: 1.39621
-	y: 1.6122
-	z: 0.806101
+	x: 1.23648
+	y: -0.972995
+	z: 0.742955
 
 Punt contingut en la capsula: 
-	x: 1.40233
-	y: 1.61927
-	z: 0.809637
+	x: 1.24359
+	y: -0.978587
+	z: 0.747225
 
 Punt contingut en la capsula: 
-	x: 1.40846
-	y: 1.62634
-	z: 0.813172
+	x: 1.2507
+	y: -0.984179
+	z: 0.751495
 
 Punt contingut en la capsula: 
-	x: 1.41458
-	y: 1.63342
-	z: 0.816708
+	x: 1.2578
+	y: -0.989771
+	z: 0.755764
 
 Punt contingut en la capsula: 
-	x: 1.4207
-	y: 1.64049
-	z: 0.820243
+	x: 1.26491
+	y: -0.995363
+	z: 0.760034
 
 Punt contingut en la capsula: 
-	x: 1.42683
-	y: 1.64756
-	z: 0.823779
+	x: 1.27202
+	y: -1.00095
+	z: 0.764304
 
 Punt contingut en la capsula: 
-	x: 1.43295
-	y: 1.65463
-	z: 0.827314
+	x: 1.27912
+	y: -1.00655
+	z: 0.768574
 
 Punt contingut en la capsula: 
-	x: 1.43907
-	y: 1.6617
-	z: 0.83085
+	x: 1.28623
+	y: -1.01214
+	z: 0.772844
 
 Punt contingut en la capsula: 
-	x: 1.4452
-	y: 1.66877
-	z: 0.834385
+	x: 1.29333
+	y: -1.01773
+	z: 0.777114
 
 Punt contingut en la capsula: 
-	x: 1.45132
-	y: 1.67584
-	z: 0.837921
+	x: 1.30044
+	y: -1.02332
+	z: 0.781384
 
 Punt contingut en la capsula: 
-	x: 1.45745
-	y: 1.68291
-	z: 0.841456
+	x: 1.30755
+	y: -1.02891
+	z: 0.785653
 
 Punt contingut en la capsula: 
-	x: 1.46357
-	y: 1.68998
-	z: 0.844992
+	x: 1.31465
+	y: -1.03451
+	z: 0.789923
 
 Punt contingut en la capsula: 
-	x: 1.46969
-	y: 1.69705
-	z: 0.848527
+	x: 1.32176
+	y: -1.0401
+	z: 0.794193
 
 Punt contingut en la capsula: 
-	x: 1.47582
-	y: 1.70413
-	z: 0.852063
+	x: 1.32887
+	y: -1.04569
+	z: 0.798463
 
 Punt contingut en la capsula: 
-	x: 1.48194
-	y: 1.7112
-	z: 0.855599
+	x: 1.33597
+	y: -1.05128
+	z: 0.802733
 
 Punt contingut en la capsula: 
-	x: 1.48806
-	y: 1.71827
-	z: 0.859134
+	x: 1.34308
+	y: -1.05687
+	z: 0.807003
 
 Punt contingut en la capsula: 
-	x: 1.49419
-	y: 1.72534
-	z: 0.86267
+	x: 1.35018
+	y: -1.06247
+	z: 0.811273
 
 Punt contingut en la capsula: 
-	x: 1.50031
-	y: 1.73241
-	z: 0.866205
+	x: 1.35729
+	y: -1.06806
+	z: 0.815542
 
 Punt contingut en la capsula: 
-	x: 1.50643
-	y: 1.73948
-	z: 0.869741
+	x: 1.3644
+	y: -1.07365
+	z: 0.819812
 
 Punt contingut en la capsula: 
-	x: 1.51256
-	y: 1.74655
-	z: 0.873276
+	x: 1.3715
+	y: -1.07924
+	z: 0.824082
 
 Punt contingut en la capsula: 
-	x: 1.51868
-	y: 1.75362
-	z: 0.876812
+	x: 1.37861
+	y: -1.08483
+	z: 0.828352
 
 Punt contingut en la capsula: 
-	x: 1.52481
-	y: 1.76069
-	z: 0.880347
+	x: 1.38572
+	y: -1.09043
+	z: 0.832622
 
 Punt contingut en la capsula: 
-	x: 1.53093
-	y: 1.76777
-	z: 0.883883
+	x: 1.39282
+	y: -1.09602
+	z: 0.836892
 
 Punt contingut en la capsula: 
-	x: 1.53705
-	y: 1.77484
-	z: 0.887418
+	x: 1.39993
+	y: -1.10161
+	z: 0.841162
 
 Punt contingut en la capsula: 
-	x: 1.54318
-	y: 1.78191
-	z: 0.890954
+	x: 1.40703
+	y: -1.1072
+	z: 0.845431
 
 Punt contingut en la capsula: 
-	x: 1.5493
-	y: 1.78898
-	z: 0.894489
+	x: 1.41414
+	y: -1.11279
+	z: 0.849701
 
 Punt contingut en la capsula: 
-	x: 1.55542
-	y: 1.79605
-	z: 0.898025
+	x: 1.42125
+	y: -1.11838
+	z: 0.853971
 
 Punt contingut en la capsula: 
-	x: 1.56155
-	y: 1.80312
-	z: 0.90156
+	x: 1.42835
+	y: -1.12398
+	z: 0.858241
 
 Punt contingut en la capsula: 
-	x: 1.56767
-	y: 1.81019
-	z: 0.905096
+	x: 1.43546
+	y: -1.12957
+	z: 0.862511
 
 Punt contingut en la capsula: 
-	x: 1.5738
-	y: 1.81726
-	z: 0.908632
+	x: 1.44257
+	y: -1.13516
+	z: 0.866781
 
 Punt contingut en la capsula: 
-	x: 1.57992
-	y: 1.82433
-	z: 0.912167
+	x: 1.44967
+	y: -1.14075
+	z: 0.871051
 
 Punt contingut en la capsula: 
-	x: 1.58604
-	y: 1.83141
-	z: 0.915703
+	x: 1.45678
+	y: -1.14634
+	z: 0.87532
 
 Punt contingut en la capsula: 
-	x: 1.59217
-	y: 1.83848
-	z: 0.919238
+	x: 1.46388
+	y: -1.15194
+	z: 0.87959
 
 Punt contingut en la capsula: 
-	x: 1.59829
-	y: 1.84555
-	z: 0.922774
+	x: 1.47099
+	y: -1.15753
+	z: 0.88386
 
 Punt contingut en la capsula: 
-	x: 1.60441
-	y: 1.85262
-	z: 0.926309
+	x: 1.4781
+	y: -1.16312
+	z: 0.88813
 
 Punt contingut en la capsula: 
-	x: 1.61054
-	y: 1.85969
-	z: 0.929845
+	x: 1.4852
+	y: -1.16871
+	z: 0.8924
 
 Punt contingut en la capsula: 
-	x: 1.61666
-	y: 1.86676
-	z: 0.93338
+	x: 1.49231
+	y: -1.1743
+	z: 0.89667
 
 Punt contingut en la capsula: 
-	x: 1.62279
-	y: 1.87383
-	z: 0.936916
+	x: 1.49942
+	y: -1.1799
+	z: 0.90094
 
 Punt contingut en la capsula: 
-	x: 1.62891
-	y: 1.8809
-	z: 0.940451
+	x: 1.50652
+	y: -1.18549
+	z: 0.905209
 
 Punt contingut en la capsula: 
-	x: 1.63503
-	y: 1.88797
-	z: 0.943987
+	x: 1.51363
+	y: -1.19108
+	z: 0.909479
 
 Punt contingut en la capsula: 
-	x: 1.64116
-	y: 1.89504
-	z: 0.947522
+	x: 1.52073
+	y: -1.19667
+	z: 0.913749
 
 Punt contingut en la capsula: 
-	x: 1.64728
-	y: 1.90212
-	z: 0.951058
+	x: 1.52784
+	y: -1.20226
+	z: 0.918019
 
 Punt contingut en la capsula: 
-	x: 1.6534
-	y: 1.90919
-	z: 0.954593
+	x: 1.53495
+	y: -1.20786
+	z: 0.922289
 
 Punt contingut en la capsula: 
-	x: 1.65953
-	y: 1.91626
-	z: 0.958129
+	x: 1.54205
+	y: -1.21345
+	z: 0.926559
 
 Punt contingut en la capsula: 
-	x: 1.66565
-	y: 1.92333
-	z: 0.961664
+	x: 1.54916
+	y: -1.21904
+	z: 0.930829
 
 Punt contingut en la capsula: 
-	x: 1.67178
-	y: 1.9304
-	z: 0.9652
+	x: 1.55627
+	y: -1.22463
+	z: 0.935098
 
 Punt contingut en la capsula: 
-	x: 1.6779
-	y: 1.93747
-	z: 0.968736
+	x: 1.56337
+	y: -1.23022
+	z: 0.939368
 
 Punt contingut en la capsula: 
-	x: 1.68402
-	y: 1.94454
-	z: 0.972271
+	x: 1.57048
+	y: -1.23582
+	z: 0.943638
 
 Punt contingut en la capsula: 
-	x: 1.69015
-	y: 1.95161
-	z: 0.975807
+	x: 1.57758
+	y: -1.24141
+	z: 0.947908
 
 Punt contingut en la capsula: 
-	x: 1.69627
-	y: 1.95868
-	z: 0.979342
+	x: 1.58469
+	y: -1.247
+	z: 0.952178
 
 Punt contingut en la capsula: 
-	x: 1.70239
-	y: 1.96576
-	z: 0.982878
+	x: 1.5918
+	y: -1.25259
+	z: 0.956448
 
 Punt contingut en la capsula: 
-	x: 1.70852
-	y: 1.97283
-	z: 0.986413
+	x: 1.5989
+	y: -1.25818
+	z: 0.960718
 
 Punt contingut en la capsula: 
-	x: 1.71464
-	y: 1.9799
-	z: 0.989949
+	x: 1.60601
+	y: -1.26377
+	z: 0.964987
 
 Punt contingut en la capsula: 
-	x: 1.72077
-	y: 1.98697
-	z: 0.993484
+	x: 1.61312
+	y: -1.26937
+	z: 0.969257
 
 Punt contingut en la capsula: 
-	x: 1.72689
-	y: 1.99404
-	z: 0.99702
+	x: 1.62022
+	y: -1.27496
+	z: 0.973527
 
 Punt contingut en la capsula: 
-	x: 1.73301
-	y: 2.00111
-	z: 1.00056
+	x: 1.62733
+	y: -1.28055
+	z: 0.977797
 
 Punt contingut en la capsula: 
-	x: 1.73914
-	y: 2.00818
-	z: 1.00409
+	x: 1.63443
+	y: -1.28614
+	z: 0.982067
 
 Punt contingut en la capsula: 
-	x: 1.74526
-	y: 2.01525
-	z: 1.00763
+	x: 1.64154
+	y: -1.29173
+	z: 0.986337
 
 Punt contingut en la capsula: 
-	x: 1.75138
-	y: 2.02232
-	z: 1.01116
+	x: 1.64865
+	y: -1.29733
+	z: 0.990607
 
 Punt contingut en la capsula: 
-	x: 1.75751
-	y: 2.02939
-	z: 1.0147
+	x: 1.65575
+	y: -1.30292
+	z: 0.994876
 
 Punt contingut en la capsula: 
-	x: 1.76363
-	y: 2.03647
-	z: 1.01823
+	x: 1.66286
+	y: -1.30851
+	z: 0.999146
 
 Punt contingut en la capsula: 
-	x: 1.76975
-	y: 2.04354
-	z: 1.02177
+	x: 1.66996
+	y: -1.3141
+	z: 1.00342
 
 Punt contingut en la capsula: 
-	x: 1.77588
-	y: 2.05061
-	z: 1.0253
+	x: 1.67707
+	y: -1.31969
+	z: 1.00769
 
 Punt contingut en la capsula: 
-	x: 1.782
-	y: 2.05768
-	z: 1.02884
+	x: 1.68418
+	y: -1.32529
+	z: 1.01196
 
 Punt contingut en la capsula: 
-	x: 1.78813
-	y: 2.06475
-	z: 1.03238
+	x: 1.69128
+	y: -1.33088
+	z: 1.01623
 
 Punt contingut en la capsula: 
-	x: 1.79425
-	y: 2.07182
-	z: 1.03591
+	x: 1.69839
+	y: -1.33647
+	z: 1.0205
 
 Punt contingut en la capsula: 
-	x: 1.80037
-	y: 2.07889
-	z: 1.03945
+	x: 1.7055
+	y: -1.34206
+	z: 1.02477
 
 Punt contingut en la capsula: 
-	x: 1.8065
-	y: 2.08596
-	z: 1.04298
+	x: 1.7126
+	y: -1.34765
+	z: 1.02904
 
 Punt contingut en la capsula: 
-	x: 1.81262
-	y: 2.09303
-	z: 1.04652
+	x: 1.71971
+	y: -1.35325
+	z: 1.03331
 
 Punt contingut en la capsula: 
-	x: 1.81874
-	y: 2.10011
-	z: 1.05005
+	x: 1.72681
+	y: -1.35884
+	z: 1.03758
 
 Punt contingut en la capsula: 
-	x: 1.82487
-	y: 2.10718
-	z: 1.05359
+	x: 1.73392
+	y: -1.36443
+	z: 1.04184
 
 Punt contingut en la capsula: 
-	x: 1.83099
-	y: 2.11425
-	z: 1.05712
+	x: 1.74103
+	y: -1.37002
+	z: 1.04611
 
 Punt contingut en la capsula: 
-	x: 1.83712
-	y: 2.12132
-	z: 1.06066
+	x: 1.74813
+	y: -1.37561
+	z: 1.05038
 
 Punt contingut en la capsula: 
-	x: 1.84324
-	y: 2.12839
-	z: 1.06419
+	x: 1.75524
+	y: -1.38121
+	z: 1.05465
 
 Punt contingut en la capsula: 
-	x: 1.84936
-	y: 2.13546
-	z: 1.06773
+	x: 1.76235
+	y: -1.3868
+	z: 1.05892
 
 Punt contingut en la capsula: 
-	x: 1.85549
-	y: 2.14253
-	z: 1.07127
+	x: 1.76945
+	y: -1.39239
+	z: 1.06319
 
 Punt contingut en la capsula: 
-	x: 1.86161
-	y: 2.1496
-	z: 1.0748
+	x: 1.77656
+	y: -1.39798
+	z: 1.06746
 
 Punt contingut en la capsula: 
-	x: 1.86773
-	y: 2.15667
-	z: 1.07834
+	x: 1.78366
+	y: -1.40357
+	z: 1.07173
 
 Punt contingut en la capsula: 
-	x: 1.87386
-	y: 2.16374
-	z: 1.08187
+	x: 1.79077
+	y: -1.40917
+	z: 1.076
 
 Punt contingut en la capsula: 
-	x: 1.87998
-	y: 2.17082
-	z: 1.08541
+	x: 1.79788
+	y: -1.41476
+	z: 1.08027
 
 Punt contingut en la capsula: 
-	x: 1.88611
-	y: 2.17789
-	z: 1.08894
+	x: 1.80498
+	y: -1.42035
+	z: 1.08454
 
 Punt contingut en la capsula: 
-	x: 1.89223
-	y: 2.18496
-	z: 1.09248
+	x: 1.81209
+	y: -1.42594
+	z: 1.08881
 
 Punt contingut en la capsula: 
-	x: 1.89835
-	y: 2.19203
-	z: 1.09601
+	x: 1.8192
+	y: -1.43153
+	z: 1.09308
 
 Punt contingut en la capsula: 
-	x: 1.90448
-	y: 2.1991
-	z: 1.09955
+	x: 1.8263
+	y: -1.43712
+	z: 1.09735
 
 Punt contingut en la capsula: 
-	x: 1.9106
-	y: 2.20617
-	z: 1.10309
+	x: 1.83341
+	y: -1.44272
+	z: 1.10162
 
 Punt contingut en la capsula: 
-	x: 1.91672
-	y: 2.21324
-	z: 1.10662
+	x: 1.84051
+	y: -1.44831
+	z: 1.10589
 
 Punt contingut en la capsula: 
-	x: 1.92285
-	y: 2.22031
+	x: 1.84762
+	y: -1.4539
 	z: 1.11016
 
 Punt contingut en la capsula: 
-	x: 1.92897
-	y: 2.22738
-	z: 1.11369
+	x: 1.85473
+	y: -1.45949
+	z: 1.11443
 
 Punt contingut en la capsula: 
-	x: 1.9351
-	y: 2.23446
-	z: 1.11723
+	x: 1.86183
+	y: -1.46508
+	z: 1.1187
 
 Punt contingut en la capsula: 
-	x: 1.94122
-	y: 2.24153
-	z: 1.12076
+	x: 1.86894
+	y: -1.47068
+	z: 1.12297
 
 Punt contingut en la capsula: 
-	x: 1.94734
-	y: 2.2486
-	z: 1.1243
+	x: 1.87605
+	y: -1.47627
+	z: 1.12724
 
 Punt contingut en la capsula: 
-	x: 1.95347
-	y: 2.25567
-	z: 1.12783
+	x: 1.88315
+	y: -1.48186
+	z: 1.13151
 
 Punt contingut en la capsula: 
-	x: 1.95959
-	y: 2.26274
-	z: 1.13137
+	x: 1.89026
+	y: -1.48745
+	z: 1.13578
 
 Punt contingut en la capsula: 
-	x: 1.96571
-	y: 2.26981
-	z: 1.13491
+	x: 1.89736
+	y: -1.49304
+	z: 1.14005
 
 Punt contingut en la capsula: 
-	x: 1.97184
-	y: 2.27688
-	z: 1.13844
+	x: 1.90447
+	y: -1.49864
+	z: 1.14432
 
 Punt contingut en la capsula: 
-	x: 1.97796
-	y: 2.28395
-	z: 1.14198
+	x: 1.91158
+	y: -1.50423
+	z: 1.14859
 
 Punt contingut en la capsula: 
-	x: 1.98408
-	y: 2.29102
-	z: 1.14551
+	x: 1.91868
+	y: -1.50982
+	z: 1.15286
 
 Punt contingut en la capsula: 
-	x: 1.99021
-	y: 2.2981
-	z: 1.14905
+	x: 1.92579
+	y: -1.51541
+	z: 1.15713
 
 Punt contingut en la capsula: 
-	x: 1.99633
-	y: 2.30517
-	z: 1.15258
+	x: 1.9329
+	y: -1.521
+	z: 1.1614
 
 Punt contingut en la capsula: 
-	x: 2.00246
-	y: 2.31224
-	z: 1.15612
+	x: 1.94
+	y: -1.5266
+	z: 1.16567
 
 Punt contingut en la capsula: 
-	x: 2.00858
-	y: 2.31931
-	z: 1.15965
+	x: 1.94711
+	y: -1.53219
+	z: 1.16994
 
 Punt contingut en la capsula: 
-	x: 2.0147
-	y: 2.32638
-	z: 1.16319
+	x: 1.95421
+	y: -1.53778
+	z: 1.17421
 
 Punt contingut en la capsula: 
-	x: 2.02083
-	y: 2.33345
-	z: 1.16673
+	x: 1.96132
+	y: -1.54337
+	z: 1.17848
 
 Punt contingut en la capsula: 
-	x: 2.02695
-	y: 2.34052
-	z: 1.17026
+	x: 1.96843
+	y: -1.54896
+	z: 1.18275
 
 Punt contingut en la capsula: 
-	x: 2.03307
-	y: 2.34759
-	z: 1.1738
+	x: 1.97553
+	y: -1.55456
+	z: 1.18702
 
 Punt contingut en la capsula: 
-	x: 2.0392
-	y: 2.35466
-	z: 1.17733
+	x: 1.98264
+	y: -1.56015
+	z: 1.19129
 
 Punt contingut en la capsula: 
-	x: 2.04532
-	y: 2.36173
-	z: 1.18087
+	x: 1.98975
+	y: -1.56574
+	z: 1.19556
 
 Punt contingut en la capsula: 
-	x: 2.05145
-	y: 2.36881
-	z: 1.1844
+	x: 1.99685
+	y: -1.57133
+	z: 1.19983
 
 Punt contingut en la capsula: 
-	x: 2.05757
-	y: 2.37588
-	z: 1.18794
+	x: 2.00396
+	y: -1.57692
+	z: 1.2041
 
 Punt contingut en la capsula: 
-	x: 2.06369
-	y: 2.38295
-	z: 1.19147
+	x: 2.01106
+	y: -1.58251
+	z: 1.20837
 
 Punt contingut en la capsula: 
-	x: 2.06982
-	y: 2.39002
-	z: 1.19501
+	x: 2.01817
+	y: -1.58811
+	z: 1.21264
 
 Punt contingut en la capsula: 
-	x: 2.07594
-	y: 2.39709
-	z: 1.19854
+	x: 2.02528
+	y: -1.5937
+	z: 1.21691
 
 Punt contingut en la capsula: 
-	x: 2.08206
-	y: 2.40416
-	z: 1.20208
+	x: 2.03238
+	y: -1.59929
+	z: 1.22118
 
 Punt contingut en la capsula: 
-	x: 2.08819
-	y: 2.41123
-	z: 1.20562
+	x: 2.03949
+	y: -1.60488
+	z: 1.22545
 
 Punt contingut en la capsula: 
-	x: 2.09431
-	y: 2.4183
-	z: 1.20915
+	x: 2.0466
+	y: -1.61047
+	z: 1.22972
 
 Punt contingut en la capsula: 
-	x: 2.10044
-	y: 2.42537
-	z: 1.21269
+	x: 2.0537
+	y: -1.61607
+	z: 1.23399
 
 Punt contingut en la capsula: 
-	x: 2.10656
-	y: 2.43245
-	z: 1.21622
+	x: 2.06081
+	y: -1.62166
+	z: 1.23826
 
 Punt contingut en la capsula: 
-	x: 2.11268
-	y: 2.43952
-	z: 1.21976
+	x: 2.06791
+	y: -1.62725
+	z: 1.24253
 
 Punt contingut en la capsula: 
-	x: 2.11881
-	y: 2.44659
-	z: 1.22329
+	x: 2.07502
+	y: -1.63284
+	z: 1.2468
 
 Punt contingut en la capsula: 
-	x: 2.12493
-	y: 2.45366
-	z: 1.22683
+	x: 2.08213
+	y: -1.63843
+	z: 1.25107
 
 Punt contingut en la capsula: 
-	x: 2.13105
-	y: 2.46073
-	z: 1.23036
+	x: 2.08923
+	y: -1.64403
+	z: 1.25534
 
 Punt contingut en la capsula: 
-	x: 2.13718
-	y: 2.4678
-	z: 1.2339
+	x: 2.09634
+	y: -1.64962
+	z: 1.25961
 
 Punt contingut en la capsula: 
-	x: 2.1433
-	y: 2.47487
-	z: 1.23744
+	x: 2.10345
+	y: -1.65521
+	z: 1.26388
 
 Punt contingut en la capsula: 
-	x: 2.14943
-	y: 2.48194
-	z: 1.24097
+	x: 2.11055
+	y: -1.6608
+	z: 1.26815
 
 Punt contingut en la capsula: 
-	x: 2.15555
-	y: 2.48901
-	z: 1.24451
+	x: 2.11766
+	y: -1.66639
+	z: 1.27242
 
 Punt contingut en la capsula: 
-	x: 2.16167
-	y: 2.49608
-	z: 1.24804
+	x: 2.12476
+	y: -1.67199
+	z: 1.27669
 
 Punt contingut en la capsula: 
-	x: 2.1678
-	y: 2.50316
-	z: 1.25158
+	x: 2.13187
+	y: -1.67758
+	z: 1.28096
 
 Punt contingut en la capsula: 
-	x: 2.17392
-	y: 2.51023
-	z: 1.25511
+	x: 2.13898
+	y: -1.68317
+	z: 1.28523
 
 Punt contingut en la capsula: 
-	x: 2.18004
-	y: 2.5173
-	z: 1.25865
+	x: 2.14608
+	y: -1.68876
+	z: 1.2895
 
 Punt contingut en la capsula: 
-	x: 2.18617
-	y: 2.52437
-	z: 1.26218
+	x: 2.15319
+	y: -1.69435
+	z: 1.29377
 
 Punt contingut en la capsula: 
-	x: 2.19229
-	y: 2.53144
-	z: 1.26572
+	x: 2.1603
+	y: -1.69995
+	z: 1.29804
 
 Punt contingut en la capsula: 
-	x: 2.19842
-	y: 2.53851
-	z: 1.26926
+	x: 2.1674
+	y: -1.70554
+	z: 1.30231
 
 Punt contingut en la capsula: 
-	x: 2.20454
-	y: 2.54558
-	z: 1.27279
+	x: 2.17451
+	y: -1.71113
+	z: 1.30658
 
 Punt contingut en la capsula: 
-	x: 2.21066
-	y: 2.55265
-	z: 1.27633
+	x: 2.18161
+	y: -1.71672
+	z: 1.31085
 
 Punt contingut en la capsula: 
-	x: 2.21679
-	y: 2.55972
-	z: 1.27986
+	x: 2.18872
+	y: -1.72231
+	z: 1.31512
 
 Punt contingut en la capsula: 
-	x: 2.22291
-	y: 2.5668
-	z: 1.2834
+	x: 2.19583
+	y: -1.7279
+	z: 1.31939
 
 Punt contingut en la capsula: 
-	x: 2.22903
-	y: 2.57387
-	z: 1.28693
+	x: 2.20293
+	y: -1.7335
+	z: 1.32366
 
 Punt contingut en la capsula: 
-	x: 2.23516
-	y: 2.58094
-	z: 1.29047
+	x: 2.21004
+	y: -1.73909
+	z: 1.32793
 
 Punt contingut en la capsula: 
-	x: 2.24128
-	y: 2.58801
-	z: 1.294
+	x: 2.21714
+	y: -1.74468
+	z: 1.3322
 
 Punt contingut en la capsula: 
-	x: 2.2474
-	y: 2.59508
-	z: 1.29754
+	x: 2.22425
+	y: -1.75027
+	z: 1.33646
 
 Punt contingut en la capsula: 
-	x: 2.25353
-	y: 2.60215
-	z: 1.30108
+	x: 2.23136
+	y: -1.75586
+	z: 1.34073
 
 Punt contingut en la capsula: 
-	x: 2.25965
-	y: 2.60922
-	z: 1.30461
+	x: 2.23846
+	y: -1.76146
+	z: 1.345
 
 Punt contingut en la capsula: 
-	x: 2.26578
-	y: 2.61629
-	z: 1.30815
+	x: 2.24557
+	y: -1.76705
+	z: 1.34927
 
 Punt contingut en la capsula: 
-	x: 2.2719
-	y: 2.62336
-	z: 1.31168
+	x: 2.25268
+	y: -1.77264
+	z: 1.35354
 
 Punt contingut en la capsula: 
-	x: 2.27802
-	y: 2.63043
-	z: 1.31522
+	x: 2.25978
+	y: -1.77823
+	z: 1.35781
 
 Punt contingut en la capsula: 
-	x: 2.28415
-	y: 2.63751
-	z: 1.31875
+	x: 2.26689
+	y: -1.78382
+	z: 1.36208
 
 Punt contingut en la capsula: 
-	x: 2.29027
-	y: 2.64458
-	z: 1.32229
+	x: 2.27399
+	y: -1.78942
+	z: 1.36635
 
 Punt contingut en la capsula: 
-	x: 2.29639
-	y: 2.65165
-	z: 1.32582
+	x: 2.2811
+	y: -1.79501
+	z: 1.37062
 
 Punt contingut en la capsula: 
-	x: 2.30252
-	y: 2.65872
-	z: 1.32936
+	x: 2.28821
+	y: -1.8006
+	z: 1.37489
 
 Punt contingut en la capsula: 
-	x: 2.30864
-	y: 2.66579
-	z: 1.3329
+	x: 2.29531
+	y: -1.80619
+	z: 1.37916
 
 Punt contingut en la capsula: 
-	x: 2.31477
-	y: 2.67286
-	z: 1.33643
+	x: 2.30242
+	y: -1.81178
+	z: 1.38343
 
 Punt contingut en la capsula: 
-	x: 2.32089
-	y: 2.67993
-	z: 1.33997
+	x: 2.30953
+	y: -1.81738
+	z: 1.3877
 
 Punt contingut en la capsula: 
-	x: 2.32701
-	y: 2.687
-	z: 1.3435
+	x: 2.31663
+	y: -1.82297
+	z: 1.39197
 
 Punt contingut en la capsula: 
-	x: 2.33314
-	y: 2.69407
-	z: 1.34704
+	x: 2.32374
+	y: -1.82856
+	z: 1.39624
 
 Punt contingut en la capsula: 
-	x: 2.33926
-	y: 2.70115
-	z: 1.35057
+	x: 2.33084
+	y: -1.83415
+	z: 1.40051
 
 Punt contingut en la capsula: 
-	x: 2.34538
-	y: 2.70822
-	z: 1.35411
+	x: 2.33795
+	y: -1.83974
+	z: 1.40478
 
 Punt contingut en la capsula: 
-	x: 2.35151
-	y: 2.71529
-	z: 1.35764
+	x: 2.34506
+	y: -1.84534
+	z: 1.40905
 
 Punt contingut en la capsula: 
-	x: 2.35763
-	y: 2.72236
-	z: 1.36118
+	x: 2.35216
+	y: -1.85093
+	z: 1.41332
 
 Punt contingut en la capsula: 
-	x: 2.36376
-	y: 2.72943
-	z: 1.36471
+	x: 2.35927
+	y: -1.85652
+	z: 1.41759
 
 Punt contingut en la capsula: 
-	x: 2.36988
-	y: 2.7365
-	z: 1.36825
+	x: 2.36638
+	y: -1.86211
+	z: 1.42186
 
 Punt contingut en la capsula: 
-	x: 2.376
-	y: 2.74357
-	z: 1.37179
+	x: 2.37348
+	y: -1.8677
+	z: 1.42613
 
 Punt contingut en la capsula: 
-	x: 2.38213
-	y: 2.75064
-	z: 1.37532
+	x: 2.38059
+	y: -1.87329
+	z: 1.4304
 
 Punt contingut en la capsula: 
-	x: 2.38825
-	y: 2.75771
-	z: 1.37886
+	x: 2.38769
+	y: -1.87889
+	z: 1.43467
 
 Punt contingut en la capsula: 
-	x: 2.39437
-	y: 2.76479
-	z: 1.38239
+	x: 2.3948
+	y: -1.88448
+	z: 1.43894
 
 Punt contingut en la capsula: 
-	x: 2.4005
-	y: 2.77186
-	z: 1.38593
+	x: 2.40191
+	y: -1.89007
+	z: 1.44321
 
 Punt contingut en la capsula: 
-	x: 2.40662
-	y: 2.77893
-	z: 1.38946
+	x: 2.40901
+	y: -1.89566
+	z: 1.44748
 
 Punt contingut en la capsula: 
-	x: 2.41275
-	y: 2.786
-	z: 1.393
+	x: 2.41612
+	y: -1.90125
+	z: 1.45175
 
 Punt contingut en la capsula: 
-	x: 2.41887
-	y: 2.79307
-	z: 1.39653
+	x: 2.42323
+	y: -1.90685
+	z: 1.45602
 
 Punt contingut en la capsula: 
-	x: 2.42499
-	y: 2.80014
-	z: 1.40007
+	x: 2.43033
+	y: -1.91244
+	z: 1.46029
 
 Punt contingut en la capsula: 
-	x: 2.43112
-	y: 2.80721
-	z: 1.40361
+	x: 2.43744
+	y: -1.91803
+	z: 1.46456
 
 Punt contingut en la capsula: 
-	x: 2.43724
-	y: 2.81428
-	z: 1.40714
+	x: 2.44454
+	y: -1.92362
+	z: 1.46883
 
 Punt contingut en la capsula: 
-	x: 2.44336
-	y: 2.82135
-	z: 1.41068
+	x: 2.45165
+	y: -1.92921
+	z: 1.4731
 
 Punt contingut en la capsula: 
-	x: 2.44949
-	y: 2.82842
-	z: 1.41421
+	x: 2.45876
+	y: -1.93481
+	z: 1.47737
 
 Punt contingut en la capsula: 
-	x: 2.45561
-	y: 2.8355
-	z: 1.41775
+	x: 2.46586
+	y: -1.9404
+	z: 1.48164
 
 Punt contingut en la capsula: 
-	x: 2.46174
-	y: 2.84257
-	z: 1.42128
+	x: 2.47297
+	y: -1.94599
+	z: 1.48591
 
 Punt contingut en la capsula: 
-	x: 2.46786
-	y: 2.84964
-	z: 1.42482
+	x: 2.48008
+	y: -1.95158
+	z: 1.49018
 
 Punt contingut en la capsula: 
-	x: 2.47398
-	y: 2.85671
-	z: 1.42835
+	x: 2.48718
+	y: -1.95717
+	z: 1.49445
 
 Punt contingut en la capsula: 
-	x: 2.48011
-	y: 2.86378
-	z: 1.43189
+	x: 2.49429
+	y: -1.96277
+	z: 1.49872
 
 Punt contingut en la capsula: 
-	x: 2.48623
-	y: 2.87085
-	z: 1.43543
+	x: 2.50139
+	y: -1.96836
+	z: 1.50299
 
 Punt contingut en la capsula: 
-	x: 2.49235
-	y: 2.87792
-	z: 1.43896
+	x: 2.5085
+	y: -1.97395
+	z: 1.50726
 
 Punt contingut en la capsula: 
-	x: 2.49848
-	y: 2.88499
-	z: 1.4425
+	x: 2.51561
+	y: -1.97954
+	z: 1.51153
 
 Punt contingut en la capsula: 
-	x: 2.5046
-	y: 2.89207
-	z: 1.44603
+	x: 2.52271
+	y: -1.98513
+	z: 1.5158
 
 Punt contingut en la capsula: 
-	x: 2.51073
-	y: 2.89914
-	z: 1.44957
+	x: 2.52982
+	y: -1.99073
+	z: 1.52007
 
 Punt contingut en la capsula: 
-	x: 2.51685
-	y: 2.90621
-	z: 1.4531
+	x: 2.53693
+	y: -1.99632
+	z: 1.52434
 
 Punt contingut en la capsula: 
-	x: 2.52297
-	y: 2.91328
-	z: 1.45664
+	x: 2.54403
+	y: -2.00191
+	z: 1.52861
 
 Punt contingut en la capsula: 
-	x: 2.5291
-	y: 2.92035
-	z: 1.46018
+	x: 2.55114
+	y: -2.0075
+	z: 1.53288
 
 Punt contingut en la capsula: 
-	x: 2.53522
-	y: 2.92742
-	z: 1.46371
+	x: 2.55824
+	y: -2.01309
+	z: 1.53715
 
 Punt contingut en la capsula: 
-	x: 2.54135
-	y: 2.93449
-	z: 1.46725
+	x: 2.56535
+	y: -2.01868
+	z: 1.54142
 
 Punt contingut en la capsula: 
-	x: 2.54747
-	y: 2.94156
-	z: 1.47078
+	x: 2.57246
+	y: -2.02428
+	z: 1.54569
 
 Punt contingut en la capsula: 
-	x: 2.55359
-	y: 2.94864
-	z: 1.47432
+	x: 2.57956
+	y: -2.02987
+	z: 1.54996
 
 Punt contingut en la capsula: 
-	x: 2.55972
-	y: 2.95571
-	z: 1.47785
+	x: 2.58667
+	y: -2.03546
+	z: 1.55423
 
 Punt contingut en la capsula: 
-	x: 2.56584
-	y: 2.96278
-	z: 1.48139
+	x: 2.59378
+	y: -2.04105
+	z: 1.5585
 
 Punt contingut en la capsula: 
-	x: 2.57196
-	y: 2.96985
-	z: 1.48492
+	x: 2.60088
+	y: -2.04664
+	z: 1.56277
 
 Punt contingut en la capsula: 
-	x: 2.57809
-	y: 2.97692
-	z: 1.48846
+	x: 2.60799
+	y: -2.05224
+	z: 1.56704
 
 Punt contingut en la capsula: 
-	x: 2.58421
-	y: 2.98399
-	z: 1.492
+	x: 2.61509
+	y: -2.05783
+	z: 1.57131
 
 Punt contingut en la capsula: 
-	x: 2.59034
-	y: 2.99106
-	z: 1.49553
+	x: 2.6222
+	y: -2.06342
+	z: 1.57558
 
 Punt contingut en la capsula: 
-	x: 2.59646
-	y: 2.99813
-	z: 1.49907
+	x: 2.62931
+	y: -2.06901
+	z: 1.57985
 
 Punt contingut en la capsula: 
-	x: 2.60258
-	y: 3.00521
-	z: 1.5026
+	x: 2.63641
+	y: -2.0746
+	z: 1.58412
 
 Punt contingut en la capsula: 
-	x: 2.60871
-	y: 3.01228
-	z: 1.50614
+	x: 2.64352
+	y: -2.0802
+	z: 1.58839
 
 Punt contingut en la capsula: 
-	x: 2.61483
-	y: 3.01935
-	z: 1.50967
+	x: 2.65062
+	y: -2.08579
+	z: 1.59266
 
 Punt contingut en la capsula: 
-	x: 2.62096
-	y: 3.02642
-	z: 1.51321
+	x: 2.65773
+	y: -2.09138
+	z: 1.59693
 
 Punt contingut en la capsula: 
-	x: 2.62708
-	y: 3.03349
-	z: 1.51675
+	x: 2.66484
+	y: -2.09697
+	z: 1.6012
 
 Punt contingut en la capsula: 
-	x: 2.6332
-	y: 3.04056
-	z: 1.52028
+	x: 2.67194
+	y: -2.10256
+	z: 1.60547
 
 Punt contingut en la capsula: 
-	x: 2.63933
-	y: 3.04763
-	z: 1.52382
+	x: 2.67905
+	y: -2.10816
+	z: 1.60974
 
 Punt contingut en la capsula: 
-	x: 2.64545
-	y: 3.0547
-	z: 1.52735
+	x: 2.68616
+	y: -2.11375
+	z: 1.61401
 
 Punt contingut en la capsula: 
-	x: 2.65158
-	y: 3.06178
-	z: 1.53089
+	x: 2.69326
+	y: -2.11934
+	z: 1.61828
 
 Punt contingut en la capsula: 
-	x: 2.6577
-	y: 3.06885
-	z: 1.53442
+	x: 2.70037
+	y: -2.12493
+	z: 1.62255
 
 Punt contingut en la capsula: 
-	x: 2.66382
-	y: 3.07592
-	z: 1.53796
+	x: 2.70747
+	y: -2.13052
+	z: 1.62681
 
 Punt contingut en la capsula: 
-	x: 2.66995
-	y: 3.08299
-	z: 1.54149
+	x: 2.71458
+	y: -2.13612
+	z: 1.63108
 
 Punt contingut en la capsula: 
-	x: 2.67607
-	y: 3.09006
-	z: 1.54503
+	x: 2.72169
+	y: -2.14171
+	z: 1.63535
 
 Punt contingut en la capsula: 
-	x: 2.68219
-	y: 3.09713
-	z: 1.54857
+	x: 2.72879
+	y: -2.1473
+	z: 1.63962
 
 Punt contingut en la capsula: 
-	x: 2.68832
-	y: 3.1042
-	z: 1.5521
+	x: 2.7359
+	y: -2.15289
+	z: 1.64389
 
 Punt contingut en la capsula: 
-	x: 2.69444
-	y: 3.11127
-	z: 1.55564
+	x: 2.74301
+	y: -2.15848
+	z: 1.64816
 
 Punt contingut en la capsula: 
-	x: 2.70057
-	y: 3.11835
-	z: 1.55917
+	x: 2.75011
+	y: -2.16407
+	z: 1.65243
 
 Punt contingut en la capsula: 
-	x: 2.70669
-	y: 3.12542
-	z: 1.56271
+	x: 2.75722
+	y: -2.16967
+	z: 1.6567
 
 Punt contingut en la capsula: 
-	x: 2.71281
-	y: 3.13249
-	z: 1.56624
+	x: 2.76432
+	y: -2.17526
+	z: 1.66097
 
 Punt contingut en la capsula: 
-	x: 2.71894
-	y: 3.13956
-	z: 1.56978
-
-Punt contingut en la capsula: 
-	x: 2.72506
-	y: 3.14663
-	z: 1.57332
-
-Punt contingut en la capsula: 
-	x: 2.73119
-	y: 3.1537
-	z: 1.57685
-
-Punt contingut en la capsula: 
-	x: 2.73731
-	y: 3.16077
-	z: 1.58039
-
-Punt contingut en la capsula: 
-	x: 2.74343
-	y: 3.16784
-	z: 1.58392
-
-Punt contingut en la capsula: 
-	x: 2.74956
-	y: 3.17492
-	z: 1.58746
-
-Punt contingut en la capsula: 
-	x: 2.75568
-	y: 3.18199
-	z: 1.59099
-
-Punt contingut en la capsula: 
-	x: 2.7618
-	y: 3.18906
-	z: 1.59453
-
-Punt contingut en la capsula: 
-	x: 2.76793
-	y: 3.19613
-	z: 1.59806
-
-Punt contingut en la capsula: 
-	x: 2.77405
-	y: 3.2032
-	z: 1.6016
-
-Punt contingut en la capsula: 
-	x: 2.78018
-	y: 3.21027
-	z: 1.60514
-
-Punt contingut en la capsula: 
-	x: 2.7863
-	y: 3.21734
-	z: 1.60867
-
-Punt contingut en la capsula: 
-	x: 2.79242
-	y: 3.22441
-	z: 1.61221
-
-Punt contingut en la capsula: 
-	x: 2.79855
-	y: 3.23148
-	z: 1.61574
-
-Punt contingut en la capsula: 
-	x: 2.80467
-	y: 3.23856
-	z: 1.61928
-
-Punt contingut en la capsula: 
-	x: 2.8108
-	y: 3.24563
-	z: 1.62281
-
-Punt contingut en la capsula: 
-	x: 2.81692
-	y: 3.2527
-	z: 1.62635
-
-Punt contingut en la capsula: 
-	x: 2.82304
-	y: 3.25977
-	z: 1.62988
-
-Punt contingut en la capsula: 
-	x: 2.82917
-	y: 3.26684
-	z: 1.63342
-
-Punt contingut en la capsula: 
-	x: 2.83529
-	y: 3.27391
-	z: 1.63696
-
-Punt contingut en la capsula: 
-	x: 2.84141
-	y: 3.28098
-	z: 1.64049
-
-Punt contingut en la capsula: 
-	x: 2.84754
-	y: 3.28805
-	z: 1.64403
-
-Punt contingut en la capsula: 
-	x: 2.85366
-	y: 3.29513
-	z: 1.64756
-
-Punt contingut en la capsula: 
-	x: 2.85979
-	y: 3.3022
-	z: 1.6511
-
-Punt contingut en la capsula: 
-	x: 2.86591
-	y: 3.30927
-	z: 1.65463
-
-Punt contingut en la capsula: 
-	x: 2.87203
-	y: 3.31634
-	z: 1.65817
-
-Punt contingut en la capsula: 
-	x: 2.87816
-	y: 3.32341
-	z: 1.66171
-
-Punt contingut en la capsula: 
-	x: 2.88428
-	y: 3.33048
+	x: 2.77143
+	y: -2.18085
 	z: 1.66524
 
 Punt contingut en la capsula: 
-	x: 2.89041
-	y: 3.33755
-	z: 1.66878
+	x: 2.77854
+	y: -2.18644
+	z: 1.66951
 
 Punt contingut en la capsula: 
-	x: 2.89653
-	y: 3.34462
-	z: 1.67231
+	x: 2.78564
+	y: -2.19203
+	z: 1.67378
 
 Punt contingut en la capsula: 
-	x: 2.90265
-	y: 3.3517
-	z: 1.67585
+	x: 2.79275
+	y: -2.19763
+	z: 1.67805
 
 Punt contingut en la capsula: 
-	x: 2.90878
-	y: 3.35877
-	z: 1.67938
+	x: 2.79986
+	y: -2.20322
+	z: 1.68232
 
 Punt contingut en la capsula: 
-	x: 2.9149
-	y: 3.36584
-	z: 1.68292
+	x: 2.80696
+	y: -2.20881
+	z: 1.68659
 
 Punt contingut en la capsula: 
-	x: 2.92103
-	y: 3.37291
-	z: 1.68645
+	x: 2.81407
+	y: -2.2144
+	z: 1.69086
 
 Punt contingut en la capsula: 
-	x: 2.92715
-	y: 3.37998
-	z: 1.68999
+	x: 2.82117
+	y: -2.21999
+	z: 1.69513
 
 Punt contingut en la capsula: 
-	x: 2.93327
-	y: 3.38705
-	z: 1.69353
+	x: 2.82828
+	y: -2.22559
+	z: 1.6994
 
 Punt contingut en la capsula: 
-	x: 2.9394
-	y: 3.39412
-	z: 1.69706
+	x: 2.83539
+	y: -2.23118
+	z: 1.70367
 
 Punt contingut en la capsula: 
-	x: 2.94552
-	y: 3.40119
-	z: 1.7006
+	x: 2.84249
+	y: -2.23677
+	z: 1.70794
 
 Punt contingut en la capsula: 
-	x: 2.95164
-	y: 3.40827
-	z: 1.70413
+	x: 2.8496
+	y: -2.24236
+	z: 1.71221
 
 Punt contingut en la capsula: 
-	x: 2.95777
-	y: 3.41534
-	z: 1.70767
+	x: 2.85671
+	y: -2.24795
+	z: 1.71648
 
 Punt contingut en la capsula: 
-	x: 2.96389
-	y: 3.42241
-	z: 1.7112
+	x: 2.86381
+	y: -2.25355
+	z: 1.72075
 
 Punt contingut en la capsula: 
-	x: 2.97002
-	y: 3.42948
-	z: 1.71474
+	x: 2.87092
+	y: -2.25914
+	z: 1.72502
 
 Punt contingut en la capsula: 
-	x: 2.97614
-	y: 3.43655
-	z: 1.71828
+	x: 2.87803
+	y: -2.26473
+	z: 1.72929
 
 Punt contingut en la capsula: 
-	x: 2.98226
-	y: 3.44362
-	z: 1.72181
+	x: 2.88513
+	y: -2.27032
+	z: 1.73356
 
 Punt contingut en la capsula: 
-	x: 2.98839
-	y: 3.45069
-	z: 1.72535
+	x: 2.89224
+	y: -2.27591
+	z: 1.73783
 
 Punt contingut en la capsula: 
-	x: 2.99451
-	y: 3.45776
-	z: 1.72888
+	x: 2.89934
+	y: -2.28151
+	z: 1.7421
 
 Punt contingut en la capsula: 
-	x: 3.00064
-	y: 3.46484
-	z: 1.73242
+	x: 2.90645
+	y: -2.2871
+	z: 1.74637
 
 Punt contingut en la capsula: 
-	x: 3.00676
-	y: 3.47191
-	z: 1.73595
+	x: 2.91356
+	y: -2.29269
+	z: 1.75064
 
 Punt contingut en la capsula: 
-	x: 3.01288
-	y: 3.47898
-	z: 1.73949
+	x: 2.92066
+	y: -2.29828
+	z: 1.75491
 
 Punt contingut en la capsula: 
-	x: 3.01901
-	y: 3.48605
-	z: 1.74302
+	x: 2.92777
+	y: -2.30387
+	z: 1.75918
 
 Punt contingut en la capsula: 
-	x: 3.02513
-	y: 3.49312
-	z: 1.74656
+	x: 2.93488
+	y: -2.30947
+	z: 1.76345
 
 Punt contingut en la capsula: 
-	x: 3.03125
-	y: 3.50019
-	z: 1.7501
+	x: 2.94198
+	y: -2.31506
+	z: 1.76772
 
 Punt contingut en la capsula: 
-	x: 3.03738
-	y: 3.50726
-	z: 1.75363
+	x: 2.94909
+	y: -2.32065
+	z: 1.77199
 
 Punt contingut en la capsula: 
-	x: 3.0435
-	y: 3.51433
-	z: 1.75717
+	x: 2.9562
+	y: -2.32624
+	z: 1.77626
 
 Punt contingut en la capsula: 
-	x: 3.04963
-	y: 3.52141
-	z: 1.7607
+	x: 2.9633
+	y: -2.33183
+	z: 1.78053
 
 Punt contingut en la capsula: 
-	x: 3.05575
-	y: 3.52848
-	z: 1.76424
+	x: 2.97041
+	y: -2.33743
+	z: 1.7848
+
+Punt contingut en la capsula: 
+	x: 2.97751
+	y: -2.34302
+	z: 1.78907
+
+Punt contingut en la capsula: 
+	x: 2.98462
+	y: -2.34861
+	z: 1.79334
+
+Punt contingut en la capsula: 
+	x: 2.99173
+	y: -2.3542
+	z: 1.79761
+
+Punt contingut en la capsula: 
+	x: 2.99883
+	y: -2.35979
+	z: 1.80188
+
+Punt contingut en la capsula: 
+	x: 3.00594
+	y: -2.36539
+	z: 1.80615
+
+Punt contingut en la capsula: 
+	x: 3.01305
+	y: -2.37098
+	z: 1.81042
+
+Punt contingut en la capsula: 
+	x: 3.02015
+	y: -2.37657
+	z: 1.81469
+
+Punt contingut en la capsula: 
+	x: 3.02726
+	y: -2.38216
+	z: 1.81896
+
+Punt contingut en la capsula: 
+	x: 3.03437
+	y: -2.38776
+	z: 1.82323
+
+Punt contingut en la capsula: 
+	x: 3.04147
+	y: -2.39335
+	z: 1.8275
+
+Punt contingut en la capsula: 
+	x: 3.04858
+	y: -2.39894
+	z: 1.83177
+
+Punt contingut en la capsula: 
+	x: 3.05569
+	y: -2.40453
+	z: 1.83604
+
+Punt contingut en la capsula: 
+	x: 3.06279
+	y: -2.41012
+	z: 1.84031
+
+Punt contingut en la capsula: 
+	x: 3.0699
+	y: -2.41572
+	z: 1.84458
+
+Punt contingut en la capsula: 
+	x: 3.077
+	y: -2.42131
+	z: 1.84885
+
+Punt contingut en la capsula: 
+	x: 3.08411
+	y: -2.4269
+	z: 1.85312
+
+Punt contingut en la capsula: 
+	x: 3.09122
+	y: -2.43249
+	z: 1.85739
+
+Punt contingut en la capsula: 
+	x: 3.09832
+	y: -2.43808
+	z: 1.86166
+
+Punt contingut en la capsula: 
+	x: 3.10543
+	y: -2.44368
+	z: 1.86593
+
+Punt contingut en la capsula: 
+	x: 3.11254
+	y: -2.44927
+	z: 1.8702
+
+Punt contingut en la capsula: 
+	x: 3.11964
+	y: -2.45486
+	z: 1.87447
+
+Punt contingut en la capsula: 
+	x: 3.12675
+	y: -2.46045
+	z: 1.87874
+
+Punt contingut en la capsula: 
+	x: 3.13386
+	y: -2.46604
+	z: 1.88301
+
+Punt contingut en la capsula: 
+	x: 3.14096
+	y: -2.47164
+	z: 1.88728
+
+Punt contingut en la capsula: 
+	x: 3.14807
+	y: -2.47723
+	z: 1.89155
+
+Punt contingut en la capsula: 
+	x: 3.15517
+	y: -2.48282
+	z: 1.89582
+
+Punt contingut en la capsula: 
+	x: 3.16228
+	y: -2.48841
+	z: 1.90009
+
+Punt contingut en la capsula: 
+	x: 3.16939
+	y: -2.494
+	z: 1.90436
+
+Punt contingut en la capsula: 
+	x: 3.17649
+	y: -2.4996
+	z: 1.90863
 
 Punt interseccio entre: 
-	x: 3.05575 i x2: 3.06187
-	y: 3.52848 i y2: 3.53555
-	z: 1.76424 i z2: 1.76777
+	x: 3.17649 i x2: 3.1836
+	y: -2.4996 i y2: -2.50519
+	z: 1.90863 i z2: 1.9129
 
 Punt interseccio exacte: 
-	x: 3.03136
-	y: 3.50032
-	z: 1.75016
+	x: 3.17827
+	y: -2.50099
+	z: 1.9097
 
-Temps d'execucio: 9 milisegons
+Punt contingut en la capsula: 
+	x: 3.1836
+	y: -2.50519
+	z: 1.9129
+
+Punt contingut en la capsula: 
+	x: 3.19071
+	y: -2.51078
+	z: 1.91717
+
+Punt contingut en la capsula: 
+	x: 3.19781
+	y: -2.51637
+	z: 1.92144
+
+Punt contingut en la capsula: 
+	x: 3.20492
+	y: -2.52196
+	z: 1.92571
+
+Punt contingut en la capsula: 
+	x: 3.21203
+	y: -2.52756
+	z: 1.92998
+
+Punt contingut en la capsula: 
+	x: 3.21913
+	y: -2.53315
+	z: 1.93425
+
+Punt contingut en la capsula: 
+	x: 3.22624
+	y: -2.53874
+	z: 1.93852
+
+Punt contingut en la capsula: 
+	x: 3.23335
+	y: -2.54433
+	z: 1.94279
+
+Punt contingut en la capsula: 
+	x: 3.24045
+	y: -2.54992
+	z: 1.94706
+
+Punt contingut en la capsula: 
+	x: 3.24756
+	y: -2.55552
+	z: 1.95133
+
+Punt contingut en la capsula: 
+	x: 3.25466
+	y: -2.56111
+	z: 1.9556
+
+Punt contingut en la capsula: 
+	x: 3.26177
+	y: -2.5667
+	z: 1.95987
+
+Punt contingut en la capsula: 
+	x: 3.26888
+	y: -2.57229
+	z: 1.96414
+
+Punt contingut en la capsula: 
+	x: 3.27598
+	y: -2.57789
+	z: 1.96841
+
+Punt contingut en la capsula: 
+	x: 3.28309
+	y: -2.58348
+	z: 1.97268
+
+Punt contingut en la capsula: 
+	x: 3.2902
+	y: -2.58907
+	z: 1.97695
+
+Punt contingut en la capsula: 
+	x: 3.2973
+	y: -2.59466
+	z: 1.98122
+
+Punt contingut en la capsula: 
+	x: 3.30441
+	y: -2.60025
+	z: 1.98549
+
+Punt contingut en la capsula: 
+	x: 3.31152
+	y: -2.60585
+	z: 1.98976
+
+Punt contingut en la capsula: 
+	x: 3.31862
+	y: -2.61144
+	z: 1.99403
+
+Punt contingut en la capsula: 
+	x: 3.32573
+	y: -2.61703
+	z: 1.9983
+
+Punt contingut en la capsula: 
+	x: 3.33283
+	y: -2.62262
+	z: 2.00257
+
+Punt contingut en la capsula: 
+	x: 3.33994
+	y: -2.62821
+	z: 2.00684
+
+Punt contingut en la capsula: 
+	x: 3.34705
+	y: -2.63381
+	z: 2.01111
+
+Punt contingut en la capsula: 
+	x: 3.35415
+	y: -2.6394
+	z: 2.01538
+
+Punt contingut en la capsula: 
+	x: 3.36126
+	y: -2.64499
+	z: 2.01965
+
+Punt contingut en la capsula: 
+	x: 3.36837
+	y: -2.65058
+	z: 2.02392
+
+Punt contingut en la capsula: 
+	x: 3.37547
+	y: -2.65617
+	z: 2.02819
+
+Punt contingut en la capsula: 
+	x: 3.38258
+	y: -2.66177
+	z: 2.03246
+
+Punt contingut en la capsula: 
+	x: 3.38969
+	y: -2.66736
+	z: 2.03673
+
+Punt contingut en la capsula: 
+	x: 3.39679
+	y: -2.67295
+	z: 2.041
+
+Punt contingut en la capsula: 
+	x: 3.4039
+	y: -2.67854
+	z: 2.04527
+
+Punt contingut en la capsula: 
+	x: 3.41101
+	y: -2.68413
+	z: 2.04954
+
+Punt contingut en la capsula: 
+	x: 3.41811
+	y: -2.68973
+	z: 2.05381
+
+Punt contingut en la capsula: 
+	x: 3.42522
+	y: -2.69532
+	z: 2.05808
+
+Punt contingut en la capsula: 
+	x: 3.43232
+	y: -2.70091
+	z: 2.06235
+
+Punt contingut en la capsula: 
+	x: 3.43943
+	y: -2.7065
+	z: 2.06662
+
+Punt contingut en la capsula: 
+	x: 3.44654
+	y: -2.71209
+	z: 2.07089
+
+Punt contingut en la capsula: 
+	x: 3.45364
+	y: -2.71769
+	z: 2.07516
+
+Punt contingut en la capsula: 
+	x: 3.46075
+	y: -2.72328
+	z: 2.07943
+
+Punt contingut en la capsula: 
+	x: 3.46786
+	y: -2.72887
+	z: 2.0837
+
+Punt contingut en la capsula: 
+	x: 3.47496
+	y: -2.73446
+	z: 2.08797
+
+Punt contingut en la capsula: 
+	x: 3.48207
+	y: -2.74005
+	z: 2.09224
+
+Punt contingut en la capsula: 
+	x: 3.48918
+	y: -2.74565
+	z: 2.09651
+
+Punt contingut en la capsula: 
+	x: 3.49628
+	y: -2.75124
+	z: 2.10078
+
+Punt contingut en la capsula: 
+	x: 3.50339
+	y: -2.75683
+	z: 2.10505
+
+Punt contingut en la capsula: 
+	x: 3.5105
+	y: -2.76242
+	z: 2.10932
+
+Punt contingut en la capsula: 
+	x: 3.5176
+	y: -2.76802
+	z: 2.11359
+
+Punt contingut en la capsula: 
+	x: 3.52471
+	y: -2.77361
+	z: 2.11786
+
+Punt contingut en la capsula: 
+	x: 3.53181
+	y: -2.7792
+	z: 2.12213
+
+Punt contingut en la capsula: 
+	x: 3.53892
+	y: -2.78479
+	z: 2.1264
+
+Punt contingut en la capsula: 
+	x: 3.54603
+	y: -2.79038
+	z: 2.13067
+
+Punt interseccio entre: 
+	x: 3.54603 i x2: 3.55313
+	y: -2.79038 i y2: -2.79598
+	z: 2.13067 i z2: 2.13494
+
+Punt interseccio exacte: 
+	x: 3.51773
+	y: -2.76811
+	z: 2.11366
+
+Temps d'execucio: 11 milisegons
 
 ------------------------------------Tetrahedron------------------------------------
 
 
 Punt interseccio entre: 
-	x: 0 i x2: 0.00612372
-	y: 0 i y2: 0.00707107
-	z: 0 i z2: 0.00353553
+	x: 0 i x2: 0.00710624
+	y: 0 i y2: -0.00559193
+	z: 0 i z2: 0.00426986
 
-Punt interseccio exacte en la cara del tetraedre: 4
+Punt interseccio exacte en la cara del tetraedre: 1
 	x: 0
 	y: 0
 	z: 0
 
-Punt contingut en la tetraedre: 
-	x: 0.998166
-	y: 1.15258
-	z: 0.576292
-
-Punt contingut en la tetraedre: 
-	x: 1.00429
-	y: 1.15965
-	z: 0.579827
-
-Punt contingut en la tetraedre: 
-	x: 1.01041
-	y: 1.16673
-	z: 0.583363
-
-Punt contingut en la tetraedre: 
-	x: 1.01654
-	y: 1.1738
-	z: 0.586898
-
-Punt contingut en la tetraedre: 
-	x: 1.02266
-	y: 1.18087
-	z: 0.590434
-
-Punt contingut en la tetraedre: 
-	x: 1.02878
-	y: 1.18794
-	z: 0.593969
-
-Punt contingut en la tetraedre: 
-	x: 1.03491
-	y: 1.19501
-	z: 0.597505
-
-Punt contingut en la tetraedre: 
-	x: 1.04103
-	y: 1.20208
-	z: 0.60104
-
-Punt contingut en la tetraedre: 
-	x: 1.04716
-	y: 1.20915
-	z: 0.604576
-
-Punt contingut en la tetraedre: 
-	x: 1.05328
-	y: 1.21622
-	z: 0.608111
-
-Punt contingut en la tetraedre: 
-	x: 1.0594
-	y: 1.22329
-	z: 0.611647
-
-Punt contingut en la tetraedre: 
-	x: 1.06553
-	y: 1.23036
-	z: 0.615182
-
-Punt contingut en la tetraedre: 
-	x: 1.07165
-	y: 1.23744
-	z: 0.618718
-
-Punt contingut en la tetraedre: 
-	x: 1.07777
-	y: 1.24451
-	z: 0.622253
-
-Punt contingut en la tetraedre: 
-	x: 1.0839
-	y: 1.25158
-	z: 0.625789
-
-Punt contingut en la tetraedre: 
-	x: 1.09002
-	y: 1.25865
-	z: 0.629325
-
-Punt contingut en la tetraedre: 
-	x: 1.09615
-	y: 1.26572
-	z: 0.63286
-
-Punt contingut en la tetraedre: 
-	x: 1.10227
-	y: 1.27279
-	z: 0.636396
-
-Punt contingut en la tetraedre: 
-	x: 1.10839
-	y: 1.27986
-	z: 0.639931
-
-Punt contingut en la tetraedre: 
-	x: 1.11452
-	y: 1.28693
-	z: 0.643467
-
-Punt contingut en la tetraedre: 
-	x: 1.12064
-	y: 1.294
-	z: 0.647002
-
-Punt contingut en la tetraedre: 
-	x: 1.12676
-	y: 1.30108
-	z: 0.650538
-
-Punt contingut en la tetraedre: 
-	x: 1.13289
-	y: 1.30815
-	z: 0.654073
-
-Punt contingut en la tetraedre: 
-	x: 1.13901
-	y: 1.31522
-	z: 0.657609
-
-Punt contingut en la tetraedre: 
-	x: 1.14514
-	y: 1.32229
-	z: 0.661144
-
-Punt contingut en la tetraedre: 
-	x: 1.15126
-	y: 1.32936
-	z: 0.66468
-
-Punt contingut en la tetraedre: 
-	x: 1.15738
-	y: 1.33643
-	z: 0.668215
-
-Punt contingut en la tetraedre: 
-	x: 1.16351
-	y: 1.3435
-	z: 0.671751
-
-Punt contingut en la tetraedre: 
-	x: 1.16963
-	y: 1.35057
-	z: 0.675286
-
-Punt contingut en la tetraedre: 
-	x: 1.17575
-	y: 1.35764
-	z: 0.678822
-
-Punt contingut en la tetraedre: 
-	x: 1.18188
-	y: 1.36471
-	z: 0.682357
-
-Punt contingut en la tetraedre: 
-	x: 1.188
-	y: 1.37179
-	z: 0.685893
-
-Punt contingut en la tetraedre: 
-	x: 1.19413
-	y: 1.37886
-	z: 0.689429
-
-Punt contingut en la tetraedre: 
-	x: 1.20025
-	y: 1.38593
-	z: 0.692964
-
-Punt contingut en la tetraedre: 
-	x: 1.20637
-	y: 1.393
-	z: 0.6965
-
-Punt contingut en la tetraedre: 
-	x: 1.2125
-	y: 1.40007
-	z: 0.700035
-
-Punt contingut en la tetraedre: 
-	x: 1.21862
-	y: 1.40714
-	z: 0.703571
-
-Punt contingut en la tetraedre: 
-	x: 1.22474
-	y: 1.41421
-	z: 0.707106
-
-Punt contingut en la tetraedre: 
-	x: 1.23087
-	y: 1.42128
-	z: 0.710642
-
-Punt contingut en la tetraedre: 
-	x: 1.23699
-	y: 1.42835
-	z: 0.714177
-
-Punt contingut en la tetraedre: 
-	x: 1.24312
-	y: 1.43543
-	z: 0.717713
-
-Punt contingut en la tetraedre: 
-	x: 1.24924
-	y: 1.4425
-	z: 0.721248
-
-Punt contingut en la tetraedre: 
-	x: 1.25536
-	y: 1.44957
-	z: 0.724784
-
-Punt contingut en la tetraedre: 
-	x: 1.26149
-	y: 1.45664
-	z: 0.728319
-
-Punt contingut en la tetraedre: 
-	x: 1.26761
-	y: 1.46371
-	z: 0.731855
-
-Punt contingut en la tetraedre: 
-	x: 1.27373
-	y: 1.47078
-	z: 0.73539
-
-Punt contingut en la tetraedre: 
-	x: 1.27986
-	y: 1.47785
-	z: 0.738926
-
-Punt contingut en la tetraedre: 
-	x: 1.28598
-	y: 1.48492
-	z: 0.742462
-
-Punt contingut en la tetraedre: 
-	x: 1.2921
-	y: 1.49199
-	z: 0.745997
-
-Punt contingut en la tetraedre: 
-	x: 1.29823
-	y: 1.49907
-	z: 0.749533
-
-Punt contingut en la tetraedre: 
-	x: 1.30435
-	y: 1.50614
-	z: 0.753068
-
-Punt contingut en la tetraedre: 
-	x: 1.31048
-	y: 1.51321
-	z: 0.756604
-
-Punt contingut en la tetraedre: 
-	x: 1.3166
-	y: 1.52028
-	z: 0.760139
-
-Punt contingut en la tetraedre: 
-	x: 1.32272
-	y: 1.52735
-	z: 0.763675
-
-Punt contingut en la tetraedre: 
-	x: 1.32885
-	y: 1.53442
-	z: 0.76721
-
-Punt contingut en la tetraedre: 
-	x: 1.33497
-	y: 1.54149
-	z: 0.770746
-
-Punt contingut en la tetraedre: 
-	x: 1.34109
-	y: 1.54856
-	z: 0.774281
-
-Punt contingut en la tetraedre: 
-	x: 1.34722
-	y: 1.55563
-	z: 0.777817
-
-Punt contingut en la tetraedre: 
-	x: 1.35334
-	y: 1.5627
-	z: 0.781352
-
-Punt contingut en la tetraedre: 
-	x: 1.35947
-	y: 1.56978
-	z: 0.784888
-
-Punt contingut en la tetraedre: 
-	x: 1.36559
-	y: 1.57685
-	z: 0.788423
-
-Punt contingut en la tetraedre: 
-	x: 1.37171
-	y: 1.58392
-	z: 0.791959
-
-Punt contingut en la tetraedre: 
-	x: 1.37784
-	y: 1.59099
-	z: 0.795494
-
-Punt contingut en la tetraedre: 
-	x: 1.38396
-	y: 1.59806
-	z: 0.79903
-
-Punt contingut en la tetraedre: 
-	x: 1.39008
-	y: 1.60513
-	z: 0.802566
-
-Punt contingut en la tetraedre: 
-	x: 1.39621
-	y: 1.6122
-	z: 0.806101
-
-Punt contingut en la tetraedre: 
-	x: 1.40233
-	y: 1.61927
-	z: 0.809637
-
-Punt contingut en la tetraedre: 
-	x: 1.40846
-	y: 1.62634
-	z: 0.813172
-
-Punt contingut en la tetraedre: 
-	x: 1.41458
-	y: 1.63342
-	z: 0.816708
-
-Punt contingut en la tetraedre: 
-	x: 1.4207
-	y: 1.64049
-	z: 0.820243
-
-Punt contingut en la tetraedre: 
-	x: 1.42683
-	y: 1.64756
-	z: 0.823779
-
-Punt contingut en la tetraedre: 
-	x: 1.43295
-	y: 1.65463
-	z: 0.827314
-
-Punt contingut en la tetraedre: 
-	x: 1.43907
-	y: 1.6617
-	z: 0.83085
-
-Punt contingut en la tetraedre: 
-	x: 1.4452
-	y: 1.66877
-	z: 0.834385
-
-Punt contingut en la tetraedre: 
-	x: 1.45132
-	y: 1.67584
-	z: 0.837921
-
-Punt contingut en la tetraedre: 
-	x: 1.45745
-	y: 1.68291
-	z: 0.841456
-
-Punt contingut en la tetraedre: 
-	x: 1.46357
-	y: 1.68998
-	z: 0.844992
-
-Punt contingut en la tetraedre: 
-	x: 1.46969
-	y: 1.69705
-	z: 0.848527
-
-Punt contingut en la tetraedre: 
-	x: 1.47582
-	y: 1.70413
-	z: 0.852063
-
-Punt contingut en la tetraedre: 
-	x: 1.48194
-	y: 1.7112
-	z: 0.855599
-
-Punt contingut en la tetraedre: 
-	x: 1.48806
-	y: 1.71827
-	z: 0.859134
-
-Punt contingut en la tetraedre: 
-	x: 1.49419
-	y: 1.72534
-	z: 0.86267
-
-Punt contingut en la tetraedre: 
-	x: 1.50031
-	y: 1.73241
-	z: 0.866205
-
-Punt contingut en la tetraedre: 
-	x: 1.50643
-	y: 1.73948
-	z: 0.869741
-
-Punt contingut en la tetraedre: 
-	x: 1.51256
-	y: 1.74655
-	z: 0.873276
-
-Punt contingut en la tetraedre: 
-	x: 1.51868
-	y: 1.75362
-	z: 0.876812
-
-Punt contingut en la tetraedre: 
-	x: 1.52481
-	y: 1.76069
-	z: 0.880347
-
-Punt contingut en la tetraedre: 
-	x: 1.53093
-	y: 1.76777
-	z: 0.883883
-
-Punt contingut en la tetraedre: 
-	x: 1.53705
-	y: 1.77484
-	z: 0.887418
-
-Punt contingut en la tetraedre: 
-	x: 1.54318
-	y: 1.78191
-	z: 0.890954
-
-Punt contingut en la tetraedre: 
-	x: 1.5493
-	y: 1.78898
-	z: 0.894489
-
-Punt contingut en la tetraedre: 
-	x: 1.55542
-	y: 1.79605
-	z: 0.898025
-
-Punt contingut en la tetraedre: 
-	x: 1.56155
-	y: 1.80312
-	z: 0.90156
-
-Punt contingut en la tetraedre: 
-	x: 1.56767
-	y: 1.81019
-	z: 0.905096
-
-Punt contingut en la tetraedre: 
-	x: 1.5738
-	y: 1.81726
-	z: 0.908632
-
-Punt contingut en la tetraedre: 
-	x: 1.57992
-	y: 1.82433
-	z: 0.912167
-
-Punt contingut en la tetraedre: 
-	x: 1.58604
-	y: 1.83141
-	z: 0.915703
-
-Punt contingut en la tetraedre: 
-	x: 1.59217
-	y: 1.83848
-	z: 0.919238
-
-Punt contingut en la tetraedre: 
-	x: 1.59829
-	y: 1.84555
-	z: 0.922774
-
-Punt contingut en la tetraedre: 
-	x: 1.60441
-	y: 1.85262
-	z: 0.926309
-
-Punt contingut en la tetraedre: 
-	x: 1.61054
-	y: 1.85969
-	z: 0.929845
-
-Punt contingut en la tetraedre: 
-	x: 1.61666
-	y: 1.86676
-	z: 0.93338
-
-Punt contingut en la tetraedre: 
-	x: 1.62279
-	y: 1.87383
-	z: 0.936916
-
-Punt contingut en la tetraedre: 
-	x: 1.62891
-	y: 1.8809
-	z: 0.940451
-
-Punt contingut en la tetraedre: 
-	x: 1.63503
-	y: 1.88797
-	z: 0.943987
-
-Punt contingut en la tetraedre: 
-	x: 1.64116
-	y: 1.89504
-	z: 0.947522
-
-Punt contingut en la tetraedre: 
-	x: 1.64728
-	y: 1.90212
-	z: 0.951058
-
-Punt contingut en la tetraedre: 
-	x: 1.6534
-	y: 1.90919
-	z: 0.954593
-
-Punt contingut en la tetraedre: 
-	x: 1.65953
-	y: 1.91626
-	z: 0.958129
-
-Punt contingut en la tetraedre: 
-	x: 1.66565
-	y: 1.92333
-	z: 0.961664
-
-Punt contingut en la tetraedre: 
-	x: 1.67178
-	y: 1.9304
-	z: 0.9652
-
-Punt contingut en la tetraedre: 
-	x: 1.6779
-	y: 1.93747
-	z: 0.968736
-
-Punt contingut en la tetraedre: 
-	x: 1.68402
-	y: 1.94454
-	z: 0.972271
-
-Punt contingut en la tetraedre: 
-	x: 1.69015
-	y: 1.95161
-	z: 0.975807
-
-Punt contingut en la tetraedre: 
-	x: 1.69627
-	y: 1.95868
-	z: 0.979342
-
-Punt contingut en la tetraedre: 
-	x: 1.70239
-	y: 1.96576
-	z: 0.982878
-
-Punt contingut en la tetraedre: 
-	x: 1.70852
-	y: 1.97283
-	z: 0.986413
-
-Punt contingut en la tetraedre: 
-	x: 1.71464
-	y: 1.9799
-	z: 0.989949
-
-Punt contingut en la tetraedre: 
-	x: 1.72077
-	y: 1.98697
-	z: 0.993484
-
-Punt contingut en la tetraedre: 
-	x: 1.72689
-	y: 1.99404
-	z: 0.99702
-
-Punt contingut en la tetraedre: 
-	x: 1.73301
-	y: 2.00111
-	z: 1.00056
-
-Punt contingut en la tetraedre: 
-	x: 1.73914
-	y: 2.00818
-	z: 1.00409
-
-Punt contingut en la tetraedre: 
-	x: 1.74526
-	y: 2.01525
-	z: 1.00763
-
-Punt contingut en la tetraedre: 
-	x: 1.75138
-	y: 2.02232
-	z: 1.01116
-
-Punt contingut en la tetraedre: 
-	x: 1.75751
-	y: 2.02939
-	z: 1.0147
-
-Punt contingut en la tetraedre: 
-	x: 1.76363
-	y: 2.03647
-	z: 1.01823
-
-Punt contingut en la tetraedre: 
-	x: 1.76975
-	y: 2.04354
-	z: 1.02177
-
-Punt contingut en la tetraedre: 
-	x: 1.77588
-	y: 2.05061
-	z: 1.0253
-
-Punt contingut en la tetraedre: 
-	x: 1.782
-	y: 2.05768
-	z: 1.02884
-
-Punt contingut en la tetraedre: 
-	x: 1.78813
-	y: 2.06475
-	z: 1.03238
-
-Punt contingut en la tetraedre: 
-	x: 1.79425
-	y: 2.07182
-	z: 1.03591
-
-Punt contingut en la tetraedre: 
-	x: 1.80037
-	y: 2.07889
-	z: 1.03945
-
-Punt contingut en la tetraedre: 
-	x: 1.8065
-	y: 2.08596
-	z: 1.04298
-
-Punt contingut en la tetraedre: 
-	x: 1.81262
-	y: 2.09303
-	z: 1.04652
-
-Punt contingut en la tetraedre: 
-	x: 1.81874
-	y: 2.10011
-	z: 1.05005
-
-Punt contingut en la tetraedre: 
-	x: 1.82487
-	y: 2.10718
-	z: 1.05359
-
-Punt contingut en la tetraedre: 
-	x: 1.83099
-	y: 2.11425
-	z: 1.05712
-
-Punt contingut en la tetraedre: 
-	x: 1.83712
-	y: 2.12132
-	z: 1.06066
-
-Punt contingut en la tetraedre: 
-	x: 1.84324
-	y: 2.12839
-	z: 1.06419
-
-Punt contingut en la tetraedre: 
-	x: 1.84936
-	y: 2.13546
-	z: 1.06773
-
-Punt contingut en la tetraedre: 
-	x: 1.85549
-	y: 2.14253
-	z: 1.07127
-
-Punt contingut en la tetraedre: 
-	x: 1.86161
-	y: 2.1496
-	z: 1.0748
-
-Punt contingut en la tetraedre: 
-	x: 1.86773
-	y: 2.15667
-	z: 1.07834
-
-Punt contingut en la tetraedre: 
-	x: 1.87386
-	y: 2.16374
-	z: 1.08187
-
-Punt contingut en la tetraedre: 
-	x: 1.87998
-	y: 2.17082
-	z: 1.08541
-
-Punt contingut en la tetraedre: 
-	x: 1.88611
-	y: 2.17789
-	z: 1.08894
-
-Punt contingut en la tetraedre: 
-	x: 1.89223
-	y: 2.18496
-	z: 1.09248
-
-Punt contingut en la tetraedre: 
-	x: 1.89835
-	y: 2.19203
-	z: 1.09601
-
-Punt contingut en la tetraedre: 
-	x: 1.90448
-	y: 2.1991
-	z: 1.09955
-
-Punt contingut en la tetraedre: 
-	x: 1.9106
-	y: 2.20617
-	z: 1.10309
-
-Punt contingut en la tetraedre: 
-	x: 1.91672
-	y: 2.21324
-	z: 1.10662
-
-Punt contingut en la tetraedre: 
-	x: 1.92285
-	y: 2.22031
-	z: 1.11016
-
-Punt contingut en la tetraedre: 
-	x: 1.92897
-	y: 2.22738
-	z: 1.11369
-
-Punt contingut en la tetraedre: 
-	x: 1.9351
-	y: 2.23446
-	z: 1.11723
-
-Punt contingut en la tetraedre: 
-	x: 1.94122
-	y: 2.24153
-	z: 1.12076
-
-Punt contingut en la tetraedre: 
-	x: 1.94734
-	y: 2.2486
-	z: 1.1243
-
-Punt contingut en la tetraedre: 
-	x: 1.95347
-	y: 2.25567
-	z: 1.12783
-
-Punt contingut en la tetraedre: 
-	x: 1.95959
-	y: 2.26274
-	z: 1.13137
-
-Punt contingut en la tetraedre: 
-	x: 1.96571
-	y: 2.26981
-	z: 1.13491
-
-Punt contingut en la tetraedre: 
-	x: 1.97184
-	y: 2.27688
-	z: 1.13844
-
-Punt contingut en la tetraedre: 
-	x: 1.97796
-	y: 2.28395
-	z: 1.14198
-
-Punt contingut en la tetraedre: 
-	x: 1.98408
-	y: 2.29102
-	z: 1.14551
-
-Punt contingut en la tetraedre: 
-	x: 1.99021
-	y: 2.2981
-	z: 1.14905
-
-Punt contingut en la tetraedre: 
-	x: 1.99633
-	y: 2.30517
-	z: 1.15258
-
-Punt contingut en la tetraedre: 
-	x: 2.00246
-	y: 2.31224
-	z: 1.15612
-
-Punt contingut en la tetraedre: 
-	x: 2.00858
-	y: 2.31931
-	z: 1.15965
-
-Punt contingut en la tetraedre: 
-	x: 2.0147
-	y: 2.32638
-	z: 1.16319
-
-Punt contingut en la tetraedre: 
-	x: 2.02083
-	y: 2.33345
-	z: 1.16673
-
-Punt contingut en la tetraedre: 
-	x: 2.02695
-	y: 2.34052
-	z: 1.17026
-
-Punt contingut en la tetraedre: 
-	x: 2.03307
-	y: 2.34759
-	z: 1.1738
-
-Punt contingut en la tetraedre: 
-	x: 2.0392
-	y: 2.35466
-	z: 1.17733
-
-Punt contingut en la tetraedre: 
-	x: 2.04532
-	y: 2.36173
-	z: 1.18087
-
-Punt contingut en la tetraedre: 
-	x: 2.05145
-	y: 2.36881
-	z: 1.1844
-
-Punt contingut en la tetraedre: 
-	x: 2.05757
-	y: 2.37588
-	z: 1.18794
-
-Punt contingut en la tetraedre: 
-	x: 2.06369
-	y: 2.38295
-	z: 1.19147
-
-Punt contingut en la tetraedre: 
-	x: 2.06982
-	y: 2.39002
-	z: 1.19501
-
-Punt contingut en la tetraedre: 
-	x: 2.07594
-	y: 2.39709
-	z: 1.19854
-
-Punt contingut en la tetraedre: 
-	x: 2.08206
-	y: 2.40416
-	z: 1.20208
-
-Punt contingut en la tetraedre: 
-	x: 2.08819
-	y: 2.41123
-	z: 1.20562
-
-Punt contingut en la tetraedre: 
-	x: 2.09431
-	y: 2.4183
-	z: 1.20915
-
-Punt contingut en la tetraedre: 
-	x: 2.10044
-	y: 2.42537
-	z: 1.21269
-
-Punt contingut en la tetraedre: 
-	x: 2.10656
-	y: 2.43245
-	z: 1.21622
-
-Punt contingut en la tetraedre: 
-	x: 2.11268
-	y: 2.43952
-	z: 1.21976
-
-Punt contingut en la tetraedre: 
-	x: 2.11881
-	y: 2.44659
-	z: 1.22329
-
-Punt contingut en la tetraedre: 
-	x: 2.12493
-	y: 2.45366
-	z: 1.22683
-
-Punt contingut en la tetraedre: 
-	x: 2.13105
-	y: 2.46073
-	z: 1.23036
-
-Punt contingut en la tetraedre: 
-	x: 2.13718
-	y: 2.4678
-	z: 1.2339
-
-Punt contingut en la tetraedre: 
-	x: 2.1433
-	y: 2.47487
-	z: 1.23744
-
-Punt contingut en la tetraedre: 
-	x: 2.14943
-	y: 2.48194
-	z: 1.24097
-
-Punt contingut en la tetraedre: 
-	x: 2.15555
-	y: 2.48901
-	z: 1.24451
-
-Punt contingut en la tetraedre: 
-	x: 2.16167
-	y: 2.49608
-	z: 1.24804
-
-Punt contingut en la tetraedre: 
-	x: 2.1678
-	y: 2.50316
-	z: 1.25158
-
-Punt contingut en la tetraedre: 
-	x: 2.17392
-	y: 2.51023
-	z: 1.25511
-
-Punt contingut en la tetraedre: 
-	x: 2.18004
-	y: 2.5173
-	z: 1.25865
-
-Punt contingut en la tetraedre: 
-	x: 2.18617
-	y: 2.52437
-	z: 1.26218
-
-Punt contingut en la tetraedre: 
-	x: 2.19229
-	y: 2.53144
-	z: 1.26572
-
-Punt contingut en la tetraedre: 
-	x: 2.19842
-	y: 2.53851
-	z: 1.26926
-
-Punt contingut en la tetraedre: 
-	x: 2.20454
-	y: 2.54558
-	z: 1.27279
-
-Punt contingut en la tetraedre: 
-	x: 2.21066
-	y: 2.55265
-	z: 1.27633
-
-Punt contingut en la tetraedre: 
-	x: 2.21679
-	y: 2.55972
-	z: 1.27986
-
-Punt contingut en la tetraedre: 
-	x: 2.22291
-	y: 2.5668
-	z: 1.2834
-
-Punt contingut en la tetraedre: 
-	x: 2.22903
-	y: 2.57387
-	z: 1.28693
-
-Punt contingut en la tetraedre: 
-	x: 2.23516
-	y: 2.58094
-	z: 1.29047
-
-Punt contingut en la tetraedre: 
-	x: 2.24128
-	y: 2.58801
-	z: 1.294
-
-Punt contingut en la tetraedre: 
-	x: 2.2474
-	y: 2.59508
-	z: 1.29754
-
-Punt contingut en la tetraedre: 
-	x: 2.25353
-	y: 2.60215
-	z: 1.30108
-
-Punt contingut en la tetraedre: 
-	x: 2.25965
-	y: 2.60922
-	z: 1.30461
-
-Punt contingut en la tetraedre: 
-	x: 2.26578
-	y: 2.61629
-	z: 1.30815
-
-Temps d'execucio: 4 milisegons
+Temps d'execucio: 0 milisegons

@@ -2,14 +2,10 @@
 #include "Vertex.h"
 #include <vector>
 #include "GameObject.h"
-#include "CollisionAABB.h"
 #include "ObjectLoader.h"
 
-#define BLUE_CUBE 0
-#define RED_CUBE 1
-#define WHITE_CUBE 2
-#define ASE_OBJECTS 3
-#define NUMBASICOBJECTS 4
+#define ASE_OBJECTS 0
+#define NUMBASICOBJECTS 1
 
 //This class stores and manipulates all the objects loaded from the text fileddd
 class Geometry
@@ -17,7 +13,6 @@ class Geometry
 	std::vector <Vertex *> _verticesData;
 	std::vector <int> _numVertices;
 	std::vector <GameObject> _listOfObjects;
-	std::vector <AABB> _listOfAABB;
 	glm::vec3 center;
 	float max, min, mid;
 	int _numBasicObjects;
@@ -37,8 +32,6 @@ public:
 	int getNumGameElements();
 	GameObject & getGameElement(int objectID);
 	void loadCube(int cube, glm::vec4 color);
-	AABB & getAABB(int objectID);
 	void loadBasic3DObjects();
 	ObjectLoader _objectLoader;
 };
-

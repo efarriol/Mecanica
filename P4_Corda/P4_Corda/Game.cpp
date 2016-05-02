@@ -14,10 +14,6 @@ Game::Game(std::string windowTitle, int screenWidth, int screenHeight, bool enab
 	_gameState(GameState::INIT), 
 	_fpsLimiter(enableLimiterFPS, maxFPS, printFPS) {
 	_screenType = 1;
-	srand(time(0));
-	velocity = 0.01f;
-	score = 0;
-	up = false;
 }
 
 /**
@@ -51,11 +47,6 @@ void Game::initSystems() {
 		//Load the current scenario
 	_gameElements.loadBasic3DObjects();
 	_gameElements.loadGameElements("./resources/scene2D.txt");
-		//Load the character AABB
-	AABBOne = _gameElements.getAABB(0);
-
-	start = time(0);
-	previousTime = 0;
 }
 
 /*
@@ -146,28 +137,6 @@ void Game::executePlayerCommands() {
 		cout << mouseCoords.x << ", " << mouseCoords.y << endl;
 	}
 
-	if (_inputManager.isKeyDown(SDLK_w)) {
-		(_gameElements.getGameElement(0))._translate = (_gameElements.getGameElement(0))._translate - glm::vec3(0, 0.05, 0);
-		AABBOne._centre = (_gameElements.getGameElement(0))._translate;
-		
-	}
-
-	/*if (_inputManager.isKeyDown(SDLK_a)) {
-		(_gameElements.getGameElement(0))._translate = (_gameElements.getGameElement(0))._translate - glm::vec3(-0.01, 0, 0);
-		AABBOne._centre = (_gameElements.getGameElement(0))._translate;
-	}*/
-	if (_inputManager.isKeyDown(SDLK_s)) {
-		(_gameElements.getGameElement(0))._translate = (_gameElements.getGameElement(0))._translate - glm::vec3(0, -0.05, 0);
-		AABBOne._centre = (_gameElements.getGameElement(0))._translate;
-	}
-	if (_inputManager.isKeyDown(SDLK_UP)) {
-		up = true;
-	}
-
-	/*if (_inputManager.isKeyDown(SDLK_d)) {
-		(_gameElements.getGameElement(0))._translate = (_gameElements.getGameElement(0))._translate - glm::vec3(0.01, 0, 0);
-		AABBOne._centre = (_gameElements.getGameElement(0))._translate;
-	}*/
 	if (_inputManager.isKeyDown(SDLK_p)) {
 		_screenType = PERSP_CAM;
 		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
@@ -186,68 +155,7 @@ void Game::executePlayerCommands() {
 * Update the game objects based on the physics
 */
 void Game::doPhysics() {
-	static int counter = 0;
-	float distance = 1;
-	AABB AABBTwo;
-	ComputeCollision computeCollision;
-	
-	if (counter == 1) {
-		/*(_gameElements.getGameElement(1))._angle = (_gameElements.getGameElement(1))._angle + 5;
-		(_gameElements.getGameElement(1))._rotation.z = 1.0f;
-		(_gameElements.getGameElement(4))._angle = (_gameElements.getGameElement(4))._angle + 1;
-		(_gameElements.getGameElement(4))._rotation.x = 1.0f;
-		(_gameElements.getGameElement(4))._rotation.y = 1.0f;*/
-		seconds_since_start = difftime(time(0), start);
-		if (seconds_since_start - previousTime >= 1) {
-			velocity += 0.001;
-			previousTime = seconds_since_start;
-			score++;
-		}
-		for (int i = 1; i <= _gameElements.getGameElement(0)._maxCars; i++) {
-			_gameElements.getGameElement(i)._translate.x += velocity;
-			_gameElements.getAABB(i)._centre.x += velocity;
-		}
-		counter = 0;
-	}
-	counter++;
-	
-	for (int j = 1; j < _gameElements.getNumGameElements(); j++) {
-		if (_gameElements.getGameElement(j)._collisionType == 1 || _gameElements.getGameElement(j)._collisionType == 2) {
-			int collisionID = 0;
-			for (int a = 1; a <= j; a++) {
-				if (_gameElements.getGameElement(a)._collisionType == 1 || _gameElements.getGameElement(a)._collisionType == 2) collisionID++;
-			}
-			AABBTwo = _gameElements.getAABB(collisionID);
-			if (glm::length(AABBTwo._centre - AABBOne._centre) < distance) {
 
-				if (computeCollision.computeCollisionAABB(AABBOne, AABBTwo)) { 
-					cout << j << endl;
-					cout << endl << "************************" << endl;
-					cout << "GAME OVER" << endl;
-					cout << "FINAL SCORE: " << score << endl;
-					cout << "************************" << endl;
-					system("Pause");
-					_gameState = GameState::EXIT;
-					 }
-
-			}
-		}
-	}
-	for (int i = 1; i <= _gameElements.getGameElement(0)._maxCars; i++) {
-		if (_gameElements.getGameElement(i)._translate.x >= 4) {
-			std::random_device rd;
-			std::mt19937 eng(rd());
-			std::uniform_real_distribution<> dis(-0.7, 0.7);
-			int collisionID = 0;
-			for (int a = 1; a <= i; a++) {
-				if (_gameElements.getGameElement(a)._collisionType == 1 || _gameElements.getGameElement(a)._collisionType == 2) collisionID++;
-			}
-			_gameElements.getGameElement(i)._translate.x = -4;
-			_gameElements.getAABB(collisionID)._centre.x = _gameElements.getGameElement(i)._translate.x;
-			_gameElements.getGameElement(i)._translate.y = dis(eng);
-			_gameElements.getAABB(collisionID)._centre.y = _gameElements.getGameElement(i)._translate.y;
-		}
-	}
 }
 
 /**
@@ -274,8 +182,6 @@ void Game::renderGame() {
 		
 		//glUniformMatrix4fv(modelMatrixUniform, 1, GL_FALSE, glm::value_ptr(modelMatrix));
 			//Send data to GPU
-		
-		if(up)_camera.setPosition(glm::vec3(_camera.getPosition().x + 0.1f, _camera.getPosition().y, _camera.getPosition().z));
 
 		GLuint modelMatrixUnifrom = _colorProgram.getUniformLocation("modelMatrix");
 		glUniformMatrix4fv(modelMatrixUniform, 1, GL_FALSE, glm::value_ptr(modelMatrix));

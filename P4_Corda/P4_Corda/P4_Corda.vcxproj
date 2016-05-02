@@ -20,8 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
-    <ClInclude Include="CollisionAABB.h" />
-    <ClInclude Include="ComputeCollision.h" />
     <ClInclude Include="Constants.h" />
     <ClInclude Include="ErrorManagement.h" />
     <ClInclude Include="FPSLimiter.h" />
@@ -40,7 +38,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="ComputeCollision.cpp" />
     <ClCompile Include="ErrorManagement.cpp" />
     <ClCompile Include="Ex06.01-Main.cpp" />
     <ClCompile Include="FPSLimiter.cpp" />
@@ -54,6 +51,11 @@
     <ClCompile Include="parserAse.cpp" />
     <ClCompile Include="Particle.cpp" />
     <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="resources\scene2D.txt" />
+    <Text Include="resources\shaders\fragment-shader.txt" />
+    <Text Include="resources\shaders\vertex-shader.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A5E3C927-BDEF-42D7-9491-DB6A024F7720}</ProjectGuid>

@@ -54,7 +54,7 @@ private:
 	GLSLProgram _glProgram;
 	vector<glm::vec3> posSysPart; //Only position is needed for draw
 	vector<Particle> sysParticles;
-	int _Numparticles = 500;
+	int _Numparticles = 15;
 	float _dt = 0.01f; //Simulation time step
 	Plane _planeBottom; //
 	Plane _planeRight;

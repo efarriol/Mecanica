@@ -137,7 +137,7 @@ void Game::loadGameObjects(const int& NumGameObj) {
 	glGenBuffers(1, &gVBO[2]);
 	glBindBuffer(GL_ARRAY_BUFFER, gVBO[2]);
 
-	nCirclePoints = 5;
+	nCirclePoints = 25;
 	float slice = 2 * M_PI / nCirclePoints;
 	float radius = 0.3f;
 	float centerX = -0.5f;

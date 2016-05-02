@@ -4,7 +4,6 @@
 
 struct GameObject
 {
-	int _maxCars;
 	int _objectType;
 	glm::vec3 _translate;
 	float _angle;

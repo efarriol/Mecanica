@@ -98,43 +98,16 @@ void Geometry::loadGameElements(char fileName[100]){
 	<type of game element> <vec3 position> <angle> <vec3 rotation> <vec3 scale>	
 	*/  
 	GameObject tempObject;
-	AABB tempAABB;
 	ifstream file;
 	file.open(fileName);
 	
 	if (file.is_open()){
 		//TODO: Read the content and add it into the data structure
 		file >> _numBasicObjects;
-		file >> tempObject._maxCars;
-	
 		for (int i = 0; i < _numBasicObjects; i++) {
-			file >> tempObject._objectType >> tempObject._collisionType >> tempAABB._multiplier >> tempObject._translate.x >> tempObject._translate.y >> tempObject._translate.z >> tempObject._angle
+			file >> tempObject._objectType >>  tempObject._translate.x >> tempObject._translate.y >> tempObject._translate.z >> tempObject._angle
 				>> tempObject._rotation.x >> tempObject._rotation.y >> tempObject._rotation.z >> tempObject._scale.x >> tempObject._scale.y >> tempObject._scale.z;
 			_listOfObjects.push_back(tempObject);
-
-			if (tempObject._collisionType == 1) {
-				// Creation of the AABB
-				tempAABB._centre.x = tempObject._translate.x;
-				tempAABB._centre.y = tempObject._translate.y;
-				tempAABB._centre.z = tempObject._translate.z;
-				tempAABB._extent.x = tempObject._scale.x*tempAABB._multiplier;
-				tempAABB._extent.y = tempObject._scale.y*tempAABB._multiplier;
-				tempAABB._extent.z = tempObject._scale.z*tempAABB._multiplier;
-				
-				_listOfAABB.push_back(tempAABB);
-			
-			}
-			if (tempObject._collisionType == 2) {
-				tempAABB._centre.x = tempObject._translate.x;
-				tempAABB._centre.y = tempObject._translate.y;
-				tempAABB._centre.z = tempObject._translate.z;
-				tempAABB._extent.x = ((minX - maxX ) - 0.05f) / 2;
-				tempAABB._extent.y = ((minY - maxY) + 0.3f) / 2;
-				tempAABB._extent.z = (minZ - maxZ) / 2;
-
-				_listOfAABB.push_back(tempAABB);
-			}
-		
 		}
 		file.close();
 	}
@@ -179,39 +152,17 @@ GameObject & Geometry::getGameElement(int objectID) {
 	return (_listOfObjects[objectID]);
 }
 
-AABB & Geometry::getAABB(int objectID)
-{
-
-	return (_listOfAABB[objectID]);
-}
 
 void Geometry::loadBasic3DObjects()
 {
-	for (int i = 0; i < NUMBASICOBJECTS; i++) {
-		switch (i) {
-		case 0:
-			//Blue cubes
-			loadCube(BLUE_CUBE, glm::vec4(0, 0, 255, 255));
-			break;
-		case 1:
-			loadCube(RED_CUBE, glm::vec4(255, 0, 0, 255));
-			break;
-		case 2:
-			loadCube(WHITE_CUBE, glm::vec4(255, 255, 255, 255));
-			break;
-		case 3:
-			_objectLoader.loadAse("./resources/models/taxi.ASE", _numVertices, _verticesData);
-			for (int j = 0; j < _numVertices[i]; j++) _verticesData[i][j].setColor(255, 255, 0, 255);
-			for (int j = 0; j < _numVertices[i]; j++) {
-				if (_verticesData[i][j].position.x > maxX) maxX = _verticesData[i][j].position.x;
-				if (_verticesData[i][j].position.y > maxY) maxY = _verticesData[i][j].position.y;
-				if (_verticesData[i][j].position.z > maxZ) maxZ = _verticesData[i][j].position.z;
-				if (_verticesData[i][j].position.x < minX) minX = _verticesData[i][j].position.x;
-				if (_verticesData[i][j].position.y < minY) minY = _verticesData[i][j].position.y;
-				if (_verticesData[i][j].position.z < minZ) minZ = _verticesData[i][j].position.z;
-			}
-
-			break;
-		}
+	_objectLoader.loadAse("./resources/models/sphere.ASE", _numVertices, _verticesData);
+	for (int j = 0; j < _numVertices[0]; j++) _verticesData[0][j].setColor(255, 255, 0, 255);
+	for (int j = 0; j < _numVertices[0]; j++) {
+		if (_verticesData[0][j].position.x > maxX) maxX = _verticesData[0][j].position.x;
+		if (_verticesData[0][j].position.y > maxY) maxY = _verticesData[0][j].position.y;
+		if (_verticesData[0][j].position.z > maxZ) maxZ = _verticesData[0][j].position.z;
+		if (_verticesData[0][j].position.x < minX) minX = _verticesData[0][j].position.x;
+		if (_verticesData[0][j].position.y < minY) minY = _verticesData[0][j].position.y;
+		if (_verticesData[0][j].position.z < minZ) minZ = _verticesData[0][j].position.z;
 	}
 }

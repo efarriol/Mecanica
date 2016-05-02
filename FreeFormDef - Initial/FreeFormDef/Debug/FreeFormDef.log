@@ -1,26 +1,36 @@
-﻿Compilación iniciada a las 11/03/2016 22:30:58.
-     1>Proyecto "C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\FreeFormDef\FreeFormDef.vcxproj" en el nodo 2 (Build destinos).
+﻿Build started 08/04/2016 1:10:33.
+     1>Project "C:\Users\Eloi\Documents\ENTI\Segundo Curso\4º Semestre\Mecánica\PracticasMecanica\FreeFormDef - Initial\FreeFormDef\FreeFormDef.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\\..\deps\include" /I"C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\\..\deps\libs" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt MainMeshTest.cpp
+         C:\Users\Eloi\Documents\VC\bin\CL.exe /c /I"C:\Users\Eloi\Documents\ENTI\Segundo Curso\4º Semestre\Mecánica\PracticasMecanica\FreeFormDef - Initial\\..\deps\include" /I"C:\Users\Eloi\Documents\ENTI\Segundo Curso\4º Semestre\Mecánica\PracticasMecanica\FreeFormDef - Initial\\..\deps\libs" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ComputingCoordinates.cpp Mesh.cpp MainMeshTest.cpp
          MainMeshTest.cpp
-     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(67): warning C4018: '<': no coinciden signed/unsigned
-     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(108): warning C4018: '<': no coinciden signed/unsigned
-     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(117): warning C4018: '<': no coinciden signed/unsigned
-     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(135): warning C4018: '<': no coinciden signed/unsigned
-     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(138): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(139): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(140): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(201): warning C4018: '<': no coinciden signed/unsigned
-     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(61): warning C4101: 's': variable local sin referencia
-     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(61): warning C4101: 't': variable local sin referencia
-     1>c:\users\pol\desktop\sourcetree\mecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(61): warning C4101: 'u': variable local sin referencia
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(67): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(108): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(117): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(135): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(138): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(139): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(140): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(201): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(61): warning C4101: 's': unreferenced local variable
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(61): warning C4101: 't': unreferenced local variable
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mainmeshtest.cpp(61): warning C4101: 'u': unreferenced local variable
+         Mesh.cpp
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mesh.cpp(94): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mesh.cpp(97): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mesh.cpp(100): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\mesh.cpp(103): warning C4018: '<': signed/unsigned mismatch
+         ComputingCoordinates.cpp
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\computingcoordinates.cpp(54): warning C4018: '<': signed/unsigned mismatch
+         Generating Code...
+     1>c:\users\eloi\documents\enti\segundo curso\4º semestre\mecánica\practicasmecanica\freeformdef - initial\freeformdef\computingcoordinates.cpp(83): warning C4715: 'ComputingCoordinates::AABBconstruction': not all control paths return a value
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\Debug\FreeFormDef.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\Debug\FreeFormDef.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\Debug\FreeFormDef.lib" /MACHINE:X86 Debug\ComputingCoordinates.obj
+         C:\Users\Eloi\Documents\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Eloi\Documents\ENTI\Segundo Curso\4º Semestre\Mecánica\PracticasMecanica\FreeFormDef - Initial\Debug\FreeFormDef.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Eloi\Documents\ENTI\Segundo Curso\4º Semestre\Mecánica\PracticasMecanica\FreeFormDef - Initial\Debug\FreeFormDef.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Eloi\Documents\ENTI\Segundo Curso\4º Semestre\Mecánica\PracticasMecanica\FreeFormDef - Initial\Debug\FreeFormDef.lib" /MACHINE:X86 Debug\ComputingCoordinates.obj
          Debug\Mesh.obj
          Debug\MainMeshTest.obj
-         FreeFormDef.vcxproj -> C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\Debug\FreeFormDef.exe
-     1>Compilación del proyecto terminada "C:\Users\POL\Desktop\SourceTree\Mecanica\FreeFormDef - Initial\FreeFormDef\FreeFormDef.vcxproj" (Build destinos).
+         LINK : C:\Users\Eloi\Documents\ENTI\Segundo Curso\4º Semestre\Mecánica\PracticasMecanica\FreeFormDef - Initial\Debug\FreeFormDef.exe not found or not built by the last incremental link; performing full link
+         FreeFormDef.vcxproj -> C:\Users\Eloi\Documents\ENTI\Segundo Curso\4º Semestre\Mecánica\PracticasMecanica\FreeFormDef - Initial\Debug\FreeFormDef.exe
+     1>Done Building Project "C:\Users\Eloi\Documents\ENTI\Segundo Curso\4º Semestre\Mecánica\PracticasMecanica\FreeFormDef - Initial\FreeFormDef\FreeFormDef.vcxproj" (Build target(s)).
 
-Compilación correcta.
+Build succeeded.
 
-Tiempo transcurrido 00:00:02.36
+Time Elapsed 00:00:02.93

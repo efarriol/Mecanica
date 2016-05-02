@@ -18,7 +18,7 @@ Camera::Camera(float screenWidth, float screenHeight, int screenType){
 	_projectionWidth = 7.0f;
 	_projectionHeight = 7.0f;
 	_FOV = 75.0f;
-	_cameraPos = glm::vec3(0.0f, 3.0f, 3.0f);
+	_cameraPos = glm::vec3(0.0f, 5.0f, 0.0f);
 	_cameraFront = glm::vec3(0.0f, 1.0f,0.0f);
 	_cameraUP = glm::vec3(0.0f, 0.0f, 0.0f);
 	_aspectRatio = (screenWidth / screenHeight);

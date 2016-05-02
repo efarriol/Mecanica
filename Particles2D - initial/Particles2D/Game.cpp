@@ -72,6 +72,7 @@ void Game::loadGameObjects(const int& NumGameObj) {
 
 	float mida = 0.2f;
 	//	float altura = sin(M_PI / 4.0f) * (2 * mida);
+
 	float altura = sqrt(2.0f) * mida;
 	vertexData[0].push_back(glm::vec3(-mida + 0.1f, 0.0f, 0.0f));
 	vertexData[0].push_back(glm::vec3(mida + 0.1f, 0.0f, 0.0f));
@@ -116,11 +117,9 @@ void Game::loadGameObjects(const int& NumGameObj) {
 		sysParticles[i].setBouncing(0.8f);
 		sysParticles[i].setFixed(false);
 
-		posSysPart.resize(_Numparticles);
-		posSysPart[i] = sysParticles[i].getCurrentPosition(); //Copy position values
 	}
 	//	glBufferData(GL_ARRAY_BUFFER, sizeof(posSysPart), posSysPart, GL_STATIC_DRAW);
-	glBufferData(GL_ARRAY_BUFFER, posSysPart.size()*sizeof(glm::vec3), &posSysPart[0], GL_STREAM_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sysParticles.size()*sizeof(glm::vec3), &sysParticles[0], GL_STREAM_DRAW);
 	// connect the xyz to the "vert" attribute of the vertex shader
 	glEnableVertexAttribArray(_glProgram.getAttribLocation("vert"));
 	glVertexAttribPointer(_glProgram.getAttribLocation("vert"), 3, GL_FLOAT, GL_FALSE, 0, NULL);

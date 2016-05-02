@@ -120,4 +120,5 @@ void OpenGLBuffers::sendDataToGPU(Vertex * data, int numVertices) {
 	glBindVertexArray(0);	
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
+
 }

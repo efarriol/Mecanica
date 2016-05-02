@@ -155,14 +155,38 @@ GameObject & Geometry::getGameElement(int objectID) {
 
 void Geometry::loadBasic3DObjects()
 {
-	_objectLoader.loadAse("./resources/models/sphere.ASE", _numVertices, _verticesData);
-	for (int j = 0; j < _numVertices[0]; j++) _verticesData[0][j].setColor(255, 255, 0, 255);
-	for (int j = 0; j < _numVertices[0]; j++) {
-		if (_verticesData[0][j].position.x > maxX) maxX = _verticesData[0][j].position.x;
-		if (_verticesData[0][j].position.y > maxY) maxY = _verticesData[0][j].position.y;
-		if (_verticesData[0][j].position.z > maxZ) maxZ = _verticesData[0][j].position.z;
-		if (_verticesData[0][j].position.x < minX) minX = _verticesData[0][j].position.x;
-		if (_verticesData[0][j].position.y < minY) minY = _verticesData[0][j].position.y;
-		if (_verticesData[0][j].position.z < minZ) minZ = _verticesData[0][j].position.z;
+	for (int i = 0; i < NUMBASICOBJECTS; i++) {
+		switch (i) {
+		case 0:
+			_objectLoader.loadAse("./resources/models/sphere.ASE", _numVertices, _verticesData);
+			for (int j = 0; j < _numVertices[0]; j++) _verticesData[0][j].setColor(255, 255, 0, 255);
+			for (int j = 0; j < _numVertices[0]; j++) {
+				if (_verticesData[0][j].position.x > maxX) maxX = _verticesData[0][j].position.x;
+				if (_verticesData[0][j].position.y > maxY) maxY = _verticesData[0][j].position.y;
+				if (_verticesData[0][j].position.z > maxZ) maxZ = _verticesData[0][j].position.z;
+				if (_verticesData[0][j].position.x < minX) minX = _verticesData[0][j].position.x;
+				if (_verticesData[0][j].position.y < minY) minY = _verticesData[0][j].position.y;
+				if (_verticesData[0][j].position.z < minZ) minZ = _verticesData[0][j].position.z;
+			}
+			break;
+		case 1:
+			_Numparticles = 5;
+			sysParticles.resize(_Numparticles);
+			for (int j = 0; j < _Numparticles; j++) {
+				sysParticles[j].setPosition(0.1f + j/10, 0.3f, 0.0f);
+				sysParticles[j].setVelocity(0.5, 2, 0);
+				sysParticles[j].setLifetime(500);
+				sysParticles[j].setBouncing(0.8f);
+				sysParticles[j].setFixed(false);
+
+				posSysPart.resize(_Numparticles);
+				posSysPart[j] = sysParticles[j].getCurrentPosition(); //Copy position values
+			}
+			break;
+		}
 	}
+
+
+
+
 }

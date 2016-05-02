@@ -47,6 +47,8 @@ class Game {
 		Geometry _gameElements;			//Manage the game elements
 		InputManager _inputManager;		//Manage the input devices
 		GLuint modelMatrixUniform;
+		GLuint viewMatrixUniform;
+		GLuint projectionMatrixUniform;
 			//Internal methods
 		void initSystems();
 		void initShaders();		
@@ -57,18 +59,8 @@ class Game {
 		void renderGame();	
 
 		// De aqui a arriba es CG hacia abajo Mecanica
-	
-		GLuint gVAO[NUMBASICOBJECTS];
-		GLuint gVBO[NUMBASICOBJECTS];
+
 		//Internal methods
-		vector<glm::vec3> posSysPart; //Only position is needed for draw
-		vector<Particle> sysParticles;
-		int _Numparticles = 15;
-		float _dt = 0.01f; //Simulation time step
-		Plane _planeBottom; //
-		Plane _planeRight;
-		Plane _planeLeft;
-		Plane _planeTop;
-		Plane _intersectPlane;
+
 };
 

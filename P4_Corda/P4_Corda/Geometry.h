@@ -3,9 +3,10 @@
 #include <vector>
 #include "GameObject.h"
 #include "ObjectLoader.h"
-
+#include "Particle.h"
 #define ASE_OBJECTS 0
-#define NUMBASICOBJECTS 1
+#define PARTICLE 1
+#define NUMBASICOBJECTS 2
 
 //This class stores and manipulates all the objects loaded from the text fileddd
 class Geometry
@@ -34,4 +35,11 @@ public:
 	void loadCube(int cube, glm::vec4 color);
 	void loadBasic3DObjects();
 	ObjectLoader _objectLoader;
+
+
+	vector<glm::vec3> posSysPart; //Only position is needed for draw
+	vector<Particle> sysParticles;
+	int _Numparticles;
+	float _dt = 0.01f; //Simulation time step
+
 };

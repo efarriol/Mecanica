@@ -102,7 +102,7 @@ void OpenGLBuffers::initializeVertexArrayObject(GLSLProgram & _colorProgram) {
 * @param data is an array that contains a set of vertices
 * @param numVertices is the number of vertices to render
 */
-void OpenGLBuffers::sendDataToGPU(Vertex * data, int numVertices) {
+void OpenGLBuffers::sendDataToGPU(Vertex * data, int numVertices, int renderType) {
 	//Bind the vertex array object
 	glBindVertexArray(gVAO);
 
@@ -114,7 +114,15 @@ void OpenGLBuffers::sendDataToGPU(Vertex * data, int numVertices) {
 
 	//Draw a set of elements(numVertices) from the VBO as GL_TRIANGLES. The first vertex is in the 0th position
 
-	glDrawArrays(GL_TRIANGLES, 0, numVertices);
+	if (renderType != 1) {
+		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+		glDrawArrays(GL_TRIANGLES, 0, numVertices);
+	}
+	else {
+		glPointSize(10);
+		glPolygonMode(GL_FRONT_AND_BACK, GL_POINT);
+		glDrawArrays(GL_POINTS, 0, numVertices);
+	}
 
 	//Unbind the VBO and VAO
 	glBindVertexArray(0);	

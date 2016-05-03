@@ -18,6 +18,6 @@ public:
 	void initializeBuffers(GLSLProgram & _colorProgram);
 	void allocateVAOVBO();
 	void initializeVertexArrayObject(GLSLProgram & _colorProgram);
-	void sendDataToGPU(Vertex * data, int numVertex);
+	void sendDataToGPU(Vertex * data, int numVertex, int renderType);
 };
 

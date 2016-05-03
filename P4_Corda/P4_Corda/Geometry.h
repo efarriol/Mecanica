@@ -7,13 +7,15 @@
 #define ASE_OBJECTS 0
 #define PARTICLE 1
 #define NUMBASICOBJECTS 2
+#define NUMPARTICLES 5
 
-//This class stores and manipulates all the objects loaded from the text fileddd
+//This class stores and manipulates all the objects loaded from the text file
 class Geometry
 {
 	std::vector <Vertex *> _verticesData;
 	std::vector <int> _numVertices;
 	std::vector <GameObject> _listOfObjects;
+	GameObject _listOfParticles[NUMPARTICLES];
 	glm::vec3 center;
 	float max, min, mid;
 	int _numBasicObjects;
@@ -23,7 +25,6 @@ class Geometry
 	float minX;  //very big value
 	float minY;
 	float minZ;
-
 public:
 	Geometry();
 	~Geometry();
@@ -32,12 +33,14 @@ public:
 	int getNumVertices(int objectID);
 	int getNumGameElements();
 	GameObject & getGameElement(int objectID);
+	GameObject & getGameParticle(int file);
 	void loadCube(int cube, glm::vec4 color);
+	//void loadParticles(int numVertex, glm::vec4 color);
 	void loadBasic3DObjects();
 	ObjectLoader _objectLoader;
 
 
-	vector<glm::vec3> posSysPart; //Only position is needed for draw
+	//vector<glm::vec3> posSysPart; //Only position is needed for draw
 	vector<Particle> sysParticles;
 	int _Numparticles;
 	float _dt = 0.01f; //Simulation time step

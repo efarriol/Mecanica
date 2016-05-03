@@ -57,10 +57,12 @@ class Game {
 		void doPhysics();
 		void executePlayerCommands();
 		void renderGame();	
-
+		void renderObject(GameObject ganeElement);
 		// De aqui a arriba es CG hacia abajo Mecanica
 
 		//Internal methods
-
+		vector<Particle> sysParticles;
+		void loadParticles();
+		float _dt = 0.01f;
 };
 

@@ -26,61 +26,26 @@ Geometry::Geometry(){
 	minY = 100000.f;
 	minZ = 100000.f;
 }
-void Geometry::loadCube(int i, glm::vec4 color)
-{
-		_numVertices.push_back(36);
-		_verticesData.push_back(new Vertex[36]);
+//void Geometry::loadParticles(int numVertex, glm::vec4 color) {
+//	_numVertices.push_back(numVertex);
+//	_verticesData.push_back(new Vertex[numVertex]);
+//	_Numparticles = numVertex;
+//	sysParticles.resize(_Numparticles);
+//	float increment = 0.0f;
+//	for (int j = 0; j < _Numparticles; j++) {
+//		sysParticles[j].setPosition(0 - increment, 0 , 0 );
+//		sysParticles[j].setVelocity(0.5, 2, 0);
+//		sysParticles[j].setLifetime(500);
+//		sysParticles[j].setBouncing(0.8f);
+//		sysParticles[j].setFixed(false);
+//		_verticesData[1][j].setPosition(sysParticles[j].getCurrentPosition().x, sysParticles[j].getCurrentPosition().y, sysParticles[j].getCurrentPosition().z);
+//		_verticesData[1][j].setColor(color.x, color.y, color.z, color.w);
+//		//posSysPart.resize(_Numparticles);
+//	    //posSysPart[j] = sysParticles[j].getCurrentPosition(); //Copy position 
+//		increment += 0.3f;
+//	}
+//}
 
-		_verticesData[i][0].setPosition(min, min, min);
-		_verticesData[i][1].setPosition(max, min, min);
-		_verticesData[i][2].setPosition(min, max, min);
-
-		_verticesData[i][3].setPosition(max, min, min);
-		_verticesData[i][4].setPosition(max, max, min);
-		_verticesData[i][5].setPosition(min, max, min);
-
-		_verticesData[i][6].setPosition(max, min, min);
-		_verticesData[i][7].setPosition(max, min, max);
-		_verticesData[i][8].setPosition(max, max, min);
-
-		_verticesData[i][9].setPosition(max, min, max);
-		_verticesData[i][10].setPosition(max, max, max);
-		_verticesData[i][11].setPosition(max, max, min);
-
-		_verticesData[i][12].setPosition(max, min, max);
-		_verticesData[i][13].setPosition(min, min, max);
-		_verticesData[i][14].setPosition(max, max, max);
-
-		_verticesData[i][15].setPosition(min, min, max);
-		_verticesData[i][16].setPosition(min, max, max);
-		_verticesData[i][17].setPosition(max, max, max);
-
-		_verticesData[i][18].setPosition(min, min, max);
-		_verticesData[i][19].setPosition(min, min, min);
-		_verticesData[i][20].setPosition(min, max, max);
-
-		_verticesData[i][21].setPosition(min, min, min);
-		_verticesData[i][22].setPosition(min, max, min);
-		_verticesData[i][23].setPosition(min, max, max);
-
-		_verticesData[i][24].setPosition(min, max, min);
-		_verticesData[i][25].setPosition(max, max, min);
-		_verticesData[i][26].setPosition(min, max, max);
-
-		_verticesData[i][27].setPosition(max, max, min);
-		_verticesData[i][28].setPosition(max, max, max);
-		_verticesData[i][29].setPosition(min, max, max);
-
-		_verticesData[i][30].setPosition(min, min, min);
-		_verticesData[i][31].setPosition(min, min, max);
-		_verticesData[i][32].setPosition(max, min, max);
-
-		_verticesData[i][33].setPosition(min, min, min);
-		_verticesData[i][34].setPosition(max, min, max);
-		_verticesData[i][35].setPosition(max, min, min);
-
-		for (int j = 0; j < 36; j++) _verticesData[i][j].setColor(color.x, color.y, color.z, color.w);
-}
 
 
 Geometry::~Geometry(){
@@ -98,23 +63,35 @@ void Geometry::loadGameElements(char fileName[100]){
 	<type of game element> <vec3 position> <angle> <vec3 rotation> <vec3 scale>	
 	*/  
 	GameObject tempObject;
-	ifstream file;
-	file.open(fileName);
-	
-	if (file.is_open()){
-		//TODO: Read the content and add it into the data structure
-		file >> _numBasicObjects;
-		for (int i = 0; i < _numBasicObjects; i++) {
-			file >> tempObject._objectType >>  tempObject._translate.x >> tempObject._translate.y >> tempObject._translate.z >> tempObject._angle
-				>> tempObject._rotation.x >> tempObject._rotation.y >> tempObject._rotation.z >> tempObject._scale.x >> tempObject._scale.y >> tempObject._scale.z;
-			_listOfObjects.push_back(tempObject);
-		}
-		file.close();
+	//LOAD SPHERE
+	tempObject._objectType = 0;
+	tempObject._translate.x = -0.0;
+	tempObject._translate.y = 0;
+	tempObject._translate.z = 0;
+	tempObject._angle = 0;
+	tempObject._rotation.x = 1;
+	tempObject._rotation.y = 0;
+	tempObject._rotation.z = 0;
+	tempObject._scale.x = 1;
+	tempObject._scale.y = 1;
+	tempObject._scale.z = 1;
+	_listOfObjects.push_back(tempObject);
+
+	for (int i = 0; i < NUMPARTICLES; i++) {
+		tempObject._objectType = 1;
+		tempObject._translate.x = 0;
+		tempObject._translate.y = 0;
+		tempObject._translate.z = 0;
+		tempObject._angle = 0;
+		tempObject._rotation.x = 0;
+		tempObject._rotation.y = 0;
+		tempObject._rotation.z = 0;
+		tempObject._scale.x = 0.1f;
+		tempObject._scale.y = 0.1f;
+		tempObject._scale.z = 0.1f;
+		_listOfParticles[i]= tempObject;
 	}
-	else{
-		string message = "The file "+ string(fileName)+" doesn't exists";
-		ErrorManagement::errorRunTime(message);
-	}
+
 
 }
 
@@ -126,6 +103,7 @@ void Geometry::loadGameElements(char fileName[100]){
 Vertex * Geometry::getData(int objectID){
 	return _verticesData[objectID];
 }
+
 
 /*
 * Get the number of vertices for an specific object
@@ -151,7 +129,9 @@ int Geometry::getNumGameElements() {
 GameObject & Geometry::getGameElement(int objectID) {
 	return (_listOfObjects[objectID]);
 }
-
+GameObject & Geometry::getGameParticle(int file) {
+	return (_listOfParticles[file]);
+}
 
 void Geometry::loadBasic3DObjects()
 {
@@ -159,7 +139,8 @@ void Geometry::loadBasic3DObjects()
 		switch (i) {
 		case 0:
 			_objectLoader.loadAse("./resources/models/sphere.ASE", _numVertices, _verticesData);
-			for (int j = 0; j < _numVertices[0]; j++) _verticesData[0][j].setColor(255, 255, 0, 255);
+
+			for (int j = 0; j < _numVertices[0]; j++)_verticesData[i][j].setColor(255, 255, 0, 255);
 			for (int j = 0; j < _numVertices[0]; j++) {
 				if (_verticesData[0][j].position.x > maxX) maxX = _verticesData[0][j].position.x;
 				if (_verticesData[0][j].position.y > maxY) maxY = _verticesData[0][j].position.y;
@@ -170,23 +151,15 @@ void Geometry::loadBasic3DObjects()
 			}
 			break;
 		case 1:
-			_Numparticles = 5;
-			sysParticles.resize(_Numparticles);
-			for (int j = 0; j < _Numparticles; j++) {
-				sysParticles[j].setPosition(0.1f + j/10, 0.3f, 0.0f);
-				sysParticles[j].setVelocity(0.5, 2, 0);
-				sysParticles[j].setLifetime(500);
-				sysParticles[j].setBouncing(0.8f);
-				sysParticles[j].setFixed(false);
-
-				posSysPart.resize(_Numparticles);
-				posSysPart[j] = sysParticles[j].getCurrentPosition(); //Copy position values
+			_numVertices.push_back(1);
+			_verticesData.push_back(new Vertex[1]);
+			for (int j = 0; j < _numVertices[i]; j++) {
+				_verticesData[i][j].setColor(255, 0, 0, 255);
+			}
+			for (int j = 0; j < _numVertices[i]; j++) {
+				_verticesData[i][j].setPosition(0, 0, 0);
 			}
 			break;
 		}
 	}
-
-
-
-
 }

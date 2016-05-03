@@ -45,12 +45,30 @@ void Game::initSystems() {
 		//Set up the openGL buffers
 	_openGLBuffers.initializeBuffers(_colorProgram);
 		//Load the current scenario
-	_gameElements.loadBasic3DObjects();
 	_gameElements.loadGameElements("./resources/scene2D.txt");
-
-
+	_gameElements.loadBasic3DObjects();
+	loadParticles();
 
 }
+
+void Game::loadParticles(){
+	sysParticles.resize(NUMPARTICLES);
+	float increment = 0.3f;
+	for (int j = 0; j < NUMPARTICLES; j++) {
+		sysParticles[j].setPosition(j - increment, 0, 0);
+		//sysParticles[j].setVelocity(0.5, 2, 0);
+		sysParticles[j].setLifetime(500);
+		sysParticles[j].setBouncing(0.8f);
+		sysParticles[j].setFixed(true);
+	}
+	for (int i = 1; i < NUMPARTICLES; i++) {
+		_gameElements.getGameParticle(i)._translate.x = sysParticles[i].getCurrentPosition().x;
+		_gameElements.getGameParticle(i)._translate.y = sysParticles[i].getCurrentPosition().y;
+		_gameElements.getGameParticle(i)._translate.z = sysParticles[i].getCurrentPosition().z;
+	}
+}
+
+
 
 /*
 * Initialize the shaders:
@@ -71,7 +89,6 @@ void Game::initShaders() {
 	modelMatrixUniform = _colorProgram.getUniformLocation("modelMatrix");
 	viewMatrixUniform = _colorProgram.getUniformLocation("viewMatrix");
 	projectionMatrixUniform = _colorProgram.getUniformLocation("projectionMatrix");
-
 
 	_colorProgram.unuse();
 }
@@ -146,7 +163,6 @@ void Game::executePlayerCommands() {
 
 	if (_inputManager.isKeyDown(SDLK_p)) {
 		_screenType = PERSP_CAM;
-		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 	}
 	if (_inputManager.isKeyDown(SDLK_o)) {
 		_screenType = ORTHO_CAM;
@@ -170,7 +186,6 @@ void Game::doPhysics() {
 */
 void Game::renderGame() {
 	//Temporal variable
-	GameObject currentRenderedGameElement;
 	Camera _camera(WIDTH, HEIGHT, _screenType);
 	//Clear the color and depth buffer
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -178,29 +193,38 @@ void Game::renderGame() {
 	_colorProgram.use();
 	//For each one of the elements: Each object MUST BE RENDERED based on its position, rotation and scale data
 	for (int i = 0; i < _gameElements.getNumGameElements(); i++) {	
-		currentRenderedGameElement = _gameElements.getGameElement(i);	
-		glm::mat4 modelMatrix;
-	
-		modelMatrix = glm::translate(modelMatrix, currentRenderedGameElement._translate);
-		if (currentRenderedGameElement._angle != 0) {
-			modelMatrix = glm::rotate(modelMatrix, glm::radians(currentRenderedGameElement._angle), currentRenderedGameElement._rotation);
-		}
-		modelMatrix = glm::scale(modelMatrix, currentRenderedGameElement._scale);
-		
-		//glUniformMatrix4fv(modelMatrixUniform, 1, GL_FALSE, glm::value_ptr(modelMatrix));
-			//Send data to GPU
-		
-			glUniformMatrix4fv(modelMatrixUniform, 1, GL_FALSE, glm::value_ptr(modelMatrix));
-			glUniformMatrix4fv(viewMatrixUniform, 1, GL_FALSE, glm::value_ptr(_camera.viewMatrix()));
-			glUniformMatrix4fv(projectionMatrixUniform, 1, GL_FALSE, glm::value_ptr(_camera.projectionMatrix()));
-			if (i != 1) {
-				_openGLBuffers.sendDataToGPU(_gameElements.getData(currentRenderedGameElement._objectType), _gameElements.getNumVertices(currentRenderedGameElement._objectType));
-		}
+		renderObject(_gameElements.getGameElement(i));
 	}
-
+	for (int i = 0; i < NUMPARTICLES; i++) {
+		renderObject(_gameElements.getGameParticle(i));
+	}
 	//Unbind the program
 	_colorProgram.unuse();
 
 	//Swap the display buffers (displays what was just drawn)
 	_window.swapBuffer();
 } 
+
+void Game::renderObject(GameObject ganeElement) {
+	//Temporal variable
+	Camera _camera(WIDTH, HEIGHT, _screenType);
+	
+	GameObject currentRenderedGameElement = ganeElement;
+	glm::mat4 modelMatrix;
+
+	modelMatrix = glm::translate(modelMatrix, currentRenderedGameElement._translate);
+	if (currentRenderedGameElement._angle != 0) {
+		modelMatrix = glm::rotate(modelMatrix, glm::radians(currentRenderedGameElement._angle), currentRenderedGameElement._rotation);
+	}
+	modelMatrix = glm::scale(modelMatrix, currentRenderedGameElement._scale);
+
+	//glUniformMatrix4fv(modelMatrixUniform, 1, GL_FALSE, glm::value_ptr(modelMatrix));
+	//Send data to GPU
+
+	glUniformMatrix4fv(modelMatrixUniform, 1, GL_FALSE, glm::value_ptr(modelMatrix));
+	glUniformMatrix4fv(viewMatrixUniform, 1, GL_FALSE, glm::value_ptr(_camera.viewMatrix()));
+	glUniformMatrix4fv(projectionMatrixUniform, 1, GL_FALSE, glm::value_ptr(_camera.projectionMatrix()));
+
+	_openGLBuffers.sendDataToGPU(_gameElements.getData(currentRenderedGameElement._objectType), _gameElements.getNumVertices(currentRenderedGameElement._objectType), currentRenderedGameElement._objectType);
+
+}

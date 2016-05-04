@@ -48,18 +48,21 @@ void Game::initSystems() {
 	_gameElements.loadGameElements("./resources/scene2D.txt");
 	_gameElements.loadBasic3DObjects();
 	loadParticles();
+	Ke = 500;
+	Kd = 0.5f;
 
 }
 
 void Game::loadParticles(){
 	sysParticles.resize(NUMPARTICLES);
-	float increment = 0.3f;
+	float increment = 0;
 	for (int j = 0; j < NUMPARTICLES; j++) {
-		sysParticles[j].setPosition(j - increment, 0, 0);
+		sysParticles[j].setPosition(0 - increment, 0, 0);
 		//sysParticles[j].setVelocity(0.5, 2, 0);
 		sysParticles[j].setLifetime(500);
 		sysParticles[j].setBouncing(0.8f);
 		sysParticles[j].setFixed(true);
+		increment += 0.3f;
 	}
 	for (int i = 1; i < NUMPARTICLES; i++) {
 		_gameElements.getGameParticle(i)._translate.x = sysParticles[i].getCurrentPosition().x;
@@ -179,6 +182,28 @@ void Game::executePlayerCommands() {
 */
 void Game::doPhysics() {
 
+	float distRepos = 0.3f; //insertar valor aqui
+	for (int i = 0; i < NUMPARTICLES; i++) {
+
+		previousForce2 = force2;
+		if (i < NUMBASICOBJECTS - 1) {
+			elasticTerm = Ke*(glm::length(sysParticles[i + 1].getCurrentPosition() - sysParticles[i].getCurrentPosition()) - distRepos);
+			normalizedVector = (sysParticles[i + 1].getCurrentPosition() - sysParticles[i].getCurrentPosition()) / glm::length(sysParticles[i + 1].getCurrentPosition() - sysParticles[i].getCurrentPosition());
+			dampingTerm = Kd*glm::cross((sysParticles[i + 1].getVelocity() - sysParticles[i].getVelocity()), normalizedVector);
+			force1 = glm::cross((elasticTerm + dampingTerm), normalizedVector);
+			force2 = -force1;
+			if (i == 0) {
+				totalForce = force1;
+			}
+			else {
+				totalForce = previousForce2 + force1;
+			}
+		}
+		else {
+			totalForce = previousForce2;
+		}
+		sysParticles[i].addForce(totalForce);
+	}																																													
 }
 
 /**

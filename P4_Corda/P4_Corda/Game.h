@@ -38,7 +38,17 @@ class Game {
 		std::string _windowTitle;		//Window Title
 		int _screenWidth;				//Screen width in pixels				
 		int _screenHeight;				//Screen height in pixels	
-		int _screenType;				//Screen type Persp/Ortho
+		int _screenType;	
+		float Ke;
+		float Kd;
+		glm::vec3 force1;
+		glm::vec3 force2;
+		glm::vec3 previousForce2;
+		glm::vec3 totalForce;
+		float elasticTerm;
+		glm::vec3 dampingTerm;
+		glm::vec3 normalizedVector;
+		//Screen type Persp/Ortho
 		GameState _gameState;			//It describes the game state				
 		Window _window;					//Manage the OpenGL context
 		GLSLProgram _colorProgram;		//Manage the shader programs

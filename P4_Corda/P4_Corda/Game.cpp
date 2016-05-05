@@ -48,11 +48,11 @@ void Game::initSystems() {
 	_gameElements.loadGameElements("./resources/scene2D.txt");
 	_gameElements.loadBasic3DObjects();
 	loadParticles();
-	Ke = 500.0f;
-	Kd = 5.0f;
+	Ke = 750.0f;
+	Kd = 7.5f;
 	_planeBottom.setPointNormal(glm::vec3(0.0f, -3.0f, 0.0f), glm::vec3(0.0f, -1.0f, 0.0f));
-	//_planeRight.setPointNormal(glm::vec3(3.0f, 0.0f, 0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-	//_planeLeft.setPointNormal(glm::vec3(-3.0f, 0.0f, 0.0f), glm::vec3(-1.0f, 0.0f, 0.0f));
+	_planeRight.setPointNormal(glm::vec3(3.0f, 0.0f, 0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+	_planeLeft.setPointNormal(glm::vec3(-3.0f, 0.0f, 0.0f), glm::vec3(-1.0f, 0.0f, 0.0f));
 	//_planeTop.setPointNormal(glm::vec3(0.0f, 3.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 
 }
@@ -61,10 +61,10 @@ void Game::loadParticles(){
 	sysParticles.resize(NUMPARTICLES);
 	float increment = 0;
 	for (int j = 0; j < NUMPARTICLES; j++) {
-		sysParticles[j].setPosition(0 + increment, 3, 0);
+		sysParticles[j].setPosition(-1 + increment, 3, 0);
 		//sysParticles[j].setVelocity(0, 0, 0);
 		sysParticles[j].setLifetime(500);
-		sysParticles[j].setBouncing(0.8f);
+		sysParticles[j].setBouncing(0.5f);
 		if(j != 0)sysParticles[j].setFixed(false);
 		else sysParticles[j].setFixed(true);
 		increment += 0.3f;
@@ -224,11 +224,11 @@ void Game::executeActions() {
 				sysParticles[i].setPosition(sysParticles[i].getCurrentPosition() + correcPos);
 				sysParticles[i].setVelocity(sysParticles[i].getVelocity() + correcVel);
 			}
-
 			//SPHERE
-
-
-
+			if (sysParticles[i].isInsideSphere(_gameElements.getGameElement(0)._radious, _gameElements.getGameElement(0)._center)) {
+				sysParticles[i].setPosition(sysParticles[i].correctPosition(_gameElements.getGameElement(0)._radious, _gameElements.getGameElement(0)._center));
+				sysParticles[i].setVelocity(sysParticles[i].correctVelocity(_gameElements.getGameElement(0)._radious, _gameElements.getGameElement(0)._center));
+			}
 		}
 		_gameElements.getGameParticle(i)._translate.x = sysParticles[i].getCurrentPosition().x;
 		_gameElements.getGameParticle(i)._translate.y = sysParticles[i].getCurrentPosition().y;

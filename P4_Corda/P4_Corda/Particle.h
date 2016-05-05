@@ -36,7 +36,9 @@ public:
 	void addForce(glm::vec3 force);
 	void addForce(const float& x, const float& y, const float& z);
 	void updateParticle(const float& dt, UpdateMethod method);
-
+	glm::vec3 correctPosition(float radious, glm::vec3 center);
+	glm::vec3 correctVelocity(float radious, glm::vec3 center);
+	bool isInsideSphere(float radious, glm::vec3 center);
 
 private:
 	glm::vec3 _currentPosition;

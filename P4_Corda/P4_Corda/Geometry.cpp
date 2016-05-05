@@ -65,7 +65,7 @@ void Geometry::loadGameElements(char fileName[100]){
 	GameObject tempObject;
 	//LOAD SPHERE
 	tempObject._objectType = 0;
-	tempObject._translate.x = -0.0;
+	tempObject._translate.x = 0;
 	tempObject._translate.y = 0;
 	tempObject._translate.z = 0;
 	tempObject._angle = 90;
@@ -75,6 +75,8 @@ void Geometry::loadGameElements(char fileName[100]){
 	tempObject._scale.x = 1;
 	tempObject._scale.y = 1;
 	tempObject._scale.z = 1;
+	tempObject._radious = 1;
+	tempObject._center = tempObject._translate;
 	_listOfObjects.push_back(tempObject);
 
 	for (int i = 0; i < NUMPARTICLES; i++) {

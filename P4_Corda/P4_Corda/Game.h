@@ -78,6 +78,7 @@ class Game {
 
 		//Internal methods
 		vector<Particle> sysParticles;
+
 		void loadParticles();
 		float _dt = 0.01f;
 };

@@ -10,4 +10,6 @@ struct GameObject
 	glm::vec3 _rotation;
 	glm::vec3 _scale;
 	int _collisionType;
+	float _radious;
+	glm::vec3 _center;
 };

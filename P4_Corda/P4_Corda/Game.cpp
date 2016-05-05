@@ -51,8 +51,8 @@ void Game::initSystems() {
 	Ke = 750.0f;
 	Kd = 7.5f;
 	_planeBottom.setPointNormal(glm::vec3(0.0f, -3.0f, 0.0f), glm::vec3(0.0f, -1.0f, 0.0f));
-	_planeRight.setPointNormal(glm::vec3(3.0f, 0.0f, 0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-	_planeLeft.setPointNormal(glm::vec3(-3.0f, 0.0f, 0.0f), glm::vec3(-1.0f, 0.0f, 0.0f));
+	//_planeRight.setPointNormal(glm::vec3(3.0f, 0.0f, 0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+	//_planeLeft.setPointNormal(glm::vec3(-3.0f, 0.0f, 0.0f), glm::vec3(-1.0f, 0.0f, 0.0f));
 	//_planeTop.setPointNormal(glm::vec3(0.0f, 3.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 
 }
@@ -61,13 +61,13 @@ void Game::loadParticles(){
 	sysParticles.resize(NUMPARTICLES);
 	float increment = 0;
 	for (int j = 0; j < NUMPARTICLES; j++) {
-		sysParticles[j].setPosition(-1 + increment, 3, 0);
+		sysParticles[j].setPosition(-4 + increment, 3, 0);
 		//sysParticles[j].setVelocity(0, 0, 0);
 		sysParticles[j].setLifetime(500);
 		sysParticles[j].setBouncing(0.5f);
 		if(j != 0)sysParticles[j].setFixed(false);
 		else sysParticles[j].setFixed(true);
-		increment += 0.3f;
+		increment += 0.5f;
 	}
 	for (int i = 1; i < NUMPARTICLES; i++) {
 		_gameElements.getGameParticle(i)._translate.x = sysParticles[i].getCurrentPosition().x;
@@ -244,7 +244,7 @@ void Game::executeActions() {
 * Update the game objects based on the physics
 */
 void Game::doPhysics() {
-	float distRepos = 0.3f; //insertar valor aqui
+	float distRepos = 0.5f; //insertar valor aqui
 
 	for (int i = 0; i < NUMPARTICLES; i++) {
 		sysParticles[i].setForce(0.0f, 0.0f, 0.0f);  //Avoid to accumulate

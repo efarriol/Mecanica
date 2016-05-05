@@ -14,13 +14,13 @@ Camera::Camera(){
 
 Camera::Camera(float screenWidth, float screenHeight, int screenType){
 	_near = 0.1f;
-	_far = 30.0;
-	_projectionWidth = 7.0f;
-	_projectionHeight = 7.0f;
-	_FOV = 75.0f;
-	_cameraPos = glm::vec3(0.0f, 5.0f, 0.0f);
-	_cameraFront = glm::vec3(0.0f, 1.0f,0.0f);
-	_cameraUP = glm::vec3(0.0f, 0.0f, 0.0f);
+	_far = 75;
+	_projectionWidth = 5.0f;
+	_projectionHeight = 5.0f;
+	_FOV = 100.0f;
+	_cameraPos = glm::vec3(0.01f, 0.0f, 5.0f);
+	_cameraFront = glm::vec3(0.0f, 0.0f,0.0f);
+	_cameraUP = glm::vec3(0.0f, 0.1f, 0.0f);
 	_aspectRatio = (screenWidth / screenHeight);
 	_screenType = screenType;
 }
@@ -42,7 +42,7 @@ glm::mat4 Camera::projectionMatrix() {
 
 glm::mat4 Camera::viewMatrix() {
 	glm::vec3 cameraDirection = glm::normalize(_cameraPos - _cameraFront);
-	glm::vec3 up = glm::vec3(0.0f, 0.0f, 1.0f);
+	glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f);
 	glm::vec3 cameraRight = glm::normalize(glm::cross(up, cameraDirection));
 	_cameraUP = glm::cross(cameraDirection, cameraRight);
 	if (_screenType == AUTO_CAM) {

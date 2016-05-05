@@ -4,6 +4,7 @@
 //Third-party libraries
 #include <GL/glew.h>			//The OpenGL Extension Wrangler
 #define GLM_FORCE_RADIANS
+#define rand01() ((float)std::rand()/RAND_MAX)
 #include <glm/glm.hpp>			//OpenGL Mathematics 
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -59,6 +60,10 @@ class Game {
 		GLuint modelMatrixUniform;
 		GLuint viewMatrixUniform;
 		GLuint projectionMatrixUniform;
+		Plane _planeBottom; 
+		Plane _planeRight;
+		Plane _planeLeft;
+		Plane _planeTop;
 			//Internal methods
 		void initSystems();
 		void initShaders();		
@@ -66,6 +71,7 @@ class Game {
 		void processInput();
 		void doPhysics();
 		void executePlayerCommands();
+		void executeActions();
 		void renderGame();	
 		void renderObject(GameObject ganeElement);
 		// De aqui a arriba es CG hacia abajo Mecanica

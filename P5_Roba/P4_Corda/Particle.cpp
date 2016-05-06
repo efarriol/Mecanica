@@ -149,7 +149,10 @@ void Particle::updateParticle(const float& dt, UpdateMethod method)
 			break;
 		case UpdateMethod::Verlet:
 		{
-									 // to be implemented
+			_actualPosition = _currentPosition;
+			_currentPosition = _actualPosition + (_actualPosition - _previousPosition) + _force*(dt*dt);
+			_velocity = (_currentPosition - _actualPosition) / dt;
+			_previousPosition = _actualPosition;
 		}			
 			break;
 		}
@@ -165,18 +168,16 @@ glm::vec3 Particle::correctPosition(float radious, glm::vec3 center){
 }
 
 glm::vec3 Particle::correctVelocity(float radious, glm::vec3 center){
-	if (isInsideSphere(radious, center)) {
 		glm::vec3 normal = glm::normalize(getCurrentPosition() - center);
 		float d = glm::dot(-normal, getCurrentPosition());
 		glm::vec3 tangVel = getVelocity() - normal;
 		glm::vec3 newVel = getVelocity() - glm::dot(1 + getBouncing(), glm::dot(normal, getVelocity()))*normal;
 		newVel += -0.1f*tangVel;
 		return newVel;
-	}
 }
 
 bool Particle::isInsideSphere(float radious, glm::vec3 center){
-	if (glm::length(getCurrentPosition() - center) < radious) {
+	if (glm::length(getCurrentPosition() - center) <= radious) {
 		return true;
 	}
 	return false;

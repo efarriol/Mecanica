@@ -7,7 +7,7 @@
 #define ASE_OBJECTS 0
 #define PARTICLE 1
 #define NUMBASICOBJECTS 2
-#define NUMPARTICLES 20
+#define NUMPARTICLES 12
 
 //This class stores and manipulates all the objects loaded from the text file
 class Geometry

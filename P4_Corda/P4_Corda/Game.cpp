@@ -62,9 +62,10 @@ void Game::loadParticles(){
 	float increment = 0;
 	for (int j = 0; j < NUMPARTICLES; j++) {
 		sysParticles[j].setPosition(-4 + increment, 3, 0);
+		sysParticles[j].setPreviousPosition(sysParticles[j].getCurrentPosition());
 		//sysParticles[j].setVelocity(0, 0, 0);
 		sysParticles[j].setLifetime(500);
-		sysParticles[j].setBouncing(0.5f);
+		sysParticles[j].setBouncing(0.2f);
 		if(j != 0)sysParticles[j].setFixed(false);
 		else sysParticles[j].setFixed(true);
 		increment += 0.5f;

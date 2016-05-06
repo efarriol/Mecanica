@@ -48,11 +48,11 @@ void Game::initSystems() {
 	_gameElements.loadGameElements("./resources/scene2D.txt");
 	_gameElements.loadBasic3DObjects();
 	loadParticles();
-	Ke = 200.0f;
-	Kd = 0.5f;
+	Ke = 800.0f;
+	Kd = 8.0f;
 	_planeBottom.setPointNormal(glm::vec3(0.0f, -3.0f, 0.0f), glm::vec3(0.0f, -1.0f, 0.0f));
-	//_planeRight.setPointNormal(glm::vec3(3.0f, 0.0f, 0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-	//_planeLeft.setPointNormal(glm::vec3(-3.0f, 0.0f, 0.0f), glm::vec3(-1.0f, 0.0f, 0.0f));
+	_planeRight.setPointNormal(glm::vec3(3.0f, 0.0f, 0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+	//_planeLeft.setPointNormal(glm::vec3(-4.0f, 0.0f, 0.0f), glm::vec3(-1.0f, 0.0f, 0.0f));
 	//_planeTop.setPointNormal(glm::vec3(0.0f, 3.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 
 }
@@ -62,16 +62,17 @@ void Game::loadParticles(){
 	float xIncrement = 0;
 	for (int i = 0; i < ROWS; i++) {
 		for (int j = 0; j < COLUMNS; j++) {
-			sysParticles[i][j].setPosition(-2 + xIncrement, 3, 4 - zIncrement);
+			sysParticles[i][j].setPosition(-3 + xIncrement, 2, 2 - zIncrement);
+			sysParticles[i][j].setPreviousPosition(sysParticles[i][j].getCurrentPosition());
 			//sysParticles[j].setVelocity(0, 0, 0);
 			sysParticles[i][j].setLifetime(500);
-			sysParticles[i][j].setBouncing(0.5f);
+			sysParticles[i][j].setBouncing(0.2f);
 			if (i != 0)sysParticles[i][j].setFixed(false);
 			else sysParticles[i][j].setFixed(true);
-			zIncrement += 0.5f;
+			zIncrement += 0.2f;
 		}
 		zIncrement = 0;
-		xIncrement += 0.5f;
+		xIncrement += 0.2f;
 	}
 	for (int i = 1; i < ROWS; i++) {
 		for (int j = 0; j < COLUMNS; j++) {
@@ -252,7 +253,7 @@ void Game::executeActions() {
 * Update the game objects based on the physics
 */
 void Game::doPhysics() {
-	float distRepos = 0.5f; //insertar valor aqui
+	float distRepos = 0.2f; //insertar valor aqui
 
 	for (int i = 0; i < ROWS; i++) {
 		for (int j = 0; j < COLUMNS; j++) {

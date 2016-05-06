@@ -41,7 +41,9 @@ public:
 	bool isInsideSphere(float radious, glm::vec3 center);
 
 private:
+
 	glm::vec3 _currentPosition;
+	glm::vec3 _actualPosition;
 	glm::vec3 _previousPosition;
 	glm::vec3 _force;
 	glm::vec3 _velocity;

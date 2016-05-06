@@ -5,5 +5,5 @@
 #define ORTHO_CAM 2      
 #define AUTO_CAM 3  
 #define NUM_PLANES 4
-#define ROWS 5
-#define COLUMNS 5
+#define ROWS 25
+#define COLUMNS 25

@@ -119,7 +119,7 @@ void OpenGLBuffers::sendDataToGPU(Vertex * data, int numVertices, int renderType
 		glDrawArrays(GL_TRIANGLES, 0, numVertices);
 	}
 	else {
-		glPointSize(5);
+		glPointSize(3);
 		glPolygonMode(GL_FRONT_AND_BACK, GL_POINT);
 		glDrawArrays(GL_POINTS, 0, numVertices);
 	}

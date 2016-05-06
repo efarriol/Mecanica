@@ -58,21 +58,26 @@ void Game::initSystems() {
 }
 
 void Game::loadParticles(){
-	sysParticles.resize(NUMPARTICLES);
-	float increment = 0;
-	for (int j = 0; j < NUMPARTICLES; j++) {
-		sysParticles[j].setPosition(-4 + increment, 3, 0);
-		//sysParticles[j].setVelocity(0, 0, 0);
-		sysParticles[j].setLifetime(500);
-		sysParticles[j].setBouncing(0.5f);
-		if(j != 0)sysParticles[j].setFixed(false);
-		else sysParticles[j].setFixed(true);
-		increment += 0.5f;
+	float xIncrement = 0;
+	float yIncrement = 0;
+	for (int i = 0; i < ROWS; i++) {
+		for (int j = 0; j < COLUMNS; j++) {
+			sysParticles[i][j].setPosition(-4 + xIncrement, 3 + yIncrement, 0);
+			//sysParticles[j].setVelocity(0, 0, 0);
+			sysParticles[i][j].setLifetime(500);
+			sysParticles[i][j].setBouncing(0.5f);
+			if (i != 0)sysParticles[i][j].setFixed(false);
+			else sysParticles[i][j].setFixed(true);
+			xIncrement += 0.5f;
+		}
+		yIncrement += 0.5f;
 	}
-	for (int i = 0; i < NUMPARTICLES; i++) {
-		_gameElements.getGameParticle(i)._translate.x = sysParticles[i].getCurrentPosition().x;
-		_gameElements.getGameParticle(i)._translate.y = sysParticles[i].getCurrentPosition().y;
-		_gameElements.getGameParticle(i)._translate.z = sysParticles[i].getCurrentPosition().z;
+	for (int i = 1; i < ROWS; i++) {
+		for (int j = 0; j < COLUMNS; j++) {
+			_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i][j].getCurrentPosition().x;
+			_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i][j].getCurrentPosition().y;
+			_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i][j].getCurrentPosition().z;
+		}
 	}
 }
 
@@ -181,58 +186,60 @@ void Game::executePlayerCommands() {
 }
 
 void Game::executeActions() {
-	for (int i = 0; i < NUMPARTICLES; i++) {
-		if (sysParticles[i].getLifetime()>0) {
-			
-			sysParticles[i].updateParticle(_dt, Particle::UpdateMethod::EulerSemi);
-			sysParticles[i].setLifetime(sysParticles[i].getLifetime() - _dt);
-			float disact, disant;
-			//PLANES
-			disant = _planeBottom.distPoint2Plane(sysParticles[i].getPreviousPosition());
-			disact = _planeBottom.distPoint2Plane(sysParticles[i].getCurrentPosition());
-			if (disant*disact < 0.0f) {
-				//only valid for the plane y=0 (floor plane)
-				glm::vec3 correcPos = -(1 + sysParticles[i].getBouncing()) * disact *_planeBottom.normal;
-				glm::vec3 correcVel = -(1 + sysParticles[i].getBouncing()) * (sysParticles[i].getVelocity()*_planeBottom.normal)*_planeBottom.normal;
-				sysParticles[i].setPosition(sysParticles[i].getCurrentPosition() + correcPos);
-				sysParticles[i].setVelocity(sysParticles[i].getVelocity() + correcVel);
+	for (int i = 0; i < ROWS; i++) {
+		for (int j = 0; j < COLUMNS; j++) {
+			if (sysParticles[i][j].getLifetime()>0) {
+				sysParticles[i][j].updateParticle(_dt, Particle::UpdateMethod::EulerSemi);
+				sysParticles[i][j].setLifetime(sysParticles[i][j].getLifetime() - _dt);
+				float disact, disant;
+				//PLANES
+				disant = _planeBottom.distPoint2Plane(sysParticles[i][j].getPreviousPosition());
+				disact = _planeBottom.distPoint2Plane(sysParticles[i][j].getCurrentPosition());
+				if (disant*disact < 0.0f) {
+					//only valid for the plane y=0 (floor plane)
+					glm::vec3 correcPos = -(1 + sysParticles[i][j].getBouncing()) * disact *_planeBottom.normal;
+					glm::vec3 correcVel = -(1 + sysParticles[i][j].getBouncing()) * (sysParticles[i][j].getVelocity()*_planeBottom.normal)*_planeBottom.normal;
+					sysParticles[i][j].setPosition(sysParticles[i][j].getCurrentPosition() + correcPos);
+					sysParticles[i][j].setVelocity(sysParticles[i][j].getVelocity() + correcVel);
+				}
+				disant = _planeBottom.distPoint2Plane(sysParticles[i][j].getPreviousPosition());
+				disact = _planeRight.distPoint2Plane(sysParticles[i][j].getCurrentPosition());
+				if (disant*disact < 0.0f) {
+					//only valid for the plane y=0 (floor plane)
+					glm::vec3 correcPos = -(1 + sysParticles[i][j].getBouncing()) * disact *_planeRight.normal;
+					glm::vec3 correcVel = -(1 + sysParticles[i][j].getBouncing()) * (sysParticles[i][j].getVelocity()*_planeRight.normal)*_planeRight.normal;
+					sysParticles[i][j].setPosition(sysParticles[i][j].getCurrentPosition() + correcPos);
+					sysParticles[i][j].setVelocity(sysParticles[i][j].getVelocity() + correcVel);
+				}
+				disant = _planeBottom.distPoint2Plane(sysParticles[i][j].getPreviousPosition());
+				disact = _planeLeft.distPoint2Plane(sysParticles[i][j].getCurrentPosition());
+				if (disant*disact < 0.0f) {
+					//only valid for the plane y=0 (floor plane)
+					glm::vec3 correcPos = -(1 + sysParticles[i][j].getBouncing()) * disact *_planeLeft.normal;
+					glm::vec3 correcVel = -(1 + sysParticles[i][j].getBouncing()) * (sysParticles[i][j].getVelocity()*_planeLeft.normal)*_planeLeft.normal;
+					sysParticles[i][j].setPosition(sysParticles[i][j].getCurrentPosition() + correcPos);
+					sysParticles[i][j].setVelocity(sysParticles[i][j].getVelocity() + correcVel);
+				}
+				disant = _planeBottom.distPoint2Plane(sysParticles[i][j].getPreviousPosition());
+				disact = _planeTop.distPoint2Plane(sysParticles[i][j].getCurrentPosition());
+				if (disant*disact < 0.0f) {
+					//only valid for the plane y=0 (floor plane)
+					glm::vec3 correcPos = -(1 + sysParticles[i][j].getBouncing()) * disact *_planeTop.normal;
+					glm::vec3 correcVel = -(1 + sysParticles[i][j].getBouncing()) * (sysParticles[i][j].getVelocity()*_planeTop.normal)*_planeTop.normal;
+					sysParticles[i][j].setPosition(sysParticles[i][j].getCurrentPosition() + correcPos);
+					sysParticles[i][j].setVelocity(sysParticles[i][j].getVelocity() + correcVel);
+				}
+				//SPHERE
+				if (sysParticles[i][j].isInsideSphere(_gameElements.getGameElement(0)._radious, _gameElements.getGameElement(0)._center)) {
+					sysParticles[i][j].setPosition(sysParticles[i][j].correctPosition(_gameElements.getGameElement(0)._radious, _gameElements.getGameElement(0)._center));
+					sysParticles[i][j].setVelocity(sysParticles[i][j].correctVelocity(_gameElements.getGameElement(0)._radious, _gameElements.getGameElement(0)._center));
+				}
+
 			}
-			disant = _planeBottom.distPoint2Plane(sysParticles[i].getPreviousPosition());
-			disact = _planeRight.distPoint2Plane(sysParticles[i].getCurrentPosition());
-			if (disant*disact < 0.0f) {
-				//only valid for the plane y=0 (floor plane)
-				glm::vec3 correcPos = -(1 + sysParticles[i].getBouncing()) * disact *_planeRight.normal;
-				glm::vec3 correcVel = -(1 + sysParticles[i].getBouncing()) * (sysParticles[i].getVelocity()*_planeRight.normal)*_planeRight.normal;
-				sysParticles[i].setPosition(sysParticles[i].getCurrentPosition() + correcPos);
-				sysParticles[i].setVelocity(sysParticles[i].getVelocity() + correcVel);
-			}
-			disant = _planeBottom.distPoint2Plane(sysParticles[i].getPreviousPosition());
-			disact = _planeLeft.distPoint2Plane(sysParticles[i].getCurrentPosition());
-			if (disant*disact < 0.0f) {
-				//only valid for the plane y=0 (floor plane)
-				glm::vec3 correcPos = -(1 + sysParticles[i].getBouncing()) * disact *_planeLeft.normal;
-				glm::vec3 correcVel = -(1 + sysParticles[i].getBouncing()) * (sysParticles[i].getVelocity()*_planeLeft.normal)*_planeLeft.normal;
-				sysParticles[i].setPosition(sysParticles[i].getCurrentPosition() + correcPos);
-				sysParticles[i].setVelocity(sysParticles[i].getVelocity() + correcVel);
-			}
-			disant = _planeBottom.distPoint2Plane(sysParticles[i].getPreviousPosition());
-			disact = _planeTop.distPoint2Plane(sysParticles[i].getCurrentPosition());
-			if (disant*disact < 0.0f) {
-				//only valid for the plane y=0 (floor plane)
-				glm::vec3 correcPos = -(1 + sysParticles[i].getBouncing()) * disact *_planeTop.normal;
-				glm::vec3 correcVel = -(1 + sysParticles[i].getBouncing()) * (sysParticles[i].getVelocity()*_planeTop.normal)*_planeTop.normal;
-				sysParticles[i].setPosition(sysParticles[i].getCurrentPosition() + correcPos);
-				sysParticles[i].setVelocity(sysParticles[i].getVelocity() + correcVel);
-			}
-			//SPHERE
-			if (sysParticles[i].isInsideSphere(_gameElements.getGameElement(0)._radious, _gameElements.getGameElement(0)._center)) {
-				sysParticles[i].setPosition(sysParticles[i].correctPosition(_gameElements.getGameElement(0)._radious, _gameElements.getGameElement(0)._center));
-				sysParticles[i].setVelocity(sysParticles[i].correctVelocity(_gameElements.getGameElement(0)._radious, _gameElements.getGameElement(0)._center));
-			}
+			_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i][j].getCurrentPosition().x;
+			_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i][j].getCurrentPosition().y;
+			_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i][j].getCurrentPosition().z;
 		}
-		_gameElements.getGameParticle(i)._translate.x = sysParticles[i].getCurrentPosition().x;
-		_gameElements.getGameParticle(i)._translate.y = sysParticles[i].getCurrentPosition().y;
-		_gameElements.getGameParticle(i)._translate.z = sysParticles[i].getCurrentPosition().z;
 	}
 }
 
@@ -246,18 +253,22 @@ void Game::executeActions() {
 void Game::doPhysics() {
 	float distRepos = 0.5f; //insertar valor aqui
 
-	for (int i = 0; i < NUMPARTICLES; i++) {
-		sysParticles[i].setForce(0.0f, 0.0f, 0.0f);  //Avoid to accumulate
-		sysParticles[i].setForce(0.0f, -9.81f, 0.0f);
+	for (int i = 0; i < ROWS; i++) {
+		for (int j = 0; j < COLUMNS; j++) {
+			sysParticles[i][j].setForce(0.0f, 0.0f, 0.0f);  //Avoid to accumulate
+			sysParticles[i][j].setForce(0.0f, -9.81f, 0.0f);
+		}
 	}
 
-	for (int i = 0; i < NUMPARTICLES - 1; i++) {
-		glm::vec3 posDifference = sysParticles[i + 1].getCurrentPosition() - sysParticles[i].getCurrentPosition();
-		glm::vec3 velDifference = sysParticles[i + 1].getVelocity() - sysParticles[i].getVelocity();
-		glm::vec3 force1 = (Ke * (glm::length(posDifference) - distRepos) + Kd * glm::dot(velDifference, posDifference / glm::length(posDifference))) * (posDifference / glm::length(posDifference));
-		glm::vec3 force2 = -force1;
-		sysParticles[i].addForce(force1);
-		sysParticles[i + 1].addForce(force2);
+	for (int i = 0; i < ROWS - 1; i++) {
+		for (int j = 0; j < COLUMNS-1; j++) {
+			glm::vec3 posDifference = sysParticles[i + 1][j].getCurrentPosition() - sysParticles[i][j].getCurrentPosition();
+			glm::vec3 velDifference = sysParticles[i + 1][j].getVelocity() - sysParticles[i][j].getVelocity();
+			glm::vec3 force1 = (Ke * (glm::length(posDifference) - distRepos) + Kd * glm::dot(velDifference, posDifference / glm::length(posDifference))) * (posDifference / glm::length(posDifference));
+			glm::vec3 force2 = -force1;
+			sysParticles[i][j].addForce(force1);
+			sysParticles[i + 1][j].addForce(force2);
+		}
 	}
 	executeActions();								
 }

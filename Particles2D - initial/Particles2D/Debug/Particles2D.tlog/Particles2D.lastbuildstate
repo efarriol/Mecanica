@@ -1,2 +1,2 @@
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
-Debug|Win32|C:\Users\Eloi\Documents\ENTI\Segundo Curso\4º Semestre\Mecánica\PracticasMecanica\Particles2D - initial\|
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
+Debug|Win32|D:\pol_b\Documents\Enti\SourceTree\Mecanica\Particles2D - initial\|

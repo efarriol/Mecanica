@@ -7,3 +7,5 @@
 #define NUM_PLANES 4
 #define ROWS 20
 #define COLUMNS 20
+#define WAVE_CONST 5.0f
+#define PARTICLE_DISTANCE 0.2f

@@ -58,13 +58,14 @@ void Game::initSystems() {
 }
 
 void Game::loadParticles(){
-	float zIncrement = 0;
-	float xIncrement = 0;
+	float zIncrement = 0.0f;
+	float xIncrement = 0.0f;
 	for (int i = 0; i < ROWS; i++) {
 		for (int j = 0; j < COLUMNS; j++) {
-			sysParticles[i][j].setPosition( -2 + xIncrement, -2, 2 - zIncrement);
+			if(i == 10 && j == 10)sysParticles[i][j].setPosition( -2 + xIncrement, -1, 2 - zIncrement);
+			else sysParticles[i][j].setPosition(-2 + xIncrement, -2, 2 - zIncrement);
 			sysParticles[i][j].setPreviousPosition(sysParticles[i][j].getCurrentPosition());
-			//sysParticles[j].setVelocity(0, 0, 0);
+			sysParticles[i][j].setVelocity(0, 0, 0);
 			sysParticles[i][j].setLifetime(500);
 			sysParticles[i][j].setBouncing(0.2f);
 			zIncrement += 0.2f;
@@ -186,29 +187,21 @@ void Game::executePlayerCommands() {
 }
 
 void Game::executeActions() {
-	/*glm::ivec2 mouseCoords = _inputManager.getMouseCoords();
-	_gameElements.getGameElement(0)._translate.x = (mouseCoords.x / 700.0f) * 5;
-	_gameElements.getGameElement(0)._translate.y = (-mouseCoords.y / 700.0f) * 5;
-	_gameElements.getGameElement(0)._center = _gameElements.getGameElement(0)._translate;*/
-	_gameElements.getGameElement(0)._translate.y -= 0.05f;
-	_gameElements.getGameElement(0)._center = _gameElements.getGameElement(0)._translate;
-	for (int i = 0; i < ROWS; i++) {
-		for (int j = 0; j < COLUMNS; j++) {
-			if (sysParticles[i][j].getLifetime()>0) {
-				sysParticles[i][j].updateParticle(_dt, Particle::UpdateMethod::EulerSemi);
-				sysParticles[i][j].setLifetime(sysParticles[i][j].getLifetime() - _dt);
-				//SPHERE
-					if (sysParticles[i][j].isInsideSphere(_gameElements.getGameElement(0)._radious, _gameElements.getGameElement(0)._center)) {
-					sysParticles[i][j].setPosition(sysParticles[i][j].correctPosition(_gameElements.getGameElement(0)._radious, _gameElements.getGameElement(0)._center));
-					sysParticles[i][j].setVelocity(sysParticles[i][j].correctVelocity(_gameElements.getGameElement(0)._radious, _gameElements.getGameElement(0)._center));
-				}
 
-			}
+	for (int i = 1; i < ROWS-1; i++) {
+		for (int j = 1; j < COLUMNS-1; j++) {
+			glm::vec3 correctVelocity = sysParticles[i][j].getVelocity() + _dt * glm::exp2(WAVE_CONST) * (sysParticles[i + 1][j].getCurrentPosition() + sysParticles[i - 1][j].getCurrentPosition() + sysParticles[i][j + 1].getCurrentPosition() + sysParticles[i][j - 1].getCurrentPosition() - 4.0f * sysParticles[i][j].getCurrentPosition()) / glm::exp2(PARTICLE_DISTANCE);
+			sysParticles[i][j].setVelocity(correctVelocity);
+			glm::vec3 correctPosition = sysParticles[i][j].getCurrentPosition() + _dt * sysParticles[i][j].getVelocity();
+			sysParticles[i][j].setPosition(correctPosition);
+
 			_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i][j].getCurrentPosition().x;
 			_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i][j].getCurrentPosition().y;
 			_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i][j].getCurrentPosition().z;
 		}
 	}
+
+
 }
 
 

@@ -72,10 +72,10 @@ void Geometry::loadGameElements(char fileName[100]){
 	tempObject._rotation.x = 1;
 	tempObject._rotation.y = 0;
 	tempObject._rotation.z = 0;
-	tempObject._scale.x = 1;
-	tempObject._scale.y = 1;
-	tempObject._scale.z = 1;
-	tempObject._radious = 1;
+	tempObject._scale.x = 0;
+	tempObject._scale.y = 0;
+	tempObject._scale.z = 0;
+	tempObject._radious = 0;
 	tempObject._center = tempObject._translate;
 	_listOfObjects.push_back(tempObject);
 

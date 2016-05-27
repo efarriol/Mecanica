@@ -200,7 +200,50 @@ void Game::executeActions() {
 			_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i][j].getCurrentPosition().z;
 		}
 	}
-
+	for (int i = 0; i < ROWS; i++) {
+		for (int j = 0; j < COLUMNS; j++) {
+			if (i == 0) {
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i + 1][j].getCurrentPosition().x;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i + 1][j].getCurrentPosition().y;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i + 1][j].getCurrentPosition().z;
+			}
+			else if (i == ROWS - 1) {
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i - 1][j].getCurrentPosition().x;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i - 1][j].getCurrentPosition().y;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i - 1][j].getCurrentPosition().z;
+			}
+			else if (j == 0) {
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i][j + 1].getCurrentPosition().x;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i][j + 1].getCurrentPosition().y;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i][j + 1].getCurrentPosition().z;
+			}
+			else if (j == COLUMNS - 1) {
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i][j - 1].getCurrentPosition().x;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i][j - 1].getCurrentPosition().y;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i][j - 1].getCurrentPosition().z;
+			}
+			if (i == 0 && j == 0) {
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i + 1][j + 1].getCurrentPosition().x;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i + 1][j + 1].getCurrentPosition().y;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i + 1][j + 1].getCurrentPosition().z;
+			}
+			else if (i == ROWS - 1 && j == COLUMNS - 1) {
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i - 1][j - 1].getCurrentPosition().x;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i - 1][j - 1].getCurrentPosition().y;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i - 1][j - 1].getCurrentPosition().z;
+			}
+			else if (i == 0 && j == COLUMNS - 1) {
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i + 1][j - 1].getCurrentPosition().x;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i + 1][j - 1].getCurrentPosition().y;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i + 1][j - 1].getCurrentPosition().z;
+			}
+			else if (i == ROWS - 1 && j == 0) {
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i - 1][j + 1].getCurrentPosition().x;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i - 1][j + 1].getCurrentPosition().y;
+				_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i - 1][j + 1].getCurrentPosition().z;
+			}
+		}
+	}
 
 }
 

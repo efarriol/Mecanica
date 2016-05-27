@@ -62,18 +62,18 @@ void Game::loadParticles(){
 	float xIncrement = 0.0f;
 	for (int i = 0; i < ROWS; i++) {
 		for (int j = 0; j < COLUMNS; j++) {
-			if(i == 10 && j == 10)sysParticles[i][j].setPosition( -2 + xIncrement, -1, 2 - zIncrement);
+			if(i == 25 && j == 25)sysParticles[i][j].setPosition( -2 + xIncrement, -1, 2 - zIncrement);
 			else sysParticles[i][j].setPosition(-2 + xIncrement, -2, 2 - zIncrement);
 			sysParticles[i][j].setPreviousPosition(sysParticles[i][j].getCurrentPosition());
-			sysParticles[i][j].setVelocity(0, 0, 0);
 			sysParticles[i][j].setLifetime(500);
 			sysParticles[i][j].setBouncing(0.2f);
-			zIncrement += 0.2f;
+			sysParticles[i][j].setForce(0, 0, 0);
+			zIncrement += PARTICLE_DISTANCE;
 		}
 		zIncrement = 0;
-		xIncrement += 0.2f;
+		xIncrement += PARTICLE_DISTANCE;
 	}
-	for (int i = 1; i < ROWS; i++) {
+	for (int i = 0; i < ROWS; i++) {
 		for (int j = 0; j < COLUMNS; j++) {
 			_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i][j].getCurrentPosition().x;
 			_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i][j].getCurrentPosition().y;
@@ -190,16 +190,21 @@ void Game::executeActions() {
 
 	for (int i = 1; i < ROWS-1; i++) {
 		for (int j = 1; j < COLUMNS-1; j++) {
-			glm::vec3 correctVelocity = sysParticles[i][j].getVelocity() + _dt * glm::exp2(WAVE_CONST) * (sysParticles[i + 1][j].getCurrentPosition() + sysParticles[i - 1][j].getCurrentPosition() + sysParticles[i][j + 1].getCurrentPosition() + sysParticles[i][j - 1].getCurrentPosition() - 4.0f * sysParticles[i][j].getCurrentPosition()) / glm::exp2(PARTICLE_DISTANCE);
-			sysParticles[i][j].setVelocity(correctVelocity);
-			glm::vec3 correctPosition = sysParticles[i][j].getCurrentPosition() + _dt * sysParticles[i][j].getVelocity();
-			sysParticles[i][j].setPosition(correctPosition);
+				sysParticles[i][j].setForce(glm::vec3(0.0f));
+				glm::vec3 newForce = glm::exp2(WAVE_CONST)*(sysParticles[i + 1][j].getCurrentPosition() + sysParticles[i - 1][j].getCurrentPosition() + sysParticles[i][j + 1].getCurrentPosition() + sysParticles[i][j - 1].getCurrentPosition() - 4.0f* sysParticles[i][j].getCurrentPosition()) / glm::exp2(PARTICLE_DISTANCE);
+				sysParticles[i][j].setForce(newForce);
+		}
+	}
 
+	for (int i = 0; i < ROWS; i++) {
+		for (int j = 0; j < COLUMNS; j++) {
+			sysParticles[i][j].updateParticle(_dt, Particle::UpdateMethod::EulerSemi);
 			_gameElements.getGameParticle(i * COLUMNS + j)._translate.x = sysParticles[i][j].getCurrentPosition().x;
 			_gameElements.getGameParticle(i * COLUMNS + j)._translate.y = sysParticles[i][j].getCurrentPosition().y;
 			_gameElements.getGameParticle(i * COLUMNS + j)._translate.z = sysParticles[i][j].getCurrentPosition().z;
 		}
 	}
+
 	for (int i = 0; i < ROWS; i++) {
 		for (int j = 0; j < COLUMNS; j++) {
 			if (i == 0) {
